@@ -20,13 +20,25 @@ const ROOT=self.registration.scope;
 const key=(p)=>new URL(p,ROOT).href;
 let pending;
 async function tell(data,target){const message={app:'fieldframe',version:VERSION,total:FILES.length,...data};if(target){target.postMessage(message);return;}for(const c of await self.clients.matchAll({includeUncontrolled:true,type:'window'}))c.postMessage(message);}
+async function fetchAsset(f){
+ let response;
+ for(let attempt=0;attempt<3;attempt++){
+  response=undefined;
+  try{response=await fetch(key(f),{cache:'reload',credentials:'same-origin'});}catch(error){if(attempt===2)throw error;}
+  if(response?.ok)return response;
+  if(response&&![429,500,502,503,504].includes(response.status))break;
+  if(attempt<2)await new Promise(resolve=>setTimeout(resolve,250*(attempt+1)));
+ }
+ throw Error('Could not save '+f+(response?' ('+response.status+')':''));
+}
 async function cacheAll(){
  if(pending)return pending;
  pending=(async()=>{
   const cache=await caches.open(CACHE);let done=0,next=0;
   await tell({status:'downloading',done,message:'Downloading every sheet and essential visual…'});
-  async function runner(){while(next<FILES.length){const f=FILES[next++];const response=await fetch(key(f),{cache:'reload',credentials:'same-origin'});if(!response.ok)throw Error('Could not save '+f+' ('+response.status+')');const type=response.headers.get('content-type')||'';if((/\\.(js|css|json|svg|png|webp|jpg|jpeg|pdf|webmanifest)$/.test(f))&&type.includes('text/html'))throw Error('A sign-in page was returned instead of '+f);if(f==='index.html'&&!(await response.clone().text()).includes('Fieldframe'))throw Error('The app page was not returned; sign in to the host and retry');if((await response.clone().arrayBuffer()).byteLength===0)throw Error('Empty response for '+f);await cache.put(key(f),response);done++;await tell({status:'downloading',done,message:'Saving the complete library and its visuals…'});}}
-  await Promise.all(Array.from({length:4},runner));
+  async function runner(){while(next<FILES.length){const f=FILES[next++];const response=await fetchAsset(f);const type=response.headers.get('content-type')||'';if((/\\.(js|css|json|svg|png|webp|jpg|jpeg|pdf|webmanifest)$/.test(f))&&type.includes('text/html'))throw Error('A sign-in page was returned instead of '+f);if(f==='index.html'&&!(await response.clone().text()).includes('Fieldframe'))throw Error('The app page was not returned; sign in to the host and retry');if((await response.clone().arrayBuffer()).byteLength===0)throw Error('Empty response for '+f);await cache.put(key(f),response);done++;await tell({status:'downloading',done,message:'Saving the complete library and its visuals…'});}}
+  const results=await Promise.allSettled(Array.from({length:4},runner));
+  const failed=results.find(result=>result.status==='rejected');if(failed)throw failed.reason;
   await cache.put(key('__fieldframe_complete__'),new Response(VERSION));
   await tell({status:'ready',done:FILES.length,message:'All sheets, photographs and tools are saved on this device.'});
  })().catch(async error=>{await tell({status:'error',message:error.message+'. Reconnect and retry.'});throw error;}).finally(()=>{pending=undefined;});

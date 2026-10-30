@@ -5,19 +5,19 @@ const worker=fs.readFileSync('dist/sw.js','utf8');
 const photos=JSON.parse(fs.readFileSync('src/photo-manifest.json','utf8'));
 const photoPath=id=>photos[id].src.slice(2);
 const manifest=JSON.parse(fs.readFileSync('dist/offline-manifest.json','utf8'));
-function harness({badFile,loginHTML=false,emptyBody=false,pendingNavigation=false}={}){
- const root='https://fieldframe.example/subpath/',handlers={},messages=[],stores=new Map();let network=true,fetchCount=0,claimed=false,skipped=false;
+function harness({badFile,loginHTML=false,emptyBody=false,pendingNavigation=false,transientFile,transientFailures=2}={}){
+ const root='https://fieldframe.example/subpath/',handlers={},messages=[],stores=new Map();let network=true,fetchCount=0,claimed=false,skipped=false,transientAttempts=0;
  const url=k=>typeof k==='string'?k:k.url;
  const cache={async put(k,v){stores.set(url(k),v.clone());},async match(k){return stores.get(url(k))?.clone();},async delete(k){return stores.delete(url(k));},async keys(){return [...stores.keys()];}};
  const names=new Set(['fieldframe-previous','unrelated-app']);
  const caches={async open(name){names.add(name);return cache;},async keys(){return [...names];},async delete(name){return names.delete(name);}};
  const client={postMessage:m=>messages.push(m),...(pendingNavigation?{url:root,navigate:()=>new Promise(()=>{})}:{})};
  const self={registration:{scope:root},location:{origin:'https://fieldframe.example'},clients:{matchAll:async()=>[client],claim:async()=>{claimed=true;}},skipWaiting:async()=>{skipped=true;},addEventListener:(n,f)=>{handlers[n]=f;}};
- const fetch=async input=>{fetchCount++;if(!network)throw Error('Network disabled by test');const f=url(input).slice(root.length);if(f===badFile&&emptyBody)return new Response('',{headers:{'content-type':'image/webp'}});if(f===badFile)return loginHTML?new Response('<html>Sign in</html>',{headers:{'content-type':'text/html'}}):new Response('missing',{status:404});if(f==='index.html')return new Response('<html><title>Fieldframe</title><div id="root"></div></html>',{headers:{'content-type':'text/html'}});return new Response(fs.existsSync('dist/'+f)?fs.readFileSync('dist/'+f):'asset',{headers:{'content-type':f.endsWith('.webp')?'image/webp':f.endsWith('.svg')?'image/svg+xml':f.endsWith('.js')?'text/javascript':'application/octet-stream'}});};
- vm.runInNewContext(worker,{self,caches,fetch,Response,URL,console});
+ const fetch=async input=>{fetchCount++;if(!network)throw Error('Network disabled by test');const f=url(input).slice(root.length);if(f===transientFile&&++transientAttempts<=transientFailures)return new Response('Temporarily unavailable',{status:503});if(f===badFile&&emptyBody)return new Response('',{headers:{'content-type':'image/webp'}});if(f===badFile)return loginHTML?new Response('<html>Sign in</html>',{headers:{'content-type':'text/html'}}):new Response('missing',{status:404});if(f==='index.html')return new Response('<html><title>Fieldframe</title><div id="root"></div></html>',{headers:{'content-type':'text/html'}});return new Response(fs.existsSync('dist/'+f)?fs.readFileSync('dist/'+f):'asset',{headers:{'content-type':f.endsWith('.webp')?'image/webp':f.endsWith('.svg')?'image/svg+xml':f.endsWith('.js')?'text/javascript':'application/octet-stream'}});};
+ vm.runInNewContext(worker,{self,caches,fetch,Response,URL,console,setTimeout});
  const fire=async(name,data={})=>{let promise;handlers[name]({...data,waitUntil:p=>{promise=p;}});await promise;};
  const request=async(path,mode='cors')=>{let promise;handlers.fetch({request:{url:root+path,method:'GET',mode},respondWith:p=>{promise=p;}});return promise;};
- return {root,fire,request,stores,messages,names,disableNetwork(){network=false;},get fetchCount(){return fetchCount;},get claimed(){return claimed;},get skipped(){return skipped;}};
+ return {root,fire,request,stores,messages,names,disableNetwork(){network=false;},get transientAttempts(){return transientAttempts;},get fetchCount(){return fetchCount;},get claimed(){return claimed;},get skipped(){return skipped;}};
 }
 describe('Built service worker: complete offline behavior',()=>{
  it('includes every real scene photograph and the public sample, but no paid guide',()=>{
@@ -42,6 +42,12 @@ describe('Built service worker: complete offline behavior',()=>{
  });
  it('activates without awaiting a client navigation that needs the new worker',async()=>{
   const h=harness({pendingNavigation:true});await h.fire('install');await h.fire('activate');expect(h.claimed).toBe(true);expect(h.messages.at(-1).status).toBe('ready');
+ });
+ it('recovers from two transient asset errors during installation',async()=>{
+  const h=harness({transientFile:photoPath('milky-way')});await h.fire('install');expect(h.skipped).toBe(true);expect(h.transientAttempts).toBe(3);expect(h.messages.at(-1).status).toBe('ready');
+ });
+ it('stops after three failed transient requests and does not report readiness',async()=>{
+  const h=harness({transientFile:photoPath('milky-way'),transientFailures:10});await expect(h.fire('install')).rejects.toThrow(/503/);expect(h.transientAttempts).toBe(3);expect(h.skipped).toBe(false);expect(h.messages.at(-1).status).toBe('error');
  });
  it('a failed asset leaves the library unready instead of falsely claiming completion',async()=>{
   const h=harness({badFile:photoPath('milky-way')});await expect(h.fire('install')).rejects.toThrow();

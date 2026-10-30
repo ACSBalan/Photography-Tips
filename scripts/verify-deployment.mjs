@@ -16,15 +16,35 @@ if (!base.pathname.endsWith('/')) base.pathname += '/';
 const manifest = JSON.parse(fs.readFileSync('dist/offline-manifest.json', 'utf8'));
 const files = [...manifest.files, 'offline-manifest.json', 'sw.js'];
 const digest = value => crypto.createHash('sha256').update(value).digest('hex');
+const transientStatuses = new Set([429, 500, 502, 503, 504]);
+async function fetchWithRetry(current, file) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const response = await fetch(current, { redirect: 'manual', signal: AbortSignal.timeout(20000) });
+      if (transientStatuses.has(response.status)) {
+        await response.body?.cancel();
+        throw new Error(`HTTP ${response.status}`);
+      }
+      // Read successful bodies here so a dropped connection also gets a retry.
+      const received = response.status === 200 ? Buffer.from(await response.arrayBuffer()) : undefined;
+      return { response, received };
+    } catch (error) {
+      if (attempt === 3) {
+        throw new Error(`${file}: request failed after 3 attempts: ${error instanceof Error ? error.message : String(error)}`, { cause: error });
+      }
+      await new Promise(resolve => setTimeout(resolve, attempt * 250));
+    }
+  }
+}
 let next = 0;
 let verified = 0;
 async function worker() {
   while (next < files.length) {
     const file = files[next++];
     let current = new URL(file, base);
-    let response;
+    let response, received;
     for (let redirects = 0; redirects < 5; redirects++) {
-      response = await fetch(current, { redirect: 'manual', signal: AbortSignal.timeout(20000) });
+      ({ response, received } = await fetchWithRetry(current, file));
       if (![301, 302, 303, 307, 308].includes(response.status)) break;
       const location = response.headers.get('location');
       if (!location) break;
@@ -35,7 +55,6 @@ async function worker() {
       current = target;
     }
     if (response.status !== 200) throw new Error(`${file}: HTTP ${response.status}`);
-    const received = Buffer.from(await response.arrayBuffer());
     const expected = fs.readFileSync(`dist/${file}`);
     if (digest(received) !== digest(expected)) throw new Error(`${file}: deployed bytes differ from the build`);
     verified++;
