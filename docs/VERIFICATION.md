@@ -11,6 +11,12 @@ Verified on 30 October 2026 against the photographic-edition source and producti
 - The final app cache version is `b981caa5a34c`. Its offline package contains 133 files including the offline manifest, approximately 14.77 MiB. `sw.js` is served separately.
 - The complete paid companion guide is absent from the public source, build and offline manifest. The public sample contains six scenes over nine PDF pages.
 
+## Published release check
+
+The GitHub Pages deployment completed successfully for `8a13458d66f201301c66da332752c22c19be85c6`. All 134 live files matched the production build byte-for-byte, including 120 photographs and the public PDF sample. Cache version: `b981caa5a34c`.
+
+The live browser received the update, reported 133/133 offline files, and passed **Verify saved files**. The live library, photographic guide previews and presentation controls were checked. The screenshot below was captured from the published site.
+
 ## Browser checks
 
 The actual React interface was inspected in the supported cloud browser using the local preview:
