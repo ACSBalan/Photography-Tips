@@ -53,10 +53,58 @@
       "shutter": "Automatic stack; 5–10 s only in a supported manual app",
       "focus": "Lock distant focus and inspect an enlarged frame.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod or clamp",
       "guidance": "Clamp the main camera and let a supported astro mode finish its sequence. Include a clean distant foreground edge.",
-      "limitation": "Night-mode duration often describes a stack, not one exposure. Manual ISO, focus and RAW depend on the phone and app."
+      "limitation": "Night-mode duration often describes a stack, not one exposure. Manual ISO, focus and RAW depend on the phone and app.",
+      "why": [
+        "A dark location and a visible galactic band matter more than a long countdown; the phone cannot recover a Milky Way hidden by bright sky.",
+        "The main camera is usually the most dependable phone lens in low light; digital zoom enlarges noise without collecting more starlight.",
+        "A supported astro mode combines frames while managing star movement. Its total capture duration is not a single shutter setting.",
+        "With a fixed aperture, the useful controls are capture mode, support, focus and any genuine shutter/ISO adjustments the app provides."
+      ],
+      "steps": [
+        "Check local darkness, clouds, Moon position and galactic visibility for your date, latitude and hemisphere; choose a safe viewpoint before dark.",
+        "Clean the main lens, clamp the phone and include a simple distant foreground below the band.",
+        "Select astrophotography mode if supported, otherwise try a tripod night capture. Use a manual app only after checking its actual exposure and focus capabilities.",
+        "Focus on a bright star using magnification and manual focus if available; otherwise lock focus on a distant light and verify the stars in a recorded test.",
+        "Start with the timer and leave the phone untouched until capture and processing finish.",
+        "Enlarge centre and corner stars. Correct focus for round swollen stars; in a manual app shorten individual exposures for trails and raise ISO only as needed. Compare a shorter available night capture if the stack smears detail."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a usable night or astro capture mode",
+          "Secure phone clamp and tripod"
+        ],
+        "optional": [
+          "Power bank for a long session",
+          "Lens cloth",
+          "Local sky-position app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The sky is bright but no galactic band appears",
+          "cause": "Moonlight, light pollution or the band being below the horizon",
+          "fix": "Check local sky position and move to darker conditions or a better date; a longer capture alone will not reveal an absent band."
+        },
+        {
+          "symptom": "Stars are enlarged round blobs",
+          "cause": "Incorrect focus, condensation or a dirty lens",
+          "fix": "Clean and dry the lens, lock distant focus again and inspect an enlarged recorded star."
+        },
+        {
+          "symptom": "Stars become lines or doubled marks",
+          "cause": "Individual exposures are too long, the phone moved, or the stack failed to align",
+          "fix": "Secure the clamp; use supported astro capture, or shorten individual exposures in a capable manual app and retest."
+        },
+        {
+          "symptom": "The foreground becomes waxy or patchy",
+          "cause": "Heavy processing of very dark ground",
+          "fix": "Use a clear silhouette or make a separate foreground capture for a disclosed blend; avoid forcing noisy shadows bright."
+        }
+      ],
+      "tip": "Check one recorded star at high magnification before committing to a long astro sequence; a bright phone preview can hide missed focus."
     },
     "why": [
       "Earth rotation limits the shutter even when the tripod is perfectly still.",
@@ -212,10 +260,57 @@
       "shutter": "Automatic; 2–5 s only if selectable",
       "focus": "Lock focus on a distant light or star.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Use the main camera and a small landmark to establish direction. Reduce exposure if bright stars lose their colour.",
-      "limitation": "Digital zoom does not replace optical reach; computational smoothing may remove faint stars."
+      "limitation": "Digital zoom does not replace optical reach; computational smoothing may remove faint stars.",
+      "why": [
+        "Recognisable spacing between the brightest stars matters more than filling the screen with a digitally enlarged pattern.",
+        "A stable main-camera capture usually retains more faint stars than an unsupported low-light telephoto view.",
+        "Reducing excessive brightness preserves star colour; the phone's aperture is usually fixed, so use exposure adjustment or supported manual controls."
+      ],
+      "steps": [
+        "Locate the constellation in a local sky map and confirm that its important stars clear buildings and trees.",
+        "Support the main camera and frame the complete pattern with a small distant landmark if useful.",
+        "Use supported astro/night capture. If testing optical telephoto, confirm that the app actually uses that camera and supports the required low-light mode.",
+        "Lock focus on a distant light or use magnified manual focusing on a star when available, then make a timed test capture.",
+        "Enlarge the stars and compare their shape and colour; reduce exposure if the bright ones are featureless, and shorten a genuine manual exposure if they trail.",
+        "Save a wider clean frame before cropping; stop enlarging when the pattern becomes noisy rather than clearer."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with supported low-light capture",
+          "Tripod and phone clamp"
+        ],
+        "optional": [
+          "Local constellation map",
+          "Compatible manual-focus app",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The constellation disappears among noise",
+          "cause": "Heavy digital zoom or insufficient sky signal",
+          "fix": "Return to the main camera, work under a darker sky and use a supported tripod astro/night mode."
+        },
+        {
+          "symptom": "Bright stars are large white spots",
+          "cause": "Clipping or inaccurate focus",
+          "fix": "Reduce capture brightness, verify distant focus and compare an enlarged test before changing both at once."
+        },
+        {
+          "symptom": "Fainter stars vanish after processing",
+          "cause": "Noise reduction treats small points as noise",
+          "fix": "Compare a supported RAW/manual capture or a dedicated astro mode; avoid heavy smoothing in the final edit."
+        },
+        {
+          "symptom": "All stars have matching short streaks",
+          "cause": "Star movement during individual exposures or movement of the phone",
+          "fix": "Check the clamp; use shorter genuine manual exposures if supported, and inspect the recorded result rather than relying on the countdown."
+        }
+      ],
+      "tip": "Keep the brightest stars of the whole pattern in the frame; a clear constellation is more useful than a large but incomplete crop."
     },
     "why": [
       "A tighter field magnifies star motion, so the exposure is shorter than a wide nightscape.",
@@ -368,10 +463,57 @@
       "shutter": "Repeated exposures controlled by the app",
       "focus": "Lock focus and exposure before starting.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod; external power if needed",
       "guidance": "Clamp the phone and use a true star-trail mode or save individual frames for later blending.",
-      "limitation": "Normal night mode usually aligns stars and suppresses trails; it is not equivalent to a trail mode."
+      "limitation": "Normal night mode usually aligns stars and suppresses trails; it is not equivalent to a trail mode.",
+      "why": [
+        "A dedicated trail mode accumulates star movement; an ordinary astro mode may align that movement away.",
+        "Total sequence duration determines arc length, while individual-frame brightness determines whether the sky washes out.",
+        "An unchanged camera position, distant focus and short capture gaps keep the arcs continuous around the local celestial pole."
+      ],
+      "steps": [
+        "Before travelling, verify that the phone offers a real star-trail mode or an interval app that saves frames for later lighten blending.",
+        "Choose a safe fixed foreground and the appropriate celestial-pole direction for your hemisphere, or point elsewhere for sweeping arcs.",
+        "Clamp the phone securely, lock distant focus on a star or far light, and fix exposure/white balance if the app permits.",
+        "Make a short trial sequence and inspect a saved frame for focus and a sky that is not clipped.",
+        "Capture a continuous sequence for roughly 30–90 minutes when battery, weather and storage permit; minimise gaps without disturbing the phone.",
+        "Review the trail composite or blend the saved frames, checking for jumps, gaps and changing focus before attempting a longer sequence."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a verified trail mode or interval capture route",
+          "Stable tripod and clamp"
+        ],
+        "optional": [
+          "Power bank connected before the sequence",
+          "Trail-blending software if saving individual frames",
+          "Lens cloth for condensation"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The result has star points instead of trails",
+          "cause": "Normal astro/night processing aligned the stars",
+          "fix": "Use a dedicated trail mode or save separate frames and blend without aligning away the sky's movement."
+        },
+        {
+          "symptom": "Arcs have long gaps",
+          "cause": "Capture pauses, processing delays or the app being suspended",
+          "fix": "Use the shortest supported interval gap and a capture app that remains active; test continuity before the full session."
+        },
+        {
+          "symptom": "The foreground jumps between segments",
+          "cause": "The clamp moved or the phone switched cameras",
+          "fix": "Secure the mount and keep one physical camera and zoom setting for the entire sequence."
+        },
+        {
+          "symptom": "Trails become thick and hazy later",
+          "cause": "Condensation or a change in focus",
+          "fix": "End the sequence, inspect the lens and restore distant focus before starting a new complete sequence."
+        }
+      ],
+      "tip": "Keep a clean foreground frame before starting; a passing torch can spoil the ground even when the sky sequence works."
     },
     "why": [
       "Total sequence duration sets trail length; each frame’s exposure controls sky brightness.",
@@ -523,10 +665,58 @@
       "shutter": "Auto; about 1/250 s if selectable",
       "focus": "Tap and lock on the Moon.",
       "focal": "Optical telephoto camera if fitted; avoid heavy digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Supported",
       "guidance": "Use a genuine optical telephoto camera and reduce exposure until the disc shows detail.",
-      "limitation": "The Moon stays small without optical reach; computational lunar enhancement is not captured optical detail."
+      "limitation": "The Moon stays small without optical reach; computational lunar enhancement is not captured optical detail.",
+      "why": [
+        "The full Moon is sunlit, so a brightened night-sky exposure usually turns it into a featureless white circle.",
+        "Genuine optical reach helps lunar detail; very large digital zoom cannot create optical information that the lens did not record.",
+        "Firm support and a short capture reduce shake at high magnification. The phone's fixed aperture leaves exposure adjustment or supported shutter/ISO controls to manage brightness."
+      ],
+      "steps": [
+        "Choose a clear view with the Moon reasonably high, avoiding hot roofs that distort the image.",
+        "Support the phone and select a real optical telephoto camera if fitted; otherwise keep a wider view and accept a small lunar disc.",
+        "Use normal photo mode first, tap the lunar rim and lock focus/exposure if the app supports it.",
+        "Lower exposure until the bright disc shows visible tonal differences; disable night capture if it is washing out the Moon.",
+        "Use the timer and take several short captures, then enlarge the lunar edge and compare detail between frames.",
+        "If using a manual app, try its supported short shutter and low ISO controls; verify the physical telephoto camera remains selected and check the actual result."
+      ],
+      "pack": {
+        "essential": [
+          "Phone; optical telephoto is needed for substantial direct lunar detail",
+          "Stable support or phone tripod"
+        ],
+        "optional": [
+          "Compatible manual-camera app",
+          "Lens cloth",
+          "Remote shutter or built-in timer"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Moon is a white circle",
+          "cause": "Automatic exposure followed the dark sky or used a long night capture",
+          "fix": "Tap the Moon, reduce exposure and compare normal mode with night mode disabled where possible."
+        },
+        {
+          "symptom": "Large Moon has painted-looking detail",
+          "cause": "Heavy digital enlargement or scene-specific enhancement",
+          "fix": "Use a genuine optical setting and retain the original file; do not describe algorithmically reconstructed detail as an optical capture."
+        },
+        {
+          "symptom": "The edge doubles in some frames",
+          "cause": "Phone movement during capture",
+          "fix": "Secure the support, use the timer and avoid touching the screen during exposure."
+        },
+        {
+          "symptom": "The Moon remains tiny",
+          "cause": "Insufficient optical focal length",
+          "fix": "Choose a wider landscape composition instead of forcing extreme digital zoom; a properly aligned telescope adapter is a separate equipment route."
+        }
+      ],
+      "tip": "Compare several modest optical-zoom frames before selecting the most enlarged one; apparent size is not the same as recorded detail.",
+      "intent": "A clearly bounded, correctly exposed full Moon, with surface detail where the optics resolve it; otherwise keep the small disc in a wider sky composition."
     },
     "why": [
       "The bright sunlit surface needs much less exposure than its black surroundings imply.",
@@ -577,9 +767,9 @@
         "name": "Handheld stabilised telephoto",
         "aperture": 5.6,
         "shutter": 0.002,
-        "iso": 200,
+        "iso": 100,
         "mode": "M",
-        "effect": "Reduces vibration risk in a smaller lunar image.",
+        "effect": "A faster shutter and stabilisation reduce vibration at comparable brightness.",
         "requirements": "Effective stabilisation and steady technique."
       },
       {
@@ -679,10 +869,58 @@
       "shutter": "Auto; shorten if the crescent clips",
       "focus": "Lock on the bright crescent edge.",
       "focal": "Optical telephoto if available.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Supported or tripod",
       "guidance": "Reduce brightness enough to define the phase and steady the phone.",
-      "limitation": "Most phones show the phase more readily than fine crater relief."
+      "limitation": "Most phones show the phase more readily than fine crater relief.",
+      "why": [
+        "The illuminated edge needs far less exposure than the black sky, so automatic night brightening can erase the phase.",
+        "Crater shadows near the terminator need optical resolution and steady support; the phone's zoom slider alone does not provide either.",
+        "Normal capture preserves the lit crescent more reliably than a long stack aimed at revealing the dark surroundings."
+      ],
+      "steps": [
+        "Check the local phase, altitude and clear-sky window; choose a viewpoint away from heat rising off roofs.",
+        "Support the phone and select genuine optical telephoto if available, keeping the entire lunar shape inside the frame.",
+        "In normal photo mode, tap the illuminated lunar edge and lock focus if supported.",
+        "Reduce exposure until the crescent or quarter-phase boundary is defined; make several timer-triggered captures.",
+        "Enlarge the recorded terminator. If detail is unstable, compare frames; if the whole crescent is white, reduce exposure further.",
+        "If optical reach is insufficient, make a clean phase silhouette against twilight instead of expecting tiny crater detail from digital zoom."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and firm support",
+          "Clear view of the illuminated Moon"
+        ],
+        "optional": [
+          "Phone with optical telephoto",
+          "Tripod clamp",
+          "Local Moon-phase map"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The crescent looks thicker than expected",
+          "cause": "Clipping and glare obscure its true boundary",
+          "fix": "Lower exposure, clean the lens and compare a short normal capture with night mode disabled."
+        },
+        {
+          "symptom": "No craters appear at maximum zoom",
+          "cause": "The optical image is too small or strongly processed",
+          "fix": "Return to the clearest genuine optical setting and emphasise phase shape; use suitable telescope equipment for substantially more detail."
+        },
+        {
+          "symptom": "Focus repeatedly pulses",
+          "cause": "The small Moon gives autofocus too little contrast",
+          "fix": "Lock focus on the bright limb, or use magnified manual focus in an app that supports the chosen camera."
+        },
+        {
+          "symptom": "The unlit side is invisible",
+          "cause": "The exposure deliberately preserves the sunlit terrain",
+          "fix": "Use the earthshine sheet for the faint hemisphere; it requires a different brightness compromise."
+        }
+      ],
+      "tip": "A sharp, correctly exposed crescent shape is a successful phone result even when the lens cannot resolve individual craters.",
+      "intent": "A sharply defined crescent or quarter-phase outline, with fine crater relief only where the optical view genuinely resolves it."
     },
     "why": [
       "Low-angle sunlight makes crater relief more visible than full-Moon lighting.",
@@ -836,10 +1074,56 @@
       "shutter": "Auto; avoid long lunar night stacks",
       "focus": "Focus on the distant skyline.",
       "focal": "Main or optical telephoto camera.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Supported",
       "guidance": "Use optical telephoto while the sky still has colour and lower exposure enough to retain lunar shape.",
-      "limitation": "A single phone frame may not hold both lunar terrain and a dark foreground."
+      "limitation": "A single phone frame may not hold both lunar terrain and a dark foreground.",
+      "why": [
+        "Twilight gives the landscape a better chance of sharing one exposure with the much brighter lunar disc.",
+        "A distant landmark can sit near the Moon's focus distance; a very close foreground may remain soft when the Moon is sharp.",
+        "Moving farther from the landmark and using genuine optical telephoto changes its scale relative to the Moon; digital enlargement alone enlarges both."
+      ],
+      "steps": [
+        "Plan the Moon's altitude and direction for the exact place and date, including the real terrain horizon.",
+        "Choose a safe distant landmark before twilight and decide whether the main camera or optical telephoto gives the better relationship.",
+        "Steady the phone, tap the distant landmark or lunar edge and check that both are acceptably sharp.",
+        "Use normal photo mode and lower exposure enough to retain the lunar shape while checking the landscape.",
+        "If the landscape becomes black, accept a silhouette or make a separate brighter land frame at identical framing for a disclosed blend.",
+        "Retake as the alignment changes; enlarge the Moon to check that night processing or digital zoom has not replaced detail with a bright smear."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe planned viewpoint"
+        ],
+        "optional": [
+          "Phone tripod",
+          "Moon-position planner",
+          "Optical telephoto camera if fitted"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The Moon is a white spot above a bright landscape",
+          "cause": "Automatic exposure or HDR favoured the ground",
+          "fix": "Lower exposure for the Moon; accept darker land or capture separate exposures for a clearly disclosed blend."
+        },
+        {
+          "symptom": "The Moon looks small beside the landmark",
+          "cause": "The camera is too close to the landmark for the intended scale",
+          "fix": "Move farther away where safe and use genuine optical telephoto to restore the landmark's framing."
+        },
+        {
+          "symptom": "Landmark is sharp but the Moon is soft",
+          "cause": "The landmark is too near or lunar detail is beyond the phone's optics",
+          "fix": "Choose a more distant landmark, refocus and inspect a recorded frame; avoid relying on digital zoom to repair it."
+        },
+        {
+          "symptom": "The Moon has a doubled edge after a night capture",
+          "cause": "Motion or failed computational alignment",
+          "fix": "Use firm support and compare a shorter normal exposure while twilight still illuminates the land."
+        }
+      ],
+      "tip": "Frame a small bright Moon deliberately if necessary; a convincing alignment is more valuable than an oversized processed disc."
     },
     "why": [
       "Twilight brings foreground brightness closer to the sunlit Moon.",
@@ -993,10 +1277,57 @@
       "shutter": "Shortest useful night capture",
       "focus": "Lock distant focus.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Brace the main camera and shorten the night capture if the display moves rapidly.",
-      "limitation": "Long computational stacks may erase curtain structure even when they look brighter."
+      "limitation": "Long computational stacks may erase curtain structure even when they look brighter.",
+      "why": [
+        "Auroral curtains can change faster than stars move, so a long phone night capture may brighten the sky while erasing its shape.",
+        "The main camera and firm support give the phone the best chance to separate a faint arc from noise.",
+        "The aperture is usually fixed; the available capture duration and exposure adjustment are the practical controls unless a manual app exposes shutter and ISO."
+      ],
+      "steps": [
+        "Check local darkness, clouds and auroral visibility for your hemisphere; choose a safe horizon before the display develops.",
+        "Clamp the main camera and compose a simple skyline with space for changing curtains.",
+        "Lock distant focus on a bright star or far light, using magnified manual focus if the app supports it.",
+        "Begin with a short available night capture; for a bright fast display also compare normal photo mode.",
+        "Enlarge the recorded rays and stars, checking for smeared folds and featureless green highlights.",
+        "Shorten the available capture for rapid movement. With a genuinely manual app, shorten individual shutter time and raise ISO as required; retest as the display brightens or fades."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with useful low-light capture",
+          "Stable clamp and tripod"
+        ],
+        "optional": [
+          "Power bank kept within its operating temperature",
+          "Lens cloth",
+          "Local aurora and cloud information"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Green colour is visible but all rays vanish",
+          "cause": "The capture combined too much auroral movement",
+          "fix": "Choose a shorter available night capture or normal mode for bright activity; use shorter individual exposures in a capable manual app."
+        },
+        {
+          "symptom": "Bright curtains become flat neon patches",
+          "cause": "Clipping or aggressive colour processing",
+          "fix": "Lower exposure and compare a restrained normal/RAW capture if supported; check the brightest recorded folds."
+        },
+        {
+          "symptom": "Stars are fuzzy although the curtain shape is clear",
+          "cause": "Focus error or condensation",
+          "fix": "Inspect and dry the lens, then relock distant focus and enlarge a new star test."
+        },
+        {
+          "symptom": "The landscape is patchy and artificial",
+          "cause": "The phone tried to brighten ground receiving very little light",
+          "fix": "Use a clean silhouette, or make a separate foreground frame and disclose any blend."
+        }
+      ],
+      "tip": "During a strong display, try one normal-mode frame as well as night mode; the shorter capture may preserve a much better curtain."
     },
     "why": [
       "Auroral motion can demand a shorter shutter than the stars.",
@@ -1146,10 +1477,57 @@
       "shutter": "Repeated short captures",
       "focus": "Lock distant focus before the sequence.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Clamp the main camera and save individual frames if the app supports it.",
-      "limitation": "Ordinary night stacks can reject a meteor as a transient; no mode guarantees one will cross the frame."
+      "limitation": "Ordinary night stacks can reject a meteor as a transient; no mode guarantees one will cross the frame.",
+      "why": [
+        "A meteor lasts briefly, so a longer countdown mainly collects more empty sky and does not guarantee a brighter streak.",
+        "Saving individual frames avoids relying entirely on a composite that might reject a meteor as a transient.",
+        "A wide main-camera view and a sustained sequence improve coverage, while a stable mount preserves the surrounding stars."
+      ],
+      "steps": [
+        "Check the shower's local active period, radiant altitude, Moon and weather; visibility depends on location and date.",
+        "Verify in advance whether the phone/app can save repeated individual frames or has a genuine meteor mode; ordinary night mode is an uncertain fallback.",
+        "Clamp the main camera on a promising wide sky patch away from local lights, with a simple distant foreground if wanted.",
+        "Lock distant focus on a bright star or far light and inspect an enlarged saved test for sharp stars.",
+        "Run the supported sequence with minimal practical gaps, keeping framing fixed and enough battery and storage available.",
+        "Review individual files later for streaks; compare neighbouring frames to distinguish repeated aircraft/satellite paths from brief events."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a verified interval or meteor capture route",
+          "Tripod and clamp"
+        ],
+        "optional": [
+          "Power bank",
+          "Compatible app that saves original frames",
+          "Lens cloth and local sky map"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "No meteor appears despite a bright night image",
+          "cause": "Random events missed the view, timing was poor, or processing removed a transient",
+          "fix": "Check local shower conditions and save individual captures if possible; keep a sustained fixed sequence rather than chasing a passed meteor."
+        },
+        {
+          "symptom": "A seen streak is absent from the final composite",
+          "cause": "Multi-frame processing may have rejected it",
+          "fix": "Review retained component frames if available; use a capture route that saves originals for the next sequence."
+        },
+        {
+          "symptom": "Stars trail in every saved frame",
+          "cause": "Individual exposures are too long or the phone moved",
+          "fix": "Stabilise the mount and shorten genuine manual exposures if available; inspect a recorded test before restarting."
+        },
+        {
+          "symptom": "Long pauses leave much of the sky unrecorded",
+          "cause": "Processing delays, interval settings or interrupted app operation",
+          "fix": "Test the interval route, minimise supported gaps and keep capture active; a long displayed night duration is not continuous meteor coverage."
+        }
+      ],
+      "tip": "Do a short interval test at home and confirm that the app saves individual images; discovering that it keeps only one composite during the shower is too late."
     },
     "why": [
       "A wide view increases the chance that a meteor crosses the frame.",
@@ -1304,10 +1682,57 @@
       "shutter": "Auto or about 1 s if manual",
       "focus": "Tap and lock a distant horizon edge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Supported",
       "guidance": "Expose for the silver texture and include only a small dark horizon.",
-      "limitation": "Long night stacks can smooth the finest ripples; compare with normal capture."
+      "limitation": "Long night stacks can smooth the finest ripples; compare with normal capture.",
+      "why": [
+        "These clouds remain sunlit in twilight, so normal photo mode may retain more fine ripples than a long night stack.",
+        "A small strip of dark horizon shows their scale without making the phone brighten a large empty foreground.",
+        "Exposure reduction protects silver texture; the phone's fixed aperture is not the control for defining the cloud structure."
+      ],
+      "steps": [
+        "Check local summer visibility and the twilight horizon for your latitude and hemisphere; do not assume every bright night cloud is noctilucent.",
+        "Support the main camera and frame the strongest silver-blue ripples above a narrow dark horizon.",
+        "Tap a distant high-contrast skyline edge and lock focus if available.",
+        "Take a normal-mode test first, reducing exposure if the luminous bands turn white.",
+        "If normal mode is too dark, compare a short available night capture without disturbing the phone.",
+        "Enlarge the cloud pattern and keep the version that preserves ripples; retest as twilight fades rather than extending capture automatically."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and firm support",
+          "Unobstructed safe view of the twilight horizon"
+        ],
+        "optional": [
+          "Phone tripod",
+          "Lens cloth",
+          "Local noctilucent-cloud reports"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Luminous clouds become a plain white band",
+          "cause": "Excessive automatic exposure",
+          "fix": "Lower capture brightness and retake until silver texture remains visible."
+        },
+        {
+          "symptom": "Fine ripples disappear in night mode",
+          "cause": "The stack averaged moving structure or applied strong smoothing",
+          "fix": "Compare normal mode or a shorter supported night capture from firm support."
+        },
+        {
+          "symptom": "The skyline is sharp but clouds are orange and featureless",
+          "cause": "Ordinary lower clouds may be reflecting artificial light",
+          "fix": "Check local visibility reports, twilight direction and the characteristic luminous ripple pattern before identifying the display."
+        },
+        {
+          "symptom": "The phone keeps refocusing on the dark foreground",
+          "cause": "Automatic focus chose nearby objects",
+          "fix": "Tap and lock a distant skyline edge, then reframe without introducing close branches."
+        }
+      ],
+      "tip": "Save a normal-mode frame as a texture reference before trying a brighter night capture; the brightest version may have the least cloud detail."
     },
     "why": [
       "Twilight allows lower ISO than a fully dark star scene.",
@@ -1357,7 +1782,7 @@
         "name": "Wide twilight context",
         "aperture": 4,
         "shutter": 0.5,
-        "iso": 400,
+        "iso": 800,
         "mode": "M",
         "effect": "Shows display extent and horizon colour.",
         "requirements": "Around 24 mm equivalent."
@@ -1366,7 +1791,7 @@
         "name": "Ripple detail",
         "aperture": 4,
         "shutter": 0.25,
-        "iso": 800,
+        "iso": 1600,
         "mode": "M",
         "effect": "Preserves smaller ripples in a tighter frame.",
         "requirements": "Around 85–100 mm equivalent and firm support."
@@ -1459,10 +1884,58 @@
       "shutter": "Shortest useful capture for the dark disc",
       "focus": "Lock lunar focus before totality.",
       "focal": "Optical telephoto for disc; main camera for landscape.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Brace the phone and expose for the coloured Moon; a wider landscape may work better than heavy digital zoom.",
-      "limitation": "Small optics and long computational stacks may fail to preserve lunar detail."
+      "limitation": "Small optics and long computational stacks may fail to preserve lunar detail.",
+      "why": [
+        "The eclipsed Moon can become many stops dimmer than the preceding bright disc, so one locked exposure cannot cover the entire event.",
+        "Optical telephoto helps scale but may perform poorly in deep totality; the main camera can give a better wider landscape result.",
+        "A long phone stack can blur or reshape the moving lunar edge even on a tripod, so examine recorded detail rather than choosing only the brightest preview."
+      ],
+      "steps": [
+        "Check local eclipse contact times, Moon altitude and weather, then choose a safe clear view.",
+        "Clamp the phone and test its genuine optical telephoto while the Moon is still bright; keep a wider main-camera composition as a fallback.",
+        "Lock focus on the lunar rim before totality if the app permits, and record a test to confirm focus rather than assuming the lock is correct.",
+        "As totality begins, compare available normal and short night captures; adjust brightness for the coloured disc without changing framing unnecessarily.",
+        "Enlarge the recorded rim and surface. If long captures smear detail, shorten the supported capture or use a wider view; manual shutter/ISO changes require a compatible app.",
+        "Reduce exposure promptly when a bright sunlit limb returns; a lunar eclipse itself needs no solar filter."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and secure tripod clamp",
+          "Local eclipse times and a clear horizon"
+        ],
+        "optional": [
+          "Power bank",
+          "Compatible manual-focus/exposure app",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The red Moon is nearly invisible",
+          "cause": "Totality is dark and the phone's telephoto camera has limited light collection",
+          "fix": "Increase available exposure cautiously, compare the main camera's wider view, and accept a small coloured disc if fine detail is beyond the optics."
+        },
+        {
+          "symptom": "The Moon brightens but its edge becomes soft or doubled",
+          "cause": "Lunar movement or failed alignment during a long stack",
+          "fix": "Use a shorter supported capture and firmer support; a brighter result is not useful if it loses the disc's shape."
+        },
+        {
+          "symptom": "Focus hunts during the darkest phase",
+          "cause": "The faint lunar edge has insufficient contrast",
+          "fix": "Use the earlier verified focus lock, or manual focus in an app that supports the selected camera; avoid repeated unsuccessful tapping."
+        },
+        {
+          "symptom": "The returning bright limb is blown white",
+          "cause": "The phone retained totality's brightened exposure",
+          "fix": "Lower exposure immediately and compare a short normal capture as direct sunlight returns."
+        }
+      ],
+      "tip": "Keep a wider landscape version during totality; a small red Moon in context can be more convincing than heavily enlarged, smeared detail.",
+      "intent": "A naturally coloured eclipsed Moon with surface detail where the optical view resolves it, or a small coloured Moon within a wider landscape."
     },
     "why": [
       "Totality can need many stops more exposure than an uneclipsed full Moon.",
@@ -1617,10 +2090,59 @@
       "shutter": "Auto with exposure reduction behind safe filtration",
       "focus": "Focus on the filtered disc or projection surface.",
       "focal": "Optical telephoto only behind correct solar filtration.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Secure tripod/mount",
       "guidance": "Use a securely fitted purpose-made filter appropriate to the device, or point away from the Sun and photograph pinhole projections.",
-      "limitation": "A phone is not exempt from solar hazards. Eclipse glasses, sunglasses and photographic ND are not substitutes for an appropriate camera solar filter."
+      "limitation": "A phone is not exempt from solar hazards. Eclipse glasses, sunglasses and photographic ND are not substitutes for an appropriate camera solar filter.",
+      "why": [
+        "A rear screen does not protect the camera optics from direct sunlight; direct eclipse imaging still requires appropriate secure front filtration.",
+        "A pinhole projection lets the phone photograph a crescent on a surface while facing away from the Sun, providing a practical alternative to direct imaging.",
+        "For filtered imaging, filter transmission and automatic camera switching affect the result; exposure adjustment never substitutes for safe filtration."
+      ],
+      "steps": [
+        "Choose the route before aiming: photograph pinhole projections with the Sun behind you, or obtain a purpose-made solar filter suitable for the phone and follow its maker's instructions.",
+        "For projection, point the phone at the projected crescents on a shaded surface; never look toward the Sun through the projector's opening.",
+        "For direct imaging, inspect and secure the appropriate filter over every active lens before pointing sunward; prevent automatic switching to an uncovered camera and stop if protection cannot be assured.",
+        "Support the phone. Tap the projection surface, or focus the safely filtered solar limb using the screen; use supported focus lock if available.",
+        "Take a brief test and lower exposure if the crescent is featureless. Keep the phone's aperture automatic/fixed; use only the exposure controls the app actually offers.",
+        "Keep filtration secured throughout all partial and annular phases. If it loosens or is damaged, stop and point away from the Sun before handling it; this sheet does not cover unfiltered totality."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a secure support",
+          "For projection: a pinhole projector and suitable surface; for direct imaging: an intact purpose-made solar filter securely fitted to the active optics"
+        ],
+        "optional": [
+          "Timer or compatible remote trigger",
+          "Spare inspected solar filter for the direct route",
+          "Separate certified solar viewer for unaided viewing, never as protection behind camera optics"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The direct solar image is a white patch",
+          "cause": "Exposure is too high behind the fitted filter",
+          "fix": "Lower exposure or use a shorter supported capture while keeping the filter attached; never remove it to change brightness."
+        },
+        {
+          "symptom": "The phone changes lenses as zoom changes",
+          "cause": "Automatic camera selection may expose an unfiltered lens",
+          "fix": "Stop and point away. Use a maker-approved arrangement that protects every active optical path, or switch to photographing projections."
+        },
+        {
+          "symptom": "Projected crescents are too faint or poorly defined",
+          "cause": "The projection surface is too bright or the projector geometry is unsuitable",
+          "fix": "Keep the Sun behind you and improve the shaded projection surface and alignment following projector guidance; focus on that surface."
+        },
+        {
+          "symptom": "The filter moves, has damage or leaves a gap",
+          "cause": "The protective setup is unsafe",
+          "fix": "Stop immediately, point the phone away from the Sun and replace or correctly secure the filter before any further direct aiming."
+        }
+      ],
+      "tip": "Practise the projection route before eclipse day; a photograph of many small crescent patterns can be more successful than a tiny direct phone image.",
+      "conditions": "A partial or annular eclipse: directly photograph the Sun only with an intact purpose-made camera solar filter securely covering every active lens before aiming. Otherwise face away from the Sun and photograph pinhole-projected crescents.",
+      "intent": "A clearly defined filtered eclipse shape where optical reach permits, or a pattern of safely projected crescents photographed on a surface while facing away from the Sun."
     },
     "why": [
       "The filter protects the system and determines the exposure range through its transmission.",
@@ -1779,10 +2301,58 @@
       "shutter": "Auto or 1/4 s if genuinely selectable",
       "focus": "Lock on the bright crescent.",
       "focal": "Optical telephoto if fitted.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Steady a modest optical telephoto view and compare exposures during twilight.",
-      "limitation": "Flare from the bright crescent can overwhelm earthshine; many phones cannot faithfully retain both."
+      "limitation": "Flare from the bright crescent can overwhelm earthshine; many phones cannot faithfully retain both.",
+      "why": [
+        "The faint hemisphere and sunlit crescent have very different brightness, so exposing for earthshine may deliberately lose bright-crescent detail.",
+        "A genuine optical telephoto view gives the faint disc more image area, but only if that camera supports a useful low-light capture.",
+        "Clean optics and firm support matter because glare and movement can resemble faint lunar features after strong phone processing."
+      ],
+      "steps": [
+        "Check a thin crescent's local rise/set time, altitude and twilight conditions; choose a clear safe horizon.",
+        "Clean the lens, support the phone and try genuine optical telephoto if its low-light mode is usable.",
+        "Focus and lock on the bright crescent edge, using manual focus only in an app that supports the selected camera.",
+        "Compare supported normal and short night captures, increasing brightness until the faint hemisphere appears while watching flare.",
+        "Enlarge the dark disc and rim to judge real structure, motion and noise; reduce capture duration if the disc smears.",
+        "Take a separate darker crescent frame at the same framing if needed, and disclose any later blend rather than presenting it as one exposure."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with usable supported low-light capture",
+          "Tripod or firm phone support"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Lens cloth",
+          "Compatible manual-focus app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Only the bright crescent is visible",
+          "cause": "Automatic exposure preserves sunlight rather than earthshine",
+          "fix": "Increase capture brightness or compare supported night mode, accepting that the bright crescent may clip."
+        },
+        {
+          "symptom": "A large glowing halo hides the faint disc",
+          "cause": "Flare, haze or fingerprints scatter the crescent's light",
+          "fix": "Clean the lens, try clearer air and compare a shorter capture; extra exposure can make the halo worse."
+        },
+        {
+          "symptom": "The faint disc looks stretched or doubled",
+          "cause": "Movement during capture or failed stacking",
+          "fix": "Steady the phone and shorten the supported capture; use genuine manual shutter control only if available."
+        },
+        {
+          "symptom": "Dark-side texture looks invented or waxy",
+          "cause": "Strong smoothing or enlargement exceeds the captured signal",
+          "fix": "Use a modest optical view and retain a natural original; prefer a wider crescent composition when reliable earthshine detail is unavailable."
+        }
+      ],
+      "tip": "Compare a darker and brighter frame captured close together; real earthshine stays in the same lunar geometry while flare can overwhelm it differently.",
+      "intent": "A thin crescent in twilight with faint-side lunar glow if the optics and processing record it faithfully; retain a wider crescent-and-sky composition when they do not."
     },
     "why": [
       "Earthshine is much fainter than the sunlit crescent, so the exposure goal differs from crater-detail photography.",
@@ -1833,9 +2403,9 @@
         "name": "Short earthshine frame",
         "aperture": 4,
         "shutter": 0.125,
-        "iso": 1600,
+        "iso": 800,
         "mode": "M",
-        "effect": "Less lunar motion with more ISO noise.",
+        "effect": "Less lunar motion at comparable brightness and the same ISO, using a faster lens.",
         "requirements": "Fast lens and reasonably clear twilight."
       },
       {
@@ -1935,10 +2505,56 @@
       "shutter": "Automatic",
       "focus": "Tap a distant reflected shape; lock exposure if recomposing.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Lower the camera enough to emphasise the reflection and reduce exposure if coloured clouds clip.",
-      "limitation": "Automatic HDR may brighten the foreground too much; compare a restrained normal capture."
+      "limitation": "Automatic HDR may brighten the foreground too much; compare a restrained normal capture.",
+      "why": [
+        "Calm water and camera height establish the reflection before any phone processing can help.",
+        "The main camera usually balances detail and dynamic range better than heavy digital zoom into bright ripples.",
+        "Exposure adjustment protects sunrise colour; HDR can help the sky/shore range but may unnaturally lift silhouettes or alter moving water."
+      ],
+      "steps": [
+        "Arrive before local sunrise and find a safe sheltered stretch of water with a clear reflected sky.",
+        "Clean the lens, keep the phone level and try a low viewpoint without moving onto unstable or wet ground.",
+        "Use normal photo mode and tap a distant shoreline or recognisable reflected distant feature to focus.",
+        "Take a test and reduce exposure if warm cloud detail becomes white; compare restrained HDR if the shore is too dark.",
+        "Inspect the reflection for ghosting and the shoreline for sharpness; brace the phone as needed in dim light.",
+        "Retake as the Sun rises and wait for calm moments if distinct reflected shapes matter more than blurred colour."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe shoreline viewpoint"
+        ],
+        "optional": [
+          "Small phone tripod for dim dawn",
+          "Lens cloth",
+          "Water-resistant carrying pouch"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Orange reflection becomes white",
+          "cause": "Highlights are clipped",
+          "fix": "Lower exposure until the recorded sky and reflection retain colour."
+        },
+        {
+          "symptom": "Water has doubled or patchy edges",
+          "cause": "HDR/night stacking combined moving ripples",
+          "fix": "Compare normal capture with a shorter available duration and wait for calmer water."
+        },
+        {
+          "symptom": "Near ripples are sharp but the shore is soft",
+          "cause": "Focus landed on nearby water instead of the reflected distant view",
+          "fix": "Tap the distant shoreline or a recognisable distant reflection and verify a new frame."
+        },
+        {
+          "symptom": "The reflection is weak or absent",
+          "cause": "Wind, viewpoint or a polarising attachment suppresses it",
+          "fix": "Wait for a lull, change camera height and remove or rotate any polariser while watching the reflection."
+        }
+      ],
+      "tip": "Try one deliberately centred horizon when the reflection is strong; the symmetry can matter more than a rule-of-thirds grid."
     },
     "why": [
       "Moderate aperture keeps shoreline and reflection readable.",
@@ -2091,10 +2707,55 @@
       "shutter": "Auto",
       "focus": "Tap and lock on the subject outline.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Drag exposure down until the subject is dark and the sky holds colour; separate arms, branches or structures from one another.",
-      "limitation": "Strong automatic HDR can undo the silhouette by lifting shadows."
+      "limitation": "Strong automatic HDR can undo the silhouette by lifting shadows.",
+      "why": [
+        "The subject is intentionally dark, so its recognisable outline carries the photograph rather than face or clothing detail.",
+        "Phone HDR can brighten the very shadows needed for a silhouette; exposure reduction and a clean bright background are the useful controls.",
+        "A person moving through the frame needs a short capture; a long night stack can blur limbs even when the sky looks good."
+      ],
+      "steps": [
+        "Place a recognisable subject against a clear coloured part of the sky and keep a safe distance from edges or traffic.",
+        "Move sideways or lower the phone to separate limbs, branches and overlapping outlines.",
+        "Use normal photo mode, tap the subject edge to focus and lock it if available.",
+        "Lower exposure until the subject reads as a dark shape while the sky retains colour; reduce HDR/shadow lifting if your app permits.",
+        "For a moving person, anticipate the gesture and take a short burst in normal mode rather than a long night capture.",
+        "Enlarge the outline to check motion and missed focus, then simplify any merges before adjusting colour."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a recognisable subject against bright sky"
+        ],
+        "optional": [
+          "Optical telephoto camera for cleaner framing",
+          "Firm support for a static subject after sunset"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The subject becomes grey and detailed",
+          "cause": "Automatic HDR or processing lifted the shadows",
+          "fix": "Lower exposure, reduce HDR if controllable and keep the sky much brighter than the subject."
+        },
+        {
+          "symptom": "The person looks like an unrecognisable lump",
+          "cause": "Limbs or neighbouring objects overlap",
+          "fix": "Change viewpoint or ask for a clearer profile and separated limbs before taking another frame."
+        },
+        {
+          "symptom": "Hands or legs are smeared",
+          "cause": "Subject movement during an automatic slow capture",
+          "fix": "Use normal mode in brighter twilight and time a pause or short burst; a faster manual shutter is an option only in a capable app."
+        },
+        {
+          "symptom": "The sky loses warm colour",
+          "cause": "Highlight clipping or strong automatic colour adjustment",
+          "fix": "Reduce exposure and compare a less processed capture, keeping an original for reference."
+        }
+      ],
+      "tip": "A profile often communicates more than a front-facing silhouette; check the nose, chin and separation of arms before tapping the shutter."
     },
     "why": [
       "The dark subject is intentional; its outline must carry the information.",
@@ -2246,10 +2907,56 @@
       "shutter": "Auto; burst helps with a breeze",
       "focus": "Tap the nearest illuminated seed head.",
       "focal": "Optical telephoto or main lens at safe close distance.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Move until a dark background sits behind the glowing seed head. Use optical telephoto rather than portrait cut-out blur.",
-      "limitation": "Tiny stems can confuse portrait masking; fixed aperture limits physical background blur."
+      "limitation": "Tiny stems can confuse portrait masking; fixed aperture limits physical background blur.",
+      "why": [
+        "Translucent hairs glow when low sunlight passes through them and a darker background gives the glow contrast.",
+        "Moving closer within the lens's focusing limit and keeping the background distant improves natural separation without relying on portrait masking.",
+        "Wind can move a stem out of focus or smear it; burst timing and normal capture matter more than a simulated aperture slider."
+      ],
+      "steps": [
+        "Find a lit seed head with shade behind it, and move until the Sun itself is blocked or outside the frame.",
+        "Use the main camera or genuine optical telephoto; choose normal mode so portrait masking does not cut off fine hairs.",
+        "Stay outside the camera's minimum focusing distance and tap the illuminated seed head, not the distant background.",
+        "Take a short burst during a pause in the breeze, bracing the phone without touching the plant.",
+        "Enlarge the hairs: reduce exposure for clipped bright edges, refocus if the background is sharp, and wait for calmer movement if the stem smears.",
+        "Move slightly to improve the dark backdrop before increasing saturation or adding artificial blur."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safely accessible backlit plant"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Optical telephoto camera if fitted",
+          "Small reflector for a deliberately brighter shadow side"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Fine hairs disappear around the seed head",
+          "cause": "Portrait-mode masking removed thin details",
+          "fix": "Use normal photo mode and create separation with camera position and background distance."
+        },
+        {
+          "symptom": "The whole image is washed out",
+          "cause": "Direct sunlight or a dirty lens causes flare",
+          "fix": "Clean the lens and shift until the Sun is excluded or hidden behind a solid edge."
+        },
+        {
+          "symptom": "The background is sharp but the plant is not",
+          "cause": "Autofocus selected a distant contrast edge or the phone is too close",
+          "fix": "Move back within focusing range and tap the seed head; verify which physical camera is being used."
+        },
+        {
+          "symptom": "The plant is dark with no visible glow",
+          "cause": "A bright sky sits behind it or the light is not passing through the hairs",
+          "fix": "Move to align the lit seed head with a dark background; a silhouette is a different photographic goal."
+        }
+      ],
+      "tip": "A few centimetres of sideways movement can replace bright sky with shade behind the seed head and transform the photograph."
     },
     "why": [
       "Backlight reveals translucent structure that front lighting flattens.",
@@ -2401,10 +3108,57 @@
       "shutter": "Automatic multi-frame capture",
       "focus": "Lock on a coastline edge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Mount the main camera and let the capture finish; keep lights outside the frame if they overwhelm the view.",
-      "limitation": "Water in a stacked capture may have irregular or stitched texture rather than a true continuous exposure."
+      "limitation": "Water in a stacked capture may have irregular or stitched texture rather than a true continuous exposure.",
+      "why": [
+        "A supported main-camera night capture can retain twilight colour and fixed rocks without demanding handheld stability for the whole sequence.",
+        "Waves change between the component frames, so the phone may render them differently from a camera's continuous exposure.",
+        "Bright shoreline lamps can clip before the coast is bright enough; framing and exposure reduction may solve more than extending the countdown."
+      ],
+      "steps": [
+        "Check tide, swell and the return route before dark; set up beyond wave wash on stable ground.",
+        "Clamp the main camera and frame a clear coastline or rock edge against the water.",
+        "Tap a stationary mid-distance edge and lock focus if supported while there is enough contrast.",
+        "Make a timed supported night capture and let processing finish without moving the phone.",
+        "Inspect the recorded rocks, water and lamps separately; reduce exposure for clipped lights or compare a shorter capture for patchy water.",
+        "Retest as twilight changes, keeping a normal-mode reference if it records a better wave pattern and continuing to watch sea conditions."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with supported night capture",
+          "Tripod and clamp on stable dry ground"
+        ],
+        "optional": [
+          "Torch for safe access",
+          "Lens cloth",
+          "Weather-resistant carrying pouch"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rocks blur along with the sea",
+          "cause": "The support moved, sank or was touched during capture",
+          "fix": "Reposition on stable ground beyond wash, tighten the clamp and use the timer."
+        },
+        {
+          "symptom": "Water looks stitched or contains repeated shapes",
+          "cause": "The phone blended changing waves imperfectly",
+          "fix": "Try a shorter available capture, another wave cycle or a supported true manual exposure rather than assuming a longer stack will improve it."
+        },
+        {
+          "symptom": "Small lamps become large white blobs",
+          "cause": "The automatic exposure favoured the dark coast",
+          "fix": "Lower exposure or reframe away from the brightest lights; preserve a separate darker frame if blending is intended."
+        },
+        {
+          "symptom": "Blue twilight turns neutral grey",
+          "cause": "Automatic white balance neutralised the scene",
+          "fix": "Lock a suitable white balance if the app offers it, or adjust the saved image gently using a reference of the actual light."
+        }
+      ],
+      "tip": "Choose the frame for both rock sharpness and believable water; a longer night-mode countdown is not automatically the best coastal result."
     },
     "why": [
       "The tripod allows low ISO while twilight becomes dim.",
@@ -2560,10 +3314,57 @@
       "shutter": "Auto",
       "focus": "Tap the edge partly covering the Sun.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Hide most of the Sun behind an edge and try a tiny sideways movement to reveal a small point.",
-      "limitation": "Most phones have a fixed wide aperture and will not produce the same diaphragm sunburst; optical flare is not the same effect."
+      "limitation": "Most phones have a fixed wide aperture and will not produce the same diaphragm sunburst; optical flare is not the same effect.",
+      "why": [
+        "A phone usually cannot stop down its physical aperture, so it may make a small bright glint or flare instead of a camera lens's defined diffraction rays.",
+        "Hiding almost all of the Sun behind a solid edge controls the visible light source and makes tiny viewpoint changes useful.",
+        "A clean lens reduces smeared flare; a portrait-mode aperture slider changes simulated blur, not the optical diaphragm."
+      ],
+      "steps": [
+        "Choose a solid tree, rock or building edge that hides almost all of the Sun; never look directly at the Sun or through optical accessories.",
+        "Use the main camera in normal mode and frame briefly with the screen, keeping most of the Sun blocked and avoiding prolonged direct solar aiming.",
+        "Tap the masking edge to focus and lower exposure if the surrounding sky loses detail.",
+        "Move the phone a tiny distance sideways to reveal a small point of light, then take a prompt test.",
+        "Inspect the actual result for rays, flare and foreground sharpness. If the fixed-aperture lens produces no rays, use the glint deliberately or choose a different lighting effect.",
+        "For dedicated direct solar-disc imaging use the filtered-eclipse guidance instead; a screen does not make unfiltered optical solar imaging safe."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean main lens",
+          "A solid edge that blocks almost all of the Sun"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Firm support for a dim foreground"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "No star-shaped rays appear",
+          "cause": "The phone's fixed aperture and optical design do not create strong diffraction spikes",
+          "fix": "Try a smaller visible glint, but accept the optical limit; do not expect a portrait-mode aperture slider to make real sunstars."
+        },
+        {
+          "symptom": "A coloured blob floats away from the Sun",
+          "cause": "Internal lens flare",
+          "fix": "Shift viewpoint slightly and block more of the Sun; clean the lens and inspect another test."
+        },
+        {
+          "symptom": "A broad smeared streak covers the frame",
+          "cause": "Fingerprints or moisture scatter the bright light",
+          "fix": "Point away, clean and dry the lens, then recompose with most of the Sun hidden."
+        },
+        {
+          "symptom": "The foreground disappears into black",
+          "cause": "The scene exceeds the phone's usable brightness range",
+          "fix": "Use a deliberate silhouette, compare restrained HDR, or capture separate exposures for a disclosed blend without prolonging direct solar aiming."
+        }
+      ],
+      "tip": "Treat the tiny visible glint as the phone version's achievable goal; defined diaphragm rays depend on the actual lens, not a software aperture label.",
+      "intent": "A small sunlit glint peeking around an edge, with usable foreground detail and controlled flare; defined diffraction rays depend on the phone’s actual optics."
     },
     "why": [
       "A small aperture forms diffraction spikes whose shape depends on the lens diaphragm.",
@@ -2718,10 +3519,56 @@
       "shutter": "Auto",
       "focus": "Tap a distinct object in front of the mist.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use a simple dark subject and increase exposure a little if the mist becomes dull grey.",
-      "limitation": "Aggressive clarity or automatic contrast can destroy the soft layered atmosphere."
+      "limitation": "Aggressive clarity or automatic contrast can destroy the soft layered atmosphere.",
+      "why": [
+        "A dark boat, post or tree gives autofocus and the viewer a clear anchor inside low-contrast mist.",
+        "Mist should remain luminous, so a slight exposure increase may be more useful than a long night capture that changes moving layers.",
+        "The fading contrast between layers is the depth cue; strong phone enhancement can remove the atmosphere you wanted to photograph."
+      ],
+      "steps": [
+        "Choose a safe viewpoint where mist separates a near anchor from one or more distant layers.",
+        "Use the main camera or a genuine optical telephoto view to simplify the scene without extreme digital zoom.",
+        "Tap a solid boat, post or tree edge to focus; lock it if the phone keeps searching through blank mist.",
+        "Take a normal-mode test and increase exposure gently if the mist looks dull grey, keeping the brightest glow below clipping.",
+        "Enlarge the anchor to check sharpness separately from the intentionally soft distance.",
+        "Retest as the Sun strengthens, and reduce aggressive clarity, dehaze or automatic contrast if it removes the layered effect."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safely accessible viewpoint"
+        ],
+        "optional": [
+          "Lens cloth for condensation",
+          "Small support for dim dawn",
+          "Optical telephoto camera if fitted"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Mist looks muddy grey",
+          "cause": "Automatic exposure treated the bright scene as average tone",
+          "fix": "Increase brightness a little and inspect a saved test for retained luminous texture."
+        },
+        {
+          "symptom": "The focus pulses without settling",
+          "cause": "The phone is trying to focus on featureless fog",
+          "fix": "Tap and lock a visible solid edge at the intended distance."
+        },
+        {
+          "symptom": "The anchor is fuzzy as well as the distance",
+          "cause": "Shake, missed focus or moisture on the lens",
+          "fix": "Dry the lens, brace the phone and refocus on the anchor before blaming the mist."
+        },
+        {
+          "symptom": "The scene looks harsh and stripped of atmosphere",
+          "cause": "Strong HDR, contrast or dehaze processing",
+          "fix": "Compare a restrained normal capture and preserve the natural fading contrast instead of making every layer equally clear."
+        }
+      ],
+      "tip": "Check one solid edge at enlarged view; the rest of the scene can remain soft without being a focusing failure."
     },
     "why": [
       "A short telephoto isolates layers and avoids a large area of empty sky.",
@@ -2780,7 +3627,7 @@
         "name": "Compressed detail",
         "aperture": 5.6,
         "shutter": 0.004,
-        "iso": 400,
+        "iso": 200,
         "mode": "M",
         "effect": "A tighter isolated boat or treeline within the mist.",
         "requirements": "Around 135–200 mm equivalent; accurate focus on the anchor."
@@ -2873,10 +3720,56 @@
       "shutter": "Auto",
       "focus": "Tap a distant edge and lock.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Pull exposure down slightly if warm cloud colour becomes white; include only enough land to establish scale.",
-      "limitation": "Automatic scene enhancement can exaggerate saturation; keep a natural reference frame."
+      "limitation": "Automatic scene enhancement can exaggerate saturation; keep a natural reference frame.",
+      "why": [
+        "Warm cloud colour can clip before the whole phone preview looks too bright, so colour and texture need checking together.",
+        "A small land silhouette gives scale while letting the strongest cloud shape dominate.",
+        "Normal capture preserves rapidly changing edges; a supported night mode is more useful later when the scene is dim and sufficiently still."
+      ],
+      "steps": [
+        "Look around the whole sky for illuminated clouds, including the direction opposite the setting Sun.",
+        "Use the main or genuine optical telephoto camera to isolate a clear cloud pattern above a small land anchor.",
+        "Tap a distant ridge or defined cloud edge and lock focus if supported.",
+        "Take a normal-mode test, lowering exposure if the brightest reds and oranges turn pale or featureless.",
+        "Inspect cloud edges for shake and processing halos; brace the phone and compare restrained HDR when the land/sky range is large.",
+        "Continue into the afterglow, retesting brightness often; use a supported short night capture only if it improves detail without smearing the clouds."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a clear sky view"
+        ],
+        "optional": [
+          "Small support for late afterglow",
+          "Lens cloth",
+          "Optical telephoto camera for isolated cloud shapes"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Red cloud texture becomes orange-white",
+          "cause": "One or more colour channels clipped",
+          "fix": "Lower exposure and compare the saved cloud texture rather than judging only overall screen brightness."
+        },
+        {
+          "symptom": "Colours look unnaturally intense",
+          "cause": "Automatic scene enhancement or heavy editing",
+          "fix": "Keep a normal reference capture and reduce enhancement where the app permits; avoid adding saturation to already clipped colour."
+        },
+        {
+          "symptom": "Cloud edges have dark halos",
+          "cause": "HDR or aggressive local contrast",
+          "fix": "Compare a simpler normal capture and reduce clarity/dehaze in the edit."
+        },
+        {
+          "symptom": "The late sky is blurred",
+          "cause": "Handheld movement or cloud movement during a long capture",
+          "fix": "Use firm support and compare a shorter capture; support fixes camera shake but cannot stop the clouds."
+        }
+      ],
+      "tip": "Save one restrained version before trying vivid colour processing so you can tell genuine sunset colour from the phone's enhancement."
     },
     "why": [
       "A fixed white balance preserves changes in sunset colour between frames.",
@@ -2926,7 +3819,7 @@
         "name": "Wide sky drama",
         "aperture": 8,
         "shutter": 0.016666666666666666,
-        "iso": 200,
+        "iso": 100,
         "mode": "M",
         "effect": "Shows the cloud pattern across a broad landscape.",
         "requirements": "Around 24–35 mm equivalent with a strong foreground shape."
@@ -3028,10 +3921,57 @@
       "shutter": "Auto",
       "focus": "Tap the ridge where light meets shadow.",
       "focal": "Optical telephoto or main lens; no heavy digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Frame a small set of curves and let shadows stay dark; avoid walking into the intended foreground.",
-      "limitation": "Wide phone lenses make distant dune shapes small; optical telephoto helps if available."
+      "limitation": "Wide phone lenses make distant dune shapes small; optical telephoto helps if available.",
+      "why": [
+        "Low side light shapes a dune through alternating bright and dark ridges; lifting every shadow flattens that structure.",
+        "Genuine optical telephoto can isolate repeating curves, while a wide main-camera view works better when nearby sand is part of the composition.",
+        "A phone's fixed aperture does not provide a depth slider for the sand; camera position and avoiding an excessively close foreground determine how much is sharp."
+      ],
+      "steps": [
+        "Plan a safe route with appropriate water and sun protection, and keep footprints out of the sand you intend to photograph.",
+        "Find sunlight crossing the dunes from the side and select two or three clear intersecting curves.",
+        "Choose the main camera for near ripples or genuine optical telephoto for distant ridges; avoid heavy digital zoom.",
+        "Tap the main light-shadow boundary to focus and make a normal-mode test.",
+        "Inspect bright sand texture and the nearest important ridge; lower exposure for clipping and move back if the foreground is outside the sharp zone.",
+        "Reframe as the shadow line changes, preserving its depth instead of forcing HDR to brighten every dark area."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Water and sun protection appropriate to the route"
+        ],
+        "optional": [
+          "Dust-resistant carrying pouch",
+          "Lens cloth",
+          "Optical telephoto camera if fitted"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The dunes look flat",
+          "cause": "Frontal light or processing has removed the useful shadows",
+          "fix": "Choose a side-lit ridge and reduce excessive shadow lifting rather than simply adding saturation."
+        },
+        {
+          "symptom": "Bright sand loses its fine ripples",
+          "cause": "Highlight clipping",
+          "fix": "Lower exposure slightly and inspect a saved bright patch for texture."
+        },
+        {
+          "symptom": "Distant curves become mushy when enlarged",
+          "cause": "Digital zoom, haze or heat shimmer",
+          "fix": "Use genuine optical reach or a nearer safe composition; return in steadier air if atmospheric distortion dominates."
+        },
+        {
+          "symptom": "Near ripples are sharp but the main ridge is soft",
+          "cause": "Focus locked too close or automatic macro switching changed the lens",
+          "fix": "Move slightly back, select the intended camera and focus farther into the important sand shapes."
+        }
+      ],
+      "tip": "Choose the composition before stepping onto the ridge; the phone cannot remove a trail of footprints without changing what was actually there."
     },
     "why": [
       "Side lighting reveals sand shape through shadow rather than colour alone.",
@@ -3082,7 +4022,7 @@
         "name": "Near ripple depth",
         "aperture": 11,
         "shutter": 0.008,
-        "iso": 100,
+        "iso": 400,
         "mode": "M",
         "effect": "Includes foreground sand texture with the main ridge.",
         "requirements": "Wide/normal lens and careful depth-of-field check."
@@ -3091,7 +4031,7 @@
         "name": "Abstract shadow shapes",
         "aperture": 5.6,
         "shutter": 0.002,
-        "iso": 100,
+        "iso": 400,
         "mode": "M",
         "effect": "Tighter graphic curves with less surrounding context.",
         "requirements": "Telephoto framing of one ridge plane."
@@ -3184,10 +4124,56 @@
       "shutter": "Auto",
       "focus": "Tap a mid-distance high-contrast ridge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Keep the horizon level and choose one foreground route or shape leading toward the main peak.",
-      "limitation": "Very wide views make mountains look small; the main or optical telephoto camera may suit the scene better than ultrawide."
+      "limitation": "Very wide views make mountains look small; the main or optical telephoto camera may suit the scene better than ultrawide.",
+      "why": [
+        "The phone's ultrawide camera can make an impressive mountain look small by including too much foreground and sky.",
+        "One clear foreground line establishes scale, but placing it extremely close can exceed the phone's usable depth of field.",
+        "HDR can balance clouds and shaded land, although moving foliage or strong processing may create unnatural edges."
+      ],
+      "steps": [
+        "Choose a safe viewpoint and identify the one peak or ridge that should dominate the photograph.",
+        "Compare the main camera with genuine optical telephoto before choosing ultrawide; include only a useful foreground line.",
+        "Level the phone and tap a distinct mid-distance feature or ridge to focus.",
+        "Take a normal test and check bright cloud texture, then compare restrained HDR if the shaded land is too dark.",
+        "Enlarge the nearest important object and the far peaks separately; move back from the foreground or refocus if both do not hold detail.",
+        "Brace against wind and retake, distinguishing atmospheric haze in distant peaks from movement affecting the whole frame."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and suitable equipment for the chosen safe route"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Small tripod for low light",
+          "Weather protection"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The mountain looks insignificant",
+          "cause": "An ultrawide view includes too much empty foreground",
+          "fix": "Use the main camera or genuine optical telephoto and simplify the lower part of the composition."
+        },
+        {
+          "symptom": "The close foreground is sharp but peaks are not",
+          "cause": "Focus is too near for the chosen depth range",
+          "fix": "Move back from the foreground, tap a farther feature and inspect both distances in another test."
+        },
+        {
+          "symptom": "The whole view has slight double edges",
+          "cause": "Wind or hand movement during capture",
+          "fix": "Brace the phone safely, use normal capture in adequate light or support it for a longer capture."
+        },
+        {
+          "symptom": "Clouds are blank white above a detailed valley",
+          "cause": "Automatic exposure favoured the shaded land",
+          "fix": "Lower exposure or compare restrained HDR, checking cloud texture and avoiding halos along the skyline."
+        }
+      ],
+      "tip": "Compare a main-camera frame with the ultrawide version before leaving; the tighter view often communicates the mountain's scale better."
     },
     "why": [
       "f/8 provides useful depth without automatically choosing the smallest aperture.",
@@ -3336,10 +4322,56 @@
       "shutter": "Auto",
       "focus": "Tap a clear dark ridge.",
       "focal": "Optical telephoto if fitted.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use a tighter view of several repeating ridges; leave the natural fading contrast intact.",
-      "limitation": "Heavy digital zoom and aggressive dehaze can make layers look artificial."
+      "limitation": "Heavy digital zoom and aggressive dehaze can make layers look artificial.",
+      "why": [
+        "Each successive ridge loses contrast through the atmosphere; preserving that difference is what creates depth.",
+        "A genuine optical telephoto view isolates the repeating shapes without relying on large digital enlargement.",
+        "A small hand movement is more visible in a tight view, so support can improve ridge edges without trying to remove natural haze."
+      ],
+      "steps": [
+        "Find a safe view across several overlapping ridges with a clear light-to-dark progression.",
+        "Choose genuine optical telephoto if available; otherwise compose a simpler main-camera frame and crop only modestly.",
+        "Brace the phone and tap a distinct darker ridge edge to focus.",
+        "Take a normal test, adjusting brightness so the lightest haze retains tone rather than clipping to white.",
+        "Enlarge the nearest visible ridge to check shake, then judge the softer distant layers as atmosphere rather than automatically refocusing.",
+        "Keep a restrained edit and leave space above the lightest ridge so the progression remains readable."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe clear viewpoint"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Small support for dim first light",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Every ridge becomes equally dark and crisp",
+          "cause": "Excessive dehaze or contrast removes atmospheric separation",
+          "fix": "Reduce processing and preserve the natural lightening of distant layers."
+        },
+        {
+          "symptom": "The nearest ridge has doubled edges",
+          "cause": "Shake at a tight zoom setting",
+          "fix": "Use firmer support, reduce digital zoom and compare a shorter normal capture in brighter light."
+        },
+        {
+          "symptom": "The phone's telephoto view becomes noisy at dawn",
+          "cause": "The selected lens has limited low-light performance or the app switched to a crop",
+          "fix": "Compare a supported main-camera capture and check which optical camera the app actually uses."
+        },
+        {
+          "symptom": "All layers merge into a pale wash",
+          "cause": "Flare, an overly bright exposure or insufficient atmospheric separation",
+          "fix": "Clean and shade the lens from stray light, lower exposure if clipped and wait for better side/backlighting if necessary."
+        }
+      ],
+      "tip": "Use the nearest ridge to judge technical sharpness and the farthest ridge to judge atmosphere; they should not necessarily look equally crisp."
     },
     "why": [
       "A telephoto view isolates the repeating shapes from distracting foreground.",
@@ -3491,10 +4523,56 @@
       "shutter": "Auto",
       "focus": "Tap the main trunk.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld; support in deep shade",
       "guidance": "Exclude bright sky holes and organise the frame around a few distinct trunks.",
-      "limitation": "A long night stack can ghost moving leaves even when tree trunks remain sharp."
+      "limitation": "A long night stack can ghost moving leaves even when tree trunks remain sharp.",
+      "why": [
+        "A few organised trunks give a phone forest photograph structure; extra ultrawide coverage can add more clutter than interest.",
+        "Tree bark may remain sharp during a supported night capture while moving leaves blur or ghost between frames.",
+        "Avoiding bright sky gaps reduces the brightness range the phone must process and keeps attention on the woodland."
+      ],
+      "steps": [
+        "Find a path, main trunk or small group of trees with clear spacing, staying on safe permitted ground.",
+        "Use the main camera and move sideways to remove bright sky holes and overlapping branches at the edges.",
+        "Tap the trunk anchoring the composition and take a braced normal-mode test.",
+        "Enlarge bark and leaf edges separately. If the woodland is still but too dark, compare a supported night capture.",
+        "If leaves move, prefer normal capture, wait for a lull or choose a brighter patch; a tripod will not freeze the foliage.",
+        "Adjust exposure to retain sunlit leaves and compare restrained HDR only if it avoids moving-leaf artifacts."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and safe access to the woodland"
+        ],
+        "optional": [
+          "Phone tripod for still dim scenes",
+          "Rain cover or carrying pouch",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Trunks are sharp but leaves have ghosted edges",
+          "cause": "Moving foliage was blended in a long capture",
+          "fix": "Use normal mode, wait for calmer air or work in brighter light; support alone cannot stop leaf movement."
+        },
+        {
+          "symptom": "Everything is soft",
+          "cause": "Hand movement, missed focus or a wet lens",
+          "fix": "Clean the lens, brace the phone and tap the anchor trunk before making another test."
+        },
+        {
+          "symptom": "White sky holes dominate the image",
+          "cause": "The sky is much brighter than the shaded forest",
+          "fix": "Move to exclude the gaps, lower exposure or use a restrained static-scene HDR capture."
+        },
+        {
+          "symptom": "The forest looks like tangled texture",
+          "cause": "Too many overlapping trunks and an overly wide view",
+          "fix": "Use a simpler main-camera composition and move sideways until the important trunks separate."
+        }
+      ],
+      "tip": "Check leaf edges after every switch into night mode; sharp bark can make a ghosted forest look deceptively successful on the small preview."
     },
     "why": [
       "Moderate aperture gives depth among trunks without forcing needlessly long times.",
@@ -3553,7 +4631,7 @@
       {
         "name": "Still misty woodland",
         "aperture": 8,
-        "shutter": 0.5,
+        "shutter": 0.125,
         "iso": 100,
         "mode": "M",
         "effect": "Low-noise bark and subtle atmosphere.",
@@ -3647,10 +4725,58 @@
       "shutter": "Auto",
       "focus": "Tap between the near anchor and distant scene, then verify both.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Keep the nearest object outside the lens’s minimum focusing distance and avoid portrait mode.",
-      "limitation": "Automatic macro switching can change lens and framing; inspect the actual camera used."
+      "limitation": "Automatic macro switching can change lens and framing; inspect the actual camera used.",
+      "why": [
+        "A phone often has useful depth of field, but a foreground object very close to the lens can still leave the horizon outside the sharp zone.",
+        "Normal photo mode preserves real near-to-far detail; portrait mode deliberately adds background blur and can misread landscape edges.",
+        "Moving back from the foreground or choosing a suitable ultrawide view changes the depth demand more reliably than a simulated aperture control."
+      ],
+      "steps": [
+        "Choose a foreground rock or plant that leads into the scene, keeping the phone beyond its lens's minimum focusing distance.",
+        "Compare main and ultrawide framing in normal photo mode; watch for automatic macro switching and avoid portrait blur.",
+        "Tap a defined feature beyond the nearest object, then take a test with the phone held steady.",
+        "Enlarge the nearest important edge and the horizon separately rather than trusting the small preview.",
+        "If only one distance is sharp, move back from the foreground and adjust focus; remove an unnecessary very close object if needed.",
+        "For a completely static scene, separate near/far captures may be blended only with suitable capture control and software; keep framing fixed and disclose the blend."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with normal photo mode",
+          "Enough safe working distance from the foreground"
+        ],
+        "optional": [
+          "Phone tripod for repeated focus frames",
+          "Compatible focus-control app for an optional static blend",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The foreground is sharp but the horizon is blurry",
+          "cause": "Focus is too close for the scene's depth range",
+          "fix": "Move back, focus slightly farther into the scene and inspect both ends again."
+        },
+        {
+          "symptom": "The horizon is crisp but the near rock is soft",
+          "cause": "The object is too close or outside the available focus depth",
+          "fix": "Increase the camera-to-object distance or use a suitable wider lens; do not assume the fixed aperture can be stopped down."
+        },
+        {
+          "symptom": "The view suddenly jumps or changes colour",
+          "cause": "Automatic macro mode switched physical cameras",
+          "fix": "Move back beyond the switching distance or lock the intended camera if supported, then refocus."
+        },
+        {
+          "symptom": "Plants have cut-out edges or artificial blur",
+          "cause": "Portrait processing or movement between blended frames",
+          "fix": "Use normal single-frame capture and wait for stillness; exclude moving plants from an optional focus blend."
+        }
+      ],
+      "tip": "A small step back from the foreground can solve the depth problem while preserving the composition more naturally than artificial blur or heavy sharpening.",
+      "intent": "A sharp foreground anchor and acceptably sharp distant scene, achieved through working distance, lens choice and careful focus."
     },
     "why": [
       "Near foreground creates a demanding depth range even with a wide lens.",
@@ -3802,10 +4928,56 @@
       "shutter": "Auto",
       "focus": "Tap a dark tree edge and lock.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Increase brightness gently if fog looks grey; keep only one or two strong shapes.",
-      "limitation": "Automatic contrast enhancement may reduce the intended soft atmosphere."
+      "limitation": "Automatic contrast enhancement may reduce the intended soft atmosphere.",
+      "why": [
+        "A nearby dark tree gives the phone a clear focus target and gives the viewer an anchor in the fog.",
+        "Automatic exposure may turn bright fog grey; a small brightness increase can restore its luminous appearance.",
+        "The intentionally faint distant shapes should remain soft, so aggressive phone sharpening and dehaze can work against the scene."
+      ],
+      "steps": [
+        "Find a safe viewpoint with one readable tree or structure and one or two fainter shapes behind it.",
+        "Use the main camera or modest genuine optical telephoto to remove distracting close branches.",
+        "Tap a dark edge on the main tree and lock focus if available rather than tapping blank fog.",
+        "Make a normal-mode test, increasing brightness gently if the fog appears dull grey.",
+        "Enlarge the anchor edge and inspect bright fog separately; refocus or brace the phone if the anchor is soft.",
+        "Keep processing restrained and check the lens for condensation as temperature or humidity changes."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe route through the fog"
+        ],
+        "optional": [
+          "Clean lens cloth",
+          "Small support for dim conditions",
+          "Weather-resistant pouch"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Fog looks grey and heavy",
+          "cause": "Automatic exposure made a bright scene too dark",
+          "fix": "Increase exposure slightly and inspect a saved frame for retained tonal detail."
+        },
+        {
+          "symptom": "The main tree is as fuzzy as the distant ones",
+          "cause": "Missed focus, shake or condensation",
+          "fix": "Dry the lens, tap a dark near-tree edge and take another steadily held test."
+        },
+        {
+          "symptom": "The image looks harsh despite the soft conditions",
+          "cause": "Strong automatic contrast or dehaze",
+          "fix": "Compare a normal capture with enhancement reduced where available, then keep the edit gentle."
+        },
+        {
+          "symptom": "The viewer has nowhere to look",
+          "cause": "Every shape is equally faint",
+          "fix": "Find a closer dark anchor or simplify the frame to one clear tree and one distant layer."
+        }
+      ],
+      "tip": "Keep a little empty fog around the main tree; that quiet space is part of the photograph rather than missing detail to recover."
     },
     "why": [
       "The near dark anchor gives the eye somewhere to settle in low contrast.",
@@ -3957,10 +5129,56 @@
       "shutter": "Auto",
       "focus": "Tap a dark edge at the desired distance.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Raise exposure a little if snow looks grey, then check that bright ridges still have detail.",
-      "limitation": "The screen’s outdoor brightness can mislead; inspect the image rather than relying on display brilliance."
+      "limitation": "The screen’s outdoor brightness can mislead; inspect the image rather than relying on display brilliance.",
+      "why": [
+        "A snow-filled frame can fool automatic exposure into making white snow grey; small exposure adjustments matter more than a phone aperture setting.",
+        "Side light and shadows reveal snow texture, while a dark tree or rock gives shape to an otherwise blank scene.",
+        "Blue snow shadows can be natural sky light; neutralising every blue area may make the scene less believable."
+      ],
+      "steps": [
+        "Choose safe ground and look for light raking across snow, with a tree, rock or shadow as a composition anchor.",
+        "Use the main camera and tap a defined edge at the important distance; avoid trying to focus on featureless white snow.",
+        "Take a normal-mode test and raise exposure a little if snow looks grey.",
+        "Inspect the brightest sunlit ridges for texture; lower exposure again if they clip and compare restrained HDR for deep shaded areas.",
+        "Enlarge the anchor to check focus and keep natural blue shade unless it is clearly an unwanted colour cast.",
+        "Keep the phone within its manufacturer's operating temperatures and protect cold equipment from condensation during warming."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and suitable clothing/traction for the location"
+        ],
+        "optional": [
+          "Dry pouch for temperature transitions",
+          "Lens cloth",
+          "Spare power kept within its operating temperature"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Snow looks grey",
+          "cause": "Automatic exposure underexposed the large bright area",
+          "fix": "Increase capture brightness gently, checking that the brightest texture remains visible."
+        },
+        {
+          "symptom": "Snow becomes a flat white sheet",
+          "cause": "Highlights clipped or the light has no revealing direction",
+          "fix": "Lower exposure first; if texture is still absent, change viewpoint or wait for side light."
+        },
+        {
+          "symptom": "Focus will not settle",
+          "cause": "The selected snow patch has no contrast",
+          "fix": "Tap a rock, twig or textured snow edge at the same useful distance."
+        },
+        {
+          "symptom": "The image turns hazy after coming indoors",
+          "cause": "Condensation formed on cold equipment",
+          "fix": "Let the phone acclimatise without charging or using wet connectors; for future transitions seal it dry before entering warmth and follow the maker's care guidance."
+        }
+      ],
+      "tip": "Judge the saved snow texture in shade if possible; an automatically brightened outdoor screen can hide an exposure mistake."
     },
     "why": [
       "Snow occupies the bright end of the tonal range and can fool an averaging meter into underexposure.",
@@ -4113,10 +5331,57 @@
       "shutter": "Auto",
       "focus": "Tap the main rock or ridge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use hard shadows as graphic shapes and keep the composition simple.",
-      "limitation": "Heavy zoom magnifies heat haze and loses detail; moving closer safely is better than digital enlargement."
+      "limitation": "Heavy zoom magnifies heat haze and loses detail; moving closer safely is better than digital enlargement.",
+      "why": [
+        "Hard overhead light can make strong graphic shadows even when it does not create warm, sculpted golden-hour dunes.",
+        "A nearer subject is less affected by a long path through shimmering hot air; digital zoom cannot remove that distortion.",
+        "Bright sand needs careful exposure checking because a phone may either darken it to grey or clip it while lifting black shadows."
+      ],
+      "steps": [
+        "Plan a safe short route with water and heat protection; keep the phone shaded between captures and within its operating limits.",
+        "Choose a simple nearby arrangement of sand, rock and hard shadow rather than relying on a heavily enlarged distant view.",
+        "Use normal mode on the main camera and tap the main rock or ridge edge to focus.",
+        "Take a test and inspect bright sand; adjust exposure until it is bright but still textured.",
+        "Enlarge both nearby and distant detail. If only distant edges shimmer, choose a nearer composition or cooler conditions rather than repeatedly refocusing.",
+        "Keep the deliberate shadow shapes and avoid lifting every dark area into noisy flat grey."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Water and sun protection appropriate to the route"
+        ],
+        "optional": [
+          "Dust-resistant carrying pouch",
+          "Lens cloth",
+          "Offline route information"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Distant objects ripple or look smeared",
+          "cause": "Heat shimmer along the sightline",
+          "fix": "Use a nearer subject or return in cooler air; sharpening, digital zoom and a steadier grip do not remove atmospheric distortion."
+        },
+        {
+          "symptom": "Pale sand looks dirty grey",
+          "cause": "Automatic exposure treated the bright sand as average tone",
+          "fix": "Increase exposure cautiously while checking a recorded bright patch for detail."
+        },
+        {
+          "symptom": "The image has flat grey shadows and glowing edges",
+          "cause": "Strong HDR or local enhancement",
+          "fix": "Compare a restrained normal capture and let useful hard shadows remain dark."
+        },
+        {
+          "symptom": "The phone dims or stops camera capture",
+          "cause": "Excessive operating temperature",
+          "fix": "Stop shooting, move the phone into shade and follow its maker's cooling guidance; do not keep it aimed in the heat to rescue the composition."
+        }
+      ],
+      "tip": "Look for one clean shadow shape close enough to record well; midday often rewards a simple graphic frame more than a distant panorama."
     },
     "why": [
       "Harsh overhead light is suited to shape and contrast more than subtle modelling.",
@@ -4269,10 +5534,56 @@
       "shutter": "Auto",
       "focus": "Tap the main ripple ridge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use the grid to align a pattern or deliberately place it diagonally; keep your own shadow out.",
-      "limitation": "Automatic macro switching can alter perspective when too close; check the final frame."
+      "limitation": "Automatic macro switching can alter perspective when too close; check the final frame.",
+      "why": [
+        "Side light makes small sand ridges visible through their shadows, so camera angle and timing create the texture.",
+        "Keeping the phone roughly parallel to a flat pattern reduces the near-to-far focus problem without requiring aperture control.",
+        "Normal mode preserves repeated edges; portrait blur and unexpected macro switching can distort a pattern that should remain continuous."
+      ],
+      "steps": [
+        "Check the tide and return route, then choose exposed sand or shallow channels on safe accessible ground.",
+        "Find a repeating ripple pattern and keep your footprints and shadow outside it.",
+        "Use normal main-camera capture, holding the phone roughly parallel for a flat patch or deliberately oblique for leading lines.",
+        "Tap a clear ripple ridge and take a test without moving closer than the selected lens can focus.",
+        "Inspect both ends of the pattern for sharpness and wet patches for clipping; change camera angle before resorting to artificial sharpening.",
+        "Refine the crop around one shell, broken ripple or channel while continuing to watch incoming water."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and knowledge of the local tide/access conditions"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Water-resistant carrying pouch",
+          "Secure grip or strap"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Ripples look flat",
+          "cause": "The light is too frontal or diffuse to reveal relief",
+          "fix": "Change direction for side light or choose a stronger physical pattern."
+        },
+        {
+          "symptom": "One end of the pattern is soft",
+          "cause": "An oblique view exceeds the usable focus depth",
+          "fix": "Hold the phone more parallel to the sand, move back and refocus on the important area."
+        },
+        {
+          "symptom": "The view changes suddenly when you move closer",
+          "cause": "Automatic macro switching selected another lens",
+          "fix": "Move back within the main camera's focusing range or lock the intended camera if available, then recheck framing."
+        },
+        {
+          "symptom": "Your shadow or a white wet glare interrupts the pattern",
+          "cause": "The viewing angle blocks light or catches a specular reflection",
+          "fix": "Move sideways, change height or reduce exposure for glare while staying clear of incoming water."
+        }
+      ],
+      "tip": "One small shell or broken ripple can give a repeated pattern a focal point without adding another subject."
     },
     "why": [
       "Side light defines tiny sand relief through small shadows.",
@@ -4426,10 +5737,56 @@
       "shutter": "Auto",
       "focus": "Tap a clear reflected distant feature.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Level the horizon and try a centred horizon if the symmetry is the point.",
-      "limitation": "A polariser attachment may remove the reflection you want; compare before using it."
+      "limitation": "A polariser attachment may remove the reflection you want; compare before using it.",
+      "why": [
+        "Calm water creates the mirror; a phone's long-exposure effect can blur ripples but cannot reconstruct a reflection broken by wind.",
+        "A distant reflected mountain is focused at its apparent reflected distance, not at the nearby water surface.",
+        "Normal capture holds fine reflected detail, while deliberate level framing makes the symmetry convincing."
+      ],
+      "steps": [
+        "Choose a safe sheltered lakeside viewpoint and wait for a lull that gives recognisable reflected shapes.",
+        "Use the main camera, level the horizon and test a centred composition if symmetry is the point.",
+        "Tap the real distant treeline or a clear reflected distant feature to focus, avoiding nearby floating debris.",
+        "Take a normal-mode test and inspect the reflection separately from the real mountain or trees.",
+        "Adjust exposure for bright sky and reflection; compare restrained HDR only if it does not ghost the water.",
+        "Change camera height or move laterally to remove shore clutter, and remove any polarising attachment that suppresses the desired reflection."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe calm-water viewpoint"
+        ],
+        "optional": [
+          "Small support in dim light",
+          "Lens cloth",
+          "Secure grip or strap"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The reflection is weak or missing",
+          "cause": "Wind, viewing angle or polarisation",
+          "fix": "Wait for calm, adjust camera height and remove or rotate a polarising attachment if fitted."
+        },
+        {
+          "symptom": "Floating leaves are sharp but the reflected mountain is soft",
+          "cause": "Focus landed on nearby debris",
+          "fix": "Tap the reflected distant feature or the real treeline and check another recorded frame."
+        },
+        {
+          "symptom": "Reflected edges are doubled or broken",
+          "cause": "Water moved while HDR/night frames were combined",
+          "fix": "Compare a normal single-capture route and wait for calmer water rather than extending the night countdown."
+        },
+        {
+          "symptom": "The mirror effect feels unbalanced despite sharp detail",
+          "cause": "The horizon tilts or clutter cuts the reflected subject",
+          "fix": "Use the level/grid and shift the viewpoint to clean up the shoreline before exposing again."
+        }
+      ],
+      "tip": "Tap an identifiable reflected tree or mountain edge rather than an arbitrary patch of water; the optical focus distance matters."
     },
     "why": [
       "A calm surface, rather than a very long exposure, creates a true mirror.",
@@ -4491,7 +5848,7 @@
         "iso": 100,
         "mode": "M",
         "effect": "Softens small disturbances for a less literal reflection.",
-        "requirements": "Tripod; does not restore a mirror in windy water."
+        "requirements": "Tripod and about three additional stops of ND in unchanged light, or light about three stops dimmer; meter again. A longer exposure does not restore a mirror in windy water."
       }
     ],
     "tip": "A tiny change in camera height can remove shoreline clutter without changing the distant landscape.",
@@ -4581,10 +5938,57 @@
       "shutter": "Auto",
       "focus": "Tap the distant landscape.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Keep the Sun behind you, find a dark background for contrast and lower exposure if the sky clips.",
-      "limitation": "Strong automatic saturation can exaggerate colours; keep a natural version."
+      "limitation": "Strong automatic saturation can exaggerate colours; keep a natural version.",
+      "why": [
+        "The Sun behind you and rain ahead create the viewing geometry; no exposure setting can keep the rainbow after that alignment disappears.",
+        "A wide or ultrawide camera can include the arc, while a main-camera view of one end can give a stronger relationship to a landmark.",
+        "A darker background makes the colours visible without excessive saturation, and clean optics prevent raindrops from scattering the light."
+      ],
+      "steps": [
+        "Watch opposite the Sun as rain clears and choose a safe viewpoint; if thunder is heard, move into substantial enclosed shelter.",
+        "Use the main camera for one end and a landmark, or try ultrawide if the whole arc will not fit.",
+        "Tap a distant landscape edge to focus and take a normal test promptly before the light changes.",
+        "Lower exposure if the bright clouds clip, checking that the arc still has believable colour.",
+        "Inspect for water droplets on the lens and processing halos; clean the lens from shelter and compare a restrained capture.",
+        "Reframe around a darker background or a simpler landmark rather than forcing saturation when the rainbow weakens."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and suitable rain protection",
+          "Safe access to the viewpoint"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Water-resistant pouch",
+          "Ultrawide camera if fitted"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The rainbow fades as you prepare the shot",
+          "cause": "Sunlight or rain geometry changed",
+          "fix": "Capture a quick normal frame first and watch for sunlight to return; a longer exposure cannot restore a vanished arc."
+        },
+        {
+          "symptom": "The whole arc is cut off",
+          "cause": "The selected camera's field is too narrow",
+          "fix": "Use ultrawide if available or compose one end with a landmark; a panorama needs a stable arc and careful overlap."
+        },
+        {
+          "symptom": "Soft bright blobs cover the colours",
+          "cause": "Raindrops or fingerprints on the lens",
+          "fix": "Clean the lens safely under shelter and retake before the light changes."
+        },
+        {
+          "symptom": "Colours look fake or the arc nearly disappears",
+          "cause": "Excessive enhancement or a polariser attachment suppressing the rainbow",
+          "fix": "Keep a natural reference, reduce enhancement and remove or rotate any polariser while checking its effect."
+        }
+      ],
+      "tip": "Get one simple frame immediately, then improve the composition; a rainbow can change faster than the phone's editing controls."
     },
     "why": [
       "The rainbow is most visible when sunlight behind the camera meets rain ahead.",
@@ -4737,10 +6141,57 @@
       "shutter": "Short repeated exposures if available",
       "focus": "Lock distant focus before the storm.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Pre-positioned stable support",
       "guidance": "Position the device safely in advance and operate remotely while staying away from windows, doors and wired equipment.",
-      "limitation": "A normal handheld phone reaction is usually too slow; safety and shelter take priority over capture."
+      "limitation": "A normal handheld phone reaction is usually too slow; safety and shelter take priority over capture.",
+      "why": [
+        "A remote repeating capture can include an unpredictable bolt without requiring the photographer to react at an exposed window.",
+        "The bolt is much briefer than the capture window. Shortening that window mainly reduces ambient sky brightness and may not make a clipped bolt darker.",
+        "Phone aperture is normally fixed; bolt brightness control may depend on genuinely available manual ISO or exposure controls, so the technique has device limits."
+      ],
+      "steps": [
+        "Choose substantial enclosed shelter and verify a remote capture route that lets you remain away from windows, doors, plumbing and wired equipment.",
+        "Before thunder approaches, position a battery-powered phone securely, protected appropriately for its placement; do not run a mains connection to an exposed setup.",
+        "Focus on a distant skyline or light and lock it if supported, then test the remote interval/manual operation before the storm.",
+        "Remain safely sheltered and start the preconfigured repeating sequence remotely; if the phone cannot be operated this way, skip the photograph.",
+        "Review remotely if possible. Reduce available exposure or manual ISO for a clipped bolt; shorten a supported capture window for an overly bright sky, recognising that these controls may not be available.",
+        "Do not approach windows or retrieve outdoor equipment to improve framing. Follow local warnings and wait at least 30 minutes after the last thunder before going outside."
+      ],
+      "pack": {
+        "essential": [
+          "Substantial enclosed shelter",
+          "Battery-powered phone on pre-positioned stable support",
+          "Verified wireless remote/interval capture route that does not require standing at a window"
+        ],
+        "optional": [
+          "Weather-appropriate phone housing installed before the storm",
+          "Compatible manual/interval app tested in advance"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "No lightning appears in the sequence",
+          "cause": "Strikes missed the frame or occurred between captures",
+          "fix": "Use shorter supported gaps or a wider view only if this can be changed remotely while remaining sheltered; accept a missed shot otherwise."
+        },
+        {
+          "symptom": "Bolts are thick white featureless lines",
+          "cause": "The brief flash exceeded the phone's exposure range",
+          "fix": "Lower genuine manual ISO or available exposure adjustment remotely if supported; shortening the overall window alone may not dim the bolt."
+        },
+        {
+          "symptom": "The sky is bright even without a strike",
+          "cause": "The repeating capture accumulates too much ambient light",
+          "fix": "Shorten the supported capture window or reduce brightness remotely, keeping distant focus locked."
+        },
+        {
+          "symptom": "Reflections obscure a view through glass",
+          "cause": "Interior lights or the phone screen reflect in the window",
+          "fix": "Use a preplanned remote setup with interior reflections minimised; do not move to an open window, balcony or exposed opening during the storm."
+        }
+      ],
+      "tip": "Test focus, framing and remote operation before storm conditions develop; if correcting the setup would expose you to lightning hazards, leave it alone."
     },
     "why": [
       "The lightning flash is brief; leaving the shutter open increases the chance of including it.",
@@ -4903,10 +6354,57 @@
       "shutter": "Auto",
       "focus": "Tap a distant edge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Include a small land reference to show the cloud’s scale and avoid excessive contrast enhancement.",
-      "limitation": "Automatic HDR can create halos along moving cloud boundaries."
+      "limitation": "Automatic HDR can create halos along moving cloud boundaries.",
+      "why": [
+        "A small building or treeline communicates the cloud's scale better than an empty sky or a large ordinary foreground.",
+        "Bright cloud rims can clip while darker layers remain visible, so exposure should preserve the sculpted edges.",
+        "Moving clouds and aggressive HDR can create halos; restrained normal capture often gives a more believable storm structure."
+      ],
+      "steps": [
+        "Check local warnings and photograph from a safe enclosed location or well outside hazardous conditions; if thunder is heard, go into substantial enclosed shelter.",
+        "Frame the strongest structure with a small land reference using the main camera or genuine optical telephoto.",
+        "Tap a distant landscape edge or defined cloud edge to focus and brace the phone.",
+        "Take a normal-mode test and reduce exposure if the sunlit rim loses texture.",
+        "Inspect dark layers and edge halos; compare restrained HDR only when it improves the actual recorded structure.",
+        "Retest as sunlight changes and stop if getting the photograph would require an exposed position or compromise shelter."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe viewpoint and current local weather information"
+        ],
+        "optional": [
+          "Weather-resistant pouch",
+          "Lens cloth",
+          "Pre-positioned support for a sheltered low-light view"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The brightest cloud rim turns blank white",
+          "cause": "Automatic exposure favoured the darker cloud mass",
+          "fix": "Lower exposure and inspect the saved rim before increasing shadow brightness."
+        },
+        {
+          "symptom": "Dark borders outline every cloud",
+          "cause": "HDR, sharpening or dehaze created halos",
+          "fix": "Compare normal capture with enhancement reduced and use a gentler edit."
+        },
+        {
+          "symptom": "The storm looks small and ordinary",
+          "cause": "Too much foreground or no useful scale reference",
+          "fix": "Keep a small familiar land object and give the dominant cloud structure more of the frame."
+        },
+        {
+          "symptom": "The view improves only from an exposed position",
+          "cause": "The composition conflicts with safe storm observation",
+          "fix": "Keep shelter and accept the obstructed view or stop shooting; do not move outside or to a porch during thunder."
+        }
+      ],
+      "tip": "Retain one believable land-scale cue and moderate contrast; dramatic clouds do not need to be processed into solid black."
     },
     "why": [
       "A small foreground scale reference makes the size of the cloud readable.",
@@ -4966,7 +6464,7 @@
         "name": "Cloud detail crop",
         "aperture": 5.6,
         "shutter": 0.002,
-        "iso": 400,
+        "iso": 200,
         "mode": "M",
         "effect": "Isolates rolling structure rather than the whole weather scene.",
         "requirements": "Normal/telephoto lens and safe visibility."
@@ -5061,10 +6559,57 @@
       "shutter": "Simulated or stacked long exposure",
       "focus": "Lock focus on a stationary rock.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod or firm support",
       "guidance": "Support the phone firmly and compare its long-exposure effect with a normal photograph.",
-      "limitation": "Many water effects blend frames rather than expose continuously; moving foliage may create artifacts."
+      "limitation": "Many water effects blend frames rather than expose continuously; moving foliage may create artifacts.",
+      "why": [
+        "A supported water-blur or long-exposure effect can combine moving water into smooth ribbons while fixed rocks provide a sharp reference.",
+        "Many phone effects blend frames instead of using one continuous exposure, so moving leaves and spray may produce different artifacts.",
+        "A genuine manual slow shutter in daylight may need a suitable ND filter because the phone's aperture usually cannot be stopped down."
+      ],
+      "steps": [
+        "Choose stable dry ground beyond fast water and slippery rock, with a strong fixed edge beside the falling water.",
+        "Clean the lens, support the main camera and take a normal reference photograph.",
+        "Tap a stationary rock at the waterfall plane and lock focus if available before starting the effect capture.",
+        "Use a supported long-exposure/water mode or a compatible Live Photo-style effect, keeping the phone still through the whole capture.",
+        "If using a genuinely manual shutter app instead, meter a test and add suitable secure ND only if required; do not assume the camera recipe's slow shutter will expose correctly at a fixed phone aperture.",
+        "Inspect rocks, water and leaves separately; compare shorter effect duration or normal capture if the water becomes blank white or surrounding foliage ghosts."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a verified water-blur/long-exposure route",
+          "Tripod or firm support on safe dry ground"
+        ],
+        "optional": [
+          "Lens cloth and spray protection",
+          "Compatible manual-shutter app",
+          "Secure phone ND filter for a genuine slow-exposure route in bright light"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Water becomes a plain white sheet",
+          "cause": "Highlight clipping or excessive smoothing",
+          "fix": "Lower exposure if clipped, then compare a shorter supported effect or normal frame for more internal water texture."
+        },
+        {
+          "symptom": "Rocks blur along with the water",
+          "cause": "Phone movement or incorrect focus",
+          "fix": "Stabilise the mount, focus on a fixed rock and capture without touching the phone."
+        },
+        {
+          "symptom": "Leaves have repeated or broken outlines",
+          "cause": "The phone blended moving foliage",
+          "fix": "Wait for calm, exclude those leaves or choose a shorter capture that preserves them."
+        },
+        {
+          "symptom": "A manual slow frame is far too bright",
+          "cause": "Daylight exceeds what the fixed aperture and lowest available ISO can accommodate",
+          "fix": "Use an appropriate securely fitted ND filter, dimmer light or a computational water effect; shortening the true shutter changes the water rendering."
+        }
+      ],
+      "tip": "Keep the normal reference frame: it shows whether the water effect improved the photograph or merely erased all its texture."
     },
     "why": [
       "The shutter duration chooses water texture; it is the most important setting here.",
@@ -5225,10 +6770,56 @@
       "shutter": "1/8 s only if the app provides genuine control",
       "focus": "Lock on a rock edge.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod or firm support",
       "guidance": "Brace the phone and choose a view where foam traces the current.",
-      "limitation": "A built-in long-exposure effect may over-smooth the flow; normal bursts can retain more texture."
+      "limitation": "A built-in long-exposure effect may over-smooth the flow; normal bursts can retain more texture.",
+      "why": [
+        "Foam and bubbles reveal the current's direction; composition can make them readable even when the phone offers no manual shutter.",
+        "A medium-length genuine exposure retains separate streaks, while a long computational effect may turn the current into smooth white ribbons.",
+        "Sharp rocks are the reference that distinguishes intentional water movement from movement of the whole phone."
+      ],
+      "steps": [
+        "Work from secure dry ground and choose a current that curves around a strong stationary rock.",
+        "Support the main camera, tap that rock to focus and make a normal reference capture.",
+        "If a compatible app genuinely controls shutter, try its selectable medium-slow setting near the phone setup's suggested value and check brightness; fixed aperture may require suitable ND in daylight.",
+        "Without genuine shutter control, compare a normal burst with the shortest useful supported water-blur effect, accepting that not every phone can make this exact texture.",
+        "Capture as a visible patch of foam enters the strongest curve while keeping the phone still.",
+        "Enlarge the flow lines and rock edge; choose shorter capture for over-smooth water or a modestly longer supported effect for a current that looks static, correcting brightness as the app allows."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and firm support on a safe bank"
+        ],
+        "optional": [
+          "Compatible app with verified manual shutter control",
+          "Secure ND filter if a true slow daylight exposure needs it",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The stream looks like cotton wool",
+          "cause": "The exposure or effect combined too much water movement",
+          "fix": "Use a shorter supported effect or normal burst; with genuine shutter control shorten the exposure and recheck brightness."
+        },
+        {
+          "symptom": "The water is frozen and busy",
+          "cause": "The automatic shutter was too short for streaks",
+          "fix": "Try a supported water-blur mode or genuine manual shutter app; if unavailable, concentrate on foam patterns and accept a frozen interpretation."
+        },
+        {
+          "symptom": "Rocks have doubled edges",
+          "cause": "The support moved or the computational capture misaligned",
+          "fix": "Set the phone on stable dry ground, lock rock focus and repeat without touching it."
+        },
+        {
+          "symptom": "No clear direction emerges from the blurred water",
+          "cause": "The frame lacks foam markers or a clear channel",
+          "fix": "Choose a stronger curve around a rock and trigger as foam enters it instead of simply extending the capture."
+        }
+      ],
+      "tip": "Choose the frame with separate readable flow lines, not necessarily the smoothest one; this sheet's goal is current with energy."
     },
     "why": [
       "A medium-slow shutter shows motion direction while retaining separate streaks.",
@@ -5284,7 +6875,7 @@
         "iso": 400,
         "mode": "M",
         "effect": "Short, separated streaks with stronger turbulence.",
-        "requirements": "Less ND than the slow setup; meter again."
+        "requirements": "Keep the same ND strength in unchanged light: ISO 400 compensates for the faster shutter. Meter again if the light changes."
       },
       {
         "name": "Gentle smooth current",
@@ -5385,10 +6976,57 @@
       "shutter": "Aim for 1/1000–1/2000 s if selectable",
       "focus": "Tap the repeated water arc or nearby nozzle at the same distance.",
       "focal": "Optical telephoto if fitted; main lens otherwise.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Choose bright daylight and a dark background, then shoot a short burst.",
-      "limitation": "The phone may choose a slower shutter automatically; burst alone does not freeze droplets."
+      "limitation": "The phone may choose a slower shutter automatically; burst alone does not freeze droplets.",
+      "why": [
+        "Bright daylight gives the automatic phone camera a better chance of selecting a shutter short enough to separate droplets.",
+        "A dark background and side/backlight reveal transparent water more clearly than extra digital zoom.",
+        "Burst capture improves timing, but it cannot freeze each droplet if every frame uses a slow shutter."
+      ],
+      "steps": [
+        "Choose a safe dry viewpoint with bright light catching the water and a darker background behind it.",
+        "Use the main or genuine optical telephoto camera in normal mode; avoid night capture and portrait masking of the droplets.",
+        "Tap a repeated part of the water arc or a nozzle at the same useful distance, using focus lock if autofocus keeps choosing the background.",
+        "Take a short burst when the water pattern is strongest, keeping the phone steady.",
+        "Enlarge individual droplet edges. If they streak, seek brighter light or use the fast shutter suggested in the phone setup only if a compatible app actually provides it.",
+        "Reduce exposure if most of each droplet clips, and change viewpoint if the water remains invisible against the background."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and enough daylight for a short capture",
+          "Safe position outside fountain spray"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Compatible manual-shutter app",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Every droplet is a short streak",
+          "cause": "The automatic shutter did not freeze the moving water",
+          "fix": "Use brighter light or a genuinely available faster manual shutter; taking a longer burst alone will not correct it."
+        },
+        {
+          "symptom": "The buildings are sharp but droplets are not",
+          "cause": "Focus selected the background",
+          "fix": "Tap the water arc's plane or prefocus on a fixed feature at that distance, then retake a short burst."
+        },
+        {
+          "symptom": "The water is almost invisible",
+          "cause": "The background is too bright or light falls from an unhelpful angle",
+          "fix": "Move sideways to put side/backlit water against shade."
+        },
+        {
+          "symptom": "Drops look cut out or partly erased",
+          "cause": "Portrait blur or multi-frame processing misread thin moving water",
+          "fix": "Use normal mode without artificial background blur and compare a simpler single-capture route."
+        }
+      ],
+      "tip": "Move the background before changing the exposure: a small sideways shift can make transparent droplets stand out dramatically."
     },
     "why": [
       "Very short exposure separates individual droplets.",
@@ -5537,10 +7175,57 @@
       "shutter": "Auto; fast shutter needs bright light",
       "focus": "Tap the break zone and use burst.",
       "focal": "Optical telephoto if fitted.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Stay well back and use optical reach; time the burst just before the crest collapses.",
-      "limitation": "A phone cannot compensate for an unsafe viewpoint, and digital zoom reduces spray detail."
+      "limitation": "A phone cannot compensate for an unsafe viewpoint, and digital zoom reduces spray detail.",
+      "why": [
+        "Bright light and a short normal capture help separate spray; a night stack usually smears the rapidly changing crest.",
+        "Genuine optical reach lets you frame from farther back, but no lens justifies moving into wave reach.",
+        "Starting a burst before the collapse improves timing, while focus on the break zone keeps autofocus from jumping to nearby spray."
+      ],
+      "steps": [
+        "Observe multiple wave sets from well beyond the largest plausible reach and avoid unstable cliffs or seawall edges.",
+        "Use the main or genuine optical telephoto camera to frame a predictable break zone with a clean contrasting background.",
+        "Tap the crest's expected distance or a fixed feature in that plane; use supported tracking or focus lock when it behaves reliably.",
+        "In normal mode, start a short burst just before the crest collapses while keeping a safe stable stance.",
+        "Enlarge the spray and reduce exposure if the white water clips; if drops streak, use brighter conditions or a genuinely supported faster shutter.",
+        "Retake from the safe position and keep watching the sea between bursts; do not move closer to compensate for limited phone reach."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a viewpoint beyond wave reach",
+          "Secure grip or strap"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Weather-resistant pouch",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Spray smears although the shore is sharp",
+          "cause": "Subject movement during a slow automatic capture",
+          "fix": "Use normal mode in brighter light or a supported faster manual shutter; support alone does not freeze the wave."
+        },
+        {
+          "symptom": "Nearby spray is sharp but the main crest is soft",
+          "cause": "Autofocus jumped forward",
+          "fix": "Tap or lock the predictable break zone and keep the selected area on it through the burst."
+        },
+        {
+          "symptom": "White water becomes a featureless patch",
+          "cause": "Clipped highlights",
+          "fix": "Lower exposure and inspect a saved burst frame for retained spray structure."
+        },
+        {
+          "symptom": "The wave is small from the safe viewpoint",
+          "cause": "The phone lacks sufficient optical reach",
+          "fix": "Use a broader environmental composition or crop modestly; accept the framing limit rather than entering the wave zone."
+        }
+      ],
+      "tip": "Begin the burst before the wave peaks and leave room for spray; the best shape often happens before you would instinctively press the button."
     },
     "why": [
       "A fast shutter preserves the explosion of spray.",
@@ -5601,10 +7286,10 @@
         "name": "Tighter spray detail",
         "aperture": 5.6,
         "shutter": 0.00025,
-        "iso": 800,
+        "iso": 400,
         "mode": "M",
         "effect": "Smaller droplets and fast fragments remain distinct.",
-        "requirements": "Telephoto lens; narrower depth and more ISO noise."
+        "requirements": "Telephoto lens; narrower depth requires precise focus on the spray plane."
       }
     ],
     "tip": "The largest wave in a set may arrive after several ordinary ones. Choose your position for the largest plausible wave, not the last one you watched.",
@@ -5696,10 +7381,57 @@
       "shutter": "1/30–1/60 s only if available",
       "focus": "Tap the fixed subject and lock focus.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Firm support",
       "guidance": "Work under shelter with a dark background and light shining through the rain.",
-      "limitation": "Automatic phones may choose a faster shutter and make rain less visible; night stacks can remove or distort streaks."
+      "limitation": "Automatic phones may choose a faster shutter and make rain less visible; night stacks can remove or distort streaks.",
+      "why": [
+        "Side or backlight against a dark background makes rain visible before any shutter adjustment is attempted.",
+        "A genuine medium-slow exposure creates rain lines, but a normal phone may choose a different shutter and a night stack may reject the moving drops.",
+        "A firmly supported phone keeps a stationary doorway or tree sharp while rain alone forms streaks."
+      ],
+      "steps": [
+        "Choose secure shelter and keep the phone dry; if thunder is heard, use substantial enclosed shelter rather than an open canopy or porch.",
+        "Frame an illuminated strip of rain against a dark background with a fixed subject to anchor it.",
+        "Support the main camera, tap the fixed subject and lock focus if supported.",
+        "Make a normal reference capture. If a compatible app provides genuine shutter control, test the phone setup's suggested medium-slow range and adjust available ISO/exposure for brightness.",
+        "Enlarge the rain lines and fixed subject separately; shorten a genuine exposure for overly dense streaks or lengthen cautiously for more visible lines.",
+        "If manual control is unavailable, improve lighting/background contrast and compare supported modes, recognising that the exact streak length may be outside the phone's controls."
+      ],
+      "pack": {
+        "essential": [
+          "Phone protected from water",
+          "Secure shelter and firm support"
+        ],
+        "optional": [
+          "Compatible app with actual shutter control",
+          "Lens cloth",
+          "Phone tripod"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rain is scarcely visible",
+          "cause": "Poor light/background contrast or an automatic fast shutter",
+          "fix": "Frame side/backlit rain against a darker area; use genuine manual shutter control only if the app supports it."
+        },
+        {
+          "symptom": "The whole scene is smeared",
+          "cause": "Phone movement during a slow capture",
+          "fix": "Improve support and use a timer; the fixed anchor should remain sharp even when rain streaks."
+        },
+        {
+          "symptom": "Large soft blobs obscure the rain lines",
+          "cause": "Drops are on the lens, glass or very close to the camera",
+          "fix": "Clean the lens safely under shelter and change framing to avoid nearby droplets or reflective wet glazing."
+        },
+        {
+          "symptom": "Night mode removes rain or makes broken streaks",
+          "cause": "Computational blending rejected or misaligned moving drops",
+          "fix": "Compare normal capture or a genuinely manual exposure; do not assume a longer night countdown gives continuous rain lines."
+        }
+      ],
+      "tip": "A narrow illuminated strip of rain can be clearer than a whole bright rainy street; choose the light and backdrop before chasing shutter settings."
     },
     "why": [
       "Side/backlight makes otherwise transparent drops visible.",
@@ -5858,10 +7590,58 @@
       "shutter": "Stacked effect, or genuine manual exposure if supported",
       "focus": "Lock focus on a fixed shoreline object.",
       "focal": "Main 1× lens; avoid digital zoom.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Tripod",
       "guidance": "Mount the phone and use a long-exposure mode designed to blur water while keeping fixed features.",
-      "limitation": "Most phones cannot make a genuine 30 s exposure in daylight; a stacking effect may show artifacts."
+      "limitation": "Most phones cannot make a genuine 30 s exposure in daylight; a stacking effect may show artifacts.",
+      "why": [
+        "A long-exposure effect can average waves into smooth tones, but it needs fixed rocks or a pier to give the image structure.",
+        "Phone water effects often combine frames rather than hold one exposure open, so their duration is not interchangeable with the camera's shutter time.",
+        "A real long manual exposure at a fixed phone aperture needs the actual light metered and suitable ND when necessary; night mode alone does not solve bright daylight."
+      ],
+      "steps": [
+        "Check tide, swell and a safe return route; place the phone support on stable dry ground beyond the wash.",
+        "Frame one or two strong fixed forms and take a normal main-camera reference photograph.",
+        "Tap the fixed rock or pier edge and lock focus if available before beginning the long-effect capture.",
+        "Use a supported long-exposure/water-blur mode and keep the phone still throughout capture; inspect its actual result instead of treating the countdown as a continuous shutter time.",
+        "For a genuine manual route, confirm the device's exposure limit, meter without ND and calculate the necessary filter/time combination using the actual phone settings.",
+        "Compare rock sharpness, horizon level and water structure; reduce effect duration if the sea loses all interest, and retest as twilight or waves change."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a verified long-exposure effect or manual route",
+          "Secure tripod and clamp beyond wave wash"
+        ],
+        "optional": [
+          "Compatible manual app and secure ND filter for genuine long exposures",
+          "Lens cloth",
+          "Torch for safe twilight access"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The pier or rocks blur with the sea",
+          "cause": "The support moved, sank or was hit by wash",
+          "fix": "Use stable dry ground farther back, lock focus on a fixed edge and trigger without touching the phone."
+        },
+        {
+          "symptom": "The sea becomes a featureless pale slab",
+          "cause": "The effect averaged away too much useful wave structure",
+          "fix": "Choose a shorter supported effect or use the normal reference frame with a stronger wave shape."
+        },
+        {
+          "symptom": "Waves have seams or repeated contours",
+          "cause": "Frame blending failed on changing water",
+          "fix": "Try a different wave cycle or shorter effect; a genuine manual exposure is a separate route requiring device support and correct filtration."
+        },
+        {
+          "symptom": "A true manual long exposure is overexposed",
+          "cause": "There is too much light for the fixed aperture and selected duration",
+          "fix": "Meter and add suitable ND, use dimmer conditions or shorten the real exposure; do not substitute a night-mode countdown for the calculation."
+        }
+      ],
+      "tip": "Keep the unblurred reference and compare it with the effect version; smooth water only helps when the remaining fixed shapes make a stronger composition.",
+      "conditions": "A stable shoreline with fixed rocks or a pier and moving water. Use a supported computational water-blur mode, or suitably dim light or physical ND filtration for a genuine continuous long exposure."
     },
     "why": [
       "Long exposure averages many small waves into broad smooth tones.",
@@ -6022,10 +7802,56 @@
       "shutter": "Auto",
       "focus": "Tap a high-contrast reflected edge.",
       "focal": "Optical telephoto if fitted, or main lens with a tight composition.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Fill the frame with reflection alone and turn the phone until the line rhythm feels deliberate.",
-      "limitation": "Night modes can blend changing ripples into a different effect; use normal capture for defined shapes."
+      "limitation": "Night modes can blend changing ripples into a different effect; use normal capture for defined shapes.",
+      "why": [
+        "The abstract shapes change with every ripple, so a short normal capture preserves one distinct arrangement.",
+        "A tight composition removes the literal building or tree and lets reflected colour and line become the subject.",
+        "Focusing on a reflected edge differs from focusing on floating debris; the apparent reflected subject lies beyond the nearby water surface."
+      ],
+      "steps": [
+        "Find strong coloured reflections on gently moving water from a safe bank or walkway.",
+        "Use the main or genuine optical telephoto camera and exclude the real subject and shoreline if abstraction is the goal.",
+        "Tap a high-contrast reflected edge, checking that focus has not locked on nearby floating leaves.",
+        "Take a short normal-mode burst as a promising line pattern develops; avoid a long night capture for defined ripple shapes.",
+        "Inspect the reflected edges and bright glints, reducing exposure if the colour turns white.",
+        "Select a coherent rhythm from the burst and try small viewpoint changes before adding saturation or artificial sharpening."
+      ],
+      "pack": {
+        "essential": [
+          "Phone and a safe view of moving reflections"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Secure grip or strap",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Distinct ripples merge into a uniform smear",
+          "cause": "A slow capture or night stack averaged changing shapes",
+          "fix": "Use normal mode in brighter light and compare a short burst; a supported manual faster shutter is an optional route."
+        },
+        {
+          "symptom": "Floating debris is sharp but the reflected lines are soft",
+          "cause": "Focus selected the water surface rather than the reflection",
+          "fix": "Tap an identifiable reflected distant edge and verify another saved frame."
+        },
+        {
+          "symptom": "White glints overwhelm the coloured pattern",
+          "cause": "The viewing angle catches strong specular highlights",
+          "fix": "Change viewpoint and reduce exposure enough to retain the important colour shapes."
+        },
+        {
+          "symptom": "The frame looks random despite vivid colour",
+          "cause": "No clear repeated line or contrasting anchor",
+          "fix": "Choose a tighter arrangement from the burst or reframe around one rhythm and one contrasting patch."
+        }
+      ],
+      "tip": "Shoot a short sequence and choose the best arrangement, not merely the sharpest frame; the composition changes with the water."
     },
     "why": [
       "A fast shutter preserves the constantly changing abstract pattern.",
@@ -6177,10 +8003,57 @@
       "shutter": "Auto; bright light helps freeze the boat",
       "focus": "Track/tap the vessel rather than the wake.",
       "focal": "Optical telephoto if fitted.",
-      "whiteBalance": "Auto; lock for a sequence.",
+      "whiteBalance": "Auto; lock white balance for a sequence only if the app supports it.",
       "support": "Handheld",
       "guidance": "Leave space ahead of travel and shoot a short burst as the boat reaches a clean background.",
-      "limitation": "Digital zoom and automatic slow shutter limit detail; avoid leaning or unsafe positions for framing."
+      "limitation": "Digital zoom and automatic slow shutter limit detail; avoid leaning or unsafe positions for framing.",
+      "why": [
+        "A solid cabin or hull gives the phone a more dependable focus target than sparkling wake or spray.",
+        "Bright light and normal capture help freeze the vessel; burst mode improves timing but cannot repair motion within each exposure.",
+        "Space ahead of the boat and a visible wake make its direction readable without needing extreme digital enlargement."
+      ],
+      "steps": [
+        "Choose a stable safe viewpoint and watch the boat's route; if aboard a vessel, follow crew instructions and flotation requirements.",
+        "Select the main or genuine optical telephoto camera in normal mode, leaving room ahead and enough wake behind.",
+        "Tap the cabin or hull and use supported subject tracking if it remains on the vessel rather than the water.",
+        "Begin a short burst as the boat approaches a clean background, keeping balance and tracking smoothly.",
+        "Enlarge the vessel edge and inspect wake highlights; lower exposure for clipped spray and seek brighter light or genuine faster manual control if the boat smears.",
+        "Reframe a later pass from the same safe position rather than leaning out or moving onto an unstable edge for more reach."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a secure grip",
+          "Safe viewpoint and any required boating safety equipment"
+        ],
+        "optional": [
+          "Optical telephoto camera if fitted",
+          "Weather-resistant pouch",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "The wake is sharp but the boat is soft",
+          "cause": "Autofocus selected water or spray",
+          "fix": "Keep the focus/tracking target on a solid cabin or hull feature and retake before the background becomes cluttered."
+        },
+        {
+          "symptom": "The hull has directional streaks",
+          "cause": "The automatic shutter is too slow for relative movement",
+          "fix": "Use normal mode in brighter light, or a genuinely supported faster manual shutter; a longer burst alone will not freeze it."
+        },
+        {
+          "symptom": "The boat seems about to leave the photograph",
+          "cause": "Insufficient space ahead of travel",
+          "fix": "Track earlier and leave lead room instead of keeping the hull at the forward edge."
+        },
+        {
+          "symptom": "The horizon tilts and everything looks unsteady",
+          "cause": "Phone or platform movement",
+          "fix": "Use a secure balanced stance and a wider stable frame; if aboard, follow crew instructions and never compromise balance to recover the composition."
+        }
+      ],
+      "tip": "Wait for the boat to cross a simple background before the burst; clean separation often improves the photograph more than another step of zoom."
     },
     "why": [
       "A fast shutter manages both vessel movement and possible platform movement.",

@@ -38,3 +38,35 @@ describe('Field search across the complete content library', () => {
     expect(result.every(s=>s.category==='wildlife')).toBe(true);
   });
 });
+
+describe('Technical search precision and complete phone guidance',()=>{
+ it('treats AF-C as a focus term, not unrelated occurrences of af and c',()=>{
+  const results=searchScenes(scenes,'AF-C');
+  expect(results.map(s=>s.id)).toContain('bird-in-flight');
+  expect(results.map(s=>s.id)).not.toContain('traffic-light-trails');
+  expect(results.slice(0,10).some(s=>s.setup.focus.includes('AF-C'))).toBe(true);
+ });
+ it('does not confuse 1/250 with 1/2500',()=>{
+  const cycling=scenes.find(s=>s.id==='cyclist-freeze')!;
+  expect(searchScenes([cycling],'1/2500').map(s=>s.id)).toEqual(['cyclist-freeze']);
+  expect(searchScenes([cycling],'1/250')).toEqual([]);
+ });
+ it('finds scene-relevant phone techniques and preserves useful typing completion',()=>{
+  expect(searchScenes(scenes,'phone macro').map(s=>s.id)).toContain('perched-insect');
+  expect(searchScenes(scenes,'milky w')[0]?.id).toBe('milky-way');
+  expect(searchScenes(scenes,'waterf').some(s=>s.tags.includes('waterfall'))).toBe(true);
+ });
+ it('does not treat petals as pets or the verb falls as a waterfall',()=>{
+  expect(searchScenes(scenes,'dog').map(s=>s.id)).not.toContain('still-flower');
+  expect(searchScenes(scenes,'waterfall').map(s=>s.id)).not.toContain('food-window-light');
+ });
+ it('indexes added phone explanations, steps, equipment and corrections',()=>{
+  const source=scenes.find(s=>s.id==='perched-insect')!;
+  const amended={...source,phone:{...source.phone,
+    why:['Diffusiondiamond reduces specular glare.'],steps:['Use a steadycontrol before capture.'],
+    pack:{essential:['Mountmark support'],optional:['Soft flag']},
+    problems:[{symptom:'Checkerblur',cause:'Focus shifted',fix:'Retarget the eye'}],
+  }};
+  for(const query of ['diffusiondiamond','steadycontrol','mountmark','checkerblur'])expect(searchScenes([amended],query)).toHaveLength(1);
+ });
+});

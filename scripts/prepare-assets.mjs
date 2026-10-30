@@ -15,5 +15,5 @@ for(const scene of scenes){
 }
 const expected=new Set(scenes.map(s=>s.id));
 for(const id of Object.keys(photos))if(!expected.has(id))throw Error(`Photo has no scene: ${id}`);
-fs.writeFileSync('public/asset-credits.json',JSON.stringify({edition:'Fieldframe 2.0 · Photographic edition',description:'Real licensed photographs, resized and compressed. Suggested scene settings are original starting points, not claimed photographic EXIF.',sceneCount:scenes.length,photographCount:new Set(Object.values(photos).map(p=>p.src)).size,photos},null,2)+'\n');
+fs.writeFileSync('public/asset-credits.json',JSON.stringify({edition:'Fieldframe 2.1 · Field reference update',description:'Real licensed photographs, resized and compressed. Suggested scene settings are original starting points, not claimed photographic EXIF.',sceneCount:scenes.length,photographCount:new Set(Object.values(photos).map(p=>p.src)).size,photos},null,2)+'\n');
 console.log(`Verified licensed local photographs for all ${scenes.length} scenes.`);

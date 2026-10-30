@@ -50,3 +50,97 @@ h1{font-weight:740;letter-spacing:-.055em;line-height:1.08}h2{font-weight:680;le
 @keyframes photo-reveal{from{opacity:.7}to{opacity:1}}
 
 @media screen and (max-width:500px){.sheet-heading{display:flex;align-items:flex-start;gap:12px}.sheet-heading>div:first-child{flex:1;min-width:0}.sheet-actions{flex:0 0 auto;max-width:78px;align-self:flex-start;flex-wrap:wrap;padding-top:3px}.sheet-heading h1{font-size:33px}.start-assumption,.focus-note{font-size:12px;line-height:1.75}.card-category{font-size:7px}}
+
+/* Field-use corrections: the settings and next action precede the photograph. */
+@media screen {
+ .scene-top { align-items:start; }
+ .scene-start .setup-meta { margin:14px 18px 0;padding:14px 0;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .scene-start .setup-meta>div { min-width:0; }
+ .scene-start .setup-meta span { font-size:11px;letter-spacing:.3px; }
+ .scene-start .setup-meta strong { font-size:14px;overflow-wrap:anywhere; }
+ .scene-start .setup-meta small { font-size:12px;line-height:1.5; }
+ .scene-start .sheet-shortcuts { margin:0;padding:3px 18px 12px;display:flex;flex-wrap:wrap;gap:8px; }
+ .scene-start .sheet-shortcuts button { font-size:12px;min-height:44px;padding:10px 12px; }
+ .scene-start .scene-conditions { padding:0 18px;font-size:14px; }
+ .scene-start .safety-note,.scene-start .phone-note,.scene-start .adaptation-note { margin:14px 18px;font-size:14px; }
+ .scene-photo>img { min-height:0;max-height:520px;object-fit:cover; }
+ .scene-photo figcaption { gap:9px; }
+ .photo-teaching-caption { display:block;font-size:14px;line-height:1.6;color:var(--ink); }
+ .photo-teaching-caption>strong { display:block;font-size:12px;line-height:1.6;margin-bottom:3px; }
+ .scene-photo .photo-credit,.scene-photo figcaption>span:last-child { font-size:11px;line-height:1.5; }
+ .setting-label,.setting small { font-size:12px;line-height:1.45; }
+ .setting strong { white-space:normal;overflow-wrap:normal;word-break:normal;font-variant-numeric:tabular-nums; }
+ .reference-context { margin:16px 0;padding:12px 14px;background:var(--surface-2);border-radius:10px; }
+ .reference-context summary { cursor:pointer;font-weight:650; }
+ .reference-context p { font-size:13px; }
+ .alternative-warning { padding:10px;border-left:3px solid var(--brand);background:var(--surface-2); }
+ .comparison-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px; }
+ .comparison-grid figure { margin:0;min-width:0; }
+ .comparison-grid img { width:100%;aspect-ratio:1.4;object-fit:cover;border-radius:10px; }
+ .comparison-grid h3 { margin:12px 0 8px; }
+ .comparison-grid p { font-size:14px; }
+ .comparison-grid .photo-credit { display:block;font-size:11px; }
+ .comparison-grid a:last-child { display:flex;align-items:center;gap:6px;margin-top:12px;min-height:40px;font-size:13px; }
+}
+@media screen and (max-width:1000px) {
+ .scene-start .setup-meta { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .scene-photo>img { aspect-ratio:1.6;max-height:440px; }
+}
+@media screen and (max-width:760px) {
+ .sheet-breadcrumb,.sheet-breadcrumb .text-button,.difficulty { font-size:12px; }
+ .format-badge { font-size:12px; }
+ .setting-label,.setting small { font-size:12px; }
+ .setting { padding:13px 12px; }
+ .setting strong { font-size:27px;letter-spacing:-.8px;line-height:1.18; }
+ .setting.focus-setting strong,.phone-settings .setting strong { font-size:15px;letter-spacing:0;line-height:1.45; }
+ .settings-intro>span { font-size:11px;letter-spacing:.5px; }
+ .settings-intro .format-control select { font-size:12px;min-height:40px; }
+ .start-assumption,.focus-note { font-size:14px;line-height:1.6; }
+ .focus-note strong { font-size:13px; }
+ .scene-recipe .eyebrow { font-size:11px; }
+ .scene-recipe p { font-size:14px;line-height:1.65; }
+ .sheet-section summary strong { font-size:16px; }
+ .sheet-section summary small { font-size:12px;line-height:1.5; }
+ .section-content,.section-content .note-text { font-size:15px;line-height:1.65; }
+ .problem h3 { font-size:17px; }
+ .problem>p,.problem .correction,.check-item,.alternative p,.alternative small { font-size:14px;line-height:1.65; }
+ .alternative-values span { font-size:12px; }
+ .field-tip p,.source-list,.glossary,.starting-note { font-size:14px; }
+ .field-tip .eyebrow { font-size:11px; }
+ .related-links a { font-size:14px; }
+ .settings-panel p,.settings-panel .note-text,.tool-panel>p { font-size:14px;line-height:1.65; }
+ .form-grid label { font-size:13px; }
+ .form-grid small { font-size:12px; }
+ .button-row button,.theme-options button,.segmented button { font-size:12px;min-height:44px; }
+ .offline-status strong { font-size:14px; }
+ .offline-status small { font-size:12px; }
+ .exposure-strip small { font-size:10px;letter-spacing:0; }
+ .exposure-strip b { font-size:13px; }
+ .exposure-strip { flex-wrap:wrap;gap:10px 8px; }
+ .exposure-strip>span { min-width:45px; }
+ .card-category { font-size:10px;line-height:1.5; }
+ .card-body p,.phone-strip { font-size:12px; }
+ .card-difficulty { font-size:10px; }
+ .comparison-grid { grid-template-columns:1fr;gap:22px; }
+}
+@media screen and (max-width:500px) {
+ .scene-start .setup-meta { margin:12px 14px 0;gap:12px;padding:12px 0; }
+ .scene-start .sheet-shortcuts { padding:0 14px 10px;gap:6px; }
+ .scene-start .sheet-shortcuts button { flex:1 1 calc(50% - 6px);font-size:12px;justify-content:center; }
+ .setting strong { font-size:clamp(21px,6.4vw,27px);white-space:nowrap; }
+ .setting.focus-setting strong,.phone-settings .setting strong { white-space:normal; }
+ .phone-settings .setting strong { font-size:14px; }
+ .scene-photo>img { aspect-ratio:1.4;max-height:380px; }
+ .scene-start .scene-conditions { padding:0 15px; }
+ .scene-start .safety-note,.scene-start .phone-note,.scene-start .adaptation-note { margin:12px 14px; }
+ .card-body h3 { font-size:17px;line-height:1.25; }
+ .scene-grid .exposure-strip { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px; }
+ .scene-grid .phone-strip { display:flex; }
+}
+@media print {
+ .print-photo-caption { font-size:9pt; }
+ .photo-teaching-caption>strong { margin-right:6px; }
+ .reference-context { display:block; }
+}
+
+@media screen { .card-difficulty { max-width:calc(100% - 26px); } }

@@ -13,6 +13,8 @@ for(const s of all){
  for(const name of ['iso','aperture','shutter']){const [a,b]=s.setup[name+'Range'];if(s.setup[name]<a||s.setup[name]>b)issues.push(s.id+': '+name+' lies outside its range');}
  if(s.setup.focalLength<s.setup.focalRange[0]||s.setup.focalLength>s.setup.focalRange[1])issues.push(s.id+': focal length outside range');
  if(new Set(s.why).size!==s.why.length||new Set(s.steps).size!==s.steps.length)issues.push(s.id+': duplicated explanation or step');
+ if(new Set(s.phone.why).size!==s.phone.why.length||new Set(s.phone.steps).size!==s.phone.steps.length)issues.push(s.id+': duplicated phone explanation or step');
+ if(new Set(s.phone.problems.map(p=>p.symptom)).size!==s.phone.problems.length)issues.push(s.id+': duplicate phone troubleshooting symptom');
  if(s.sources.some(x=>!x.url.startsWith('https://')))issues.push(s.id+': non-HTTPS source');
  if(!s.phone.aperture.toLowerCase().includes('fix')&&!s.phone.aperture.toLowerCase().includes('auto'))issues.push(s.id+': phone aperture must state fixed/automatic capability');
  if(s.visual.points.some(t=>t.length>80))issues.push(s.id+': diagram annotation is too long');

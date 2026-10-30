@@ -2,6 +2,8 @@ import { z } from 'zod';
 const text = z.string().min(2);
 const positive = z.number().positive().finite();
 const range = z.tuple([positive,positive]).refine(v=>v[0]<=v[1], 'Range must ascend');
+const packSchema = z.object({essential:z.array(text).min(1),optional:z.array(text).min(1)});
+const problemsSchema = z.array(z.object({symptom:text,cause:text,fix:text})).min(4).max(6);
 export const categories = [
   {id:'night-sky',name:'Night & sky',icon:'moon',color:'#6845e8'},
   {id:'sunrise-sunset',name:'Sunrise & sunset',icon:'sun',color:'#bd480e'},
@@ -23,10 +25,10 @@ export const sceneSchema = z.object({
   difficulty:z.enum(['Easy','Intermediate','Advanced']),tags:z.array(text).min(4),
   conditions:text,intent:text,
   setup:z.object({mode:z.enum(['M','M + Auto ISO']),aperture:positive,shutter:positive,iso:positive,autoISO:z.boolean(),isoRange:range,apertureRange:range,shutterRange:range,focalLength:positive,focalRange:range,focus:text,focusTarget:text,whiteBalance:text,support:z.enum(['Handheld','Tripod','Supported']),stabilization:text,metering:text,exposureNote:text,priority:z.enum(['motion','depth','effect','stars']),lighting:z.enum(['ambient','flash','mixed']).optional(),canSlowShutter:z.boolean().optional()}).refine(s=>s.autoISO===(s.mode==='M + Auto ISO'),'Mode / ISO automation mismatch'),
-  phone:z.object({mode:text,iso:text,aperture:text,shutter:text,focus:text,focal:text,whiteBalance:text,support:text,guidance:text,limitation:text}),
+  phone:z.object({conditions:text.optional(),intent:text.optional(),startingPoint:text.optional(),mode:text,iso:text,aperture:text,shutter:text,focus:text,focal:text,whiteBalance:text,support:text,guidance:text,limitation:text,why:z.array(text).min(3).max(6),steps:z.array(text).min(4).max(8),pack:packSchema,problems:problemsSchema,tip:text.optional()}),
   why:z.array(text).min(3).max(6),steps:z.array(text).min(4).max(8),
-  pack:z.object({essential:z.array(text).min(1),optional:z.array(text).min(1)}),
-  problems:z.array(z.object({symptom:text,cause:text,fix:text})).min(4).max(6),
+  pack:packSchema,
+  problems:problemsSchema,
   alternatives:z.array(z.object({name:text,aperture:positive,shutter:positive,iso:positive,mode:z.enum(['M','M + Auto ISO']),effect:text,requirements:text})).min(2).max(3),
   tip:text,startingPoint:text,safety:z.array(text),
   sources:z.array(z.object({title:text,url:z.url()})).min(1),related:z.array(text).min(2).max(4),

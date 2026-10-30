@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest';
 import {
   actualFocal, adaptSetup, cropFor, distanceLabel, equivalentFocal,
   ndExposure, npfExposure, rule500, shutterLabel,
-  type NPFInputs,
+  type NPFInputs, ISO_STEPS, SHUTTER_STEPS, selectableISO, selectableShutter,
+  bracketSequence, adaptedExposureNote, roughStarExposure,
 } from '../src/calculators';
 import { defaults, sceneSchema, type Preferences, type Scene } from '../src/schema';
 import actionRaw from '../src/data/action-creative.json';
@@ -147,7 +148,7 @@ describe('Scene exposure adaptation', () => {
     const s=scene('still-flower');
     const r=adaptSetup(s,prefs({gearEnabled:true,focalLength:'200'}));
     expect(r.shutter).toBeLessThan(s.setup.shutter);
-    expect(Math.abs(Math.log2(exposureProxy(r)/exposureProxy(s.setup)))).toBeLessThan(0.03);
+    expect(Math.abs(Math.log2(exposureProxy(r)/exposureProxy(s.setup)))).toBeLessThan(1/6);
   });
   it('keeps base ISO and lengthens exposure for a supported static product', () => {
     const s=scene('reflective-product');
@@ -191,4 +192,86 @@ describe('Field-facing numeric labels', () => {
   it('keeps exact seconds visible for the ND anchor', () => expect(shutterLabel(0.512)).toBe('0.51 s'));
   it('carries rounded seconds into the next minute', () => expect(shutterLabel(119.99)).toBe('2m'));
   it('does not display invalid shutter values as numbers', () => expect(shutterLabel(NaN)).toBe('—'));
+});
+
+
+describe('Field-tested gear adaptation regressions',()=>{
+  it('uses selectable ISO 2000 rather than ISO 1925 for the f/1.8 to f/2.8 bokeh lens limit',()=>{
+    const s=scene('bokeh-lights'),p=prefs({gearEnabled:true,maxAperture:'2.8'}),r=adaptSetup(s,p);
+    expect(r.iso).toBe(2000);expect(r.shutter).toBe(1/125);
+    expect(Math.abs(r.exposureDeltaStops)).toBeLessThan(1/6);
+    expect(r.notes.join(' ')).toMatch(/0.05 stops brighter/);
+    expect(r.exposureChanged).toBe(true);
+  });
+  it('rounds a handheld 135 mm shake target faster, then recalculates selectable ISO',()=>{
+    const s=scene('still-flower'),r=adaptSetup(s,prefs({gearEnabled:true,focalLength:'135'}));
+    expect(r.shutter).toBe(1/320);expect(r.shutter).toBeLessThanOrEqual(1/270);
+    expect(r.iso).toBe(1000);expect(Math.abs(r.exposureDeltaStops)).toBeLessThan(1/6);
+  });
+  it('never rounds an arbitrary ISO ceiling upward',()=>{
+    const r=adaptSetup(scene('bokeh-lights'),prefs({gearEnabled:true,maxAperture:'2.8',isoLimit:'1950'}));
+    expect(r.iso).toBe(1600);expect(r.isoRange[1]).toBe(1600);
+    expect(r.unresolvedStops).toBeGreaterThan(0.25);
+    expect(r.notes.join(' ')).toMatch(/ceiling below your limit/);
+    expect(selectableISO(900,950)).toBe(800);
+  });
+  it('keeps star motion within the original proportional limit after rounding',()=>{
+    const s=scene('milky-way'),focal=s.setup.focalLength*1.7;
+    const r=adaptSetup(s,prefs({gearEnabled:true,focalLength:String(focal),isoLimit:'204800'}));
+    expect(r.shutter).toBeLessThanOrEqual(s.setup.shutter/1.7);
+    expect(SHUTTER_STEPS).toContain(r.shutter);expect(ISO_STEPS).toContain(r.iso);
+    expect(Math.abs(r.exposureDeltaStops)).toBeLessThan(1/6);
+  });
+  it('reports extended timing, diffraction and original-range tradeoffs instead of silently promising a usable stack',()=>{
+    const r=adaptSetup(scene('focus-stacking'),prefs({gearEnabled:true,maxAperture:'64',isoLimit:'25'}));
+    expect(r.shutter).toBeGreaterThan(30);expect(Number.isInteger(r.shutter)).toBe(true);
+    expect(r.notes.join(' ')).toMatch(/Bulb\/Time/);
+    expect(r.notes.join(' ')).toMatch(/diffraction/);
+    expect(r.notes.join(' ')).toMatch(/outside this sheet’s original range/);
+    expect(r.notes.join(' ')).toMatch(/extended setting or unavailable/);
+  });
+  it('keeps the revised HDR sequence and its instructions consistent with the revised centre exposure',()=>{
+    const s=scene('exposure-bracketing'),p=prefs({gearEnabled:true,maxAperture:'16'}),r=adaptSetup(s,p);
+    expect(r.shutter).toBe(1/30);
+    expect(r.bracket?.map(frame=>frame.shutter)).toEqual([1/125,1/30,1/8]);
+    expect(r.bracket?.every(frame=>Math.abs(frame.actualEv-frame.ev)<1/6)).toBe(true);
+    const note=adaptedExposureNote(s,p,r);
+    expect(note).toContain('f/16');expect(note).toContain('1/125 s');expect(note).toContain('1/8 s');
+    expect(note).not.toContain('f/8');expect(note).not.toContain('1/500 s');
+  });
+  it('preserves the original technique note when no exposure adaptation is needed',()=>{
+    const s=scene('timelapse-clouds');
+    expect(adaptedExposureNote(s,prefs())).toBe(s.setup.exposureNote);
+  });
+  it('does not silently widen an Auto ISO range merely because the global cap is higher',()=>{
+    const s=scene('runner-stride'),r=adaptSetup(s,prefs({gearEnabled:true,isoLimit:'12800'}));
+    expect(r.isoRange).toEqual(s.setup.isoRange);expect(r.exposureChanged).toBe(false);
+  });
+  it('rejects invalid gear inputs with notes and retains finite, usable starting values',()=>{
+    const s=scene('still-flower'),r=adaptSetup(s,prefs({gearEnabled:true,maxAperture:'999',isoLimit:'1',focalLength:'-5'}));
+    expect(r.aperture).toBe(s.setup.aperture);expect(r.iso).toBe(s.setup.iso);
+    expect(r.shutter).toBe(s.setup.shutter);expect(r.notes.filter(n=>n.includes('must be between'))).toHaveLength(3);
+  });
+  it('rounds a conventional bracket without inventing precise camera dial speeds',()=>{
+    expect(bracketSequence(1/125).map(frame=>frame.shutter)).toEqual([1/500,1/125,1/30]);
+    expect(selectableShutter(1/270,'faster')).toBe(1/320);
+    expect(selectableShutter(130.6)).toBe(131);
+  });
+  it('withholds the rough 500 rule for phone while retaining the correct physical NPF estimate',()=>{
+    expect(roughStarExposure(4,'phone')).toBeUndefined();
+    expect(roughStarExposure(16,'aps-c',1.5)).toBeCloseTo(500/24,12);
+    expect(npfExposure({aperture:1.8,focalLength:4,sensorWidth:5.6,imageWidth:4000,declination:0,tolerance:1}).seconds).toBeCloseTo(12.5,12);
+  });
+  it('reports unresolved exposure exactly while preserving motion and flash requirements across practical limits',()=>{
+    for(const id of ['runner-stride','cycling-pan','perched-insect','timelapse-clouds','focus-stacking','milky-way']){
+      const s=scene(id);
+      for(const format of ['full-frame','aps-c','mft'] as const)for(const aperture of ['4','8','16'])for(const cap of ['100','800','12800']){
+        const r=adaptSetup(s,prefs({format,gearEnabled:true,maxAperture:aperture,isoLimit:cap}));
+        expect(ISO_STEPS).toContain(r.iso);
+        expect(r.iso).toBeLessThanOrEqual(Number(cap));
+        expect(r.unresolvedStops).toBeCloseTo(Math.max(0,-Math.log2(exposureProxy(r)/exposureProxy(s.setup))),12);
+        if(s.setup.priority==='motion'||s.setup.priority==='effect'||s.setup.lighting==='flash')expect(r.shutter).toBe(s.setup.shutter);
+      }
+    }
+  });
 });

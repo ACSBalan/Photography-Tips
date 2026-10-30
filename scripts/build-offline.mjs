@@ -14,12 +14,60 @@ fs.writeFileSync(path.join(dist,'offline-manifest.json'),JSON.stringify({version
 const manifest=[...files,'offline-manifest.json'];
 const source=`/* Fieldframe offline cache. Generated from the exact production output. */
 const VERSION=${JSON.stringify(version)};
-const CACHE='fieldframe-'+VERSION;
 const FILES=${JSON.stringify(manifest)};
-const ROOT=self.registration.scope;
+const ROOT=new URL(self.registration.scope).href;
+const CACHE_PREFIX='fieldframe:'+encodeURIComponent(ROOT)+':';
+const CACHE=CACHE_PREFIX+VERSION;
 const key=(p)=>new URL(p,ROOT).href;
+const CURRENT_SCRIPTS=new Set(FILES.filter(file=>file.startsWith('assets/')&&file.endsWith('.js')).map(key));
+const currentClients=new Set();
 let pending;
-async function tell(data,target){const message={app:'fieldframe',version:VERSION,total:FILES.length,...data};if(target){target.postMessage(message);return;}for(const c of await self.clients.matchAll({includeUncontrolled:true,type:'window'}))c.postMessage(message);}
+const inScope=url=>typeof url==='string'&&url.startsWith(ROOT);
+async function tell(data,target){
+ const message={app:'fieldframe',scope:ROOT,version:VERSION,total:FILES.length,...data};
+ if(target){if(inScope(target.url))target.postMessage(message);return;}
+ for(const client of await self.clients.matchAll({includeUncontrolled:true,type:'window'}))if(inScope(client.url))client.postMessage(message);
+}
+async function removeOldCaches(){
+ let changed=false;
+ for(const name of await caches.keys()){
+  if(name.startsWith(CACHE_PREFIX)&&name!==CACHE){await caches.delete(name);changed=true;continue;}
+  // Older editions used one origin-wide namespace. Remove only this deployment's
+  // exact manifest entries, never a sibling deployment's cache or files.
+  if(!name.startsWith('fieldframe-'))continue;
+  const legacy=await caches.open(name),saved=await legacy.match(key('offline-manifest.json'));
+  if(!saved)continue;
+  let oldManifest;try{oldManifest=await saved.json();}catch{continue;}
+  if(!Array.isArray(oldManifest.files))continue;
+  const ownKeys=new Set([...oldManifest.files.filter(file=>typeof file==='string').map(key),key('offline-manifest.json'),key('__fieldframe_complete__'),key('__fieldframe_rehearsal__')]);
+  for(const request of await legacy.keys())if(ownKeys.has(request.url)){await legacy.delete(request);changed=true;}
+  if(!(await legacy.keys()).length)await caches.delete(name);
+ }
+ return changed;
+}
+async function hasPreviousCache(){
+ for(const name of await caches.keys()){
+  if(name.startsWith(CACHE_PREFIX)&&name!==CACHE)return true;
+  if(name.startsWith('fieldframe-')&&await (await caches.open(name)).match(key('offline-manifest.json')))return true;
+ }
+ return false;
+}
+async function pruneForCurrentClients(){
+ const cache=await caches.open(CACHE),marker=await cache.match(key('__fieldframe_complete__'));
+ if(!marker||(await marker.text())!==VERSION)return;
+ const clients=(await self.clients.matchAll({type:'window'})).filter(client=>inScope(client.url));
+ if(clients.length&&clients.every(client=>currentClients.has(client.id)))await removeOldCaches();
+}
+async function previousResponse(requested){
+ for(const name of (await caches.keys()).reverse()){
+  if(name===CACHE||!(name.startsWith(CACHE_PREFIX)||name.startsWith('fieldframe-')))continue;
+  const cache=await caches.open(name);
+  if(!await cache.match(key('__fieldframe_complete__')))continue;
+  // Legacy caches can be shared: the manifest confirms this deployment has entries here.
+  if(name.startsWith('fieldframe-')&&!await cache.match(key('offline-manifest.json')))continue;
+  const response=await cache.match(requested);if(response?.ok)return response;
+ }
+}
 async function fetchAsset(f){
  let response;
  for(let attempt=0;attempt<3;attempt++){
@@ -46,14 +94,15 @@ async function cacheAll(){
 }
 async function status(target,verify=false){
  const cache=await caches.open(CACHE);let done=0;
- for(const f of FILES){const r=await cache.match(key(f));if(r&&(!verify||(await r.clone().arrayBuffer()).byteLength>0))done++;}
+ for(const f of FILES){const r=await cache.match(key(f));if(r?.ok&&(!verify||(await r.clone().arrayBuffer()).byteLength>0))done++;}
  const rehearsal=!!(await cache.match(key('__fieldframe_rehearsal__')));
- const ready=done===FILES.length&&!!(await cache.match(key('__fieldframe_complete__')));
+ const marker=await cache.match(key('__fieldframe_complete__'));
+ const ready=done===FILES.length&&!!marker&&(await marker.text())===VERSION;
  await tell({status:ready?'ready':pending?'downloading':'error',done,rehearsal,message:ready?(rehearsal?'Offline rehearsal active. All app files are served from cache.':verify?'Verified every saved file, including all scene photographs.':'All sheets, photographs and tools are saved on this device.'):'Offline files are incomplete. Use Download / retry while online.'},target);
 }
 self.addEventListener('install',event=>event.waitUntil(cacheAll().then(()=>self.skipWaiting())));
-self.addEventListener('activate',event=>event.waitUntil((async()=>{const old=(await caches.keys()).filter(name=>name.startsWith('fieldframe-')&&name!==CACHE);for(const name of old)await caches.delete(name);await self.clients.claim();await status();if(old.length)for(const client of await self.clients.matchAll({type:'window'})){if(client.url?.startsWith(ROOT)&&typeof client.navigate==='function')void client.navigate(client.url).catch(()=>{});}})()));
-self.addEventListener('message',event=>{event.waitUntil((async()=>{const type=event.data?.type;if(type==='CACHE_ALL'){await cacheAll();await status(event.source);}else if(type==='STATUS'||type==='VERIFY')await status(event.source,type==='VERIFY');else if(type==='REHEARSAL_ON'||type==='REHEARSAL_OFF'){const cache=await caches.open(CACHE);if(type==='REHEARSAL_ON')await cache.put(key('__fieldframe_rehearsal__'),new Response('1'));else await cache.delete(key('__fieldframe_rehearsal__'));await status(event.source);}})().catch(error=>tell({status:'error',message:error.message},event.source)));});
+self.addEventListener('activate',event=>event.waitUntil((async()=>{const changed=await hasPreviousCache();await self.clients.claim();await status();if(changed)for(const client of await self.clients.matchAll({type:'window'})){if(client.url?.startsWith(ROOT)&&typeof client.navigate==='function')void client.navigate(client.url).catch(()=>{});}})()));
+self.addEventListener('message',event=>{if(!inScope(event.source?.url)||(event.data?.scope&&event.data.scope!==ROOT))return;event.waitUntil((async()=>{if(CURRENT_SCRIPTS.has(event.data?.assetUrl)&&event.source.id)currentClients.add(event.source.id);const type=event.data?.type;if(type==='CACHE_ALL'){await cacheAll();await status(event.source);}else if(type==='STATUS'||type==='VERIFY')await status(event.source,type==='VERIFY');else if(type==='REHEARSAL_ON'||type==='REHEARSAL_OFF'){const cache=await caches.open(CACHE);if(type==='REHEARSAL_ON')await cache.put(key('__fieldframe_rehearsal__'),new Response('1'));else await cache.delete(key('__fieldframe_rehearsal__'));await status(event.source);}await pruneForCurrentClients();})().catch(error=>tell({status:'error',message:error.message},event.source)));});
 self.addEventListener('fetch',event=>{
  const u=new URL(event.request.url);
  if(event.request.method!=='GET'||!event.request.url.startsWith(ROOT)||u.origin!==self.location.origin)return;
@@ -63,6 +112,7 @@ self.addEventListener('fetch',event=>{
   const requested=appNavigation?key('index.html'):u.origin+u.pathname;
   const saved=await cache.match(requested);
   if(saved)return saved;
+  const previous=await previousResponse(requested);if(previous)return previous;
   if(await cache.match(key('__fieldframe_rehearsal__')))return new Response('Offline rehearsal: this resource was not saved.',{status:503,headers:{'Content-Type':'text/plain'}});
   try{return await fetch(event.request);}catch{return new Response('This file is unavailable offline. Reconnect and download the full library.',{status:503,headers:{'Content-Type':'text/plain'}});}
  })());

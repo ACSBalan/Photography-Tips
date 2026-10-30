@@ -55,7 +55,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Frame first, wait for someone to enter a clean patch of background, then shoot a short burst.",
-      "limitation": "Night mode and multi-frame HDR can merge moving limbs; ordinary Photo mode is more reliable for fast gestures."
+      "limitation": "Night mode and multi-frame HDR can merge moving limbs; ordinary Photo mode is more reliable for fast gestures.",
+      "why": [
+        "Good daylight gives the automatic camera a better chance of freezing a walking gesture.",
+        "The main lens keeps the person connected to the street without the detail loss of heavy digital zoom.",
+        "Choosing the background first makes a brief gesture readable even on a small screen."
+      ],
+      "steps": [
+        "Choose an uncluttered patch of pavement with good light and keep clear of other people.",
+        "Select ordinary Photo mode and the main lens; frame before the person enters.",
+        "Tap or track the person if supported, then make a short burst as their stride opens.",
+        "Enlarge the face and feet and inspect pale clothing for clipped highlights.",
+        "If limbs smear, seek brighter light or a pause; with a manual app, try 1/500 s and let its available ISO control compensate."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens",
+          "Secure grip or wrist strap"
+        ],
+        "optional": [
+          "Manual app with documented shutter control",
+          "Spare power for a long walk"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Buildings sharp, legs smeared",
+          "cause": "The selected exposure was too long for the walk.",
+          "fix": "Use brighter light or a pause; if selectable, try 1/500 s and retest."
+        },
+        {
+          "symptom": "Sign sharp, face soft",
+          "cause": "Focus selected the background.",
+          "fix": "Tap the person earlier or use person tracking; check the next face enlarged."
+        },
+        {
+          "symptom": "Pale clothes turn white",
+          "cause": "The phone brightened important highlights too much.",
+          "fix": "Reduce the exposure slider slightly and check both face brightness and clothing."
+        },
+        {
+          "symptom": "Extra outlines around moving limbs",
+          "cause": "Multi-frame processing combined changing positions.",
+          "fix": "Try ordinary Photo mode or a short burst; disable optional Night processing and compare results."
+        }
+      ],
+      "tip": "Leave a clean gap around the next step, not just around the person’s head."
     },
     "why": [
       "The 1/500 s shutter is the priority because a walker can blur even when buildings are sharp.",
@@ -211,7 +256,52 @@
       "whiteBalance": "Auto or around 3800 K in a manual app",
       "support": "Handheld",
       "guidance": "Stay close to a bright window and capture people as they pause; brace against a wall.",
-      "limitation": "Multi-second Night mode suits static streets but can erase or smear people; a phone may not freeze dark, fast-moving subjects."
+      "limitation": "Multi-second Night mode suits static streets but can erase or smear people; a phone may not freeze dark, fast-moving subjects.",
+      "why": [
+        "A lit doorway supplies the face light that a phone cannot create by raising ISO alone.",
+        "A normal short capture handles people more predictably than a long Night sequence.",
+        "The main lens usually gives more useful low-light detail than a heavily cropped or dim telephoto view."
+      ],
+      "steps": [
+        "Find a bright shop window or lamp illuminating faces from the side or front.",
+        "Use the main lens in Photo mode with flash off; leave unlit pavement dark.",
+        "Tap the face in the light and capture a short sequence at a pause in the stride.",
+        "Inspect the eye, moving feet and bright signs separately.",
+        "For a moving person, use a brighter position or a manual 1/250 s if available; accept more noise rather than assuming Night mode freezes movement."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean main lens",
+          "Safe well-lit pavement viewpoint"
+        ],
+        "optional": [
+          "Small grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face smears but signs are sharp",
+          "cause": "The person moved during the capture.",
+          "fix": "Wait for a pause or brighter light; use 1/250 s in a capable manual app."
+        },
+        {
+          "symptom": "Every lamp has a doubled edge",
+          "cause": "The phone moved during exposure.",
+          "fix": "Brace elbows or lean safely against a wall; squeeze the release gently."
+        },
+        {
+          "symptom": "Bright signs lose colour",
+          "cause": "One or more colour channels clipped.",
+          "fix": "Lower exposure and inspect the lettering; choose a better-lit face if it becomes too dark."
+        },
+        {
+          "symptom": "Person appears in pieces or disappears",
+          "cause": "Night processing merged different positions.",
+          "fix": "Use normal Photo mode for people; save Night mode for an empty static street."
+        }
+      ],
+      "tip": "A half-step into the window light often helps more than another zoom level."
     },
     "why": [
       "The shutter protects people from blur; stabilization only helps camera movement.",
@@ -364,10 +454,54 @@
       "shutter": "Auto; try 1/100 or 1/120 s for flicker only if adjustable",
       "focus": "Tap the lettering and lower the exposure slider.",
       "focal": "Main or true optical telephoto; no digital zoom.",
-      "whiteBalance": "Auto lock or 4000 K in a manual app",
+      "whiteBalance": "Auto; lock white balance or select around 4000 K only if the app offers those controls.",
       "support": "Handheld; support at slow shutter speeds",
       "guidance": "Make one darker frame specifically for the lettering; inspect whether colours remain distinct.",
-      "limitation": "Some LED frequencies still produce bands; phones may provide no shutter fine-tuning or anti-flicker option."
+      "limitation": "Some LED frequencies still produce bands; phones may provide no shutter fine-tuning or anti-flicker option.",
+      "why": [
+        "A neon sign emits its own light, so exposing the surrounding darkness brightly can destroy the lettering.",
+        "A fixed or locked colour balance keeps related frames consistent when the app permits it.",
+        "Different LED refresh rates mean no single phone shutter speed cures every dark band."
+      ],
+      "steps": [
+        "Clean the lens and choose a view where letters do not overlap distracting reflections.",
+        "Start in Photo mode, tap a lettering edge and reduce exposure until colours separate.",
+        "Make a test and enlarge the brightest coloured letters rather than judging only the dark wall.",
+        "If bands appear, try an available anti-flicker mode or a manual 1/100 or 1/120 s test; inspect the saved frame.",
+        "Support the phone for slower tests, and change position or capture mode if the sign still bands."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens"
+        ],
+        "optional": [
+          "Small support",
+          "Manual app with shutter and white-balance controls"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Letters are white instead of coloured",
+          "cause": "Exposure clipped the bright tubes.",
+          "fix": "Lower the exposure slider or manual ISO and retest the brightest letter."
+        },
+        {
+          "symptom": "Dark bars cross the sign",
+          "cause": "LED timing interacts with the sensor readout.",
+          "fix": "Test supported anti-flicker or different shutter durations; there may be no clean setting on this phone."
+        },
+        {
+          "symptom": "Large glow washes over the picture",
+          "cause": "Fingerprints, moisture or flare spread the light.",
+          "fix": "Clean and dry the lens, then change angle slightly."
+        },
+        {
+          "symptom": "Wall sharp, letters soft",
+          "cause": "Autofocus missed the letter boundary.",
+          "fix": "Tap an edge between a letter and its background; lock focus if offered."
+        }
+      ],
+      "tip": "Take one deliberately darker frame for the lettering before trying to brighten the wall."
     },
     "why": [
       "The sign produces its own light, so night does not automatically mean very high ISO.",
@@ -523,7 +657,52 @@
       "whiteBalance": "Lock around 4000 K if available",
       "support": "Tripod or rigid clamp",
       "guidance": "Use a dedicated long-exposure mode and trigger without moving the phone; inspect buildings for overexposure.",
-      "limitation": "A Night-mode stack may suppress moving cars instead of drawing trails. App composites do not behave exactly like one camera exposure."
+      "limitation": "A Night-mode stack may suppress moving cars instead of drawing trails. App composites do not behave exactly like one camera exposure.",
+      "why": [
+        "A rigid phone position keeps buildings sharp while vehicle lights move.",
+        "A genuine slow exposure and a frame-blended trail mode can produce different trail continuity.",
+        "Ordinary Night mode may remove passing vehicles, so its long countdown does not guarantee light trails."
+      ],
+      "steps": [
+        "Choose a permitted pavement viewpoint where a curve or junction gives the lights a clear path.",
+        "Clamp the phone securely and select a documented light-trail mode or manual long exposure.",
+        "Lock focus on a distant building; lock exposure and white balance when the mode allows.",
+        "Start a 5–15 s capture or the app’s trail interval as traffic approaches, without touching the support.",
+        "Inspect building detail, trail gaps and headlight clipping; adjust the mode’s duration or brightness controls and make another pass."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a supported light-trail or long-exposure app",
+          "Tripod or rigid clamp"
+        ],
+        "optional": [
+          "Compatible remote or timer",
+          "Power bank"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Cars disappear instead of leaving lines",
+          "cause": "The selected Night stack suppressed moving objects.",
+          "fix": "Use a documented trail mode or true slow exposure; a normal Night capture may not produce this effect."
+        },
+        {
+          "symptom": "Buildings also smear",
+          "cause": "The support moved during the sequence.",
+          "fix": "Use solid ground and a timer; avoid flexible railings and touching the clamp."
+        },
+        {
+          "symptom": "Headlights become a broad white band",
+          "cause": "Too many bright passes accumulated or exposure is excessive.",
+          "fix": "Shorten the trail interval, reduce exposure where supported or wait for lighter traffic."
+        },
+        {
+          "symptom": "Trails have regular gaps",
+          "cause": "The app captured separated frames or vehicles stopped.",
+          "fix": "Use a continuous trail mode if available and choose flowing traffic; some apps cannot remove capture gaps."
+        }
+      ],
+      "tip": "Test the capture mode on one passing car before committing to a long traffic sequence."
     },
     "why": [
       "Fifteen seconds gives passing vehicles time to cross a useful length of the frame.",
@@ -682,7 +861,52 @@
       "whiteBalance": "Auto or fixed around 4200 K if controllable",
       "support": "Tripod or steady support",
       "guidance": "Lower the exposure slider slightly if building lights lose detail and let the capture finish.",
-      "limitation": "The displayed Night-mode duration is a capture sequence, not necessarily one exposure; it may alter clouds and water."
+      "limitation": "The displayed Night-mode duration is a capture sequence, not necessarily one exposure; it may alter clouds and water.",
+      "why": [
+        "Twilight lets the phone record sky colour and building lights within a more manageable brightness range.",
+        "A supported Night capture suits a static skyline, although clouds and water can change during processing.",
+        "Keeping the phone level avoids spending much of the image on later perspective correction."
+      ],
+      "steps": [
+        "Arrive while the sky is still visibly blue and choose an unobstructed skyline.",
+        "Use the main lens, level the phone and tap a distant building.",
+        "Brace or mount the phone and compare ordinary Photo mode with a supported Night capture.",
+        "Inspect windows, sky colour and the corners of the skyline at full size.",
+        "Lower exposure if windows bleach; repeat every few minutes as the sky changes rather than keeping one setting all evening."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens",
+          "Stable support or a steady safe stance"
+        ],
+        "optional": [
+          "Phone tripod",
+          "Timer or remote"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Sky is black and windows dominate",
+          "cause": "The useful twilight balance has passed.",
+          "fix": "Try earlier on the next visit; simply brightening now will also brighten the windows."
+        },
+        {
+          "symptom": "Windows are featureless white",
+          "cause": "Exposure prioritised shadows over bright lights.",
+          "fix": "Lower the exposure slider and compare a normal Photo frame."
+        },
+        {
+          "symptom": "Water has patchy repeated shapes",
+          "cause": "Multi-frame processing handled movement unevenly.",
+          "fix": "Try ordinary Photo mode or a documented long-exposure app; inspect the saved water detail."
+        },
+        {
+          "symptom": "Buildings lean inward",
+          "cause": "The phone was tilted upward.",
+          "fix": "Keep the sensor plane vertical, step back where safe and leave space for modest correction."
+        }
+      ],
+      "tip": "Keep a few frames from different moments; the best sky-to-window balance changes quickly."
     },
     "why": [
       "Twilight reduces the difference between the sky and artificial lights, avoiding a black empty sky.",
@@ -839,7 +1063,51 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Keep the phone vertical and level rather than tipping it upward; leave extra room for perspective correction.",
-      "limitation": "Ultrawide edges stretch nearby features. Software correction crops the frame and cannot reveal a missing roof."
+      "limitation": "Ultrawide edges stretch nearby features. Software correction crops the frame and cannot reveal a missing roof.",
+      "why": [
+        "Tilting the phone upward makes verticals converge even when the lens itself is well corrected.",
+        "The main lens from farther away usually gives more restrained edge proportions than a close ultrawide view.",
+        "Straightening later crops the frame, so missing roof space cannot be repaired by a setting."
+      ],
+      "steps": [
+        "Find a permitted viewpoint with enough distance and clear roof space.",
+        "Enable the grid or level and start with the main lens.",
+        "Keep the phone’s sensor plane vertical, tap facade detail and make a test.",
+        "Check both side edges, roof clearance and bright stone or glass.",
+        "If the whole building cannot fit, choose intentional upward convergence or a wider view with correction space; do not assume exposure changes will straighten it."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a grid or level display"
+        ],
+        "optional": [
+          "Small support",
+          "Perspective-correction editor"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Building seems to fall backwards",
+          "cause": "The phone tilted upward.",
+          "fix": "Level it and move back where safe, or label the converging view as an intentional composition."
+        },
+        {
+          "symptom": "Edge features stretch",
+          "cause": "A very close wide viewpoint exaggerates proportions.",
+          "fix": "Step back and use the main lens; keep important details away from extreme corners."
+        },
+        {
+          "symptom": "Roof disappears after straightening",
+          "cause": "The original frame left no correction margin.",
+          "fix": "Reshoot wider with more space above and beside the facade."
+        },
+        {
+          "symptom": "Bright facade has no texture",
+          "cause": "Highlights clipped.",
+          "fix": "Reduce exposure and inspect the actual wall or glass, not just the overall screen brightness."
+        }
+      ],
+      "tip": "Watch a vertical near each edge; they reveal small camera tilts better than a busy centre."
     },
     "why": [
       "Camera tilt, rather than focal length alone, makes verticals converge.",
@@ -996,7 +1264,53 @@
       "whiteBalance": "Auto WB",
       "support": "Supported; use only permitted supports",
       "guidance": "Keep verticals straight and hold still through the whole capture; make a darker frame for stained glass.",
-      "limitation": "Tripods or flash may be prohibited, and a bright window can exceed the phone’s recoverable range even with HDR."
+      "limitation": "Tripods or flash may be prohibited, and a bright window can exceed the phone’s recoverable range even with HDR.",
+      "why": [
+        "A supported Night capture can reveal a static interior without using prohibited flash.",
+        "Bright stained glass may exceed the room exposure even when automatic HDR is active.",
+        "A level main-lens view keeps the architecture believable; an ultrawide view needs careful edge checks."
+      ],
+      "steps": [
+        "Check photography and support rules before choosing a position; keep flash off.",
+        "Frame an aisle or repeating arches and keep the phone level.",
+        "Tap a mid-distance column and brace the phone on a permitted support.",
+        "Take a normal frame and, if available, a supported Night frame while visitors are still or clear.",
+        "Enlarge near columns, distant details and stained glass; keep the better natural-looking result.",
+        "If window detail matters, make a separate darker exposure using the slider; a blend needs compatible editing and a fixed viewpoint."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Steady hands or an explicitly permitted support"
+        ],
+        "optional": [
+          "Phone tripod where allowed",
+          "Small grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Stained glass is pure white",
+          "cause": "Window light exceeds the interior exposure.",
+          "fix": "Lower exposure for a separate glass-detail frame; a single phone HDR frame may not hold both."
+        },
+        {
+          "symptom": "Visitors look translucent",
+          "cause": "They moved during the multi-frame capture.",
+          "fix": "Wait for a clear view or use normal Photo mode at a still moment."
+        },
+        {
+          "symptom": "All columns have doubled edges",
+          "cause": "The phone moved or the support vibrated.",
+          "fix": "Brace more firmly and use a timer where available."
+        },
+        {
+          "symptom": "Interior corners look stretched",
+          "cause": "The ultrawide lens was used very close or tilted.",
+          "fix": "Try the main lens from farther back and level the phone."
+        }
+      ],
+      "tip": "Compare the finished Night frame with a normal one; brighter shadows are not always better architecture."
     },
     "why": [
       "A supported two-second exposure gathers interior light without forcing high ISO.",
@@ -1150,10 +1464,55 @@
       "shutter": "2–8 s if manually supported; otherwise app-selected",
       "focus": "Tap and lock a lit bridge edge.",
       "focal": "Main 1× for cleaner low-light detail.",
-      "whiteBalance": "Auto lock or about 4000 K",
+      "whiteBalance": "Auto; lock white balance or select about 4000 K only if the app permits it.",
       "support": "Tripod or rigid support",
       "guidance": "Include enough water below the bridge for the reflection; trigger hands-free.",
-      "limitation": "A phone stack can make water patchy rather than smooth; results depend on the app’s movement handling."
+      "limitation": "A phone stack can make water patchy rather than smooth; results depend on the app’s movement handling.",
+      "why": [
+        "The bridge needs a fixed viewpoint while the water may blur deliberately.",
+        "A phone Night stack can show reflections differently from one continuous long exposure.",
+        "Focusing on the structure prevents a moving reflection from becoming the unintended sharpness target."
+      ],
+      "steps": [
+        "Choose solid permitted land with a clear view of the bridge and its reflection.",
+        "Mount or brace the phone, use the main lens and tap a lit structural edge.",
+        "Make a supported Night capture and check that it finishes before touching the phone.",
+        "For smoother water, try a documented long-exposure mode; use 2–8 s only if true shutter selection is available.",
+        "Inspect bridge edges, water texture and bright lamps separately, then adjust exposure or the app’s effect strength."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Rigid support on solid land"
+        ],
+        "optional": [
+          "Tripod clamp",
+          "Documented long-exposure app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Bridge edges are doubled",
+          "cause": "The support moved during the capture.",
+          "fix": "Move off a vibrating deck, shorten the support extension and trigger hands-free."
+        },
+        {
+          "symptom": "Water looks patchy",
+          "cause": "Frame blending treated ripples inconsistently.",
+          "fix": "Compare normal Photo mode with a true long exposure or a different supported water mode."
+        },
+        {
+          "symptom": "Reflections are blank bright smears",
+          "cause": "Exposure or the smoothing effect is excessive.",
+          "fix": "Reduce exposure or the effect interval; retain some dark water between lights."
+        },
+        {
+          "symptom": "Bridge soft, another plane sharp",
+          "cause": "Focus selected a reflection or nearby object.",
+          "fix": "Tap the bridge’s lit railing or pier and lock focus if possible."
+        }
+      ],
+      "tip": "Leave room below the bridge for the brightest reflection instead of cropping its lower edge."
     },
     "why": [
       "Eight seconds averages small ripples into broader reflection strokes.",
@@ -1307,10 +1666,54 @@
       "shutter": "Automatic; complete the capture without moving",
       "focus": "Tap the main decoration and lower exposure if bulbs turn white.",
       "focal": "Main 1×; use a true optical telephoto for detail only in enough light.",
-      "whiteBalance": "Auto WB; lock for a consistent series",
+      "whiteBalance": "Auto WB; lock for a consistent series only if the app supports it.",
       "support": "Steady hands or support",
       "guidance": "Try a normal frame and a supported Night frame; choose the one with the best light colour, not just the brightest shadows.",
-      "limitation": "Portrait blur can misread thin light wires and ornaments; ordinary Photo mode often renders them more cleanly."
+      "limitation": "Portrait blur can misread thin light wires and ornaments; ordinary Photo mode often renders them more cleanly.",
+      "why": [
+        "Coloured bulbs lose their hue when automatic exposure makes them too bright.",
+        "Night mode suits a static display but can blur people beside it.",
+        "Background light circles come from focus and distance; simulated portrait blur may misread thin decorations."
+      ],
+      "steps": [
+        "Choose one decoration and move until bright bulbs do not merge with its outline.",
+        "Use the main lens, tap the decoration and make a normal Photo frame.",
+        "Reduce exposure if coloured bulbs turn white; compare a supported Night frame for a completely static display.",
+        "For a person, stay in ordinary Photo mode and put their face in useful existing light.",
+        "Inspect fine wires, faces and bulb colour; try a closer ornament with distant lights as a separate composition."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens"
+        ],
+        "optional": [
+          "Small support for static displays",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Coloured bulbs turn white",
+          "cause": "Highlights clipped.",
+          "fix": "Lower the exposure slider and inspect the brightest red or blue bulbs."
+        },
+        {
+          "symptom": "Person is ghosted beside the lights",
+          "cause": "A long capture combined their movement.",
+          "fix": "Use Photo mode, brighter face light and a brief still pose."
+        },
+        {
+          "symptom": "Fine wires or hair disappear",
+          "cause": "Portrait segmentation confused thin edges.",
+          "fix": "Use ordinary Photo mode or reduce simulated blur."
+        },
+        {
+          "symptom": "Light pattern has bands",
+          "cause": "LED refresh interacts with the capture.",
+          "fix": "Test another supported mode or a longer static capture; manual shutter tests require a capable app."
+        }
+      ],
+      "tip": "A small change in phone height can place coloured lights behind an ornament instead of empty darkness."
     },
     "why": [
       "f/8 keeps more of a layered display in focus than a wide-open detail shot.",
@@ -1466,7 +1869,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld; brace safely",
       "guidance": "Get low enough to enlarge the reflection, then lower exposure until the wet colours stay saturated.",
-      "limitation": "Night stacking can duplicate feet and break reflection outlines when pedestrians move."
+      "limitation": "Night stacking can duplicate feet and break reflection outlines when pedestrians move.",
+      "why": [
+        "A low safe viewpoint makes a small wet patch fill more of the frame.",
+        "A reflection belongs to the apparent scene behind the surface; tapping only nearby pavement may miss it.",
+        "A walking person needs a shorter capture than a static reflection study."
+      ],
+      "steps": [
+        "Choose a safe pavement position, protect the phone and wipe the lens.",
+        "Lower the phone without putting it in water; align a sign or person with its reflection.",
+        "Use Photo mode for people and tap the intended face or reflected subject.",
+        "Take a short sequence when the person pauses or a stride separates clearly.",
+        "Enlarge the person and reflection; use a supported Night or water-effect capture only for a separate static composition."
+      ],
+      "pack": {
+        "essential": [
+          "Protected phone",
+          "Dry lens cloth"
+        ],
+        "optional": [
+          "Rain cover compatible with controls",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Reflection sharp, feet smeared",
+          "cause": "The person moved during the capture.",
+          "fix": "Use brighter light or a pause; a capable manual app can try 1/250–1/500 s."
+        },
+        {
+          "symptom": "Pavement sharp, reflected sign soft",
+          "cause": "Focus selected the surface.",
+          "fix": "Tap the reflected lettering or focus on the actual distant sign."
+        },
+        {
+          "symptom": "Large soft circles cover the scene",
+          "cause": "Water droplets are on the lens.",
+          "fix": "Dry and shield the lens, then make another test."
+        },
+        {
+          "symptom": "Reflected colours look washed out",
+          "cause": "The phone lifted bright wet highlights too far.",
+          "fix": "Lower exposure slightly and let some pavement remain dark."
+        }
+      ],
+      "tip": "Wait for the puddle to settle first, then wait for the person; they are separate timing decisions."
     },
     "why": [
       "A low viewpoint expands the visible reflection without requiring a huge puddle.",
@@ -1624,7 +2072,53 @@
       "whiteBalance": "Auto or fixed for station lights",
       "support": "Brace on a permitted stable surface",
       "guidance": "Choose a still person as the anchor and make several frames as the train passes.",
-      "limitation": "Stock Night mode may merge the train differently and may not retain a sharp standing person; manual slow shutter is app-dependent."
+      "limitation": "Stock Night mode may merge the train differently and may not retain a sharp standing person; manual slow shutter is app-dependent.",
+      "why": [
+        "The effect needs one still anchor and a deliberately slow exposure for the moving train.",
+        "A phone app must actually offer a selectable slow shutter; a Night countdown alone is not equivalent.",
+        "A steady platform edge in the picture helps distinguish intended train blur from camera shake."
+      ],
+      "steps": [
+        "Check station rules and remain behind the marked platform boundary.",
+        "Choose a still person with the passing train behind, and brace the phone on a permitted support.",
+        "If a manual app supports it, select about 1/15 s, tap the person and adjust available ISO/exposure for the station light.",
+        "Make several frames during the pass and inspect the person and fixed platform lines.",
+        "If the app cannot select this exposure, make a normal Photo frame of the arrival or a waiting person; do not promise the same train-streak effect."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe permitted bracing position"
+        ],
+        "optional": [
+          "App with true slow-shutter control",
+          "Grip or support if allowed"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Train and person both smear",
+          "cause": "The person moved or the phone shook.",
+          "fix": "Check fixed signs first; improve support, wait for a still pose or try 1/30 s if selectable."
+        },
+        {
+          "symptom": "Train remains sharp",
+          "cause": "The selected mode used a short exposure.",
+          "fix": "Use a supported manual slow shutter, or accept a frozen-arrival alternative."
+        },
+        {
+          "symptom": "Train breaks into repeated sections",
+          "cause": "Computational capture combined separated frames.",
+          "fix": "Use a genuine single slow exposure if supported; another app may be necessary."
+        },
+        {
+          "symptom": "Station lights form dark bands",
+          "cause": "Lighting flicker interacts with readout.",
+          "fix": "Test a different supported shutter duration and inspect the saved file; do not assume one universal speed."
+        }
+      ],
+      "tip": "Include a sharp pillar or sign so the intended train blur has an unmistakable stationary reference.",
+      "intent": "Use a supported slow shutter to contrast a still person with a streaked train, or make a normal arrival photograph when that control is unavailable."
     },
     "why": [
       "The slow shutter is intentional for the train, but the person and camera must remain nearly still.",
@@ -1783,7 +2277,53 @@
       "whiteBalance": "Lock WB if available",
       "support": "Tripod or fixed support",
       "guidance": "Keep the phone level, take a normal HDR frame, then a darker window frame if the view matters.",
-      "limitation": "Automatic HDR may leave halos around window frames; extreme ultrawide perspective can misrepresent room proportions."
+      "limitation": "Automatic HDR may leave halos around window frames; extreme ultrawide perspective can misrepresent room proportions.",
+      "why": [
+        "A phone’s HDR can help a still room, but an extreme bright-window contrast may remain beyond one capture.",
+        "Locked framing matters when separate room and window images will be blended.",
+        "Keeping the phone level and avoiding an extreme close ultrawide view preserves believable room proportions."
+      ],
+      "steps": [
+        "Choose a tidy, representative viewpoint and use the main lens unless space requires the ultrawide.",
+        "Level the phone, mount it and avoid changing the room lighting between frames.",
+        "Tap a mid-distance furnishing and make a normal HDR-enabled Photo frame if the phone offers it.",
+        "Inspect the exterior view, necessary shadow detail and edges around window frames.",
+        "If one frame fails, use a documented bracketing app with focus and WB locked, or make aligned brighter-room and darker-window frames for careful later editing.",
+        "Check any blend for halos and moving-object ghosts; retain the original files."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Tripod or fixed support"
+        ],
+        "optional": [
+          "Compatible bracketing app",
+          "Alignment and exposure-blending editor"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Outside view is blank white",
+          "cause": "The brightness difference exceeded the capture.",
+          "fix": "Make a darker window frame from the same position; accept bright windows if blending is unavailable."
+        },
+        {
+          "symptom": "Windows have bright halos",
+          "cause": "HDR or editing exaggerated local contrast.",
+          "fix": "Try a less aggressive capture/edit and compare with the original normal frame."
+        },
+        {
+          "symptom": "Furniture or leaves ghost in the blend",
+          "cause": "Objects moved between component images.",
+          "fix": "Use a single frame for moving regions or wait for stillness."
+        },
+        {
+          "symptom": "Room appears stretched or walls lean",
+          "cause": "A very wide close viewpoint or camera tilt changed proportions.",
+          "fix": "Level the phone, step back where possible and try the main lens."
+        }
+      ],
+      "tip": "Make the normal HDR frame first; use a bracket only when an actual window or furnishing needs it."
     },
     "why": [
       "f/8 provides room depth while a tripod removes the need to raise ISO just for handholding.",
@@ -1941,7 +2481,55 @@
       "whiteBalance": "Fixed Daylight if selectable",
       "support": "Tripod or clamp",
       "guidance": "Disable flash; start a long exposure just before a burst and inspect its coloured trails.",
-      "limitation": "Some Night modes combine frames and erase or duplicate bursts. Manual exposure availability and maximum time vary by phone/app."
+      "limitation": "Some Night modes combine frames and erase or duplicate bursts. Manual exposure availability and maximum time vary by phone/app.",
+      "why": [
+        "A fixed phone aperture cannot be stopped down to restrain bright sparks, so even the lowest ISO may not hold every burst.",
+        "A genuine slow exposure draws trails; some Night stacks instead duplicate or remove them.",
+        "Locking a verified distant focus prevents hunting in the dark gaps between bursts."
+      ],
+      "steps": [
+        "Choose a permitted spectator position with clear sky and smoke moving away from the view; never approach the launch area.",
+        "Mount the phone, disable flash and choose a documented manual long-exposure mode if available.",
+        "Lock focus on a distant light and select the lowest available ISO; begin with about 2 s only if true shutter control exists.",
+        "Capture one burst, then enlarge the trails and inspect their colour.",
+        "If trails clip at minimum ISO, a compatible physical ND filter may help a tested manual setup; a shorter capture reduces overlap but may not restore individual spark colour.",
+        "If manual capture is unavailable or clipping persists, use normal Photo mode for shorter spark fragments rather than promising the same long-trail result."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Tripod or secure clamp for long exposures"
+        ],
+        "optional": [
+          "Documented manual capture app",
+          "Compatible physical ND filter and secure holder for tested manual use",
+          "Remote or timer"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Spark trails turn thick white",
+          "cause": "The burst exceeds the phone’s exposure range at its fixed aperture.",
+          "fix": "Lower ISO if possible; if already at minimum, test suitable physical ND or switch to shorter-fragment Photo captures."
+        },
+        {
+          "symptom": "Bursts vanish or appear doubled",
+          "cause": "Night processing merged changing fireworks.",
+          "fix": "Try a genuine manual slow exposure or ordinary Photo mode; compare the saved results."
+        },
+        {
+          "symptom": "All trails are soft",
+          "cause": "Focus missed the display or the support moved.",
+          "fix": "Refocus on a distant light, lock focus and check a burst enlarged; test support separately."
+        },
+        {
+          "symptom": "Sky becomes a smoky grey veil",
+          "cause": "Smoke and repeated bursts accumulated.",
+          "fix": "Capture earlier or shorter sequences; use a permitted upwind/crosswind position when available."
+        }
+      ],
+      "tip": "Save the first clear-sky bursts; longer captures of the finale often add smoke more than detail.",
+      "intent": "Keep colour and recognisable burst shapes: use trails with a genuinely supported slow capture, or shorter spark fragments in ordinary Photo mode."
     },
     "why": [
       "Fireworks provide bright light themselves, so high ISO is usually unnecessary.",
@@ -1987,7 +2575,7 @@
       {
         "symptom": "Sky becomes grey and smoky",
         "cause": "Too many bursts or illuminated smoke accumulated.",
-        "fix": "Shorten exposure and favour early bursts or a clearer downwind view from a safe location."
+        "fix": "Shorten exposure and favour early bursts. From permitted spectator positions, choose an upwind or crosswind view where smoke moves away from your line of sight; stay clear of launch areas."
       }
     ],
     "alternatives": [
@@ -2097,7 +2685,54 @@
       "whiteBalance": "Auto; do not try to neutralise every coloured spotlight",
       "support": "Handheld; elbows braced",
       "guidance": "Shoot when the face catches a bright light and at a pause or peak gesture; turn flash off.",
-      "limitation": "Digital zoom and long Night-mode sequences often lose moving performers. Fine LED banding control may be unavailable."
+      "limitation": "Digital zoom and long Night-mode sequences often lose moving performers. Fine LED banding control may be unavailable.",
+      "why": [
+        "The lit face and a pause in movement give a phone a better chance than a dark fast-moving gesture.",
+        "The main lens usually gathers light more effectively than a digital crop or a dim telephoto module.",
+        "Coloured stage light should remain coloured; exposure must protect saturated highlights before editing."
+      ],
+      "steps": [
+        "Check venue rules, turn flash off and choose a position that does not block anyone.",
+        "Watch a lighting cycle and identify when the face becomes bright and unobstructed.",
+        "Use ordinary Photo mode; tap the face or use available person tracking.",
+        "Capture a short burst at a pause or peak gesture; use a true optical telephoto only if its result remains detailed.",
+        "Inspect eye sharpness, red/blue skin highlights and horizontal bands.",
+        "For motion smear, seek a brighter cue or use a supported manual 1/250–1/500 s; for banding, test available anti-flicker or shutter controls rather than only raising ISO."
+      ],
+      "pack": {
+        "essential": [
+          "Venue-permitted phone",
+          "Secure grip"
+        ],
+        "optional": [
+          "Ear protection",
+          "Power bank",
+          "Manual app with documented shutter/anti-flicker controls"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Performer blurs but microphone is crisp",
+          "cause": "The performer moved during the exposure.",
+          "fix": "Shoot a brighter cue or a still moment; use a shorter shutter only if the app permits."
+        },
+        {
+          "symptom": "Microphone sharp, face soft without streaking",
+          "cause": "Focus selected the foreground microphone.",
+          "fix": "Tap a visible part of the face beside it and reacquire as the singer moves."
+        },
+        {
+          "symptom": "Red-lit face has no texture",
+          "cause": "Saturated highlights clipped.",
+          "fix": "Reduce exposure or wait for a mixed/white light cue; white balance cannot restore clipped detail."
+        },
+        {
+          "symptom": "Dark stripes cross the stage",
+          "cause": "LED timing interacts with sensor readout.",
+          "fix": "Test supported anti-flicker or manual shutter options; if unavailable, try another cue or angle and inspect the result."
+        }
+      ],
+      "tip": "Learn one repeated chorus gesture and lighting cue; anticipation matters more than continuous shooting."
     },
     "why": [
       "A fast shutter and reliable focus matter more than keeping ISO artificially low.",
@@ -2255,7 +2890,53 @@
       "whiteBalance": "Auto; keep theatrical colour rather than forcing neutral skin",
       "support": "Handheld from your seat",
       "guidance": "Wait for a pause or tableau and keep the screen dim enough not to distract others.",
-      "limitation": "Distant faces and movement in dim light may exceed a phone’s optical reach; digital zoom cannot recover absent detail."
+      "limitation": "Distant faces and movement in dim light may exceed a phone’s optical reach; digital zoom cannot recover absent detail.",
+      "why": [
+        "An expressive pause is easier for a distant phone camera to record than fast stage action.",
+        "A wider stage photograph is preferable when the phone lacks genuine optical reach for a face.",
+        "Keeping flash, screen distraction and optional camera sounds controlled respects the performance and its rules."
+      ],
+      "steps": [
+        "Get permission and follow the venue’s photography intervals, flash and device rules.",
+        "Stay in your agreed seat or position and dim the screen.",
+        "Use Photo mode with flash off; choose a real optical telephoto only if light and detail are adequate.",
+        "Tap the leading actor and capture a short sequence during a tableau or pause.",
+        "Inspect face detail, pale costumes and banding; lower exposure for clipped costumes.",
+        "If distant faces remain too small or blurred, compose the cast and scenery together instead of enlarging beyond useful detail."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Unobstructive approved viewing position"
+        ],
+        "optional": [
+          "Optical telephoto already built into the phone",
+          "Power bank"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Faces remain soft after zooming",
+          "cause": "The capture contains too little optical detail or light.",
+          "fix": "Reduce digital zoom and make a wider stage composition; wait for a brighter tableau."
+        },
+        {
+          "symptom": "White costumes lose their folds",
+          "cause": "Stage highlights clipped.",
+          "fix": "Lower the exposure slider and let unlit scenery stay dark."
+        },
+        {
+          "symptom": "Actor blurred, backdrop sharp",
+          "cause": "Movement exceeded the phone’s exposure speed.",
+          "fix": "Wait for a pause or use a supported faster manual capture during a brighter cue."
+        },
+        {
+          "symptom": "Bands or strange colours cross the frame",
+          "cause": "Stage LEDs interact with capture timing.",
+          "fix": "Test a different supported capture mode or manual shutter; some phones cannot remove the effect."
+        }
+      ],
+      "tip": "The listening actor’s reaction often provides a quieter, sharper moment than the speaking actor’s gesture."
     },
     "why": [
       "1/250 s suits speaking actors better than long handheld night exposures.",
@@ -2412,7 +3093,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Move toward good window or room light; photograph a laugh at its pause rather than during a head turn.",
-      "limitation": "Multi-frame processing may smear hands. Artificial portrait blur can cut into glasses and hair in dim light."
+      "limitation": "Multi-frame processing may smear hands. Artificial portrait blur can cut into glasses and hair in dim light.",
+      "why": [
+        "Putting faces in one useful light source reduces both low-light blur and mixed-colour skin.",
+        "Keeping a pair at similar distance makes focus more predictable and avoids aggressive artificial blur.",
+        "A short ordinary capture is more suitable for conversation than a long Night sequence."
+      ],
+      "steps": [
+        "Find a bright room-light or window-light position and check the background.",
+        "Use the main lens in Photo mode and keep the flash choice appropriate to venue rules.",
+        "Frame a pair with faces at similar distances and tap the nearer face.",
+        "Capture several brief frames as a laugh or gesture pauses.",
+        "Enlarge both faces and inspect bright forehead detail and colour patches.",
+        "Move toward better light if blur persists; try Portrait mode only for a cooperative subject and compare its hair/glasses edges with ordinary Photo mode."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens"
+        ],
+        "optional": [
+          "Small grip",
+          "Power bank"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "One person sharp, partner soft",
+          "cause": "Focus depth, motion or artificial blur affected the second face.",
+          "fix": "Use ordinary Photo mode, align faces and tap a central face before retesting."
+        },
+        {
+          "symptom": "Faces streak but chairs are sharp",
+          "cause": "People moved in dim light.",
+          "fix": "Choose brighter face light or a pause; a tripod alone cannot freeze them."
+        },
+        {
+          "symptom": "Skin has green and orange patches",
+          "cause": "Different light sources overlap on the face.",
+          "fix": "Move to one dominant source; a global colour adjustment cannot clean every patch."
+        },
+        {
+          "symptom": "Hair or glasses are cut out",
+          "cause": "Portrait segmentation failed in the available light.",
+          "fix": "Use ordinary Photo mode or reduce the simulated background blur."
+        }
+      ],
+      "tip": "Choose the light before asking for a photograph; a small move can solve several problems together."
     },
     "why": [
       "1/160 s handles small expression changes better than relying on stabilization alone.",
@@ -2568,7 +3294,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld from an agreed position",
       "guidance": "Stay in your seat or assigned place, keep the professional photographer’s view clear, and photograph a clean expression.",
-      "limitation": "A phone may not have enough reach or low-light shutter speed for distant moving subjects; avoid digital zooming past useful detail."
+      "limitation": "A phone may not have enough reach or low-light shutter speed for distant moving subjects; avoid digital zooming past useful detail.",
+      "why": [
+        "A phone works best from an agreed position during a clear, well-lit gesture.",
+        "The meaningful focus target changes between faces and ring hands.",
+        "Flash and long Night captures can be unsuitable for the ceremony even when the room is dim."
+      ],
+      "steps": [
+        "Confirm the couple’s and venue’s rules; keep the commissioned photographer’s view clear.",
+        "Use ordinary Photo mode, disable flash and use permitted quiet settings without assuming every phone can silence its shutter.",
+        "Choose a main-lens or genuine telephoto composition that still has useful face detail.",
+        "Tap the visible face, or the ring hands when they are the subject, and capture a brief sequence.",
+        "Inspect pale clothing, face brightness and motion before an important moment when practical.",
+        "If a bright window darkens the faces, adjust face exposure or change the permitted angle; accept a wider contextual view when reach is insufficient."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Charged battery and available storage"
+        ],
+        "optional": [
+          "Power bank",
+          "Agreed backup arrangements for commissioned coverage"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Dress is blank white",
+          "cause": "Important highlights clipped.",
+          "fix": "Reduce exposure slightly and check faces; another angle may handle the contrast better."
+        },
+        {
+          "symptom": "Ring hands smear",
+          "cause": "The gesture moved during a low-light capture.",
+          "fix": "Use a brighter position if allowed or capture the brief pause; a capable manual app can use a shorter shutter."
+        },
+        {
+          "symptom": "Faces are dark beside a window",
+          "cause": "Automatic exposure prioritised the bright background.",
+          "fix": "Tap the face and adjust exposure, accepting some window clipping where necessary."
+        },
+        {
+          "symptom": "Distant faces look blocky",
+          "cause": "Digital zoom enlarged limited captured detail.",
+          "fix": "Use a wider ceremony composition or genuine optical reach; do not obstruct the event to get closer."
+        }
+      ],
+      "tip": "Decide whether the next moment is about faces or hands, then change the tap-focus target accordingly."
     },
     "why": [
       "The shutter preserves small but important gestures such as turning faces and placing rings.",
@@ -2725,7 +3497,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Choose an angle where a venue light reaches the faces and shoot when a turn briefly slows.",
-      "limitation": "Night mode may merge different dance positions. A dim room can require accepting blur or moving to brighter light."
+      "limitation": "Night mode may merge different dance positions. A dim room can require accepting blur or moving to brighter light.",
+      "why": [
+        "The face is easiest to hold when a turn briefly slows in a useful pool of light.",
+        "Ordinary Photo mode avoids the position-merging risk of a long Night sequence.",
+        "Aligning the two faces helps both focus and expression without needing an adjustable aperture."
+      ],
+      "steps": [
+        "Watch a full turn to learn the movement and venue-light direction.",
+        "Choose a permitted angle with useful face light and a clean background.",
+        "Use the main lens in Photo mode and tap or track the visible face.",
+        "Take short bursts when the turn slows and both faces become visible.",
+        "Inspect eyes and hands separately; avoid judging sharpness only from the small screen.",
+        "Seek a brighter cue or a slower moment if blur persists; a manual 1/250–1/500 s is an option only when the app exposes that control and enough light remains."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Clear permitted viewpoint"
+        ],
+        "optional": [
+          "Secure grip",
+          "Power bank"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Both faces streak while the room is sharp",
+          "cause": "Dance movement exceeded the exposure speed.",
+          "fix": "Shoot a pause in a brighter pool of light or use a supported faster shutter."
+        },
+        {
+          "symptom": "Only one partner is sharp",
+          "cause": "Focus or portrait segmentation excluded the other.",
+          "fix": "Use ordinary Photo mode and wait for faces at similar distances."
+        },
+        {
+          "symptom": "Tracking jumps to a guest",
+          "cause": "Another face entered the focus region.",
+          "fix": "Tap the couple again and simplify the background angle."
+        },
+        {
+          "symptom": "Several dance positions overlap",
+          "cause": "Night or multi-frame processing merged motion.",
+          "fix": "Use a normal Photo burst and compare results; exact handling varies by phone."
+        }
+      ],
+      "tip": "Leave room in the direction of the turn so the movement reads even in a sharp frame."
     },
     "why": [
       "A rotating face can move surprisingly fast, so the shutter is set higher than for a posed couple.",
@@ -2873,7 +3691,7 @@
       "lighting": "mixed"
     },
     "phone": {
-      "mode": "Photo with flash only as a different, simpler result",
+      "mode": "Ordinary Photo mode for a simpler nearby portrait; specialist trails only with documented compatible flash/app support",
       "iso": "Automatic",
       "aperture": "Usually fixed by the selected lens; not user-adjustable.",
       "shutter": "Automatic; stock camera usually cannot choose slow-sync timing",
@@ -2882,7 +3700,54 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "For a reliable phone result, use bright ambient light and a normal frame; use motion-trail apps only if their flash control is documented.",
-      "limitation": "Most phone LEDs and apps do not offer camera-style TTL, rear-curtain sync or adjustable flash duration; the exact effect is not universally available."
+      "limitation": "Most phone LEDs and apps do not offer camera-style TTL, rear-curtain sync or adjustable flash duration; the exact effect is not universally available.",
+      "why": [
+        "The reliable stock-phone alternative is a nearby dance-floor portrait; it does not promise a camera-style flash image with trails.",
+        "Better ambient face light helps a phone more than expecting its small LED to light a distant dancer.",
+        "Rear-sync timing, TTL and true motion-trail flash control require specifically documented compatible equipment or apps."
+      ],
+      "steps": [
+        "Check venue rules and choose a nearby person with useful ambient light and colourful lamps behind.",
+        "Start with ordinary Photo mode and the main lens; tap the face and make a short test.",
+        "Ask for a brief pause or photograph the slower part of a movement; use the built-in flash only if permitted and effective at that distance.",
+        "Inspect face exposure, blur and background colour, then move the person into better light if necessary.",
+        "Use a dedicated motion-trail/flash route only when its hardware and app explicitly support that combination; test it separately and do not assume a Night capture offers rear sync."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted nearby shooting position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Documented compatible trail/flash system only for the specialist effect"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face remains dark while background lights look good",
+          "cause": "The person is beyond useful ambient or phone-flash illumination.",
+          "fix": "Move to brighter face light or work closer without intruding; the LED cannot light the whole room."
+        },
+        {
+          "symptom": "Face is a bright flat patch",
+          "cause": "Nearby flash or automatic exposure is excessive.",
+          "fix": "Try flash off in better ambient light, increase distance slightly or reduce available exposure control."
+        },
+        {
+          "symptom": "Two facial positions overlap",
+          "cause": "Movement was combined by a long or computational capture.",
+          "fix": "Use ordinary Photo mode, a pause and more face light; do not rely on Night mode to freeze the dancer."
+        },
+        {
+          "symptom": "No trails appear around the person",
+          "cause": "The stock phone capture does not provide the required slow-sync method.",
+          "fix": "Keep the simpler sharp portrait, or use a documented compatible specialist setup; there is no universal phone toggle for this effect."
+        }
+      ],
+      "tip": "First make one useful normal portrait; treat an app-controlled trail effect as a separately tested option.",
+      "conditions": "A nearby dancer in useful available light with coloured lamps behind; phone flash is used only if permitted and effective at that distance.",
+      "intent": "Make a clear nearby dance-floor portrait. Add a flash-defined face with motion trails only through a specifically compatible hardware/app method."
     },
     "why": [
       "A short flash pulse can define the person while the slower shutter admits ambient streaks.",
@@ -3040,7 +3905,53 @@
       "whiteBalance": "Auto; reduce excessive orange only if controllable",
       "support": "Supported if possible",
       "guidance": "Move the face closer to the light without putting hair or clothing near flame; tap the face and reduce exposure if skin highlights bleach.",
-      "limitation": "Long Night sequences can smear blinking eyes and moving flames; a fixed phone aperture cannot be opened further."
+      "limitation": "Long Night sequences can smear blinking eyes and moving flames; a fixed phone aperture cannot be opened further.",
+      "why": [
+        "Moving the face safely into useful candlelight improves exposure more than making the dark room look bright.",
+        "The face and flame need different treatment; a tiny clipped flame core may be acceptable when skin remains detailed.",
+        "A long Night sequence can blur blinking eyes and merge changing flames even when the phone is supported."
+      ],
+      "steps": [
+        "Secure candles away from hair, fabric and the table edge before arranging the portrait.",
+        "Use the main lens and place the face where it receives light without approaching the flame dangerously.",
+        "Tap the lit eye or face and start with ordinary Photo mode.",
+        "Ask for a brief pause and make several frames; try a short supported Night capture only for a genuinely still subject.",
+        "Inspect the eye and bright skin; add safely placed light or change face position if the image is too dark.",
+        "Keep some warmth and surrounding darkness rather than lifting every shadow."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Stable candle holders and a safe supervised arrangement"
+        ],
+        "optional": [
+          "Phone support",
+          "White reflector kept safely clear of flames"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face is a silhouette",
+          "cause": "Exposure was dominated by the flame.",
+          "fix": "Tap the face and increase exposure cautiously, or bring more safe light to the face."
+        },
+        {
+          "symptom": "Eye blurs but candle holder is sharp",
+          "cause": "The person moved during capture.",
+          "fix": "Use a shorter normal capture in brighter face light and ask for a brief pause."
+        },
+        {
+          "symptom": "Changing flame leaves repeated shapes",
+          "cause": "Night processing combined different flame positions.",
+          "fix": "Compare ordinary Photo mode and keep the frame with cleaner flame and eye detail."
+        },
+        {
+          "symptom": "Skin is uniformly orange and muddy",
+          "cause": "Weak exposure or colour processing obscured variation.",
+          "fix": "Improve actual face light first; adjust WB in a capable app or edit while keeping natural warmth."
+        }
+      ],
+      "tip": "Turn the face slightly toward the brightest safe candle position until a catchlight appears."
     },
     "why": [
       "A wide aperture and moderately fast shutter help a living person stay sharp in weak light.",
@@ -3198,7 +4109,53 @@
       "whiteBalance": "Auto WB; preserve some warmth",
       "support": "Handheld or braced well away from the fire",
       "guidance": "Photograph the brighter flicker and a pause in conversation together; include enough darkness to retain the night mood.",
-      "limitation": "The phone may blend changing flames or smear faces. Small bright flame cores can exceed the available dynamic range."
+      "limitation": "The phone may blend changing flames or smear faces. Small bright flame cores can exceed the available dynamic range.",
+      "why": [
+        "Firelight changes between frames, so a brighter flicker and a still expression need to coincide.",
+        "The main phone lens is a practical low-light choice for people and their surroundings.",
+        "Exposing every flame perfectly can leave all faces black; decide which part tells the story."
+      ],
+      "steps": [
+        "Choose a safe position clear of sparks, smoke and movement around the fire.",
+        "Use the main lens in Photo mode with flash off unless a permitted fill-light result is specifically wanted.",
+        "Tap a face when a brighter flicker reaches it; keep large flames from blocking the face.",
+        "Capture short sequences during a pause in conversation.",
+        "Inspect face sharpness and bright skin, then decide how much flame clipping is acceptable.",
+        "Move to a safer clearer angle or wait for lower flames instead of asking people to approach the fire."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe controlled fire setting"
+        ],
+        "optional": [
+          "Dry lens cloth",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Fire detailed, faces black",
+          "cause": "Automatic exposure prioritised the flames.",
+          "fix": "Tap a lit face and adjust exposure or reframe toward better-lit people."
+        },
+        {
+          "symptom": "Faces vary widely between frames",
+          "cause": "The firelight changed.",
+          "fix": "Capture several short sequences around brighter flickers and select a balanced frame."
+        },
+        {
+          "symptom": "Faces smear or repeat",
+          "cause": "Movement and multi-frame processing interacted.",
+          "fix": "Use normal Photo mode and a pause; long Night capture is poorly suited to this moment."
+        },
+        {
+          "symptom": "A pale veil covers the image",
+          "cause": "Smoke or flare crossed the view.",
+          "fix": "Change to a safe clearer angle and clean the lens; keep well away from sparks."
+        }
+      ],
+      "tip": "Watch the people and the flame together; the best exposure moment may arrive between the biggest flames."
     },
     "why": [
       "The flickering fire makes exposure vary from frame to frame, so timing is part of the setup.",
@@ -3357,7 +4314,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld from a permitted position",
       "guidance": "Hold exposure on the speaker instead of the projected slide; wait for an expressive face and unobstructed hands.",
-      "limitation": "A distant small face may exceed phone reach; screen projections and spotlights may also exceed one frame’s brightness range."
+      "limitation": "A distant small face may exceed phone reach; screen projections and spotlights may also exceed one frame’s brightness range.",
+      "why": [
+        "A dark stage should remain dark when the face is lit; exposing for the whole room can bleach the speaker.",
+        "A pause in speech or gesture helps a phone hold a distant face.",
+        "Optical reach and actual face detail matter more than a large digital zoom number."
+      ],
+      "steps": [
+        "Choose an approved view where the microphone does not cover the mouth.",
+        "Use Photo mode with flash off; try a real telephoto only if it keeps useful detail.",
+        "Tap the lit face and lower exposure until forehead and cheek texture remain.",
+        "Capture a short sequence at a clear expression or a held gesture.",
+        "Enlarge the face, inspect hand movement and look for LED bands.",
+        "For audience or slides, make a separate composition exposed for that subject rather than brightening the speaker’s frame indiscriminately."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Clear approved viewpoint"
+        ],
+        "optional": [
+          "Small support if allowed",
+          "Manual app with flicker controls"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face turns white while the stage looks bright",
+          "cause": "The exposure lifted the dark surroundings too far.",
+          "fix": "Lower exposure on the face and let the backdrop stay dark."
+        },
+        {
+          "symptom": "Lectern sharp, face soft",
+          "cause": "Autofocus selected the nearer high-contrast edge.",
+          "fix": "Tap the eye or visible facial edge and reacquire after movement."
+        },
+        {
+          "symptom": "Hands streak while the face is defined",
+          "cause": "Gesture speed exceeded the capture.",
+          "fix": "Wait for the held part of a gesture or use a supported faster shutter in sufficient light."
+        },
+        {
+          "symptom": "Slide and face cannot both be readable",
+          "cause": "Their brightness or focus needs differ.",
+          "fix": "Take separate slide and speaker frames; one global exposure may not preserve both."
+        }
+      ],
+      "tip": "A hand held clear of the mouth often communicates the speech better than a rapid blurred gesture."
     },
     "why": [
       "A dark backdrop can fool automatic metering into making the face too bright.",
@@ -3409,10 +4412,10 @@
         "name": "Speaker and room context",
         "aperture": 4,
         "shutter": 0.008,
-        "iso": 3200,
+        "iso": 800,
         "mode": "M",
-        "effect": "Audience and stage layout become more visible.",
-        "requirements": "Wider framing; wait for a quiet gesture and brace the camera."
+        "effect": "Wider framing includes the audience and stage layout while preserving the speaker’s exposure; dark audience areas may remain dark.",
+        "requirements": "Same spotlight level; use wider framing, wait for a quiet gesture and brace the camera. For brighter audience detail, make a separate exposure or wait for a cue that lights both areas."
       },
       {
         "name": "Tight expressive gesture",
@@ -3513,7 +4516,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Face the person toward bright open sky and move them away from the background; inspect hair edges if using artificial blur.",
-      "limitation": "Portrait blur is computed and may misread glasses, flyaway hair and gaps between fingers; fixed aperture cannot be stopped down."
+      "limitation": "Portrait blur is computed and may misread glasses, flyaway hair and gaps between fingers; fixed aperture cannot be stopped down.",
+      "why": [
+        "Facing bright open sky gives the phone a broad soft light source and useful catchlights.",
+        "Distance from the background simplifies the portrait even without artificial blur.",
+        "A comfortable camera-to-face distance prevents the exaggerated proportions of a very close wide view."
+      ],
+      "steps": [
+        "Find open shade with no dappled sun crossing the face.",
+        "Turn the person toward the bright sky until both eyes receive light.",
+        "Use the main lens or a genuine portrait telephoto in enough light, stepping back to a comfortable distance.",
+        "Tap the near eye and make an ordinary Photo frame before trying Portrait mode.",
+        "Inspect both eyes, hair and glasses; reduce simulated blur or use the normal frame if edges fail."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Open shade facing bright sky"
+        ],
+        "optional": [
+          "Neutral white reflector",
+          "Small grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Eyes look dark and flat",
+          "cause": "The face points away from the sky opening.",
+          "fix": "Rotate the person toward the brighter opening until catchlights appear."
+        },
+        {
+          "symptom": "Hair or glasses disappear into blur",
+          "cause": "Portrait segmentation failed.",
+          "fix": "Use ordinary Photo mode or reduce the blur strength."
+        },
+        {
+          "symptom": "Nose or near cheek looks exaggerated",
+          "cause": "The phone is too close to the face.",
+          "fix": "Step back; use a suitable optical view or a restrained crop afterwards."
+        },
+        {
+          "symptom": "Green colour appears beneath the chin",
+          "cause": "Grass or foliage reflected coloured light.",
+          "fix": "Move away from the green surface or use a neutral reflector."
+        }
+      ],
+      "tip": "Improve the face light and background distance before reaching for a stronger blur slider."
     },
     "why": [
       "Open sky acts as a broad light source, giving softer transitions than direct sun.",
@@ -3673,7 +4721,52 @@
       "whiteBalance": "Auto or Daylight",
       "support": "Handheld",
       "guidance": "Turn the person so the shadow pattern looks intentional, or use the sun as a rim with a brighter background; avoid asking them to stare into the sun.",
-      "limitation": "HDR may lighten shadows but cannot change squinting or the direction of hard light; portrait blur does not soften facial shadows."
+      "limitation": "HDR may lighten shadows but cannot change squinting or the direction of hard light; portrait blur does not soften facial shadows.",
+      "why": [
+        "HDR can change shadow brightness but cannot remove squinting or move an awkward nose shadow.",
+        "Exposing for bright skin helps preserve texture in hard sunlight.",
+        "A fixed phone aperture makes position and exposure adjustment more useful than a camera-style f-stop prescription."
+      ],
+      "steps": [
+        "Choose a pose that does not ask the person to look into the sun.",
+        "Move the face or camera until hard brow and nose shadows have a deliberate shape.",
+        "Use Photo mode, tap the face and reduce exposure if the lit cheek loses texture.",
+        "Take a short sequence with relaxed expressions and inspect bright skin.",
+        "If the contrast is unhelpful, use nearby open shade, a safely held white reflector or a different sun angle, then retest."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Comfortable safe position for the subject"
+        ],
+        "optional": [
+          "White reflector with a helper",
+          "Diffuser with a secure helper"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Person squints in every frame",
+          "cause": "They face uncomfortable direct light.",
+          "fix": "Turn them away from it or move into shade; processing cannot repair the expression reliably."
+        },
+        {
+          "symptom": "Nose shadow crosses the mouth",
+          "cause": "The light-to-face angle is awkward.",
+          "fix": "Rotate the face or move the camera until the shadow separates."
+        },
+        {
+          "symptom": "Bright cheek is featureless",
+          "cause": "Skin highlights clipped.",
+          "fix": "Lower the exposure slider and inspect the saved cheek detail."
+        },
+        {
+          "symptom": "Face has an artificial halo",
+          "cause": "HDR or portrait processing struggled with extreme contrast.",
+          "fix": "Compare ordinary Photo mode with less simulated blur or move to softer light."
+        }
+      ],
+      "tip": "A small change of head angle can improve hard light more than a large exposure change."
     },
     "why": [
       "A short shutter handles bright light without forcing a tiny aperture.",
@@ -3830,7 +4923,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Hide the sun just behind the head or a tree edge and inspect face tone; make a normal Photo frame as well as Portrait mode.",
-      "limitation": "HDR and portrait segmentation can produce bright halos around hair; the phone cannot recover a fully clipped sun or remove all flare."
+      "limitation": "HDR and portrait segmentation can produce bright halos around hair; the phone cannot recover a fully clipped sun or remove all flare.",
+      "why": [
+        "The phone needs useful light on the face as well as a bright rim behind it.",
+        "Hiding the sun’s disc reduces flare while retaining light around hair and shoulders.",
+        "HDR and portrait processing can struggle with extreme hair-edge contrast, so a normal comparison frame is useful."
+      ],
+      "steps": [
+        "Place low sun behind and slightly to one side of the person without directing them to stare at it.",
+        "Move until the head or a tree edge hides the sun’s brightest disc.",
+        "Look for open sky or a neutral wall lighting the face and use the main or a suitable optical portrait lens.",
+        "Tap the near eye and adjust exposure until skin remains readable.",
+        "Make ordinary Photo and optional Portrait frames; inspect hair halos, eye contrast and flare.",
+        "Use a neutral reflector or change angle if the phone cannot hold the face and bright rim together."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a clean lens"
+        ],
+        "optional": [
+          "Neutral reflector",
+          "Helper to shade the lens without entering the frame"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face is a silhouette",
+          "cause": "Exposure favoured the bright background.",
+          "fix": "Tap the face and increase exposure or add reflected face light; accept some background clipping."
+        },
+        {
+          "symptom": "Image looks milky",
+          "cause": "Direct sun created veiling flare.",
+          "fix": "Hide the sun more fully or shade the lens with a hand kept outside the frame."
+        },
+        {
+          "symptom": "Hair has a bright artificial border",
+          "cause": "HDR or portrait segmentation struggled with contrast.",
+          "fix": "Compare ordinary Photo mode and reduce simulated blur; change the angle to soften the rim."
+        },
+        {
+          "symptom": "Eyes remain soft despite a sharp background",
+          "cause": "Focus was lost in flare or selected the distance.",
+          "fix": "Shade the lens, tap the near eye again and inspect a fresh frame."
+        }
+      ],
+      "tip": "Move the phone a few centimetres around the head before changing any exposure control."
     },
     "why": [
       "The face receives much less light than the rim, so a sunny-background meter reading can make a silhouette.",
@@ -3986,7 +5124,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Turn off strongly coloured room lamps, move near the window and rotate the face until the shadow side still has detail.",
-      "limitation": "A bright window in the frame can make the phone underexpose the face; computational blur may cut into hair."
+      "limitation": "A bright window in the frame can make the phone underexpose the face; computational blur may cut into hair.",
+      "why": [
+        "A large nearby window provides soft directional light without needing a camera flash.",
+        "One dominant light colour avoids orange and blue patches across the face.",
+        "The phone’s fixed aperture makes face angle, distance and reliable focus more useful than a stop-down instruction."
+      ],
+      "steps": [
+        "Choose indirect window light or diffuse direct sun safely with a curtain.",
+        "Turn off room lamps that cast a conflicting colour, when permitted.",
+        "Place the person near the window and rotate the face until the shadow-side eye is still readable.",
+        "Use the main or a suitable optical portrait lens from a comfortable distance; tap the near eye.",
+        "Take a normal Photo frame and inspect eyes, cheek highlights and hair edges.",
+        "Add a white reflector or move closer to useful window light if the shadow side is too dark or the capture blurs."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Window with useful indirect light"
+        ],
+        "optional": [
+          "White card or reflector",
+          "Sheer curtain"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Shadow-side eye disappears",
+          "cause": "The face is turned too far from the window.",
+          "fix": "Rotate it toward the light or add a nearby neutral reflector."
+        },
+        {
+          "symptom": "Skin is orange on one side and blue on the other",
+          "cause": "Room lamps and daylight overlap.",
+          "fix": "Turn off conflicting lamps or use one dominant source."
+        },
+        {
+          "symptom": "Hair edge looks cut out",
+          "cause": "Portrait segmentation failed.",
+          "fix": "Use ordinary Photo mode or reduce simulated blur."
+        },
+        {
+          "symptom": "Eyes smear but the chair is sharp",
+          "cause": "The person moved during a dim capture.",
+          "fix": "Move into brighter window light, ask for a brief pause and avoid a long Night sequence."
+        }
+      ],
+      "tip": "A visible catchlight is a quick check that the eye can see the window."
     },
     "why": [
       "A window to the side gives facial shape; directly frontal window light is softer but flatter.",
@@ -4142,7 +5326,54 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld or supported",
       "guidance": "Arrange shallow rows, keep every face visible and take several frames for blinks.",
-      "limitation": "Phone Portrait mode may blur rear people; ultrawide corners distort faces even when they are in focus."
+      "limitation": "Phone Portrait mode may blur rear people; ultrawide corners distort faces even when they are in focus.",
+      "why": [
+        "Shallow rows and visible faces solve group problems that a fixed phone aperture cannot adjust away.",
+        "Ordinary Photo mode avoids accidentally blurring rear people with portrait segmentation.",
+        "The main lens from enough distance keeps edge faces less stretched than a close ultrawide view."
+      ],
+      "steps": [
+        "Find even light across the whole group and arrange two or three shallow rows only as needed.",
+        "Check that every face has a clear view of the phone.",
+        "Use the main lens, step back enough for comfortable framing and avoid faces at extreme edges.",
+        "Tap a face near the centre of the group’s depth and make a first frame.",
+        "Enlarge front, back and edge faces; reduce row depth or reposition before continuing.",
+        "Take several short sequences with a clear countdown and inspect blinks and expression."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Enough space for shallow rows"
+        ],
+        "optional": [
+          "Secure support or tripod",
+          "Safe seating or steps for height variation",
+          "Helper to check hidden faces"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Back row looks soft",
+          "cause": "Focus, row depth or artificial portrait blur excluded it.",
+          "fix": "Use ordinary Photo mode, reduce row spacing, step back and retap a central-depth face; inspect again."
+        },
+        {
+          "symptom": "Edge faces look stretched",
+          "cause": "The phone is too close with a very wide view.",
+          "fix": "Use the main lens from farther back and keep faces away from extreme corners."
+        },
+        {
+          "symptom": "Some faces are in harsh sun and others in shade",
+          "cause": "The group crosses different light zones.",
+          "fix": "Move everyone into consistent light rather than trying to correct each face with one exposure."
+        },
+        {
+          "symptom": "Good frames contain closed eyes",
+          "cause": "People blink at different moments.",
+          "fix": "Make several short sequences and review faces; a faster shutter alone does not prevent closed eyes."
+        }
+      ],
+      "tip": "Ask everyone whether they can see the phone clearly; a hidden view often means a hidden face."
     },
     "why": [
       "Row depth, working distance and aperture all determine whether the group fits within focus.",
@@ -4303,7 +5534,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Keep a meaningful tool or workspace in the frame and avoid portrait blur that removes the story.",
-      "limitation": "A phone’s wide view can exaggerate hands held close to the lens; move back if proportions become distracting."
+      "limitation": "A phone’s wide view can exaggerate hands held close to the lens; move back if proportions become distracting.",
+      "why": [
+        "Ordinary phone depth rendering can keep the person and useful work context readable together.",
+        "A close wide viewpoint exaggerates hands and tools, so camera position matters.",
+        "One clear activity explains the setting better than a frame filled with every object in the room."
+      ],
+      "steps": [
+        "Ask permission and choose an activity or tool that represents the person’s work.",
+        "Find useful face light and a viewpoint with less competing clutter.",
+        "Use the main lens in ordinary Photo mode; avoid artificial blur that removes the workspace.",
+        "Tap the face and capture a natural gesture without putting the phone or subject into a working hazard.",
+        "Inspect the face and the important tool, then change position if one dominates or obscures the other.",
+        "For blurred hands, seek brighter light or a quieter part of the activity; use manual shutter control only if your app supports it."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permission and a safe workplace position"
+        ],
+        "optional": [
+          "Neutral reflector",
+          "Permitted continuous light"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Person disappears into the room",
+          "cause": "The face is too small or merged with clutter.",
+          "fix": "Move closer from a safe position or change angle to give the head a clean surround."
+        },
+        {
+          "symptom": "Hands or tools look enormous",
+          "cause": "They are much closer to the wide lens than the face.",
+          "fix": "Step back and keep important objects closer to the person’s plane."
+        },
+        {
+          "symptom": "Work context is an artificial blur",
+          "cause": "Portrait mode removed the storytelling background.",
+          "fix": "Use ordinary Photo mode and retain meaningful surroundings."
+        },
+        {
+          "symptom": "Face and workplace have conflicting colour",
+          "cause": "Different light sources illuminate different regions.",
+          "fix": "Use one dominant source or switch off a conflicting lamp if permitted."
+        }
+      ],
+      "tip": "Include one unmistakable clue about the work and give it enough room to be understood."
     },
     "why": [
       "A wider view includes the setting, but the person still needs visual priority.",
@@ -4459,7 +5736,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Choose good light, hold framing around a predictable part of the game and take a short burst as the child approaches it.",
-      "limitation": "Phones may select a shutter too slow in shade; computational sharpening cannot repair real subject blur."
+      "limitation": "Phones may select a shutter too slow in shade; computational sharpening cannot repair real subject blur.",
+      "why": [
+        "Bright light gives automatic exposure a better chance of freezing unpredictable movement.",
+        "Tracking before the child reaches the composition is easier than tapping after the best moment.",
+        "A slightly wider frame preserves hands and feet when the direction changes suddenly."
+      ],
+      "steps": [
+        "Choose a safe clear play area and avoid obstructing the child’s route.",
+        "Use the main lens in Photo mode and get to a useful eye-level viewpoint.",
+        "Enable available person tracking or tap the expected position before the child reaches it.",
+        "Take short bursts around a predictable part of the game, leaving room ahead.",
+        "Enlarge eyes and hands; separate motion streaks from focus that stayed on the background.",
+        "Seek brighter light for smear, or use a supported manual exposure around 1/1000 s with suitable ISO; reacquire tracking for a plain focus miss."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe unobstructed play space"
+        ],
+        "optional": [
+          "Secure grip",
+          "Power bank"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Hands and face streak but background is sharp",
+          "cause": "The exposure was too long for the movement.",
+          "fix": "Use brighter light or a supported faster manual shutter; avoid Night mode for running."
+        },
+        {
+          "symptom": "Background sharp, child soft without clear streaks",
+          "cause": "Focus did not track the child.",
+          "fix": "Reacquire earlier and try available person tracking or a more predictable part of the game."
+        },
+        {
+          "symptom": "Feet leave the frame",
+          "cause": "The composition was too tight.",
+          "fix": "Frame wider and leave room in the direction of movement."
+        },
+        {
+          "symptom": "Limbs have strange repeated edges",
+          "cause": "Multi-frame processing merged changing positions.",
+          "fix": "Try an ordinary Photo burst and compare results; choose the cleanest single moment."
+        }
+      ],
+      "tip": "Prepare for a place the child naturally returns to instead of chasing every change of direction."
     },
     "why": [
       "1/1000 s protects fast head and limb movement, especially when the child is close.",
@@ -4616,7 +5939,56 @@
       "whiteBalance": "Lock to the continuous light’s colour if possible",
       "support": "Handheld or tripod",
       "guidance": "Use a large continuous soft source beside and above the face; inspect the shadow pattern before shooting.",
-      "limitation": "Most phones cannot trigger and synchronise ordinary studio flashes without specialised compatible hardware/apps; the camera flash recipe does not transfer directly."
+      "limitation": "Most phones cannot trigger and synchronise ordinary studio flashes without specialised compatible hardware/apps; the camera flash recipe does not transfer directly.",
+      "why": [
+        "A large continuous source lets a phone user see the facial shadow pattern before shooting.",
+        "The fixed phone aperture cannot be set to the camera recipe’s f/8, so position and focus must supply the needed clarity.",
+        "Ordinary studio flash synchronisation is not assumed; continuous light is the practical phone route."
+      ],
+      "steps": [
+        "Place a diffused continuous light slightly above eye level and to one side as a starting position.",
+        "Secure its stand and cables, following the light’s ventilation and heat instructions.",
+        "Use Photo mode and a comfortable main-lens or optical portrait-lens distance; turn off the phone flash.",
+        "Tap the nearer eye and take a test while the person briefly holds still.",
+        "Inspect both eyes, skin highlights and the shadow edge; adjust light position for shape and available exposure control for brightness.",
+        "If the face blurs, increase safe continuous illumination or use a stiller pose; compare ordinary Photo mode before adding simulated portrait blur."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Diffused continuous light",
+          "Secure stand or safe light support"
+        ],
+        "optional": [
+          "White reflector",
+          "Neutral background",
+          "Sandbag or suitable stand weight"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Skin is featureless and bright",
+          "cause": "Continuous illumination or automatic exposure is too strong.",
+          "fix": "Lower the exposure slider or light output and retest skin; no flash-power setting is required."
+        },
+        {
+          "symptom": "Shadow edge is hard",
+          "cause": "The source is small relative to the face or too far away.",
+          "fix": "Use a larger safely diffused source or move it closer, then readjust brightness."
+        },
+        {
+          "symptom": "Eyes smear despite clear background detail",
+          "cause": "The continuous light is too weak for the person’s movement.",
+          "fix": "Increase safe illumination or ask for a short pause; a tripod cannot stop facial movement."
+        },
+        {
+          "symptom": "Bands or colour vary across frames",
+          "cause": "The continuous LED flickers with the capture timing.",
+          "fix": "Try another output level or a proven flicker-free light; use app shutter/anti-flicker controls only if available."
+        }
+      ],
+      "tip": "Move the light to change the facial shadow; moving an exposure slider only changes brightness.",
+      "conditions": "A posed person lit by one large diffused continuous light in a controlled indoor space, with enough illumination for a short normal phone capture."
     },
     "why": [
       "A large diffused source close to the person creates a softer transition than a small bare flash.",
@@ -4778,7 +6150,53 @@
       "whiteBalance": "Auto WB",
       "support": "Brace the phone",
       "guidance": "Put the face beside a bright window, separate it from background lights, and ask for a short pause.",
-      "limitation": "Artificial background blur can fail around hair and glasses; a long Night capture may soften the person even on a tripod."
+      "limitation": "Artificial background blur can fail around hair and glasses; a long Night capture may soften the person even on a tripod.",
+      "why": [
+        "A nearby window or sign must light the face; raising exposure on the whole dark street is a poor substitute.",
+        "Distance between person and background helps separate city lights even before simulated blur is applied.",
+        "A still pose and ordinary Photo capture are more dependable than a long Night sequence for eyes."
+      ],
+      "steps": [
+        "Find a source lighting the face from the front or side rather than only overhead.",
+        "Place distant city lights behind the person without a lamp merging into their head.",
+        "Use the main lens in Photo mode and tap the near eye.",
+        "Ask for a relaxed pause and take several frames with the phone braced.",
+        "Inspect eye detail, skin colour and bright background lamps; move the person closer to useful light if needed.",
+        "Try Portrait mode as a separate option and compare hair and glasses edges with the normal frame."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Useful existing face light"
+        ],
+        "optional": [
+          "Secure grip",
+          "Small neutral reflector"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face dark, city lamps bright",
+          "cause": "The person is outside useful illumination.",
+          "fix": "Move them toward a window or other face light before lifting the whole exposure."
+        },
+        {
+          "symptom": "Eyes blur but the background stays clear",
+          "cause": "The person moved during a dim capture.",
+          "fix": "Use more face light and a short still pose; compare normal Photo mode against Night processing."
+        },
+        {
+          "symptom": "Hair edge looks cut out",
+          "cause": "Portrait segmentation failed.",
+          "fix": "Use ordinary Photo mode or reduce artificial blur."
+        },
+        {
+          "symptom": "One side of the face is a different colour",
+          "cause": "Several light sources overlap on skin.",
+          "fix": "Choose a position dominated by one face-light source while keeping colour in the background."
+        }
+      ],
+      "tip": "Look for a good catchlight and clean outline before worrying about every distant street detail."
     },
     "why": [
       "Moving the person into better light is more effective than only raising ISO in a dark location.",
@@ -4934,7 +6352,54 @@
       "whiteBalance": "Auto WB",
       "support": "Tripod or secure support",
       "guidance": "Mark the standing position, choose a 3 or 10 s timer and take several frames; verify face detail before changing poses.",
-      "limitation": "Focus behaviour during a timer varies; some apps lock focus before you enter the frame. Rear-camera self framing may need a remote or mirror."
+      "limitation": "Focus behaviour during a timer varies; some apps lock focus before you enter the frame. Rear-camera self framing may need a remote or mirror.",
+      "why": [
+        "The countdown gives time to enter the frame; it does not guarantee a short exposure once the photo is taken.",
+        "Some apps lock focus before you enter, so a stand-in and a tested timer workflow prevent repeated soft portraits.",
+        "Good light and a repeatable standing position matter more than trying to change a fixed phone aperture."
+      ],
+      "steps": [
+        "Secure the phone at the intended height and frame with a stand-in at face level.",
+        "Mark a safe standing position without creating a trip hazard.",
+        "Test whether face focus updates during the timer; otherwise lock focus on the stand-in if supported.",
+        "Choose the available timer delay or a compatible remote, move into position and pause for the capture.",
+        "Enlarge the eyes and inspect the full pose before repeating.",
+        "Correct focus position, light or framing separately; use ordinary Photo mode first before trying simulated background blur."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Secure tripod or support",
+          "Timer or compatible remote"
+        ],
+        "optional": [
+          "Stand-in at eye height",
+          "Remote preview if supported"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Background sharp, face soft",
+          "cause": "The app focused before the subject entered.",
+          "fix": "Use supported timer face detection or pre-focus on a stand-in at the eye position."
+        },
+        {
+          "symptom": "Feet repeat the position but eyes do not",
+          "cause": "Leaning changed the face’s distance.",
+          "fix": "Keep the eye plane consistent and retest focus; do not rely only on a floor mark."
+        },
+        {
+          "symptom": "Face smears despite a long countdown",
+          "cause": "The actual exposure was too slow in dim light.",
+          "fix": "Improve illumination and hold still; the timer duration does not control motion blur."
+        },
+        {
+          "symptom": "Hand or head is cut off",
+          "cause": "The stand-in did not represent the final pose.",
+          "fix": "Leave more room and test the complete pose before the final sequence."
+        }
+      ],
+      "tip": "Put the stand-in at eye height; a bag on the floor is a different focus target."
     },
     "why": [
       "The timer gives time to enter the composition but does not make the actual exposure long.",
@@ -5090,7 +6555,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld close to, but not pressed against, the window",
       "guidance": "Shade cabin reflections with dark clothing or your hand held out of frame; choose a clean section of window.",
-      "limitation": "Multiple plastic window layers and scratches limit sharpness; a polarizer can reveal stress colours and will not remove every reflection."
+      "limitation": "Multiple plastic window layers and scratches limit sharpness; a polarizer can reveal stress colours and will not remove every reflection.",
+      "why": [
+        "The window, not the phone’s resolution, may limit detail through scratches and multiple layers.",
+        "Keeping close without touching reduces reflections without transmitting as much aircraft vibration.",
+        "A bright distant subject gives automatic exposure a better chance of using a short capture."
+      ],
+      "steps": [
+        "Follow crew instructions and use equipment only when permitted.",
+        "Choose a clean part of the window, wipe your own lens and switch flash off.",
+        "Use the main lens close to the pane without pressing against it; shade reflections with dark clothing or a hand out of frame.",
+        "Tap distant ground detail and make a short Photo burst.",
+        "Inspect outside detail, cloud highlights and reflection ghosts.",
+        "Change angle for window defects; if the light becomes too dim to hold detail, accept a wider atmospheric record rather than a long Night capture from the moving aircraft."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted passenger window view"
+        ],
+        "optional": [
+          "Dark clothing to reduce reflections",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Cabin objects overlay the landscape",
+          "cause": "Interior light reflects in the window.",
+          "fix": "Move close without contact and shade the phone from reflected clothing or screens."
+        },
+        {
+          "symptom": "Landscape smears",
+          "cause": "Vibration or motion exceeded the capture speed.",
+          "fix": "Use brighter views and a short burst; a manual app can try 1/1000 s if enough light remains."
+        },
+        {
+          "symptom": "Scratches are sharp, ground soft",
+          "cause": "Focus selected the pane.",
+          "fix": "Tap distant outside detail or use a documented manual focus control."
+        },
+        {
+          "symptom": "Rainbow patches appear",
+          "cause": "A polarizer interacts with stressed window layers.",
+          "fix": "Remove the accessory polarizer and change angle; not every reflection can be eliminated."
+        }
+      ],
+      "tip": "Include a wing intentionally for context, or frame it out completely when the landscape is the subject."
     },
     "why": [
       "The high shutter speed helps with vibration even though the distant ground may look still.",
@@ -5245,7 +6756,54 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld as a passenger",
       "guidance": "Aim slightly ahead, wait for a gap between poles and make a short burst without touching the window.",
-      "limitation": "Close foreground objects may still streak or lean from rolling shutter; a phone cannot guarantee a short enough exposure in dim conditions."
+      "limitation": "Close foreground objects may still streak or lean from rolling shutter; a phone cannot guarantee a short enough exposure in dim conditions.",
+      "why": [
+        "Distant scenery moves across the frame less quickly than nearby poles and fences.",
+        "A clean window and a reflection-free angle can matter more than extra digital zoom.",
+        "A short burst helps find a clear gap, but cannot make a blocked view unobstructed."
+      ],
+      "steps": [
+        "Photograph only as a passenger and secure the phone.",
+        "Use the main lens in Photo mode with flash off, close to but not touching a clean window.",
+        "Choose a distant scene and tap it rather than a nearby window mark.",
+        "Look ahead for a gap between trees or poles, then capture a short burst.",
+        "Inspect the intended subject for streaking and vertical objects for readout lean.",
+        "Use brighter light or a supported manual 1/1000–1/2000 s for motion blur; use a wider contextual image if the phone cannot supply enough speed."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Passenger position",
+          "Secure grip or strap"
+        ],
+        "optional": [
+          "Dark cloth to shade reflections without blocking others",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Distant view sharp, foreground streaked",
+          "cause": "Nearby objects cross the frame faster.",
+          "fix": "Accept the travel context or frame above them; do not expect equal movement at every distance."
+        },
+        {
+          "symptom": "Everything smears horizontally",
+          "cause": "The capture was too slow for vehicle motion.",
+          "fix": "Choose brighter light or a shorter manual shutter if supported."
+        },
+        {
+          "symptom": "Crisp poles lean strangely",
+          "cause": "Rolling readout recorded different positions across the frame.",
+          "fix": "Avoid close vertical subjects or try another supported capture mode; a shorter exposure alone may not cure it."
+        },
+        {
+          "symptom": "Window marks are sharper than the landscape",
+          "cause": "Autofocus selected the pane.",
+          "fix": "Tap a distant edge or lock focus outside before the next clear gap."
+        }
+      ],
+      "tip": "Watch the next clear opening rather than the obstruction already in front of the phone."
     },
     "why": [
       "Near objects sweep across the frame faster than distant landscape, so distance changes the required shutter.",
@@ -5404,7 +6962,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Choose one visitor for scale or wait for a clean gap; keep the phone level and check frame edges.",
-      "limitation": "Automatic object removal changes the factual scene; a long exposure may blur crowds but will not reliably erase stationary visitors."
+      "limitation": "Automatic object removal changes the factual scene; a long exposure may blur crowds but will not reliably erase stationary visitors.",
+      "why": [
+        "A deliberate person for scale can strengthen a monument photograph without removing the real crowd.",
+        "Daylight and a short Photo capture make visitors look intentional rather than ghosted.",
+        "A tighter architectural detail often works better than heavy digital zoom through obstructing people."
+      ],
+      "steps": [
+        "Choose the monument feature that matters and find a permitted angle where it stays visible.",
+        "Use the main lens and keep the phone level; consider a real telephoto for a detail above the crowd.",
+        "Tap the monument or the chosen person according to the composition.",
+        "Wait for one useful visitor placement or a clear gap and capture a short sequence.",
+        "Inspect all frame edges for half-people and overlaps with doorways or statues.",
+        "Reframe or wait if clutter dominates; treat automatic object removal as an edit, not proof of an empty site."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted viewpoint"
+        ],
+        "optional": [
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Crowd overwhelms the subject",
+          "cause": "Too much foreground activity has equal emphasis.",
+          "fix": "Choose a higher/lower permitted angle or isolate a meaningful architectural detail."
+        },
+        {
+          "symptom": "A visitor overlaps the key feature",
+          "cause": "Timing or viewpoint merged the shapes.",
+          "fix": "Move sideways or wait for a clean gap."
+        },
+        {
+          "symptom": "Frame edges cut through heads",
+          "cause": "The composition ignored the borders.",
+          "fix": "Widen or reframe before the next sequence."
+        },
+        {
+          "symptom": "Long capture leaves ghosts instead of an empty square",
+          "cause": "People moved only during part of the capture.",
+          "fix": "Use ordinary Photo mode with people placed deliberately; motion effects do not guarantee crowd removal."
+        }
+      ],
+      "tip": "One clearly separated visitor can show scale better than a frame that only tries to hide everyone."
     },
     "why": [
       "A short shutter makes the crowd look deliberate rather than accidentally smeared.",
@@ -5560,7 +7163,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld",
       "guidance": "Ask where appropriate, frame a person with a clear group of products, and wait for an exchange rather than photographing every shelf.",
-      "limitation": "Coloured fabric overhead can tint skin; automatic white balance cannot perfectly correct mixed sources in different areas."
+      "limitation": "Coloured fabric overhead can tint skin; automatic white balance cannot perfectly correct mixed sources in different areas.",
+      "why": [
+        "A face or working hand makes the market specific instead of turning every product into equal clutter.",
+        "Light from an awning opening can be brighter and less coloured than light deep inside a stall.",
+        "The phone needs a short capture for an exchange; raising exposure alone does not freeze hands."
+      ],
+      "steps": [
+        "Observe the stall’s rhythm and ask permission for close portraits where appropriate.",
+        "Use the main lens in Photo mode and include one useful product group with the person.",
+        "Check whether the awning casts strong colour on skin and choose a cleaner light angle.",
+        "Tap the face or active hands and make a short burst during an exchange.",
+        "Inspect gesture sharpness, bright labels and skin colour.",
+        "If hands smear, seek a brighter opening or a brief pause; a capable manual app can use 1/500–1/640 s with enough ISO to maintain exposure."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Comfortable secure grip or strap"
+        ],
+        "optional": [
+          "Small lens cloth",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Products sharp, exchanging hands blurred",
+          "cause": "The capture was too long for the gesture.",
+          "fix": "Use brighter light or a held moment; select a shorter shutter only in an app that supports it."
+        },
+        {
+          "symptom": "Skin looks red or green",
+          "cause": "A coloured awning filtered the light.",
+          "fix": "Move toward neutral light if possible; one WB change may not correct every part of the scene."
+        },
+        {
+          "symptom": "Bright labels dominate",
+          "cause": "Highlights compete with the human action.",
+          "fix": "Change angle or frame around the exchange and a simpler product group."
+        },
+        {
+          "symptom": "Person feels disconnected from the market",
+          "cause": "Framing removed the useful context.",
+          "fix": "Include working hands, a recognisable product or the customer’s interaction."
+        }
+      ],
+      "tip": "Watch weighing, wrapping and handing over: these gestures explain the market without needing a posed portrait."
     },
     "why": [
       "A moderately fast shutter protects the gesture that makes the market scene specific.",
@@ -5573,7 +7222,7 @@
       "Check whether the awning casts an unwanted colour on the face.",
       "Track the face or hands and shoot during an exchange.",
       "Inspect the chosen gesture, bright labels and skin tone.",
-      "Move to the stall opening for cleaner light or raise ISO if hands are blurred."
+      "Move to the stall opening for cleaner light. If hands blur, choose 1/500–1/640 s and let Auto ISO compensate; if it reaches its ceiling, seek brighter light or open the aperture and recheck focus depth."
     ],
     "pack": {
       "essential": [
@@ -5717,7 +7366,53 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld or permitted support",
       "guidance": "Keep the phone parallel to flat exhibits, shade reflections and make several steady frames.",
-      "limitation": "Automatic sharpening may invent-looking edge texture in very dim light; glass and low illumination can limit fine detail regardless of mode."
+      "limitation": "Automatic sharpening may invent-looking edge texture in very dim light; glass and low illumination can limit fine detail regardless of mode.",
+      "why": [
+        "A static exhibit allows a careful supported capture, but museum rules still govern flash and support.",
+        "A glass reflection is a light-path problem; brightening the object does not remove it.",
+        "Flat artwork needs a parallel phone position while deep sculpture needs an actual front-to-back detail check."
+      ],
+      "steps": [
+        "Read the gallery’s photography and support rules and disable flash.",
+        "Choose an angle with fewer reflected lamps, keeping the permitted distance from the case.",
+        "Use the main lens and align the phone parallel to flat artwork.",
+        "Tap an important object edge, not a reflection, and make several steady Photo frames.",
+        "Try a supported Night capture only for a static exhibit where allowed; inspect fine texture and depth afterwards.",
+        "Change angle for glare or use more permitted support for shake; do not invent detail with heavy digital zoom."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Clean lens"
+        ],
+        "optional": [
+          "Dark clothing to reduce reflections",
+          "Support only where explicitly permitted"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Gallery lights float over the exhibit",
+          "cause": "The case reflects room lighting.",
+          "fix": "Change angle and shade the phone without touching the case or obstructing visitors."
+        },
+        {
+          "symptom": "All fine edges are doubled",
+          "cause": "The phone moved in dim light.",
+          "fix": "Brace safely and take several frames; use a permitted support if available."
+        },
+        {
+          "symptom": "Front detail sharp, back detail soft",
+          "cause": "The chosen focus distance or viewpoint does not cover the sculpture.",
+          "fix": "Try a more parallel view, step back within permitted space and retap an intermediate detail; phone aperture may be fixed."
+        },
+        {
+          "symptom": "Artwork becomes a trapezoid",
+          "cause": "The phone is tilted relative to the surface.",
+          "fix": "Align the sensor plane parallel and leave modest correction margins."
+        }
+      ],
+      "tip": "Inspect the reflection first: a small sideways move can save a much larger correction later."
     },
     "why": [
       "The object is still, so camera shake and focus depth matter more than subject movement.",
@@ -5873,7 +7568,55 @@
       "whiteBalance": "Underwater/custom mode if available",
       "support": "Stable buoyancy; never stand on coral",
       "guidance": "Test housing seals and controls before entry, keep subjects nearby without touching wildlife and use the sun behind or to your side.",
-      "limitation": "Water resistance alone is not a guarantee for underwater photography. Colours and sharpness deteriorate with depth and distance; fixed phone optics and the port change framing."
+      "limitation": "Water resistance alone is not a guarantee for underwater photography. Colours and sharpness deteriorate with depth and distance; fixed phone optics and the port change framing.",
+      "why": [
+        "A rated housing with usable controls is essential; ordinary phone water resistance is not a substitute.",
+        "Keeping the water path short preserves contrast and available colour without chasing wildlife.",
+        "A short normal capture suits drift and movement better than a long Night sequence."
+      ],
+      "steps": [
+        "Inspect, seal and test the depth-rated housing exactly as its manufacturer directs; practise its controls before entry.",
+        "Confirm conditions, depth limits, safe entry and your own competence with appropriate supervision or a buddy.",
+        "Use the compatible main/wide lens and ordinary Photo mode; set available underwater/WB options before entry if controls require it.",
+        "Approach a nearby composition without touching wildlife or coral, maintain buoyancy and focus through the housing controls.",
+        "Take short sequences, then inspect clarity and highlights only when safe.",
+        "Move to clearer or shallower water for weak colour; use supported manual shutter control only if it does not distract from buoyancy and safety."
+      ],
+      "pack": {
+        "essential": [
+          "Phone in a tested depth-rated housing with usable controls",
+          "Suitable water-safety equipment",
+          "Competence and appropriate supervision or buddy support"
+        ],
+        "optional": [
+          "Manufacturer-approved tether",
+          "Compatible wide wet lens",
+          "Lens/port cleaning supplies"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Scene is blue-green with little red",
+          "cause": "Water absorbed warm wavelengths over depth and distance.",
+          "fix": "Shoot shallower and nearer; use available underwater WB within its limits, without promising missing colours will return."
+        },
+        {
+          "symptom": "Image stays hazy despite apparent focus",
+          "cause": "Too much suspended material or water lies between lens and subject.",
+          "fix": "Choose clearer water and a nearer composition without disturbing marine life."
+        },
+        {
+          "symptom": "Subject edges smear",
+          "cause": "Drift or subject motion exceeded the capture speed.",
+          "fix": "Stabilise buoyancy and seek brighter shallow light; a supported manual app may use 1/250–1/500 s."
+        },
+        {
+          "symptom": "Housing fogs, leaks or controls fail",
+          "cause": "Preparation, sealing or operating conditions are unsuitable.",
+          "fix": "Stop photography and exit safely; follow the housing manufacturer’s instructions before using it again."
+        }
+      ],
+      "tip": "Practise every needed control with the housing dry; a touch gesture that works ashore may not work underwater."
     },
     "why": [
       "Water between lens and subject reduces contrast and colour, so a nearby composition is more effective than distant zooming.",
@@ -6036,7 +7779,52 @@
       "whiteBalance": "Auto WB",
       "support": "Handheld with a secure strap",
       "guidance": "Brace your body safely without pressing the phone against a vibrating rail; keep the horizon level and shoot between splashes.",
-      "limitation": "Stabilization cannot fully remove boat movement in a long exposure; water droplets on the lens can ruin every frame."
+      "limitation": "Stabilization cannot fully remove boat movement in a long exposure; water droplets on the lens can ruin every frame.",
+      "why": [
+        "The boat is moving beneath the camera, so a tripod cannot provide a stationary long-exposure viewpoint.",
+        "Bright daylight helps a phone freeze foam and platform vibration.",
+        "The wake supplies strong leading lines while a level horizon keeps the view coherent."
+      ],
+      "steps": [
+        "Choose a permitted passenger position with secure footing and attach a suitable strap or grip.",
+        "Clean spray from the lens and use Photo mode with the main or appropriate ultrawide lens.",
+        "Frame the wake without leaning beyond railings and tap defined foam beyond the immediate spray.",
+        "Take short bursts between splashes while keeping the horizon level.",
+        "Inspect foam texture, horizon and droplet blur.",
+        "For persistent smear, seek brighter light or use a supported manual 1/1000 s; protect footing and equipment before making adjustments."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with a secure grip or strap",
+          "Suitable weather protection"
+        ],
+        "optional": [
+          "Dry lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Whole view smears",
+          "cause": "Boat movement exceeded the capture speed.",
+          "fix": "Use a short normal capture in good light; do not switch to a long Night mode or rely on a deck-mounted tripod."
+        },
+        {
+          "symptom": "Wake is a blank white shape",
+          "cause": "Foam highlights clipped.",
+          "fix": "Lower exposure and inspect foam detail while keeping a usable sea tone."
+        },
+        {
+          "symptom": "Horizon tilts between frames",
+          "cause": "Boat roll changed the framing.",
+          "fix": "Use the grid or level and leave small straightening margins."
+        },
+        {
+          "symptom": "Soft circles overlay the sea",
+          "cause": "Spray landed on the lens.",
+          "fix": "Clean and shield the lens safely, then take another test."
+        }
+      ],
+      "tip": "Wait for the boat to straighten for a symmetrical wake, or use a turn’s curve deliberately."
     },
     "why": [
       "A fast shutter controls both foam movement and movement of the camera platform.",
@@ -6195,7 +7983,54 @@
       "whiteBalance": "Auto WB; tinted glass can retain a colour cast",
       "support": "Handheld or permitted support",
       "guidance": "Move close to a clean pane, shade the lens from room lights and avoid reflecting your screen or clothing.",
-      "limitation": "A polarizer may help at some angles but can reveal stress patterns in laminated glass; phone accessories are not a guaranteed cure."
+      "limitation": "A polarizer may help at some angles but can reveal stress patterns in laminated glass; phone accessories are not a guaranteed cure.",
+      "why": [
+        "Blocking reflected interior light is more effective than trying to remove it with exposure changes.",
+        "A main or genuine optical telephoto view can isolate a clear section of pane without heavy digital zoom.",
+        "Tint and multiple glass layers may limit colour and detail even when the phone is correctly focused."
+      ],
+      "steps": [
+        "Choose a clean permitted pane and an angle with fewer reflected interior lamps.",
+        "Switch flash off, dim the screen and move close without stressing or touching the glass unnecessarily.",
+        "Shade the lens from room light with dark clothing or a hand kept outside the image.",
+        "Tap a distant building and make an ordinary Photo test.",
+        "Enlarge city detail, ghost reflections and colour casts.",
+        "Change position for reflections; after dark use a supported Night capture only when the scene and viewpoint are sufficiently still."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted observation-deck access"
+        ],
+        "optional": [
+          "Dark clothing",
+          "Soft hood compatible with the phone",
+          "Support where allowed"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Ceiling lights float over buildings",
+          "cause": "Interior lamps reflect in the pane.",
+          "fix": "Shade the lens and move to a darker section or a different angle."
+        },
+        {
+          "symptom": "Window marks sharp, city soft",
+          "cause": "Autofocus selected the glass.",
+          "fix": "Tap a distant building edge and lock focus if available."
+        },
+        {
+          "symptom": "Rainbow or dark patches appear",
+          "cause": "An accessory polarizer interacts with laminated or stressed glass.",
+          "fix": "Remove it or test another angle while inspecting the whole frame."
+        },
+        {
+          "symptom": "The city has a blue-green cast",
+          "cause": "Window tint changed the transmitted light.",
+          "fix": "Use available WB/tint correction or RAW editing, accepting that some colour may remain limited."
+        }
+      ],
+      "tip": "Dim the screen before blaming the glass; the reflection can be your own display."
     },
     "why": [
       "The distant skyline needs little focus depth, so a moderate aperture is enough while helping hide nearby marks.",

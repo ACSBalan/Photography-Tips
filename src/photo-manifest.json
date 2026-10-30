@@ -396,16 +396,17 @@
     "downloadUrl": "https://images.pexels.com/photos/9280240/pexels-photo-9280240.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "light-painting": {
-    "src": "./photos/pexels-12386462.webp",
-    "alt": "A circular trail of sparks and reflected light beside water at night.",
-    "author": "Quang Nguyen Vinh",
-    "source": "https://www.pexels.com/photo/steel-wool-spinning-12386462/",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
+    "src": "./photos/commons-light-painted-car.webp",
+    "alt": "A stationary car with selectively illuminated bodywork in a dark garage.",
+    "author": "WillVision",
+    "source": "https://commons.wikimedia.org/wiki/File:Light-painted_BMW_E30_Drift_car_M5_powered_-_Flickr_-_WillVision_Photography.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/12386462/pexels-photo-12386462.jpeg",
-    "title": "Steel Wool Spinning",
-    "downloadUrl": "https://images.pexels.com/photos/12386462/pexels-photo-12386462.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Light-painted_BMW_E30_Drift_car_M5_powered_-_Flickr_-_WillVision_Photography.jpg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Light-painted_BMW_E30_Drift_car_M5_powered_-_Flickr_-_WillVision_Photography.jpg",
+    "title": "Light-painted BMW E30 drift car",
+    "teachingCaption": "Selective light reveals the stationary car while the surrounding garage stays dark. Sweep an ordinary torch over the surfaces you want to reveal, keeping its beam out of the lens; no fire or spark effect is needed."
   },
   "double-exposure": {
     "src": "./photos/commons-29584111.webp",
@@ -600,16 +601,17 @@
     "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Total_Lunar_Eclipse_Totality_-_large_image.jpg/1280px-Total_Lunar_Eclipse_Totality_-_large_image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   "partial-solar-eclipse": {
-    "src": "./photos/commons-139328890.webp",
-    "alt": "The Sun's disk partly obscured by the Moon during a partial eclipse.",
-    "author": "HomerPap17",
-    "source": "https://commons.wikimedia.org/wiki/File:Partial_Solar_Eclipse_on_25th_of_October_2022.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "src": "./photos/commons-eclipse-vienna.webp",
+    "alt": "A partially eclipsed solar disc with a defined lunar edge and several visible dark sunspots.",
+    "author": "J.KYSELAK",
+    "source": "https://commons.wikimedia.org/wiki/File:Sofi_2026_Wien_partielle_Phase.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Sofi 2026 Wien partielle Phase",
     "position": "50% 50%",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Partial_Solar_Eclipse_on_25th_of_October_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "title": "Partial Solar Eclipse on 25th of October 2022.jpg",
-    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Partial_Solar_Eclipse_on_25th_of_October_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sofi_2026_Wien_partielle_Phase.jpg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sofi_2026_Wien_partielle_Phase.jpg",
+    "teachingCaption": "The lunar edge and small dark sunspots stay visible instead of washing into a white disc. The shape changes with eclipse phase; fit the correct front-mounted solar filter before aiming, and keep it in place throughout every partial phase."
   },
   "earthshine": {
     "src": "./photos/commons-68393224.webp",
@@ -648,16 +650,17 @@
     "downloadUrl": "https://images.pexels.com/photos/28945726/pexels-photo-28945726.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "backlit-grasses": {
-    "src": "./photos/pexels-4016697.webp",
-    "alt": "Fine grass stems silhouetted against the low orange Sun.",
-    "author": "Serinus",
-    "source": "https://www.pexels.com/photo/silhouette-of-grass-during-sunset-4016697/",
+    "src": "./photos/pexels-34993666.webp",
+    "alt": "A backlit grass seed head with glowing fine hairs against softly blurred warm foliage.",
+    "author": "Ty Nguyễn",
+    "source": "https://www.pexels.com/photo/golden-hour-capture-of-backlit-grass-34993666/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/4016697/pexels-photo-4016697.jpeg",
-    "title": "Silhouette of Grass during Sunset",
-    "downloadUrl": "https://images.pexels.com/photos/4016697/pexels-photo-4016697.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/34993666/pexels-photo-34993666.jpeg",
+    "title": "Golden hour capture of backlit grass",
+    "downloadUrl": "https://images.pexels.com/photos/34993666/pexels-photo-34993666.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "The fine hairs glow while the seed head stays defined. Aim for a quieter, darker background and keep the brightest edges from washing out."
   },
   "blue-hour-coast": {
     "src": "./photos/pexels-18508975.webp",
@@ -876,16 +879,15 @@
     "downloadUrl": "https://images.pexels.com/photos/11605791/pexels-photo-11605791.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "stream-texture": {
-    "src": "./photos/pexels-11895413.webp",
-    "alt": "A textured stream winding between mossy rocks in a forest.",
-    "author": "Mark Barnwell",
-    "source": "https://www.pexels.com/photo/a-river-in-the-forest-11895413/",
+    "src": "./photos/pexels-12719831.webp",
+    "alt": "Distinct white water streaks curve around a sharply defined mossy rock in a flowing river.",
+    "author": "Maciej Cisowski",
+    "source": "https://www.pexels.com/photo/long-exposure-of-flowing-water-12719831/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/11895413/pexels-photo-11895413.jpeg",
-    "title": "A River in the Forest",
-    "downloadUrl": "https://images.pexels.com/photos/11895413/pexels-photo-11895413.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "downloadUrl": "https://images.pexels.com/photos/12719831/pexels-photo-12719831.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "The mossy rock stays defined while separate flow lines bend around it. Judge the readable streaks, not just smoothness; choose a shorter supported capture if the flow becomes featureless."
   },
   "fountain-droplets": {
     "src": "./photos/pexels-6457.webp",
@@ -960,16 +962,17 @@
     "downloadUrl": "https://images.pexels.com/photos/5463569/pexels-photo-5463569.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "daylight-street": {
-    "src": "./photos/pexels-9432522.webp",
-    "alt": "A narrow city street with light falling between tall buildings.",
+    "src": "./photos/pexels-8132066.webp",
+    "alt": "Pedestrians mid-stride on a striped crossing in daylight.",
     "author": "Zeeshaan Shabbir",
-    "source": "https://www.pexels.com/photo/desaturated-image-of-a-downtown-architecture-at-night-9432522/",
+    "source": "https://www.pexels.com/photo/people-walking-on-pedestrian-crossing-in-daytime-8132066/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/9432522/pexels-photo-9432522.jpeg",
-    "title": "Desaturated Image of a Downtown Architecture at Night",
-    "downloadUrl": "https://images.pexels.com/photos/9432522/pexels-photo-9432522.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/8132066/pexels-photo-8132066.jpeg",
+    "title": "People walking on pedestrian crossing in daytime",
+    "downloadUrl": "https://images.pexels.com/photos/8132066/pexels-photo-8132066.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "The gaps between legs and repeated crossing stripes make the walking gesture readable. Inspect moving shoes separately from the stationary road markings."
   },
   "night-street": {
     "src": "./photos/pexels-533787.webp",
@@ -1020,16 +1023,17 @@
     "downloadUrl": "https://images.pexels.com/photos/34232700/pexels-photo-34232700.png?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "vertical-architecture": {
-    "src": "./photos/pexels-374122.webp",
-    "alt": "Tall glass buildings seen from street level.",
-    "author": "Burst",
-    "source": "https://www.pexels.com/photo/low-angle-photo-of-glass-building-374122/",
+    "src": "./photos/pexels-36326590.webp",
+    "alt": "A building façade photographed front-on with nearly parallel vertical window edges.",
+    "author": "Valentin Ivantsov",
+    "source": "https://www.pexels.com/photo/symmetrical-urban-building-facade-with-windows-36326590/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/374122/pexels-photo-374122.jpeg",
-    "title": "Low Angle Photo of Glass Building",
-    "downloadUrl": "https://images.pexels.com/photos/374122/pexels-photo-374122.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/36326590/pexels-photo-36326590.jpeg",
+    "title": "Symmetrical urban building facade with windows",
+    "downloadUrl": "https://images.pexels.com/photos/36326590/pexels-photo-36326590.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "The window uprights stay nearly parallel. Keep the camera level; step back or use a permitted higher viewpoint when the top of a building will not fit."
   },
   "cathedral-interior": {
     "src": "./photos/pexels-37423340.webp",
@@ -1080,28 +1084,30 @@
     "downloadUrl": "https://images.pexels.com/photos/13975775/pexels-photo-13975775.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "subway-motion": {
-    "src": "./photos/pexels-36568725.webp",
-    "alt": "A moving train blurred beside a stationary station platform.",
-    "author": "David Vives",
-    "source": "https://www.pexels.com/photo/blur-motion-in-new-york-city-subway-station-36568725/",
+    "src": "./photos/pexels-9606024.webp",
+    "alt": "A stationary passenger on a platform in front of a horizontally blurred passing train.",
+    "author": "Osman Özavcı",
+    "source": "https://www.pexels.com/photo/a-person-standing-on-a-subway-platform-9606024/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/36568725/pexels-photo-36568725.jpeg",
-    "title": "Blur Motion in New York City Subway Station",
-    "downloadUrl": "https://images.pexels.com/photos/36568725/pexels-photo-36568725.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/9606024/pexels-photo-9606024.jpeg",
+    "title": "A person standing on a subway platform",
+    "downloadUrl": "https://images.pexels.com/photos/9606024/pexels-photo-9606024.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "The passenger and platform remain readable while the passing train streaks horizontally. Keep yourself and any posed subject behind the platform’s safety markings."
   },
   "interior-window-balance": {
-    "src": "./photos/pexels-35449990.webp",
-    "alt": "A shaded Japanese room with sunlight and a garden visible through shoji screens.",
-    "author": "Kaiya Inouye",
-    "source": "https://www.pexels.com/photo/tranquil-japanese-room-with-open-shoji-and-garden-view-35449990/",
+    "src": "./photos/pexels-19916712.webp",
+    "alt": "A furnished living room with visible sofa and wall detail as well as buildings through the windows.",
+    "author": "Lisa Anna",
+    "source": "https://www.pexels.com/photo/window-in-a-living-room-19916712/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/35449990/pexels-photo-35449990.jpeg",
-    "title": "Tranquil Japanese Room with Open Shoji and Garden View",
-    "downloadUrl": "https://images.pexels.com/photos/35449990/pexels-photo-35449990.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/19916712/pexels-photo-19916712.jpeg",
+    "title": "Window in a living room",
+    "downloadUrl": "https://images.pexels.com/photos/19916712/pexels-photo-19916712.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "Room furnishings remain readable and the outside building retains detail. Check both areas; bracket a static room when one exposure cannot hold them."
   },
   "fireworks": {
     "src": "./photos/pexels-1503520.webp",
@@ -1176,16 +1182,17 @@
     "downloadUrl": "https://images.pexels.com/photos/6266941/pexels-photo-6266941.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "dance-floor-flash": {
-    "src": "./photos/pexels-5192503.webp",
-    "alt": "Dancers silhouetted on a green-lit dance floor.",
-    "author": "Maor Attias",
-    "source": "https://www.pexels.com/photo/silhouettes-of-people-on-the-dancefloor-in-green-light-5192503/",
+    "src": "./photos/pexels-29559268.webp",
+    "alt": "A night portrait with defined facial features surrounded by curved coloured light trails.",
+    "author": "Alejandro Reyes",
+    "source": "https://www.pexels.com/photo/dynamic-night-portrait-with-neon-light-effects-29559268/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/5192503/pexels-photo-5192503.jpeg",
-    "title": "Silhouettes of People on the Dancefloor in Green Light",
-    "downloadUrl": "https://images.pexels.com/photos/5192503/pexels-photo-5192503.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/29559268/pexels-photo-29559268.jpeg",
+    "title": "Dynamic night portrait with neon light effects",
+    "downloadUrl": "https://images.pexels.com/photos/29559268/pexels-photo-29559268.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "Defined facial features coexist with light trails. With a compatible camera and flash system, flash output controls the lit person and shutter duration controls ambient trails. Stock phone cameras generally cannot reproduce this setup; use the phone workflow’s alternative."
   },
   "candlelight-portrait": {
     "src": "./photos/pexels-2689912.webp",
@@ -1272,16 +1279,17 @@
     "downloadUrl": "https://images.pexels.com/photos/19193225/pexels-photo-19193225.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
   },
   "group-portrait": {
-    "src": "./photos/pexels-33167534.webp",
-    "alt": "A group of five friends standing together for a portrait.",
-    "author": "Karan Mridha",
-    "source": "https://www.pexels.com/photo/joyful-group-of-friends-in-studio-setting-33167534/",
+    "src": "./photos/pexels-1429900.webp",
+    "alt": "An outdoor group portrait with faces at several heights and distances.",
+    "author": "GM ISLAM",
+    "source": "https://www.pexels.com/photo/group-photo-1429900/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "position": "50% 50%",
-    "originalUrl": "https://images.pexels.com/photos/33167534/pexels-photo-33167534.jpeg",
-    "title": "Joyful Group of Friends in Studio Setting",
-    "downloadUrl": "https://images.pexels.com/photos/33167534/pexels-photo-33167534.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max"
+    "originalUrl": "https://images.pexels.com/photos/1429900/pexels-photo-1429900.jpeg",
+    "title": "Group photo",
+    "downloadUrl": "https://images.pexels.com/photos/1429900/pexels-photo-1429900.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1400&fit=max",
+    "teachingCaption": "Check the nearest child and the people behind separately. Keeping rows shallow helps retain detail across the whole group."
   },
   "environmental-portrait": {
     "src": "./photos/pexels-40573912.webp",

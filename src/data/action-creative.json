@@ -52,10 +52,56 @@
       "shutter": "Aim for 1/1600 s in a manual app",
       "focus": "Track or tap the face before the runner arrives",
       "focal": "Use a genuine tele lens if available; avoid heavy digital zoom",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Shoot in bright light and start the burst before the peak stride.",
-      "limitation": "Ordinary photo mode may choose a shutter too slow; night mode and multi-frame HDR can ghost limbs."
+      "limitation": "Ordinary photo mode may choose a shutter too slow; night mode and multi-frame HDR can ghost limbs.",
+      "why": [
+        "Bright light helps the phone choose a short exposure; burst mode alone does not guarantee sharp movement.",
+        "Starting before the stride peaks gives tracking and timing a better chance.",
+        "A quiet background and space ahead make the runner’s airborne pose readable."
+      ],
+      "steps": [
+        "Choose a permitted viewpoint beside the course, clear of the runner’s path.",
+        "Use Photo/burst or a genuine action mode and select the main or a useful optical telephoto lens.",
+        "Tap or track the face before the runner reaches your chosen clear background.",
+        "Begin a short burst before the airborne stride, following smoothly without cutting off feet.",
+        "Enlarge the face and feet; for motion smear seek brighter light or use a supported manual 1/1600 s with suitable ISO.",
+        "If the runner remains too small, include the track and surroundings rather than relying on heavy digital zoom."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe permitted course-side position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Face and feet streak, track sharp",
+          "cause": "The exposure was too long for the crossing movement.",
+          "fix": "Use brighter light or a supported faster manual shutter; do not use Night mode for the run."
+        },
+        {
+          "symptom": "Background sharp, runner soft",
+          "cause": "Focus stayed on the scene behind.",
+          "fix": "Acquire the face earlier or use available person tracking."
+        },
+        {
+          "symptom": "Best frame cuts off a foot",
+          "cause": "The burst framing was too tight.",
+          "fix": "Leave space below and ahead before the runner enters."
+        },
+        {
+          "symptom": "Limbs have doubled outlines",
+          "cause": "Multi-frame processing combined positions.",
+          "fix": "Try an ordinary Photo burst and compare saved frames; processing options vary by phone."
+        }
+      ],
+      "tip": "Watch a practice stride and choose the clean background before the runner reaches it."
     },
     "why": [
       "1/1600 s limits movement of feet and hands during the stride.",
@@ -208,10 +254,56 @@
       "shutter": "Pro app: start 1/2500 s",
       "focus": "Track the rider’s upper body",
       "focal": "Genuine tele lens; main lens for a closer safe viewpoint",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use a burst as the cyclist crosses a pre-selected clear background.",
-      "limitation": "Rolling shutter can still distort wheels; digital zoom does not replace a long lens."
+      "limitation": "Rolling shutter can still distort wheels; digital zoom does not replace a long lens.",
+      "why": [
+        "A side-on cyclist moves quickly across the image, so good light and a short capture matter.",
+        "Tracking the upper body is usually easier than following the rotating wheels.",
+        "A true optical view can help reach, but a wider racing composition is better than missing detail enlarged digitally."
+      ],
+      "steps": [
+        "Choose an authorised position outside the course and identify a clear background.",
+        "Select Photo/burst or a supported sports mode, using optical reach only when the light supports it.",
+        "Tap or track the rider’s upper body before the chosen crossing point.",
+        "Make a short burst with room for both wheels and the direction of travel.",
+        "Inspect the face, frame and wheel shape separately.",
+        "For movement smear use brighter light or a supported 1/2500 s; if crisp wheels are still distorted, recognise a possible readout limit rather than only increasing exposure speed."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Authorised safe course-side position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual capture app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rider and bike smear horizontally",
+          "cause": "Exposure was too slow for their apparent speed.",
+          "fix": "Choose brighter light or a supported short manual exposure around 1/2500 s."
+        },
+        {
+          "symptom": "Wheel shape is bent despite crisp edges",
+          "cause": "Rolling readout distorted the moving geometry.",
+          "fix": "Try another supported capture mode or a less side-on moment; faster shutter alone may not cure it."
+        },
+        {
+          "symptom": "Spectator sharp, rider soft",
+          "cause": "Focus switched to a competing background subject.",
+          "fix": "Track earlier and choose a cleaner background."
+        },
+        {
+          "symptom": "Face is tiny after heavy zoom",
+          "cause": "The lens did not capture enough optical detail.",
+          "fix": "Use a wider rider-and-course image from the same safe position."
+        }
+      ],
+      "tip": "The face is the useful sharpness anchor; a little rotating-spoke blur may still communicate speed."
     },
     "why": [
       "A cyclist crosses a frame quickly, so 1/2500 s provides a stronger freeze than a casual walking shutter.",
@@ -366,10 +458,56 @@
       "shutter": "Start 1/60 s",
       "focus": "Lock or track the passing rider",
       "focal": "Main lens; avoid changing lenses during a pan",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Pan smoothly; a clip-on ND may be needed because phone apertures are fixed.",
-      "limitation": "Computational long exposure may combine frames instead of recording a true pan; results vary by app."
+      "limitation": "Computational long exposure may combine frames instead of recording a true pan; results vary by app.",
+      "why": [
+        "A recognisable rider against streaks requires a deliberately slow capture and matched phone movement.",
+        "The fixed phone aperture may require physical ND or dimmer light at 1/60 s.",
+        "Computational slow-shutter modes can blend the rider differently from a true single-exposure pan."
+      ],
+      "steps": [
+        "Choose a safe permitted side view with a cyclist moving steadily across a simple background.",
+        "Use a manual app that genuinely offers about 1/60 s, select the main lens and the lowest practical ISO.",
+        "If the test is too bright, use a secure compatible ND filter or softer light; do not expect an aperture control.",
+        "Tap/track the rider, rotate smoothly from the waist and release while continuing the pan.",
+        "Inspect the upper body and background streak direction; try 1/125 s if keeping the rider recognisable is difficult.",
+        "If the phone cannot select the slow exposure, take a normal cycling action photograph or label an app-processed motion effect as a different result."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "App with documented slow-shutter control for the true pan"
+        ],
+        "optional": [
+          "Compatible ND filter and secure holder",
+          "Grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rider blurred in a different direction from the background",
+          "cause": "The pan did not match the rider’s speed.",
+          "fix": "Practise a smooth follow-through and try 1/125 s if supported."
+        },
+        {
+          "symptom": "Whole image is washed out",
+          "cause": "Too much light entered at the chosen slow exposure and fixed aperture.",
+          "fix": "Use lower available ISO, suitable physical ND or dimmer light."
+        },
+        {
+          "symptom": "Background is still sharp",
+          "cause": "The app used a short exposure or the pan was too small.",
+          "fix": "Confirm actual shutter control and follow the rider through release."
+        },
+        {
+          "symptom": "Rider has repeated cutout shapes",
+          "cause": "The mode blended separated frames.",
+          "fix": "Use a genuine slow exposure if available, or accept the computational effect as distinct."
+        }
+      ],
+      "tip": "Keep following after pressing the shutter; stopping at release often ruins the recognisable rider."
     },
     "why": [
       "1/60 s records the moving background while you follow the rider.",
@@ -525,10 +663,56 @@
       "shutter": "Manual app: 1/2000 s target",
       "focus": "Tap and track the car before the apex",
       "focal": "Genuine tele lens if available",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Stay at authorised distances and compose a wider racing scene if the car is small.",
-      "limitation": "Long-distance detail and tracking are limited; do not move closer to compensate for inadequate reach."
+      "limitation": "Long-distance detail and tracking are limited; do not move closer to compensate for inadequate reach.",
+      "why": [
+        "A preselected corner gives the phone a more predictable subject position than chasing an entire lap.",
+        "Track access and safe distance take priority over filling the frame.",
+        "A wider car-and-circuit photograph remains useful when a phone lacks long optical reach."
+      ],
+      "steps": [
+        "Stay in the authorised spectator area and choose a corner visible without leaning across barriers.",
+        "Use Photo/burst or a supported action mode and a genuine telephoto only if detail remains useful.",
+        "Tap or track the car before it reaches the chosen apex.",
+        "Make a short burst with room for the exit direction and the circuit context.",
+        "Enlarge car edges and inspect wheel/body distortion as well as blur.",
+        "For motion smear seek a brighter lap or use a supported manual 1/2000 s; if reach is insufficient, compose the wider race scene from the same safe position."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Authorised spectator position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Ear protection appropriate to the venue"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Car streaks but track lines are sharp",
+          "cause": "The capture was too slow for the pass.",
+          "fix": "Use brighter light or a supported faster manual shutter."
+        },
+        {
+          "symptom": "Car remains a small block after zooming",
+          "cause": "Digital crop enlarged insufficient optical detail.",
+          "fix": "Keep a wider racing composition; never approach restricted track space for reach."
+        },
+        {
+          "symptom": "Car shape leans or stretches",
+          "cause": "Sensor readout distorted fast motion.",
+          "fix": "Try a less side-on part of the corner or another supported capture mode."
+        },
+        {
+          "symptom": "Safety fence is sharper than the car",
+          "cause": "Focus selected the nearer barrier.",
+          "fix": "Tap the distant car or track area through a clear permitted view; do not bypass the barrier."
+        }
+      ],
+      "tip": "Choose the corner and background once, then use each lap to improve timing rather than camera position."
     },
     "why": [
       "A short exposure limits rapid body movement without requiring a perfect pan.",
@@ -684,10 +868,57 @@
       "shutter": "Pro app: start 1/2000 s",
       "focus": "Tap and track the athlete",
       "focal": "Main or genuine tele lens",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Expose for bright textured snow and burst during the turn.",
-      "limitation": "Cold reduces battery life; touch controls and tracking can be difficult with gloves."
+      "limitation": "Cold reduces battery life; touch controls and tracking can be difficult with gloves.",
+      "why": [
+        "Bright snow can mislead automatic exposure, so judge texture in the snow as well as the athlete.",
+        "A short burst around a turn can capture both the body position and the spray.",
+        "Cold and gloves affect phone operation, making a prepared composition especially useful."
+      ],
+      "steps": [
+        "Choose a safe permitted position outside the athlete’s route and landing area.",
+        "Use Photo/burst mode with a main or useful optical telephoto view.",
+        "Tap or track the athlete before the turn and leave room for the spray.",
+        "Capture a short burst, then enlarge the face and inspect the brightest snow.",
+        "If snow is grey, raise exposure cautiously; if texture is already white and blank, lower it.",
+        "For motion smear use brighter light or a supported manual 1/2000 s, and keep the phone warm and dry between sequences."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Secure grip suitable for the conditions"
+        ],
+        "optional": [
+          "Warm inner pocket",
+          "Dry lens cloth",
+          "Power bank protected from cold"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Snow looks dull grey",
+          "cause": "Metering rendered a bright scene too dark.",
+          "fix": "Increase exposure slightly while checking that snow texture remains."
+        },
+        {
+          "symptom": "Spray becomes featureless white",
+          "cause": "Bright droplets clipped.",
+          "fix": "Lower exposure and inspect saved highlights."
+        },
+        {
+          "symptom": "Athlete sharp but skis or spray smear",
+          "cause": "The fastest parts moved farther during capture.",
+          "fix": "Use a supported faster shutter or a brighter moment; judge whether some spray blur suits the image."
+        },
+        {
+          "symptom": "Phone stops responding or loses charge quickly",
+          "cause": "Cold affected battery and controls.",
+          "fix": "Warm it safely between shots and prepare controls before removing gloves; avoid sudden condensation."
+        }
+      ],
+      "tip": "Let the turn come to the composition; moving to chase it can put you in the athlete’s path."
     },
     "why": [
       "1/2000 s freezes much of the snow spray and the athlete’s movement.",
@@ -843,10 +1074,57 @@
       "shutter": "Pro app: target 1/2500 s",
       "focus": "Track surfer or tap the breaking point",
       "focal": "Genuine tele lens; main lens for a wide surf scene",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Photograph closer breaks from safe dry ground; include sea patterns if detail is limited.",
-      "limitation": "Phones often lack enough optical reach for distant surfers; digital zoom amplifies haze and noise."
+      "limitation": "Phones often lack enough optical reach for distant surfers; digital zoom amplifies haze and noise.",
+      "why": [
+        "Optical reach often limits a phone surf photograph more than its megapixel count.",
+        "Timing the breaking section gives a clear relationship between surfer, board and wave.",
+        "Bright water and a short capture help hold movement, but white foam still needs a highlight check."
+      ],
+      "steps": [
+        "Choose stable dry ground and stay clear of waves, slippery rocks and restricted access.",
+        "Use a genuine telephoto if it retains detail; otherwise frame a wider surfer-and-wave composition.",
+        "Tap or track the surfer before the wave breaks, or focus on the expected breaking zone.",
+        "Take short bursts through the turn with room around the board and spray.",
+        "Enlarge the surfer and check foam for clipping.",
+        "If motion smears, use brighter light or a supported manual 1/2500 s; if the subject is simply too small, keep the wider seascape rather than entering unsafe water."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe dry shore viewpoint"
+        ],
+        "optional": [
+          "Secure grip",
+          "Lens cloth",
+          "Weather protection"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Surfer is blocky while the wave looks detailed",
+          "cause": "The capture lacks enough optical reach.",
+          "fix": "Reduce digital zoom and make the wave pattern part of the image."
+        },
+        {
+          "symptom": "Surfer streaks against defined water",
+          "cause": "The person moved too far during capture.",
+          "fix": "Try brighter light or a shorter supported shutter and time the turn’s peak."
+        },
+        {
+          "symptom": "Foam is blank white",
+          "cause": "Highlights clipped.",
+          "fix": "Lower exposure slightly and inspect foam texture."
+        },
+        {
+          "symptom": "Focus follows spray instead of the surfer",
+          "cause": "A nearer high-contrast splash stole focus.",
+          "fix": "Acquire the surfer earlier or focus on the expected breaking zone and frame less tightly."
+        }
+      ],
+      "tip": "A small surfer on a beautifully shaped wave can be a stronger phone image than an enlarged soft face."
     },
     "why": [
       "1/2500 s gives droplets and the board edge a convincing freeze.",
@@ -1002,10 +1280,56 @@
       "shutter": "Manual app: 1/1000 s if light permits",
       "focus": "Track the nearest visible face",
       "focal": "Main lens usually gathers more light than the phone tele lens",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use a wider court scene if the tele lens becomes noisy or drops shutter speed.",
-      "limitation": "Night mode and multi-frame HDR often produce doubled limbs; LED banding may not be controllable."
+      "limitation": "Night mode and multi-frame HDR often produce doubled limbs; LED banding may not be controllable.",
+      "why": [
+        "Dim halls and fast limbs challenge phone capture, so brighter court areas and peak moments matter.",
+        "The main lens may retain more low-light detail than a telephoto module.",
+        "Night processing can merge moving players; it is not a reliable substitute for a short action exposure."
+      ],
+      "steps": [
+        "Use an approved courtside or seated position without blocking players or spectators.",
+        "Select Photo/burst or sports mode and start with the main lens.",
+        "Track or tap the key player before the pass, jump or drive, leaving room for the ball.",
+        "Capture short bursts at the top of a jump or a held passing moment.",
+        "Inspect the face, ball and LED bands separately.",
+        "If a manual app offers 1/1000 s, test it with enough ISO; if the hall is too dim, choose a wider play or a quieter moment rather than a long Night sequence."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Clear safe viewing position"
+        ],
+        "optional": [
+          "Grip",
+          "Manual app with shutter/flicker controls"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Ball and hands smear",
+          "cause": "Exposure was too long for fast play.",
+          "fix": "Use a brighter court zone, a peak moment or a supported faster shutter."
+        },
+        {
+          "symptom": "Players have doubled limbs",
+          "cause": "Multi-frame processing combined positions.",
+          "fix": "Use ordinary Photo/burst mode and compare saved frames; avoid long Night capture."
+        },
+        {
+          "symptom": "Telephoto image is noisy and soft",
+          "cause": "The longer phone module has insufficient light or detail.",
+          "fix": "Try the main lens with a wider court composition."
+        },
+        {
+          "symptom": "Dark bands cross players",
+          "cause": "Sports-hall LEDs interact with readout timing.",
+          "fix": "Test available anti-flicker or manual shutter options; some phones cannot eliminate the bands."
+        }
+      ],
+      "tip": "Keep the ball inside the composition before worrying about filling the frame with the player."
     },
     "why": [
       "1/1000 s protects fast hands and the ball under difficult indoor light.",
@@ -1160,10 +1484,56 @@
       "shutter": "Manual app: target 1/2000 s",
       "focus": "Track the nearest key player",
       "focal": "Genuine tele lens; wider view when action is distant",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Photograph near-side play from your permitted position and allow room for the ball.",
-      "limitation": "A phone cannot match the reach of a sideline telephoto; distant faces will remain small."
+      "limitation": "A phone cannot match the reach of a sideline telephoto; distant faces will remain small.",
+      "why": [
+        "Near-side play is a more realistic phone subject than distant faces across the pitch.",
+        "Tracking one player before the decisive contact helps when bodies overlap.",
+        "Room around the player preserves the ball and direction of the play."
+      ],
+      "steps": [
+        "Stay in the permitted spectator area and identify a clear view of near-side action.",
+        "Use Photo/burst mode and optical telephoto only when it captures useful detail.",
+        "Tap or track the key player before the pass or tackle.",
+        "Begin a short burst with extra room for the ball and another approaching player.",
+        "Enlarge the face and ball; distinguish motion streaks from focus on a different player.",
+        "For smear use brighter light or a supported manual 1/2000 s; for distant action make a wider team-and-pitch photograph."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted sideline or spectator position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Weather protection"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Player sharp, ball streaked",
+          "cause": "The ball moved faster than the body.",
+          "fix": "Try a supported faster shutter or a moment just before/after contact."
+        },
+        {
+          "symptom": "Wrong player is sharp",
+          "cause": "Overlapping faces confused tracking.",
+          "fix": "Tap the intended player again and anticipate a clearer separation."
+        },
+        {
+          "symptom": "Ball leaves the frame",
+          "cause": "Framing followed only the player’s body.",
+          "fix": "Widen and leave space in the direction of the pass."
+        },
+        {
+          "symptom": "Far-side faces lack detail",
+          "cause": "Optical reach is insufficient.",
+          "fix": "Use a wider scene and wait for near-side play; heavy digital zoom cannot recover faces."
+        }
+      ],
+      "tip": "Read the direction of the next pass and leave space there before starting the burst."
     },
     "why": [
       "1/2000 s captures a fast boot or ball more reliably than a walking shutter.",
@@ -1316,10 +1686,57 @@
       "shutter": "Pro app: start 1/1600 s",
       "focus": "Tap the cap or face",
       "focal": "Main lens close enough from a permitted dry position, or genuine tele lens",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Time the breathing phase and keep the camera safely away from pool edges.",
-      "limitation": "Water resistance is not permission to immerse a phone; indoor exposure may be too slow without manual control."
+      "limitation": "Water resistance is not permission to immerse a phone; indoor exposure may be too slow without manual control.",
+      "why": [
+        "The breathing phase gives a brief visible face instead of only a cap and splash.",
+        "Reflective water and white spray require a highlight check separate from facial exposure.",
+        "A short capture matters in a pool; support alone cannot freeze a swimmer."
+      ],
+      "steps": [
+        "Choose an approved dry viewing position and keep equipment and footing secure.",
+        "Use Photo/burst mode, flash off and a genuine optical view only when the pool light supports it.",
+        "Watch the swimmer’s stroke rhythm and tap the cap or face before the next breath.",
+        "Capture a short burst as the face clears the water, leaving room for the arm and spray.",
+        "Inspect the eye, splash and bright reflections.",
+        "In a capable manual app try 1/1600 s with enough ISO; if indoor light is insufficient, choose a slower part of the stroke or a wider pool composition."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Dry safe spectator position",
+          "Secure grip"
+        ],
+        "optional": [
+          "Splash protection",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Only a cap appears in the best frame",
+          "cause": "Release missed the breathing phase.",
+          "fix": "Watch a full stroke cycle and begin the next burst slightly earlier."
+        },
+        {
+          "symptom": "Face smeared but lane ropes are sharp",
+          "cause": "The swimmer moved during a slow capture.",
+          "fix": "Use brighter light or supported faster shutter; avoid a long Night sequence."
+        },
+        {
+          "symptom": "Water highlights are blank white",
+          "cause": "Reflections or spray clipped.",
+          "fix": "Lower exposure and inspect whether the face remains usable."
+        },
+        {
+          "symptom": "Blurry patches cover every frame",
+          "cause": "Water reached the lens surface.",
+          "fix": "Move to a dry safe position and clean the lens; phone water resistance does not justify immersion."
+        }
+      ],
+      "tip": "Learn the swimmer’s breathing side before choosing the position and timing."
     },
     "why": [
       "1/1600 s gives water droplets structure and limits head movement.",
@@ -1474,10 +1891,56 @@
       "shutter": "Manual app: 1/2000 s target",
       "focus": "Track the torso",
       "focal": "Main or ultrawide lens; keep faces away from extreme frame edges",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use a safe low viewpoint and start the burst before take-off.",
-      "limitation": "Ultrawide edge distortion can stretch limbs; avoid a night-mode sequence for a fast trick."
+      "limitation": "Ultrawide edge distortion can stretch limbs; avoid a night-mode sequence for a fast trick.",
+      "why": [
+        "The board and landing context make the trick understandable, so a tight face-only crop loses the action.",
+        "A low main or ultrawide view can add energy without putting the photographer in the landing path.",
+        "Burst timing begins before take-off because the most useful board position is brief."
+      ],
+      "steps": [
+        "Agree a safe position with the rider and stay outside take-off, travel and landing paths.",
+        "Choose a background and a main or ultrawide view with room for the complete trick.",
+        "Use Photo/burst mode and tap or track the torso before take-off.",
+        "Start the burst early and hold the composition through the landing.",
+        "Inspect board position, face and cut-off limbs; keep faces away from ultrawide corners.",
+        "If a spinning board smears, use brighter light or a supported manual 1/2000–1/4000 s; do not move into the path to improve framing."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Agreed safe viewpoint"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rider sharp, board smeared",
+          "cause": "The board rotated faster than the body.",
+          "fix": "Try a shorter supported exposure or a clearer peak position of the trick."
+        },
+        {
+          "symptom": "Board or head leaves the picture",
+          "cause": "The frame was too tight for the full movement.",
+          "fix": "Widen before take-off and include landing context."
+        },
+        {
+          "symptom": "Limbs stretch near the corners",
+          "cause": "Ultrawide edge geometry exaggerated them.",
+          "fix": "Reposition from a safe distance or use the main lens with more framing room."
+        },
+        {
+          "symptom": "Background sharp, rider soft",
+          "cause": "Focus did not follow the changing distance.",
+          "fix": "Acquire the torso earlier or use a predictable jump plane and inspect a practice sequence."
+        }
+      ],
+      "tip": "Keep a visible take-off or landing feature; it gives the airborne pose a reason to matter."
     },
     "why": [
       "A wide view shows both the trick and its relationship to the obstacle.",
@@ -1632,10 +2095,56 @@
       "shutter": "Manual app: 1/800 s or faster",
       "focus": "Tap the bird’s eye or head",
       "focal": "Use a genuine tele lens; consider a properly aligned spotting-scope adapter",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Choose a wide bird-in-habitat image if the subject is small.",
-      "limitation": "Most phones cannot resolve tiny distant birds well; digital magnification cannot recover missing feather detail."
+      "limitation": "Most phones cannot resolve tiny distant birds well; digital magnification cannot recover missing feather detail.",
+      "why": [
+        "A clear eye and quiet perch are more useful than a large digital crop of missing feather detail.",
+        "A perched bird can still turn its head quickly, so a normal short capture remains important.",
+        "Background choice and patience can improve the image without reducing the bird’s safe distance."
+      ],
+      "steps": [
+        "Observe from a respectful permitted distance and avoid nests or signs of disturbance.",
+        "Use a genuine telephoto if available; otherwise compose the bird within its habitat.",
+        "Tap the head or eye and wait for a clear head angle with space around the beak.",
+        "Make a short Photo burst during a pause rather than a long Night capture.",
+        "Enlarge the eye and inspect whether branches stole focus or movement blurred the head.",
+        "For smear seek brighter light or a supported manual 1/800 s; do not approach simply because digital zoom lacks detail."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Respectful observation position"
+        ],
+        "optional": [
+          "Optical telephoto built into the phone",
+          "Properly aligned scope adapter with stable support"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Bird is a soft block after zooming",
+          "cause": "The phone did not capture enough optical detail.",
+          "fix": "Use a wider bird-in-habitat frame or compatible optical equipment from the same safe distance."
+        },
+        {
+          "symptom": "Branch sharp, head soft",
+          "cause": "Autofocus selected the perch.",
+          "fix": "Tap the head through a clear gap and reacquire before the next pause."
+        },
+        {
+          "symptom": "Body sharp, beak streaked",
+          "cause": "The head turned during capture.",
+          "fix": "Wait for a pause or use a supported shorter shutter in brighter light."
+        },
+        {
+          "symptom": "Bright sky overwhelms the bird",
+          "cause": "The background and subject have too much brightness difference.",
+          "fix": "Change to a permitted angle with a quieter background or accept a deliberate silhouette."
+        }
+      ],
+      "tip": "Wait for the bird to turn its head into a clean gap; the eye and beak then read clearly."
     },
     "why": [
       "Even a perched bird makes quick head movements, so stabilization alone is insufficient.",
@@ -1791,10 +2300,56 @@
       "shutter": "Pro app: 1/3200 s if available and bright enough",
       "focus": "Track the bird if supported; otherwise prefocus on its expected distance",
       "focal": "Genuine tele lens; a wider bird-and-sky composition is often more realistic",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Photograph large nearby birds in bright light without approaching or disturbing them.",
-      "limitation": "Small birds and fast tracking are demanding for phones; burst mode alone does not guarantee a fast shutter."
+      "limitation": "Small birds and fast tracking are demanding for phones; burst mode alone does not guarantee a fast shutter.",
+      "why": [
+        "Large birds in good light are a more realistic phone target than tiny distant fast-flapping birds.",
+        "A burst does not guarantee a fast shutter, so inspect the head and wings separately.",
+        "A wider composition provides room to track without losing the bird at the frame edge."
+      ],
+      "steps": [
+        "Choose a safe observation position and watch a natural flight route without feeding or provoking birds.",
+        "Use Photo/burst mode and the optical view you can track reliably.",
+        "Acquire the bird before the best wing position; if tracking is unavailable, pre-focus on a suitable distant feature near the expected route.",
+        "Start a short burst early and keep following with room ahead.",
+        "Enlarge the head to distinguish focus loss from movement smear.",
+        "Use brighter conditions or a supported manual 1/3200 s for blur; retain a bird-and-sky composition if optical detail is limited."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe non-disturbing viewpoint"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual capture app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Bird is too tiny to recognise after cropping",
+          "cause": "Available optical reach is insufficient.",
+          "fix": "Include habitat or sky patterns and choose larger birds passing naturally nearby."
+        },
+        {
+          "symptom": "Head and wings streak",
+          "cause": "Exposure was too long for the flight.",
+          "fix": "Seek brighter light or a supported faster shutter; burst alone does not change this."
+        },
+        {
+          "symptom": "Sky is clear but bird is out of focus",
+          "cause": "Tracking lost a small low-detail subject.",
+          "fix": "Acquire earlier, frame wider or pre-focus on an appropriate distant feature."
+        },
+        {
+          "symptom": "Wings leave the frame",
+          "cause": "Framing was too tight for the stroke and tracking error.",
+          "fix": "Zoom out to a usable optical view and leave movement space."
+        }
+      ],
+      "tip": "Practise tracking a large gliding bird before attempting a small bird’s rapid wingbeats."
     },
     "why": [
       "Wing tips move faster than the body, requiring a short exposure.",
@@ -1949,10 +2504,56 @@
       "shutter": "Manual app: 1/500 s",
       "focus": "Tap the nearer eye",
       "focal": "Genuine tele lens; keep a wider habitat view when reach is limited",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use the longest true optical option from the same safe distance.",
-      "limitation": "Portrait-mode fur masks can produce ragged edges; compare with an ordinary photograph."
+      "limitation": "Portrait-mode fur masks can produce ragged edges; compare with an ordinary photograph.",
+      "why": [
+        "A resting animal still makes small eye and head movements that can blur in a long capture.",
+        "A clear eye and natural habitat context are achievable without pretending a phone has a long wildlife lens.",
+        "Ordinary Photo mode often renders fur more reliably than artificial portrait separation."
+      ],
+      "steps": [
+        "Stay at the required safe distance and watch for alertness or signs that the animal wants space.",
+        "Use a genuine optical telephoto or choose a wider habitat composition.",
+        "Tap the near eye and wait for a clear head angle.",
+        "Make several short Photo frames and compare with Portrait mode only if it handles the fur cleanly.",
+        "Inspect the eye, muzzle and background; use a brighter pause or supported 1/500 s if head movement smears.",
+        "If the animal becomes active, change to a short action burst without approaching or blocking its route."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe respectful viewing distance"
+        ],
+        "optional": [
+          "Secure grip",
+          "Support for a distant static habitat view"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Fur edge looks cut out",
+          "cause": "Portrait segmentation misread fine hairs.",
+          "fix": "Use ordinary Photo mode or reduce simulated blur."
+        },
+        {
+          "symptom": "Muzzle sharp, eye soft",
+          "cause": "Focus selected a nearer facial feature.",
+          "fix": "Tap the near eye again and inspect the saved frame."
+        },
+        {
+          "symptom": "Head smears while the body is clear",
+          "cause": "The animal moved during capture.",
+          "fix": "Wait for a pause or use a supported faster exposure in sufficient light."
+        },
+        {
+          "symptom": "Animal lacks detail after zooming",
+          "cause": "The lens did not resolve the distant subject.",
+          "fix": "Keep a wider environmental portrait; do not reduce the safe distance."
+        }
+      ],
+      "tip": "Wait for the visible eye to catch light; a small head turn can transform a quiet portrait."
     },
     "why": [
       "1/500 s allows small head movements while retaining reasonable ISO.",
@@ -2108,10 +2709,56 @@
       "shutter": "Manual app: 1/2500 s",
       "focus": "Track the head or body",
       "focal": "Genuine tele lens; use a wider environmental frame if necessary",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Start the burst before the animal reaches your planned frame.",
-      "limitation": "Distant wildlife and rapid focus changes exceed many phones; do not approach to compensate."
+      "limitation": "Distant wildlife and rapid focus changes exceed many phones; do not approach to compensate.",
+      "why": [
+        "The safe observation distance stays fixed even when a phone cannot fill the frame.",
+        "Starting tracking before the animal reaches a clear background improves the chance of a recognisable stride.",
+        "A wider habitat view can communicate movement when detailed fur is beyond the phone’s reach."
+      ],
+      "steps": [
+        "Remain in the permitted safe position and never trigger movement for the photograph.",
+        "Use Photo/burst or a genuine action mode and choose a reliable optical view.",
+        "Track the head or upper body before the animal reaches the planned frame.",
+        "Begin the burst early and leave space in the direction of travel.",
+        "Inspect the head and legs for motion smear and whether focus jumped to the ground.",
+        "For blur use brighter conditions or a supported manual 1/2500 s; accept a wider scene or a missed frame rather than following into unsafe space."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe non-disturbing observation position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Animal and legs streak while grass is clear",
+          "cause": "The exposure was too long for running.",
+          "fix": "Use brighter conditions or a supported faster shutter; a tripod does not freeze the animal."
+        },
+        {
+          "symptom": "Ground sharp, animal soft",
+          "cause": "Tracking did not follow the changing distance.",
+          "fix": "Acquire earlier or choose a predictable crossing area with fewer obstructions."
+        },
+        {
+          "symptom": "Animal runs out of the frame",
+          "cause": "Composition lacked lead space.",
+          "fix": "Frame wider before the next natural pass."
+        },
+        {
+          "symptom": "Heavy zoom produces no fur detail",
+          "cause": "Optical reach and captured resolution are insufficient.",
+          "fix": "Keep the habitat in the frame and preserve the safe distance."
+        }
+      ],
+      "tip": "Leave more room in front than behind; it makes the movement legible even with a small subject."
     },
     "why": [
       "1/2500 s protects head detail during fast lateral movement.",
@@ -2268,10 +2915,57 @@
       "shutter": "Pro app: 1/500 s; increase light if too dark",
       "focus": "Tap the nearest eye",
       "focal": "Main lens generally gathers most light; genuine 2× lens if bright enough",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Photograph at eye level with the window slightly to one side.",
-      "limitation": "Portrait mode may blur whiskers or fur incorrectly; night mode can smear a pet’s movement."
+      "limitation": "Portrait mode may blur whiskers or fur incorrectly; night mode can smear a pet’s movement.",
+      "why": [
+        "A bright window supplies the light a phone needs for quick head movements.",
+        "Eye-level framing gives the face priority without a very close exaggerated muzzle.",
+        "Whiskers and fur often expose portrait-mode segmentation errors, so a normal frame is a useful baseline."
+      ],
+      "steps": [
+        "Choose a quiet place near a bright window without restraining or distressing the pet.",
+        "Use the main lens in Photo mode and get to eye level from a comfortable distance.",
+        "Turn the composition so window light reaches the near eye; tap that eye.",
+        "Make short bursts as the pet pauses or looks up naturally.",
+        "Inspect the eye, whiskers and moving nose; compare any pet-aware Portrait mode with the ordinary frame.",
+        "For smear move to better light or use a supported manual 1/500 s with sufficient exposure; avoid long Night capture for an alert pet."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Useful window light",
+          "Calm comfortable space for the pet"
+        ],
+        "optional": [
+          "White reflector",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Nose sharp, eye soft",
+          "cause": "Focus selected the nearest facial feature.",
+          "fix": "Tap the near eye and avoid placing the phone extremely close."
+        },
+        {
+          "symptom": "Whiskers disappear into the background",
+          "cause": "Portrait segmentation failed.",
+          "fix": "Use ordinary Photo mode or reduce simulated blur."
+        },
+        {
+          "symptom": "Face smears despite sharp furniture",
+          "cause": "The pet moved in weak light.",
+          "fix": "Use brighter window light and a short burst; support alone will not stop the pet."
+        },
+        {
+          "symptom": "Face is dark beside a bright window",
+          "cause": "Exposure followed the background.",
+          "fix": "Change angle so the window lights the face, then tap and adjust face exposure."
+        }
+      ],
+      "tip": "Wait for a natural pause near the window instead of repeatedly asking for the same pose."
     },
     "why": [
       "1/500 s handles a sudden ear or head movement better than a low-light snapshot speed.",
@@ -2424,10 +3118,56 @@
       "shutter": "Manual app: 1/320 s if available",
       "focus": "Tap the fish’s eye through clean glass",
       "focal": "Main lens, or macro-capable lens for fish close to glass",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Shade your phone from room lights and shoot square to the tank.",
-      "limitation": "Night mode often smears swimming fish; ultrawide lenses may distort through thick tank walls."
+      "limitation": "Night mode often smears swimming fish; ultrawide lenses may distort through thick tank walls.",
+      "why": [
+        "Room reflections and fish movement are separate problems that need different corrections.",
+        "A square view through the pane reduces the distortion that thick aquarium glass can introduce.",
+        "The main lens and a short normal capture usually serve moving fish better than Night processing."
+      ],
+      "steps": [
+        "Follow aquarium rules, switch flash off and choose a clean viewing section.",
+        "Keep the phone near the pane without touching it where prohibited; shade reflected room light.",
+        "Use the main lens and face the glass squarely; use macro capability only when the fish is close enough and detail improves.",
+        "Tap the fish’s eye or a defined body edge and capture a short sequence as it crosses a clear area.",
+        "Inspect fish sharpness, reflections and coloured doubled edges.",
+        "For motion blur use a slower-swimming moment or supported manual 1/320 s with enough ISO; change angle rather than exposure for reflections."
+      ],
+      "pack": {
+        "essential": [
+          "Permitted phone",
+          "Clean lens"
+        ],
+        "optional": [
+          "Dark clothing to reduce reflections",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Visitor lights overlay the fish",
+          "cause": "The pane reflects light from the room.",
+          "fix": "Shade the phone and move to a darker viewing angle; keep flash off."
+        },
+        {
+          "symptom": "Tank decoration sharp, fish streaked",
+          "cause": "The fish moved during the capture.",
+          "fix": "Wait for a slower pass or use a shorter supported manual shutter."
+        },
+        {
+          "symptom": "Fish edges have coloured doubles",
+          "cause": "An oblique view through thick glass introduced optical distortion.",
+          "fix": "Shoot more squarely through a clean pane and avoid an extreme ultrawide view."
+        },
+        {
+          "symptom": "Fish appears repeated or partly missing",
+          "cause": "Night or HDR processing merged movement.",
+          "fix": "Use ordinary Photo/burst mode and compare the saved result."
+        }
+      ],
+      "tip": "Choose one clear section of tank and wait for a fish to enter it rather than chasing reflections."
     },
     "why": [
       "A short enough exposure is needed for swimming even when the camera is braced.",
@@ -2582,10 +3322,56 @@
       "shutter": "Manual app: start 1/500 s",
       "focus": "Tap the near eye; verify reflections are not selected",
       "focal": "Main or genuine tele lens",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Shade the phone and keep its lens square to the glass.",
-      "limitation": "Artificial portrait cutouts can mistake reflections for edges; glass limits detail regardless of phone resolution."
+      "limitation": "Artificial portrait cutouts can mistake reflections for edges; glass limits detail regardless of phone resolution.",
+      "why": [
+        "Shading reflections improves the view before any exposure or editing adjustment.",
+        "A defined eye target helps the phone focus beyond smudges and reflected visitors.",
+        "A clean pane and a square viewing angle may matter more than an extra zoom step."
+      ],
+      "steps": [
+        "Follow the zoo’s barriers and photography rules and switch flash off.",
+        "Choose a clean section of glass with fewer reflected visitors or lamps.",
+        "Use the main or a useful optical telephoto lens, shade the phone and keep it square to the pane.",
+        "Tap the animal’s near eye and make a short Photo sequence during a pause.",
+        "Enlarge the eye and inspect reflections separately from motion blur.",
+        "Move only within permitted space to improve the view; use a wider habitat photograph if the window or reach limits detail."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted viewing position"
+        ],
+        "optional": [
+          "Dark clothing",
+          "Soft compatible hood used without stressing glass"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Visitors float over the animal",
+          "cause": "Interior reflections enter the lens.",
+          "fix": "Shade the phone and change the permitted viewpoint; exposure alone cannot remove them."
+        },
+        {
+          "symptom": "Glass marks sharp, eye soft",
+          "cause": "Focus selected the pane.",
+          "fix": "Tap the eye beyond the glass or use supported manual focus."
+        },
+        {
+          "symptom": "Animal smears while the enclosure is clear",
+          "cause": "The animal moved during exposure.",
+          "fix": "Wait for a pause or seek a brighter enclosure area; manual faster shutter is app-dependent."
+        },
+        {
+          "symptom": "Fur has odd artificial edges",
+          "cause": "Portrait processing confused fur and reflections.",
+          "fix": "Use ordinary Photo mode and inspect the true detail."
+        }
+      ],
+      "tip": "Look at the reflection before looking at the animal; solving the glass often solves the photograph."
     },
     "why": [
       "A wide aperture softens some marks on nearby glass.",
@@ -2741,10 +3527,55 @@
       "shutter": "Manual app: start 1/640 s",
       "focus": "Tap the eye through an opening; use manual focus if supported",
       "focal": "Genuine tele lens; avoid portrait mode for removing mesh",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
-      "guidance": "Find a permitted angle through a larger opening and keep the animal away from the wire.",
-      "limitation": "Small phone lenses often retain visible mesh; portrait-mode segmentation is unreliable for fences."
+      "guidance": "Find a permitted clear angle through an opening and wait until the animal is naturally farther behind the wire; never lure it or cross a barrier.",
+      "limitation": "Small phone lenses often retain visible mesh; portrait-mode segmentation is unreliable for fences.",
+      "why": [
+        "Phone lenses often keep mesh visible because their optical depth and working distance differ from long camera lenses.",
+        "A permitted clear opening or an animal farther behind the mesh is more reliable than artificial fence removal.",
+        "Focus must reach the eye beyond the wire, not the nearest high-contrast grid."
+      ],
+      "steps": [
+        "Stay on the permitted visitor side and never put the phone or hands through a barrier.",
+        "Look for a safe clear angle through an opening and wait for the animal to move naturally farther behind the fence.",
+        "Use a genuine telephoto if it improves the view; otherwise compose the enclosure honestly.",
+        "Tap the eye through a gap or use documented manual focus if autofocus keeps selecting wire.",
+        "Take a normal Photo frame and inspect the eye and visible mesh.",
+        "If the fence cannot be softened optically, include it deliberately or choose another permitted view; do not promise Portrait mode will remove it."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Permitted visitor position"
+        ],
+        "optional": [
+          "Genuine optical telephoto built into the phone"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Wire is sharp, animal soft",
+          "cause": "Autofocus selected the near mesh.",
+          "fix": "Tap a visible eye through a gap or use supported manual focus beyond the wire."
+        },
+        {
+          "symptom": "Mesh remains visible everywhere",
+          "cause": "The phone’s optics and geometry do not blur it sufficiently.",
+          "fix": "Wait for greater animal-to-fence separation or choose a clearer permitted angle."
+        },
+        {
+          "symptom": "Animal edges have holes or missing fur",
+          "cause": "Portrait segmentation attempted to remove overlapping mesh.",
+          "fix": "Use ordinary Photo mode and retain the real fence where it remains visible."
+        },
+        {
+          "symptom": "Fence creates bright haze",
+          "cause": "Sunlit wire reflects strongly near the lens.",
+          "fix": "Choose a shaded permitted section or a different light angle without crossing barriers."
+        }
+      ],
+      "tip": "Wait for the animal’s eye to align with a clear opening; no setting can recover detail hidden by a wire."
     },
     "why": [
       "Nearby mesh blurs more at a wide aperture and long focal length.",
@@ -2898,10 +3729,56 @@
       "shutter": "Pro app: start 1/320 s",
       "focus": "Tap the visible eye or bright edge of the head",
       "focal": "Main lens usually gathers most light; avoid digital zoom",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Support the phone and look for an environmental silhouette instead of distant fur detail.",
-      "limitation": "Night-mode stacking can create ghosted animals; a steady camera does not make a moving subject still."
+      "limitation": "Night-mode stacking can create ghosted animals; a steady camera does not make a moving subject still.",
+      "why": [
+        "A still animal at dawn is a different exposure problem from a running one.",
+        "Night stacking can brighten the habitat but may merge even small head movements.",
+        "An environmental silhouette is a useful phone result when light and optical reach cannot support detailed fur."
+      ],
+      "steps": [
+        "Observe quietly from a safe respectful distance without adding disturbing light.",
+        "Use the main lens or an optical view that retains useful low-light detail.",
+        "Tap the visible eye or head edge and make ordinary Photo frames during a pause.",
+        "Try a supported Night capture only when both phone and subject remain still, then compare enlarged eyes.",
+        "If the animal moves, return to a short capture and accept more darkness or noise.",
+        "When detail is beyond reach, compose a clear animal outline against the dawn sky or habitat instead of approaching."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe non-disturbing dawn viewpoint"
+        ],
+        "optional": [
+          "Stable support",
+          "Warm spare power storage"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Animal has a ghost head",
+          "cause": "Night processing combined movement.",
+          "fix": "Use ordinary Photo mode at a pause or choose a silhouette."
+        },
+        {
+          "symptom": "Image is bright but fur remains mushy",
+          "cause": "Low light and processing exceeded useful detail.",
+          "fix": "Keep a wider habitat image or wait for more light; digital zoom cannot restore texture."
+        },
+        {
+          "symptom": "Animal is dark against a bright sky",
+          "cause": "The brightness difference exceeds the useful capture.",
+          "fix": "Expose for a clean silhouette or wait for natural face light."
+        },
+        {
+          "symptom": "All landscape edges wobble",
+          "cause": "The phone moved during a dim capture.",
+          "fix": "Use safe support; remember that this still will not freeze an active animal."
+        }
+      ],
+      "tip": "Choose whether you want an eye portrait or a dawn silhouette before trying to brighten the entire scene."
     },
     "why": [
       "A pause is what makes a moderate shutter usable in very low light.",
@@ -3061,10 +3938,56 @@
       "shutter": "Manual app: 1/4000 s in bright light",
       "focus": "Track the bird before the splash",
       "focal": "Genuine tele lens; choose large nearby birds at a safe distance",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Frame loosely and begin before the expected dive or bath movement.",
-      "limitation": "Many phones cannot sustain precise tracking and short exposure at long reach; do not feed or provoke birds."
+      "limitation": "Many phones cannot sustain precise tracking and short exposure at long reach; do not feed or provoke birds.",
+      "why": [
+        "The head, wings and spray move at different speeds, so inspect them separately.",
+        "Anticipating a natural dive or bath gives the phone time to acquire the bird before the splash hides it.",
+        "Loose framing preserves the water pattern when fine droplet detail is beyond the phone’s capture."
+      ],
+      "steps": [
+        "Choose a safe non-disturbing view and never feed or provoke the bird for a splash.",
+        "Use Photo/burst mode and a genuine optical view you can follow reliably.",
+        "Track the bird before the dive or bathing movement, leaving room around the expected splash.",
+        "Start a short burst early and continue through the head’s reappearance.",
+        "Inspect the head first, then wing shape and bright droplets.",
+        "Try a supported manual 1/4000 s in strong light for more definition; otherwise keep a wider bird-and-water action frame."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Safe non-disturbing waterside position"
+        ],
+        "optional": [
+          "Secure grip",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Head hidden behind spray",
+          "cause": "Timing caught the splash before the head reappeared.",
+          "fix": "Begin earlier and keep the burst through the next phase."
+        },
+        {
+          "symptom": "Head sharp, droplets streaked",
+          "cause": "The fastest water movement exceeded the exposure.",
+          "fix": "Try a supported faster shutter in brighter light or accept some spray motion."
+        },
+        {
+          "symptom": "Focus locks onto the splash",
+          "cause": "A nearer bright water edge distracted autofocus.",
+          "fix": "Acquire the bird before movement and frame a little wider."
+        },
+        {
+          "symptom": "White spray has no texture",
+          "cause": "Droplet highlights clipped.",
+          "fix": "Lower exposure slightly and inspect the saved highlights and head together."
+        }
+      ],
+      "tip": "Watch one natural sequence first; knowing when the head returns is more useful than a longer random burst."
     },
     "why": [
       "Rapid head and wing movement justifies a shorter shutter than a resting bird.",
@@ -3221,10 +4144,57 @@
       "shutter": "Automatic; Pro 1/125 s when handheld",
       "focus": "Tap the stamen or selected petal edge",
       "focal": "Use the phone’s macro-capable lens; otherwise respect the main lens minimum focus distance",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Move back if the phone cannot focus and crop modestly; shade harsh sunlight with a diffuser.",
-      "limitation": "Some macro modes switch to an ultrawide camera with lower detail; portrait blur can misread petal edges."
+      "limitation": "Some macro modes switch to an ultrawide camera with lower detail; portrait blur can misread petal edges.",
+      "why": [
+        "Respecting the phone’s minimum focus distance gives more real detail than moving closer until it hunts.",
+        "Soft light preserves petal colour and avoids small harsh highlights.",
+        "A still bloom allows careful support and focus selection without needing an adjustable aperture."
+      ],
+      "steps": [
+        "Choose a sheltered motionless flower and a simple background without damaging the plant.",
+        "Use ordinary Photo mode or a genuine macro-capable lens; check whether the phone switches cameras automatically.",
+        "Move to a distance where focus is stable and tap the stamen or chosen petal edge.",
+        "Brace or mount the phone and make a test in soft light.",
+        "Enlarge the important detail and inspect petal edges; step back slightly if the depth is too thin.",
+        "Compare the macro and main-lens result rather than assuming the closest view is the sharpest."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Still flower in useful soft light"
+        ],
+        "optional": [
+          "Small support",
+          "Diffuser held safely clear of the plant",
+          "Compatible close-up attachment"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Focus hunts at the closest distance",
+          "cause": "The subject is inside the lens’s focusing limit.",
+          "fix": "Move back until focus settles, then crop modestly if necessary."
+        },
+        {
+          "symptom": "Centre sharp, important petals soft",
+          "cause": "Close working distance gives limited focus depth.",
+          "fix": "Step back slightly or align the important petal surfaces; a controlled external stack is another option for a completely still bloom."
+        },
+        {
+          "symptom": "Petal edges look cut out",
+          "cause": "Portrait segmentation misread the flower.",
+          "fix": "Use ordinary Photo or macro mode without simulated background blur."
+        },
+        {
+          "symptom": "Colour disappears in bright patches",
+          "cause": "Harsh sunlight or overexposure clipped petals.",
+          "fix": "Use soft shade or a diffuser and reduce exposure if needed."
+        }
+      ],
+      "tip": "Keep the important petal plane aligned with the phone before searching for a stronger macro setting."
     },
     "why": [
       "f/5.6 gives a useful balance between a distinct centre and a softer background.",
@@ -3382,10 +4352,56 @@
       "shutter": "Manual app: 1/1000 s",
       "focus": "Track or repeatedly tap the flower centre",
       "focal": "Main or macro-capable lens, with room for the bloom to sway",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use bright soft light and burst at the end of each swing.",
-      "limitation": "Computational HDR may merge different petal positions; macro AF can struggle with repeated near/far motion."
+      "limitation": "Computational HDR may merge different petal positions; macro AF can struggle with repeated near/far motion.",
+      "why": [
+        "A tripod stops the phone moving but cannot stop a flower swaying.",
+        "The end of a swing briefly reduces subject speed and gives autofocus a better chance.",
+        "A slightly wider view keeps the moving bloom within both the frame and a usable focus range."
+      ],
+      "steps": [
+        "Choose bright soft light and a safe viewpoint without restraining or damaging the flower.",
+        "Use Photo/burst mode and select a main or macro lens that can focus reliably at the distance.",
+        "Leave room for the bloom to move and tap or track its centre.",
+        "Capture a short burst at the end of each swing or during a natural lull.",
+        "Inspect petal edges for streaks and focus that moved to the background.",
+        "For continued smear use a supported manual 1/1000 s in enough light, or wait for calmer conditions rather than a long supported exposure."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Bright soft natural light"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Background sharp, petals streaked",
+          "cause": "The flower moved during capture.",
+          "fix": "Wait for a lull or the swing endpoint; use a shorter supported exposure if available."
+        },
+        {
+          "symptom": "Sharpness jumps behind the flower",
+          "cause": "Autofocus lost repeated near/far movement.",
+          "fix": "Frame a little wider and reacquire the centre before the pause."
+        },
+        {
+          "symptom": "Petals have doubled outlines",
+          "cause": "Multi-frame processing merged different positions.",
+          "fix": "Compare ordinary Photo bursts and avoid Night mode."
+        },
+        {
+          "symptom": "Bloom leaves the frame",
+          "cause": "Close framing did not allow for sway.",
+          "fix": "Step back slightly and leave room around the flower."
+        }
+      ],
+      "tip": "Time the instant when the flower changes direction; it is often the clearest close-up moment."
     },
     "why": [
       "A fast shutter addresses subject movement that a tripod cannot stop.",
@@ -3539,10 +4555,58 @@
       "shutter": "Aim for 1/250 s or faster in a manual app",
       "focus": "Tap the nearest eye; keep the phone steady at its focus distance",
       "focal": "Macro-capable lens or a compatible close-up attachment",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Use soft daylight or a diffused LED and let the insect remain undisturbed.",
-      "limitation": "A phone’s built-in flash is rarely positioned well for macro and usually cannot emulate this controlled low-power external-flash setup."
+      "limitation": "A phone’s built-in flash is rarely positioned well for macro and usually cannot emulate this controlled low-power external-flash setup.",
+      "why": [
+        "The phone route uses soft daylight or continuous light; the camera’s low-power external-flash recipe is not assumed.",
+        "Accurate eye focus and a workable macro distance matter more than moving as close as possible.",
+        "A still undisturbed insect lets you inspect real detail without chilling, restraining or provoking it."
+      ],
+      "steps": [
+        "Choose a resting insect without disturbing its perch or blocking an escape route.",
+        "Use a macro-capable lens or compatible attachment, keeping the phone outside its minimum focusing limit.",
+        "Work with soft daylight or a safely diffused continuous LED, avoiding heat and intrusive repeated flashing.",
+        "Tap the nearest eye and steady the phone at that distance.",
+        "Take several normal frames and inspect eyes, body depth and your own shadow.",
+        "If movement blurs, use brighter gentle light or a supported manual 1/250 s or faster; change alignment or step back for more useful depth."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with suitable macro capability or compatible close-up attachment",
+          "Soft daylight or a safe diffused continuous light"
+        ],
+        "optional": [
+          "Small support",
+          "Secure LED support",
+          "Lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Eye soft but wing or body sharp",
+          "cause": "Focus selected a different plane.",
+          "fix": "Tap the near eye and align the important body detail with it where the viewpoint permits."
+        },
+        {
+          "symptom": "Image darkens as the phone approaches",
+          "cause": "The phone or attachment blocks the light.",
+          "fix": "Change the light angle or use a slightly longer working distance."
+        },
+        {
+          "symptom": "Body looks sharp only in a thin strip",
+          "cause": "The close focus depth is too small.",
+          "fix": "Step back or align the body plane; do not prescribe an unavailable phone f-stop."
+        },
+        {
+          "symptom": "Subject smears despite steady support",
+          "cause": "The insect moved during continuous-light capture.",
+          "fix": "Wait for stillness or improve gentle illumination; a phone LED does not reproduce a short controlled macro-flash pulse."
+        }
+      ],
+      "tip": "Check for your own shadow before changing exposure; at macro distance the phone can block the best light.",
+      "conditions": "A resting insect at a workable phone macro distance, illuminated by soft daylight or a safely diffused continuous light without disturbing it."
     },
     "why": [
       "f/8 gives useful macro depth without automatically resorting to the smallest aperture.",
@@ -3699,10 +4763,56 @@
       "shutter": "Manual app: 1/3200 s if supported",
       "focus": "Prefocus beside a repeatedly visited flower",
       "focal": "Main lens at a workable distance; macro mode only if it can track",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Frame a wider flower-and-insect scene and burst at a hovering moment.",
-      "limitation": "Focus lag, tiny subjects and shutter limits make phone flight macros difficult; wings may remain blurred."
+      "limitation": "Focus lag, tiny subjects and shutter limits make phone flight macros difficult; wings may remain blurred.",
+      "why": [
+        "A repeatedly visited flower gives a predictable focus region for a very small fast subject.",
+        "A wider flower-and-insect photograph is more realistic on many phones than a frame-filling flight macro.",
+        "Even a short exposure may leave wing blur while the head or body remains recognisable."
+      ],
+      "steps": [
+        "Observe a flower naturally visited by insects and avoid disturbing either subject.",
+        "Choose bright light and a main-lens working distance where the flower is reliably in focus.",
+        "Pre-focus beside the expected hover point or use supported tracking; keep enough frame space for arrival.",
+        "Start short Photo bursts as the insect pauses in the air before landing.",
+        "Enlarge the head or body and check whether the background stole focus.",
+        "If a manual app supports 1/3200 s, test it with enough exposure; otherwise keep a wider hover or landing image and accept some wing blur."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Bright naturally visited flower"
+        ],
+        "optional": [
+          "Secure grip",
+          "Manual shutter-control app"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Insect is too tiny after cropping",
+          "cause": "The optics did not capture enough detail.",
+          "fix": "Use a wider flower-and-insect composition rather than excessive digital zoom."
+        },
+        {
+          "symptom": "Flower sharp, hovering body soft",
+          "cause": "The insect is outside the locked focus plane.",
+          "fix": "Adjust the focus region toward the repeated hover position and wait for a similar approach."
+        },
+        {
+          "symptom": "Body recognisable, wings blurred",
+          "cause": "Wingbeats are faster than the available capture.",
+          "fix": "Try brighter light and a shorter supported shutter, or accept wing motion as part of the result."
+        },
+        {
+          "symptom": "Autofocus hunts during every approach",
+          "cause": "The close subject changes distance faster than the phone can follow.",
+          "fix": "Pre-focus at a predictable flower distance and photograph the pause or landing instead."
+        }
+      ],
+      "tip": "Watch several visits first; a repeated hover position is more useful than chasing an insect around the garden."
     },
     "why": [
       "A very short exposure protects the small fast-moving body.",
@@ -3854,10 +4964,58 @@
       "shutter": "Supported manual app: start 1/8 s; handheld aim 1/250 s",
       "focus": "Tap the nearest important droplet edge",
       "focal": "Macro-capable lens or close-up attachment",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod or firm support",
       "guidance": "Use a tripod and soft side light; avoid moving closer than the phone can focus.",
-      "limitation": "The phone may switch lenses automatically; lock the chosen camera if the app permits."
+      "limitation": "The phone may switch lenses automatically; lock the chosen camera if the app permits.",
+      "why": [
+        "Soft side or back light gives a droplet shape without covering it in broad white glare.",
+        "A fixed phone position helps keep a tiny chosen edge in focus.",
+        "Lens switching or moving inside the focus limit can change the result more than an exposure adjustment."
+      ],
+      "steps": [
+        "Choose stationary droplets on a still surface and keep electronics safely dry.",
+        "Use a genuine macro lens or compatible attachment and a stable phone support.",
+        "Arrange soft side/back light and tap the nearest important droplet edge.",
+        "Lock focus and the selected lens if the app permits, then take a timer or gentle-release frame.",
+        "Inspect droplet edges, tiny reflections and white glare.",
+        "Change light angle for glare or align the important droplet plane for depth; choose a slow manual exposure only when the subject and support truly remain still."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with suitable close-focus capability",
+          "Stable support",
+          "Stationary droplet surface"
+        ],
+        "optional": [
+          "Soft continuous light",
+          "Compatible macro attachment",
+          "Dry lens cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Droplet edge never sharp",
+          "cause": "The lens is too close to focus or selected another plane.",
+          "fix": "Move back until focus settles and tap the intended edge."
+        },
+        {
+          "symptom": "Drops become white blobs",
+          "cause": "Glare or clipped highlights hide their shape.",
+          "fix": "Move or diffuse the light and reduce exposure if needed."
+        },
+        {
+          "symptom": "Framing and detail jump between tests",
+          "cause": "The phone automatically changed lenses.",
+          "fix": "Lock one camera in a compatible app or use a distance where switching stops."
+        },
+        {
+          "symptom": "All tiny edges double",
+          "cause": "The phone or surface moved.",
+          "fix": "Use a timer and rigid support; shorten the capture if the leaf or drops cannot stay still."
+        }
+      ],
+      "tip": "Move the light before moving the phone; tiny reflections can change dramatically while focus stays fixed."
     },
     "why": [
       "f/8 offers useful depth around rounded droplets at close range.",
@@ -4013,10 +5171,58 @@
       "shutter": "Automatic; use a tripod if the phone chooses a slow speed",
       "focus": "Tap the main ingredient",
       "focal": "Main lens; genuine tele lens if there is enough light and working distance",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Supported",
       "guidance": "Use side window light, step back to avoid wide-angle distortion and keep colour edits restrained.",
-      "limitation": "Portrait mode can blur plate edges or cutlery incorrectly; ordinary photo mode is more dependable for a full dish."
+      "limitation": "Portrait mode can blur plate edges or cutlery incorrectly; ordinary photo mode is more dependable for a full dish.",
+      "why": [
+        "Side window light reveals texture without the flat glare of a small phone flash.",
+        "Ordinary Photo mode keeps plate and cutlery edges more reliable than artificial portrait blur.",
+        "A comfortable distance with the main lens avoids exaggerated near portions of the dish."
+      ],
+      "steps": [
+        "Place the dish beside useful window light and turn off conflicting coloured room lamps where possible.",
+        "Choose an overhead or angled view that shows the main ingredient clearly.",
+        "Use the main lens from enough distance, support the phone and tap the important ingredient.",
+        "Take a normal Photo frame with restrained processing and inspect colour, texture and plate edges.",
+        "Use a white card to lift a deep shadow or change angle for glare.",
+        "If steam, pouring or hands matter, use a shorter normal capture in brighter light; a slow supported exposure suits only the still plate."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Useful window light",
+          "Stable plate surface"
+        ],
+        "optional": [
+          "White card or reflector",
+          "Phone support",
+          "Neutral background"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Food looks flat and shiny",
+          "cause": "Frontal flash or an unhelpful light angle removed texture.",
+          "fix": "Turn flash off and use side window light."
+        },
+        {
+          "symptom": "Nearest food looks enormous",
+          "cause": "The phone is too close with a wide view.",
+          "fix": "Step back and frame with the main or a suitable optical telephoto lens."
+        },
+        {
+          "symptom": "Plate or cutlery has missing edges",
+          "cause": "Portrait segmentation treated them as background.",
+          "fix": "Use ordinary Photo mode without artificial blur."
+        },
+        {
+          "symptom": "Steam or pouring liquid smears",
+          "cause": "The capture was too long for movement.",
+          "fix": "Use brighter light and a shorter available capture; do not rely on a tripod to freeze the pour."
+        }
+      ],
+      "tip": "Watch the highlight on a sauce or glaze; moving the plate a little can reveal its texture."
     },
     "why": [
       "Side light reveals texture and shape in food.",
@@ -4167,10 +5373,59 @@
       "shutter": "Adjust a supported exposure to the continuous light",
       "focus": "Tap and lock the logo or important edge",
       "focal": "Main lens or genuine short tele lens; avoid very close wide-angle views",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
       "guidance": "Use the same large diffuser and reflection cards; the lighting design works with a phone too.",
-      "limitation": "Fixed aperture limits optical depth control; use careful alignment or an external stacking workflow for small deep objects."
+      "limitation": "Fixed aperture limits optical depth control; use careful alignment or an external stacking workflow for small deep objects.",
+      "why": [
+        "The product reflects its surroundings, so cards and diffuser shape control its appearance more than exposure alone.",
+        "A supported phone can record a stationary object cleanly under continuous light.",
+        "A less close viewpoint avoids exaggerated proportions and a large phone reflection."
+      ],
+      "steps": [
+        "Clean the product and choose a stable surface with a simple background.",
+        "Place a large diffused continuous source and white or dark cards where their reflections describe the shape.",
+        "Mount the phone, use the main or suitable optical telephoto lens and tap the logo or key edge.",
+        "Lock focus and colour balance if available, then make a normal Photo or low-ISO manual test.",
+        "Inspect reflected highlights, product colour and front-to-back detail.",
+        "Move cards or the light to reshape reflections; change exposure only after the reflection design works."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Stable support",
+          "Large diffused continuous light",
+          "White/dark reflection cards"
+        ],
+        "optional": [
+          "Lens cloth",
+          "Neutral background",
+          "Manual app for exposure/WB lock"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "A bright patch hides the surface",
+          "cause": "A small source is reflected as harsh glare.",
+          "fix": "Enlarge or diffuse the source and change its angle before simply darkening the whole image."
+        },
+        {
+          "symptom": "Phone appears in the product",
+          "cause": "The camera lies in the reflected view.",
+          "fix": "Change angle or use a dark card with a small viewing opening where practical."
+        },
+        {
+          "symptom": "Product proportions look distorted",
+          "cause": "The phone is very close with a wide view.",
+          "fix": "Move back and use a suitable optical view or a restrained crop."
+        },
+        {
+          "symptom": "Important rear detail is soft",
+          "cause": "The object’s depth exceeds the close focus range.",
+          "fix": "Align the important surfaces, step back or use a controlled external focus stack if supported."
+        }
+      ],
+      "tip": "Treat each bright band as a reflected shape you can move with a card or diffuser."
     },
     "why": [
       "A reflective object shows the surrounding light sources, so their shapes become part of the photograph.",
@@ -4327,10 +5582,59 @@
       "shutter": "Adjust to light while firmly supported",
       "focus": "Tap the important stone edge and lock focus",
       "focal": "Macro-capable lens or good close-up attachment",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
       "guidance": "Clean the piece carefully and use white cards to control metal reflections.",
-      "limitation": "Tiny gemstones may exceed the phone’s detail and focus capabilities; simulated portrait blur cannot substitute for true focus stacking."
+      "limitation": "Tiny gemstones may exceed the phone’s detail and focus capabilities; simulated portrait blur cannot substitute for true focus stacking.",
+      "why": [
+        "Clean surfaces and controlled reflections reveal workmanship that extra sharpening cannot invent.",
+        "A macro-capable lens must still respect its own working distance.",
+        "A fixed phone aperture cannot add focus depth; alignment or a genuine multi-frame stack may be needed."
+      ],
+      "steps": [
+        "Clean the jewellery using a method safe for its materials and secure it on a stable surface.",
+        "Use soft continuous light and white/dark cards to shape metal reflections.",
+        "Mount the phone and select one suitable macro-capable lens or attachment.",
+        "Tap the important stone facet or engraved edge and take a timer-triggered test.",
+        "Enlarge real detail and inspect clipped sparkle, dust and focus depth.",
+        "Align more of the piece with the focus plane or use a documented manual-focus stacking workflow for a completely still item; simulated portrait blur adds no sharp detail."
+      ],
+      "pack": {
+        "essential": [
+          "Phone with suitable macro capability",
+          "Stable support",
+          "Soft continuous light",
+          "Safe product-cleaning materials"
+        ],
+        "optional": [
+          "Reflection cards",
+          "Compatible close-up attachment",
+          "External focus-stacking app/editor"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Gemstone is bright but facets disappear",
+          "cause": "Highlights clipped or light reflects at an unhelpful angle.",
+          "fix": "Lower exposure and reposition a small light contribution to keep distinct facets."
+        },
+        {
+          "symptom": "Dust is more visible than the design",
+          "cause": "Close focus magnifies small surface marks.",
+          "fix": "Clean safely and inspect before continuing; do not rely only on later retouching."
+        },
+        {
+          "symptom": "Front engraving sharp, rear edge soft",
+          "cause": "Focus depth is too small.",
+          "fix": "Align the piece, step back slightly or capture overlapping focus planes with compatible tools."
+        },
+        {
+          "symptom": "Macro image has less detail than expected",
+          "cause": "The chosen lens, attachment or distance is limiting resolution.",
+          "fix": "Compare the main and macro views at useful focus distances; crop modestly rather than enlarging missing detail."
+        }
+      ],
+      "tip": "Make one enlarged cleanliness check before fine-tuning the lighting."
     },
     "why": [
       "At jewellery magnification, depth of field can be thinner than the object.",
@@ -4492,10 +5796,59 @@
       "shutter": "Supported exposure; shutter may be slow for a still arrangement",
       "focus": "Tap the central object plane",
       "focal": "Main lens; step higher rather than using ultrawide when possible",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Secure overhead support",
       "guidance": "Use the phone’s level indicator and keep the camera parallel to the table.",
-      "limitation": "Different-height objects may need focus stacking; multi-lens switching can change distortion between frames."
+      "limitation": "Different-height objects may need focus stacking; multi-lens switching can change distortion between frames.",
+      "why": [
+        "Keeping the phone parallel to the table matters more than an unavailable aperture adjustment.",
+        "Soft even light keeps small shadows from competing with the arrangement.",
+        "Locking one lens avoids changing geometry between tests or multi-frame captures."
+      ],
+      "steps": [
+        "Arrange the objects on a stable surface with deliberate spacing and similar important heights.",
+        "Secure the phone above the table with a properly rated mount; do not balance it precariously.",
+        "Use the main lens where possible and the level/grid to keep the sensor parallel.",
+        "Tap the main object plane and use a timer or remote to take the first frame.",
+        "Inspect corners, straight shapes, glare and focus on taller objects.",
+        "Rearrange height differences or use a controlled focus stack if supported; raise the secure mount rather than forcing an extreme close ultrawide view."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Secure overhead support",
+          "Stable tabletop",
+          "Soft window or continuous light"
+        ],
+        "optional": [
+          "Timer or remote",
+          "White reflector",
+          "Background surface"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Rectangles become trapezoids",
+          "cause": "The phone is tilted relative to the table.",
+          "fix": "Level the mount and align the sensor plane before editing perspective."
+        },
+        {
+          "symptom": "One corner is soft",
+          "cause": "The phone or object plane is tilted, or the lens edge is weak.",
+          "fix": "Recheck alignment and compare a less extreme main-lens view."
+        },
+        {
+          "symptom": "Tall object sharp, flat objects soft",
+          "cause": "Different heights exceed the focus range.",
+          "fix": "Reduce height differences or capture a genuine controlled focus stack."
+        },
+        {
+          "symptom": "Your hand or phone casts a shadow",
+          "cause": "The setup blocks the light.",
+          "fix": "Move the light or mount and trigger remotely after hands are clear."
+        }
+      ],
+      "tip": "Check the four corners before adding more objects; alignment errors become harder to spot in a busy layout."
     },
     "why": [
       "A parallel sensor keeps similar-height objects within the same focus plane.",
@@ -4654,10 +6007,59 @@
       "shutter": "Adjust a supported exposure until the edge is visible",
       "focus": "Tap a rim or temporary same-plane target and lock focus",
       "focal": "Main or genuine short tele lens",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
       "guidance": "Use a bright diffuser behind the glass and dark cards beside it; lower exposure if the outline washes out.",
-      "limitation": "Automatic HDR may flatten the desired edge contrast; disable it if the app allows and compare."
+      "limitation": "Automatic HDR may flatten the desired edge contrast; disable it if the app allows and compare.",
+      "why": [
+        "Transparent glass is described mainly by reflected and refracted edges rather than by the empty centre.",
+        "Dark side cards can create a visible outline against a bright diffuser.",
+        "Too much background brightness can flare through the edges, so the brightest frame is not necessarily the clearest."
+      ],
+      "steps": [
+        "Clean the glass and place it securely in front of a diffused bright continuous background.",
+        "Arrange dark cards beside it until the rim and sides have useful outlines.",
+        "Mount the phone and choose the main or a suitable optical short telephoto view.",
+        "Tap a rim; if focus hunts, use a temporary target at that plane, lock focus and remove it without moving the setup.",
+        "Take a test and lower exposure if the outline washes out.",
+        "Inspect the rim, reflections and base; move cards to change edge shape before adjusting the whole exposure again."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Stable support",
+          "Glass on a secure surface",
+          "Diffused continuous background light",
+          "Dark side cards"
+        ],
+        "optional": [
+          "Temporary focus target",
+          "Lens/product cloth"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Glass vanishes into the background",
+          "cause": "The background is too bright or edge contrast is weak.",
+          "fix": "Lower exposure and reposition dark cards to define the outline."
+        },
+        {
+          "symptom": "Autofocus repeatedly misses",
+          "cause": "Transparent surfaces provide little contrast.",
+          "fix": "Focus-lock on the rim or a temporary same-plane target if supported."
+        },
+        {
+          "symptom": "Small bright hotspots cover the glass",
+          "cause": "Undiffused sources or room objects reflect in it.",
+          "fix": "Use a broader diffuser and remove or shade unwanted reflected lights."
+        },
+        {
+          "symptom": "Edges look unnaturally flat",
+          "cause": "HDR processing compressed the intended contrast.",
+          "fix": "Compare another supported capture mode or disable optional HDR where available; preserve the dark edge in editing."
+        }
+      ],
+      "tip": "Move a side card a few centimetres and watch the edge change before touching exposure."
     },
     "why": [
       "Transparent glass is described by edge reflections and refraction rather than surface texture.",
@@ -4810,13 +6212,59 @@
       "mode": "Manual app with a true slow shutter, or a clearly labelled computational slow-shutter mode",
       "iso": "Lowest available ISO",
       "aperture": "Fixed by the selected phone lens; normally not adjustable",
-      "shutter": "Start 1/4 s",
+      "shutter": "About 1/4 s only with true manual control; computational modes use their own effect timing",
       "focus": "Focus on the scene, then lock",
       "focal": "Main lens; do not switch cameras mid-sweep",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Move in one direction through the exposure; ND may be necessary because the aperture is fixed.",
-      "limitation": "Many native phone cameras cannot force a true quarter-second exposure; app stacking can create a different result."
+      "limitation": "Many native phone cameras cannot force a true quarter-second exposure; app stacking can create a different result.",
+      "why": [
+        "The direction and steadiness of the sweep create the picture; random shake usually produces less readable marks.",
+        "A true quarter-second exposure and a computational slow-shutter effect may draw different textures.",
+        "The fixed phone aperture can make daylight too bright for a slow exposure without ND or softer light."
+      ],
+      "steps": [
+        "Choose simple vertical trees or broad colour bands from a safe standing position.",
+        "Use a documented manual slow shutter or a clearly identified computational motion mode; keep one lens selected.",
+        "Focus on the scene and lock focus/exposure where available.",
+        "For a true exposure, begin near 1/4 s at the lowest practical ISO and use suitable physical ND or dimmer light if highlights clip.",
+        "Sweep smoothly in one chosen direction through the capture and make several separate attempts.",
+        "Inspect streak direction and remaining recognisable shapes; vary one movement or duration control at a time rather than assuming every app uses real shutter time."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Supported manual or computational slow-shutter app"
+        ],
+        "optional": [
+          "Compatible ND filter for a true daylight slow exposure",
+          "Secure grip"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Whole frame is bright white",
+          "cause": "The chosen slow exposure admits too much light at the fixed aperture.",
+          "fix": "Use lower available ISO, suitable physical ND or dimmer light; a software effect may use a different capture method."
+        },
+        {
+          "symptom": "Marks look like chaotic wobble",
+          "cause": "Movement changed direction unintentionally.",
+          "fix": "Choose one smooth sweep and follow through release."
+        },
+        {
+          "symptom": "Scene remains mostly sharp",
+          "cause": "The app did not use a slow exposure or strong enough motion effect.",
+          "fix": "Confirm the actual mode and its supported controls before increasing the sweep."
+        },
+        {
+          "symptom": "Streaks contain repeated blocks",
+          "cause": "The app combined separated frames.",
+          "fix": "Use a true slow shutter if available or treat the stepped texture as a computational variation."
+        }
+      ],
+      "tip": "Make one vertical sweep and one horizontal sweep of the same scene; compare how the underlying shapes survive."
     },
     "why": [
       "A quarter-second records the path of the camera rather than freezing the scene.",
@@ -4958,16 +6406,64 @@
       "priority": "effect"
     },
     "phone": {
-      "mode": "Special-effect or manual app, if it supports the required capture",
-      "iso": "App-dependent",
+      "mode": "Sharp Photo capture plus a controllable radial-zoom effect in an editor; true optical capture only on documented compatible hardware",
+      "iso": "Automatic or suitable manual ISO for the source image; the edit has no capture ISO",
       "aperture": "Fixed by the selected phone lens; normally not adjustable",
-      "shutter": "A 1 s simulated effect is app-dependent",
+      "shutter": "Normal source-image exposure; processed blur strength is not shutter duration",
       "focus": "Lock the central subject",
       "focal": "Most phone lenses have fixed focal lengths; lens switching is not an optical zoom burst",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
-      "guidance": "Use an app’s clearly labelled zoom-effect processing if no continuous optical zoom is available.",
-      "limitation": "Pinch zoom is usually digital cropping and cannot reproduce a continuous optical-lens exposure faithfully."
+      "guidance": "Keep a sharp original, then use clearly labelled radial-zoom processing with a deliberate centre and controlled strength.",
+      "limitation": "Pinch zoom is usually digital cropping and cannot reproduce a continuous optical-lens exposure faithfully.",
+      "why": [
+        "Most phone cameras cannot zoom an optical lens continuously during one still exposure.",
+        "A controlled radial-zoom edit can make a related graphic result, but it is a processed effect rather than evidence of an optical capture.",
+        "A sharp, uncluttered source with a clear centre gives the effect a subject instead of only streaks."
+      ],
+      "steps": [
+        "Choose a stationary subject with bright points or strong texture surrounding a clear centre.",
+        "Use ordinary Photo mode, focus on the centre and capture a well-exposed sharp original.",
+        "Keep the original and open a compatible editor or special-effect app with controllable radial zoom blur.",
+        "Place the blur centre deliberately and adjust strength or a mask to retain a readable subject.",
+        "Inspect edges, highlight clipping and whether the effect points towards the intended centre.",
+        "Use an in-exposure optical route only if the phone hardware and app explicitly support continuous optical zoom during a true exposure; ordinary pinch zoom or lens switching is not that method."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Editor or app with controllable radial-zoom processing for the practical phone route"
+        ],
+        "optional": [
+          "Stable support for the source image",
+          "Mask-capable editor"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Pinching during capture does not make smooth rays",
+          "cause": "Digital cropping or discrete lens switching is not continuous optical zoom.",
+          "fix": "Use a clearly labelled radial-effect workflow or documented compatible optical hardware."
+        },
+        {
+          "symptom": "The subject vanishes in the streaks",
+          "cause": "Blur strength or masking overwhelmed the centre.",
+          "fix": "Reduce the effect and preserve more of the sharp original around the subject."
+        },
+        {
+          "symptom": "Rays point to the wrong place",
+          "cause": "The blur centre is misplaced.",
+          "fix": "Move the effect centre to the intended visual anchor."
+        },
+        {
+          "symptom": "Bright points become ugly white bands",
+          "cause": "The source or effect clipped highlights.",
+          "fix": "Start with a darker source or reduce effect strength and blending opacity."
+        }
+      ],
+      "tip": "Keep the sharp original; the best effect often leaves more of it visible than the first dramatic preview.",
+      "conditions": "A sharp phone photograph of a stationary subject with a clear centre and surrounding lights or texture, ready for controlled radial-zoom processing.",
+      "intent": "Create a clearly identified processed radial-zoom effect while keeping the central subject readable."
     },
     "why": [
       "The zoom changes image scale during the exposure, drawing light outward or inward from the centre.",
@@ -5116,10 +6612,59 @@
       "shutter": "Start 1/125 s in manual mode, then adjust ISO",
       "focus": "If supported, focus close while lights stay distant",
       "focal": "Genuine tele lens can help; fixed aperture remains unchanged",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "For a natural effect, focus on a nearby object with distant lights behind it.",
-      "limitation": "Many native phone apps do not allow arbitrary manual defocus; portrait blur is computational and may not render light discs accurately."
+      "limitation": "Many native phone apps do not allow arbitrary manual defocus; portrait blur is computational and may not render light discs accurately.",
+      "why": [
+        "Real defocus requires focusing nearer than the distant lights; a brightness slider does not change disc size.",
+        "A nearby object with lights far behind offers a practical phone composition when arbitrary manual defocus is unavailable.",
+        "Simulated portrait blur may handle point lights differently from optical blur."
+      ],
+      "steps": [
+        "Choose separated small lights with enough darkness between them.",
+        "For real defocus, use a supported manual-focus app and focus close while the lights remain distant.",
+        "If that control is unavailable, place a nearby real subject in focus with distant lights behind and compare ordinary Photo and Portrait modes.",
+        "Use a suitable optical lens and keep exposure low enough to retain the light colours.",
+        "Inspect disc edges, overlap and artificial segmentation around the foreground subject.",
+        "Change focus distance, viewpoint or subject-to-light separation for the pattern; do not seek an unavailable phone aperture setting."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Distant point lights"
+        ],
+        "optional": [
+          "App with documented manual focus",
+          "Nearby foreground subject",
+          "Small support"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Lights remain tiny sharp points",
+          "cause": "Focus is still on the distant lights.",
+          "fix": "Set nearer manual focus if supported, or focus on a nearby real subject."
+        },
+        {
+          "symptom": "Light circles turn white",
+          "cause": "Highlights clipped.",
+          "fix": "Lower exposure or manual ISO where available and inspect the colour."
+        },
+        {
+          "symptom": "Foreground edges are cut out",
+          "cause": "Portrait segmentation struggled with the scene.",
+          "fix": "Use ordinary Photo mode or less simulated blur."
+        },
+        {
+          "symptom": "Discs are too small to read",
+          "cause": "The lens and distance geometry produce limited optical blur.",
+          "fix": "Increase subject-to-background separation or use a suitable genuine telephoto; accept the phone’s optical limits."
+        }
+      ],
+      "tip": "Move sideways to separate overlapping light circles before trying to make them larger.",
+      "conditions": "Small distant lights after dark, either behind a nearby real subject or viewed with an app that supports deliberate manual defocus.",
+      "intent": "Make soft background lights around a nearby subject, or a pattern of defocused light discs when manual focus is available."
     },
     "why": [
       "A wide aperture produces larger blur discs for the same framing and focus distance.",
@@ -5271,10 +6816,60 @@
       "shutter": "Start 10–15 s only if the app supports true long exposure",
       "focus": "Light the subject, focus and lock before exposure",
       "focal": "Main lens on a firm mount",
-      "whiteBalance": "Fixed balance matched to the torch; warm/cool mixtures are a creative choice",
+      "whiteBalance": "Fixed balance matched to the torch if selectable; otherwise Auto. Warm/cool mixtures can be deliberate.",
       "support": "Tripod",
       "guidance": "Use a tripod and move the torch across the subject; compare with the app’s computational alternative if true long exposure is unavailable.",
-      "limitation": "Native night mode may align or reject moving light, so it does not always reproduce a single continuous exposure."
+      "limitation": "Native night mode may align or reject moving light, so it does not always reproduce a single continuous exposure.",
+      "why": [
+        "A stationary phone and subject allow a moving torch to place light selectively.",
+        "Torch distance and dwell time change local brightness, while the capture duration also records ambient light.",
+        "A Night stack may reject moving illumination, so the capture method must be tested rather than assumed."
+      ],
+      "steps": [
+        "Choose a safe dark location and a stationary subject; use an ordinary torch or LED, with no fire effects.",
+        "Mount the phone, illuminate the subject to focus, then lock focus and available exposure/WB controls.",
+        "Choose a documented true long exposure or dedicated light-painting mode; use 10–15 s only if the device genuinely supports it.",
+        "Trigger hands-free and sweep the torch across the subject without pointing its beam into the lens.",
+        "Inspect local brightness, unwanted hand/beam trails and ambient glow.",
+        "Change torch distance or dwell time one at a time; if the phone cannot retain moving illumination, use a steady side-lit photograph as a simpler result or a documented composite mode."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Rigid support",
+          "Ordinary torch or suitable LED",
+          "Documented long-exposure or light-painting app"
+        ],
+        "optional": [
+          "Remote or timer",
+          "Safe low-level light for moving around the setup"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Painted subject is washed out",
+          "cause": "Torch illumination dwelt too long or was too close.",
+          "fix": "Move the torch farther away or sweep faster, then compare."
+        },
+        {
+          "symptom": "Torch makes a bright line across the picture",
+          "cause": "Its beam or emitter faced the lens.",
+          "fix": "Keep the emitter outside the view and direct light only onto the subject."
+        },
+        {
+          "symptom": "Moving light disappears from the saved image",
+          "cause": "The selected Night process rejected or merged it.",
+          "fix": "Use a documented painting mode or true continuous exposure if available."
+        },
+        {
+          "symptom": "Subject and background are both blurred",
+          "cause": "The phone or subject moved during capture.",
+          "fix": "Secure both and use a hands-free trigger; torch movement should be the only deliberate movement."
+        }
+      ],
+      "tip": "Illuminate one side first and review it; filling every shadow can remove the shape you wanted to reveal.",
+      "conditions": "A stationary subject in darkness with an ordinary torch and a documented painting/slow-exposure mode; a steady side-lit capture is the simpler phone fallback.",
+      "intent": "Selectively illuminate a stationary subject with a torch, using the app’s documented capture method or a clearly different steady-light fallback."
     },
     "why": [
       "A tripod and locked focus keep static edges sharp during the long exposure.",
@@ -5427,10 +7022,56 @@
       "shutter": "Expose each source separately; no single universal shutter",
       "focus": "Focus separately for silhouette and texture",
       "focal": "Main or genuine tele lens, depending on each layer",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Handheld",
       "guidance": "Save two clean originals and combine with a controllable blend or mask.",
-      "limitation": "Native cameras often lack double exposure; a separate app is required, and blend modes may not match camera implementations."
+      "limitation": "Native cameras often lack double exposure; a separate app is required, and blend modes may not match camera implementations.",
+      "why": [
+        "Each source image needs its own correct focus and exposure; one shared shutter value cannot suit both.",
+        "A simple silhouette gives the texture a readable shape to occupy.",
+        "Blend mode, opacity and masking determine the composite, so the untouched originals should remain available."
+      ],
+      "steps": [
+        "Photograph a clear dark outline against a bright simple background, checking the shape at the frame edges.",
+        "Capture a separate texture or scene with its own appropriate focus and exposure.",
+        "Save both originals and open a layer-capable editor or documented multiple-exposure app.",
+        "Align the layers and choose a controllable blend or mask, understanding that additive, lighten, darken and average modes behave differently.",
+        "Adjust opacity and masking so the outline remains recognisable and important highlights stay within range.",
+        "Inspect the final image enlarged and retain an editable version alongside the clearly identified composite."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Layer-capable editor or documented multiple-exposure app"
+        ],
+        "optional": [
+          "Stable support for a carefully aligned silhouette",
+          "Masking tools"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Everything becomes too bright",
+          "cause": "An additive blend summed already bright images.",
+          "fix": "Reduce layer exposure/opacity or use a blend mode better suited to the intended result."
+        },
+        {
+          "symptom": "Silhouette is no longer readable",
+          "cause": "Texture overwhelms the subject’s outline.",
+          "fix": "Use a simpler texture, lower its opacity or refine the mask."
+        },
+        {
+          "symptom": "Texture appears in the wrong part of the image",
+          "cause": "Blend behaviour or mask placement differs from the intention.",
+          "fix": "Choose and test the mode deliberately, then position the texture within the outline."
+        },
+        {
+          "symptom": "Composite has soft unconvincing edges",
+          "cause": "One source was out of focus or the mask was poorly aligned.",
+          "fix": "Return to the originals, correct alignment or capture a sharper source rather than sharpening the whole blend."
+        }
+      ],
+      "tip": "Choose the outline first, then look for a texture whose direction supports that shape."
     },
     "why": [
       "A simple outline gives the second image a readable shape to work within.",
@@ -5578,10 +7219,56 @@
       "shutter": "Native mode controls shutter; separate daylight stills can start at 1/250 s",
       "focus": "Lock focus on the distant scene where supported",
       "focal": "Main lens; avoid automatic lens switching",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod optional for distant daylight scenes",
       "guidance": "Pan steadily at the app’s requested speed, or shoot 30–40% overlapping locked stills for later stitching.",
-      "limitation": "Moving people and close objects can warp in sweep panorama; each phone handles exposure changes differently."
+      "limitation": "Moving people and close objects can warp in sweep panorama; each phone handles exposure changes differently.",
+      "why": [
+        "A steady sweep and static scene reduce warped joins in a native phone panorama.",
+        "Close foreground objects change their relationship to distant ones when the phone moves sideways, creating stitching errors.",
+        "Separate overlapping stills need consistent exposure, focus and lens selection before later stitching."
+      ],
+      "steps": [
+        "Choose a mostly static view with few close foreground objects and enough space for the full sweep.",
+        "Use the main lens and level the phone; choose native Panorama or a separate-stills workflow deliberately.",
+        "In native mode, follow the app’s speed guide and keep the lens near one position while turning.",
+        "For separate stills, lock focus, exposure and WB where supported, keep one lens selected and overlap neighbouring frames by about 30–40%.",
+        "Leave top/bottom crop margins and avoid people crossing the joins.",
+        "Inspect the assembled horizon, repeated objects and brightness bands; reshoot while still at the location if a join fails."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Native panorama mode or a compatible stitching workflow"
+        ],
+        "optional": [
+          "Stable support",
+          "Editor for stitching separate stills"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Railings or near objects break at joins",
+          "cause": "The viewpoint shifted sideways between frames.",
+          "fix": "Avoid close foreground or rotate with the lens near one position; a proper support can help."
+        },
+        {
+          "symptom": "People have missing or repeated body parts",
+          "cause": "They moved during the sweep.",
+          "fix": "Wait for a static scene or make a single wider photograph instead."
+        },
+        {
+          "symptom": "Brightness changes in bands",
+          "cause": "Automatic exposure or white balance changed between panels.",
+          "fix": "Use supported locks for separate stills, or choose steadier light and inspect the native panorama."
+        },
+        {
+          "symptom": "Horizon rises or falls",
+          "cause": "The phone tilted during the sweep.",
+          "fix": "Use the level/grid, pan steadily and leave stitching margins."
+        }
+      ],
+      "tip": "Check the joins before leaving; a panorama thumbnail can hide a broken person or railing."
     },
     "why": [
       "Fixed exposure and white balance prevent visible brightness and colour steps between panels.",
@@ -5731,10 +7418,58 @@
       "shutter": "Native automatic; manual example 1/500, 1/125, 1/30 s",
       "focus": "Lock focus on the main plane",
       "focal": "Main lens with consistent framing",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod or firm support",
       "guidance": "Use native HDR for simple scenes; keep the phone still and inspect moving people and branches.",
-      "limitation": "Native HDR may not save separate source frames or offer EV spacing; manual brackets need an app and external merge."
+      "limitation": "Native HDR may not save separate source frames or offer EV spacing; manual brackets need an app and external merge.",
+      "why": [
+        "Native HDR may solve a simple scene without giving access to its component exposures.",
+        "A manual bracket needs separately saved frames with the same viewpoint and focus.",
+        "The useful endpoints protect bright detail and record dark detail; fixed EV spacing is only a starting test."
+      ],
+      "steps": [
+        "Choose a mostly static scene and secure the phone; start with one normal HDR-enabled Photo capture if available.",
+        "Inspect the brightest important detail and darkest necessary area in the saved result.",
+        "If a manual bracket is needed, use an app that can save separate frames and lock lens, focus, WB and ISO where supported.",
+        "Vary shutter only; a 1/500, 1/125 and 1/30 s sequence is a roughly two-stop example, to be shifted for the actual light and available shutter limits.",
+        "Check that the dark frame preserves highlights and the bright frame has useful shadows without subject motion.",
+        "Merge in compatible software, inspect halos and ghosts, and retain all originals; do not assume a stock HDR mode exports a controllable bracket."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Rigid support",
+          "For a manual bracket: compatible capture app and merge software"
+        ],
+        "optional": [
+          "Timer or remote",
+          "Storage for original frames"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Bright detail missing in every frame",
+          "cause": "The darkest exposure was still too bright.",
+          "fix": "Shift the bracket darker within supported controls and inspect highlights again."
+        },
+        {
+          "symptom": "Shadows remain noisy in the merge",
+          "cause": "The brightest frame did not record enough useful shadow information.",
+          "fix": "Add a brighter supported frame while keeping the scene still, or accept the limited range."
+        },
+        {
+          "symptom": "Moving branches or people ghost",
+          "cause": "The subject changed between exposures.",
+          "fix": "Use one source frame for moving regions, wait for stillness or choose a single HDR capture."
+        },
+        {
+          "symptom": "Cannot find separate bracket originals",
+          "cause": "The native HDR mode saved only its final result.",
+          "fix": "Use a documented app that exports source frames, or work with the native result without claiming a manual merge."
+        }
+      ],
+      "tip": "Choose the two useful endpoint exposures before worrying about a perfectly symmetric bracket.",
+      "intent": "Keep important bright and dark detail through native HDR or a separately saved manual bracket, then inspect the result for a natural balance."
     },
     "why": [
       "Changing shutter alone keeps depth of field and noise behaviour more consistent across the bracket.",
@@ -5884,10 +7619,59 @@
       "shutter": "Keep identical supported exposure for every frame",
       "focus": "Move focus in small steps from near to far",
       "focal": "Lock one macro-capable or main lens; no automatic camera switching",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
       "guidance": "Mount the phone, lock exposure and capture separate focus planes for external stacking.",
-      "limitation": "Most native camera apps do not offer controlled focus bracketing; synthetic portrait blur does not add real sharp detail."
+      "limitation": "Most native camera apps do not offer controlled focus bracketing; synthetic portrait blur does not add real sharp detail.",
+      "why": [
+        "A genuine focus stack combines sharp detail from separately focused source images; portrait blur cannot add that detail.",
+        "The phone must keep lens, exposure and white balance consistent while focus changes independently.",
+        "Overlapping sharp regions matter more than a universal number of frames."
+      ],
+      "steps": [
+        "Use a completely still subject, steady continuous light and a rigid phone mount with crop margin.",
+        "Choose an app that independently controls focus and locks exposure/WB while saving separate full-resolution images; lock one lens and prevent automatic camera switching.",
+        "Set an exposure the app genuinely supports and keep it identical throughout the sequence.",
+        "Start at the nearest required detail and move focus in small steps towards the farthest, keeping visible sharp regions overlapping.",
+        "Review adjacent frames enlarged for gaps, then align and merge them in compatible focus-stacking software.",
+        "Inspect edges and transparent/reflective details for halos; retain the originals. If independent focus control or merging is unavailable, use a single aligned close-up from slightly farther away instead."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Rigid mount",
+          "Still subject and steady continuous light",
+          "App with independent manual focus/exposure controls and source-image export",
+          "Compatible focus-stacking software"
+        ],
+        "optional": [
+          "Remote or timer",
+          "Stable subject support"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "A band remains soft in the final image",
+          "cause": "The focus steps left a gap between sharp regions.",
+          "fix": "Capture smaller focus changes with real overlap; adding sharpening does not fill a missing plane."
+        },
+        {
+          "symptom": "Object edges ghost or shift",
+          "cause": "The subject, phone or lighting moved during the sequence.",
+          "fix": "Stabilise the setup and repeat; exclude moving subjects from this method."
+        },
+        {
+          "symptom": "Framing jumps between focus frames",
+          "cause": "The phone switched lenses or focus breathing changed scale.",
+          "fix": "Lock one camera, leave crop margins and use alignment in the merge."
+        },
+        {
+          "symptom": "Frames change brightness when focus moves",
+          "cause": "The app coupled autofocus or metering to each adjustment.",
+          "fix": "Use independent manual focus with locked exposure/WB, or choose the simpler single-frame route."
+        }
+      ],
+      "tip": "Inspect two neighbouring frames before completing the sequence; they should share a clearly sharp region."
     },
     "why": [
       "Moderate aperture retains fine detail while multiple focus planes supply depth.",
@@ -6043,10 +7827,58 @@
       "shutter": "Native automatic; manual target about 1 s with 3 s intervals",
       "focus": "Lock focus on the static landscape",
       "focal": "Main lens fixed throughout the sequence",
-      "whiteBalance": "Auto; lock it for a consistent series",
+      "whiteBalance": "Auto; lock white balance for a series only if the app supports it.",
       "support": "Tripod",
       "guidance": "Secure the phone, check battery and capture a short test before a long run.",
-      "limitation": "Native time-lapse often chooses intervals and exposure automatically; true slow shutters may require an app and ND."
+      "limitation": "Native time-lapse often chooses intervals and exposure automatically; true slow shutters may require an app and ND.",
+      "why": [
+        "A fixed phone position lets cloud movement remain the only large change between frames.",
+        "Native time-lapse modes often choose timing automatically, so output duration cannot be promised from the camera recipe.",
+        "A manual interval sequence needs exposure plus file-writing time to fit inside each start-to-start interval."
+      ],
+      "steps": [
+        "Choose a stable landscape view with moving clouds, secure the phone and check battery, storage and weather protection.",
+        "Select native Time-lapse for an automatic sequence, or a documented interval app for separately saved frames.",
+        "Keep one lens selected and lock focus/exposure/WB where the app supports it; make a short playback test.",
+        "For a manual example, use a supported exposure around 1 s and 3 s start-to-start intervals; suitable physical ND may be needed in daylight because aperture is fixed.",
+        "Record about 240 manual frames for roughly 10 s at 24 fps, taking about 12 minutes at that interval; native timing may differ.",
+        "Inspect playback for flicker, shake and missing frames before committing to a longer run, and retain source images when the app provides them."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Secure tripod or fixed support",
+          "Sufficient battery and storage"
+        ],
+        "optional": [
+          "Power bank safely secured",
+          "Manual interval app for timing control",
+          "Compatible ND filter for true slow exposures"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Landscape jumps during playback",
+          "cause": "The phone or support moved.",
+          "fix": "Use a rigid sheltered mount and avoid touching the setup during recording."
+        },
+        {
+          "symptom": "Brightness or colour pulses",
+          "cause": "Automatic exposure/WB changed between frames.",
+          "fix": "Use supported locks or more consistent light; gradual day-to-night changes need a deliberately managed workflow."
+        },
+        {
+          "symptom": "Motion jumps with missing moments",
+          "cause": "Interval, exposure or processing demands exceeded capture capability.",
+          "fix": "Shorten exposure or lengthen the interval in a manual app and test writing time."
+        },
+        {
+          "symptom": "Final duration differs from the planned frame calculation",
+          "cause": "The native mode selected its own interval or playback processing.",
+          "fix": "Accept its automatic result or use a documented manual interval workflow for exact counts."
+        }
+      ],
+      "tip": "Play back a short test before the long wait; timing and flicker problems are easier to fix at the start."
     },
     "why": [
       "A 1 s exposure blurs some cloud movement within each 3 s capture interval.",
@@ -6197,16 +8029,67 @@
       "canSlowShutter": false
     },
     "phone": {
-      "mode": "Specialised manual app plus independently controlled repeating light",
-      "iso": "Fixed low ISO if supported",
+      "mode": "Documented true long exposure with independent repeating light, or ordinary burst plus a labelled multi-image composite",
+      "iso": "Lowest practical fixed ISO for a supported long exposure; automatic or suitable manual ISO for burst originals",
       "aperture": "Fixed by the selected phone lens; normally not adjustable",
-      "shutter": "A true 2 s capture is required for the example sequence",
+      "shutter": "True 2–3 s only if genuinely supported; otherwise separate short burst exposures for a composite",
       "focus": "Pre-focus on the movement plane and lock it",
       "focal": "Main lens on a secure support",
-      "whiteBalance": "Fixed balance matched to the repeating light",
+      "whiteBalance": "Fixed balance matched to the repeating or continuous light if selectable; otherwise Auto.",
       "support": "Tripod",
-      "guidance": "Use only an app that records one continuous exposure, with a separately controlled compatible repeating flash or light; test timing before the movement.",
-      "limitation": "Native phone flash systems generally do not provide programmable pulse count, power and frequency; night-mode stacking can reject or merge the repeated positions."
+      "guidance": "Test a true continuous exposure with independent repeating light, or combine separately saved sharp burst frames as an explicitly labelled composite.",
+      "limitation": "Native phone flash systems generally do not provide programmable pulse count, power and frequency; night-mode stacking can reject or merge the repeated positions.",
+      "why": [
+        "The phone’s built-in flash is not assumed to provide programmable pulse count, frequency or output.",
+        "A true long exposure can record an independently controlled repeating light only when the phone/app genuinely supports that exposure.",
+        "A burst of separate sharp images can make a related composite result, but it must be identified as a composite rather than one stroboscopic capture."
+      ],
+      "steps": [
+        "Choose a small light-coloured object and a controlled clear path; warn nearby people about flashing light and avoid it around anyone sensitive to flashes.",
+        "Mount the phone and lock focus on the movement plane. Test whether the app records one true 2–3 s exposure rather than a Night stack.",
+        "For the single-exposure route, darken ambient light and use an independently controlled compatible repeating flash within its manual’s limits; 8 pulses at 4 Hz take about 2 s, with capture margin needed for trigger timing.",
+        "Start at low permitted flash output and the phone’s lowest practical ISO; test timing and brightness before moving the object, adjusting external flash output or distance separately.",
+        "If that setup is unavailable, use bright continuous light and an ordinary short-exposure burst, save the separate originals and combine 3–6 clear positions with masks in a layer editor.",
+        "Inspect each position for blur, clipping and overlap; retain originals and clearly distinguish the one-exposure result from the multi-image composite."
+      ],
+      "pack": {
+        "essential": [
+          "Phone",
+          "Rigid support",
+          "Controlled safe object path",
+          "Either documented true-long-exposure capture plus independent programmable repeating light, or a burst-export and layer-editing workflow"
+        ],
+        "optional": [
+          "Dark background",
+          "Remote trigger",
+          "Continuous light for the composite alternative"
+        ]
+      },
+      "problems": [
+        {
+          "symptom": "Phone offers no pulse count or frequency setting",
+          "cause": "Its built-in flash lacks programmable repeating control.",
+          "fix": "Use a separately controlled compatible system or the ordinary-burst composite alternative."
+        },
+        {
+          "symptom": "Repeated positions disappear or merge unexpectedly",
+          "cause": "The app used computational Night processing instead of one continuous exposure.",
+          "fix": "Verify true exposure support, or save separate short burst frames and build a labelled composite."
+        },
+        {
+          "symptom": "A continuous ghost joins all the positions",
+          "cause": "Ambient light recorded the moving object between flash pulses.",
+          "fix": "Reduce ambient for the single-exposure route; for a composite choose sharper originals and cleaner masks."
+        },
+        {
+          "symptom": "Positions overlap or become too bright",
+          "cause": "Pulse spacing is too tight, flash output excessive or the same area accumulated light.",
+          "fix": "Reduce external flash frequency/output or change distance within equipment limits; in a composite select fewer separated positions and adjust blending."
+        }
+      ],
+      "tip": "Test a stationary object for brightness first, then test timing; changing both at once makes the cause of a failure unclear.",
+      "conditions": "A light-coloured object on a controlled path: a darkened room for a verified continuous exposure with independent repeating light, or bright steady light for separate burst originals.",
+      "intent": "Show several distinct object positions through a verified repeating-light exposure or an explicitly labelled composite of separate sharp frames."
     },
     "why": [
       "Repeated short flash pulses record separate positions while the shutter remains open.",

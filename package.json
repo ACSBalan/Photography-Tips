@@ -1,6 +1,6 @@
 {
   "name": "fieldframe",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "description": "120 practical photography scene sheets, ready for the field.",
@@ -15,15 +15,15 @@
   "dependencies": {
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "zod": "4.1.12"
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "@vitejs/plugin-react": "5.1.0",
     "typescript": "5.9.3",
-    "vite": "7.2.2",
-    "vitest": "3.2.4"
+    "vite": "7.3.7",
+    "vitest": "4.1.12"
   },
   "repository": {
     "type": "git",
