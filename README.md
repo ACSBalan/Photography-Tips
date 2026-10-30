@@ -1,5 +1,9 @@
 # Fieldframe
 
+**Live app:** [Open Fieldframe](https://acsbalan.github.io/Photography-Tips/)
+
+**Source repository:** [ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)
+
 **Photography in your pocket.** Fieldframe is a standalone, scene-first photography reference with 120 complete cheat sheets. Search for the photograph you want to make, choose your camera format, read the starting settings, take a test frame and use the scene's corrections.
 
 The app opens directly into its searchable library. A scene puts ISO, aperture, shutter and actionable focus instructions first; mode, focal length, white balance and support are nearby. Every sheet also contains conditions, original comparison diagrams, practical explanations, shooting steps, essential and optional equipment, troubleshooting, alternatives, a field tip and technical sources. There are no lessons, accounts or required learning sequence.
@@ -8,13 +12,13 @@ The app opens directly into its searchable library. A scene puts ISO, aperture, 
 
 **Public GitHub repository: [ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips).** This delivery contains the complete React/TypeScript application, all 120 scene sheets, 240 original SVG assets, the lockfile, tests and deployment instructions. The owner confirmed public publication on 30 October 2026. The fresh repository contained only its initial README when checked. No code or history from another starter repository is included.
 
-The complete source is uploaded and every one of its **291 files was verified by Git blob hash**. The **[gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages)** contains the tested production build: 251 application files plus `.nojekyll`, with every file verified against local output.
+The complete source is uploaded and every one of its **291 files was verified by Git blob hash**. The **[gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages)** contains the tested production build: **252 files**, comprising 251 application files plus `.nojekyll`, with every file verified against the prepared local output.
 
-**One owner setting remains before the app is live:** open [Settings → Pages](https://github.com/ACSBalan/Photography-Tips/settings/pages), choose **Deploy from a branch → gh-pages → /(root)** and **Save**. This public repository supports Pages on GitHub Free. The connected code-writing tools cannot change Pages administration settings, and browser sign-in was unavailable. No live Pages URL is claimed yet.
+**GitHub Pages is live and verified.** The [successful Pages deployment](https://github.com/ACSBalan/Photography-Tips/actions/runs/41051389283) published `gh-pages` commit [`790a2aafbc5720e42a48e443dbbfca17d80b2a99`](https://github.com/ACSBalan/Photography-Tips/commit/790a2aafbc5720e42a48e443dbbfca17d80b2a99). All **251 served application files** match the tested build by SHA-256, with cache version `a8076470a1d7`. The live browser journey verified scene search, format changes, favourites, corrections, **250/250 cached files** and a cache-only rehearsal that reloaded the app and opened an unvisited waterfall sheet with its diagram.
 
-An optional manual `.github/workflows/pages.yml` is also included for later builds directly from source. Use it only after choosing **GitHub Actions** as the Pages source; see the deployment guide. No plan upgrade or visibility change is part of either route.
+Pages currently publishes from **gh-pages → /(root)**. An optional manual `.github/workflows/pages.yml` is also included for later builds directly from source. Use it only after choosing **GitHub Actions** as the Pages source; see the deployment guide. This public repository supports Pages on GitHub Free; no plan upgrade or visibility change is part of either route.
 
-See [deployment instructions](docs/DEPLOYMENT.md), the [verification record](docs/VERIFICATION.md), [redesigned library screenshot](docs/fieldframe-redesign-library.jpg) and [phone layout screenshot](docs/fieldframe-redesign-phone.jpg). The local production build, all 120 content checks and all 88 automated tests pass. Live GitHub Pages verification and physical-device installation are separate acceptance steps and are not claimed here.
+See [deployment instructions](docs/DEPLOYMENT.md), the [verification record](docs/VERIFICATION.md), [redesigned library screenshot](docs/fieldframe-redesign-library.jpg) and [phone layout screenshot](docs/fieldframe-redesign-phone.jpg). The production build, all 120 content checks and all 88 automated tests pass. Physical iOS/Android installation and printed-paper or native PDF pagination tests remain unverified.
 
 ## What is included
 
@@ -72,18 +76,19 @@ For ordinary interface development:
 npm run dev
 ```
 
-This provides Vite hot reload. Service-worker downloads are deliberately disabled in development to avoid stale-cache confusion. Use `npm run build` followed by `npm run preview` to test the real PWA. In a managed Sites container with `SITES_MANAGED_LINUX_CONTAINER=1`, the development wrapper starts the production preview instead; build first there too.
+This provides Vite hot reload. Service-worker downloads are deliberately disabled in development to avoid stale-cache confusion. Use `npm run build` followed by `npm run preview` to test the real PWA.
 
 ### Commands
 
 | Command | Purpose |
 | --- | --- |
 | `npm ci` | Install the exact locked dependency tree |
-| `npm run dev` | Local development server, or built preview in the managed Sites environment |
+| `npm run dev` | Local Vite development server with hot reload |
 | `npm run build` | Generate diagrams, type-check, compile and create the offline manifest/service worker |
 | `npm run validate` | Check all scene schemas, uniqueness, ranges, sources and related links |
 | `npm test` | Run the calculator, content, search, exposure-adaptation and built-worker tests |
 | `npm run preview` | Serve the production build for browser and offline QA |
+| `npm run verify:deployment -- https://acsbalan.github.io/Photography-Tips/` | Compare all 251 live application files with the local production build by SHA-256 |
 
 ## Using Fieldframe in the field
 

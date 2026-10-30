@@ -1,6 +1,12 @@
 # Deploy Fieldframe from GitHub
 
-The project's source repository is **[ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)**. It contained only its initial README before the completed app was uploaded; the application does not import the history or starter code of another repository. The owner's initial commit is preserved. This guide concerns deployment from the new repository; it does not claim that a live GitHub Pages deployment has been verified.
+**Live app:** [https://acsbalan.github.io/Photography-Tips/](https://acsbalan.github.io/Photography-Tips/)
+
+**Source repository:** [ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)
+
+GitHub Pages is enabled and the live app is verified. [Deployment run 41051389283](https://github.com/ACSBalan/Photography-Tips/actions/runs/41051389283) succeeded for `gh-pages` commit [`790a2aafbc5720e42a48e443dbbfca17d80b2a99`](https://github.com/ACSBalan/Photography-Tips/commit/790a2aafbc5720e42a48e443dbbfca17d80b2a99). Every one of the 251 served application files matches the tested production build by SHA-256.
+
+The source repository contained only its initial README before the completed app was uploaded. The owner's initial commit is preserved; the application does not import the history or starter code of another repository.
 
 Fieldframe is a static React/Vite PWA. The complete deployable output is `dist/`. No application server, database, runtime secret or paid AI API is required.
 
@@ -24,18 +30,17 @@ npm run preview
 
 Build first: the tests inspect the generated service worker, offline manifest and artwork. The build creates all diagrams and thumbnails, checks TypeScript, compiles the application and then writes `dist/sw.js` and `dist/offline-manifest.json`. Deploy every file in `dist/`, including all visuals and PWA assets.
 
-## Publish the prepared build
+## Current publishing configuration
 
-The [gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages) contains the verified production output, with `index.html` at its root and `.nojekyll` to prevent Jekyll processing. All 252 files match the local build, including all 120 diagrams and 120 thumbnails. It was built from source commit `6cf2696f72ead5bccfcdb0c206647741ee371308`; the offline cache version is `a8076470a1d7`.
+The [gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages) contains **252 verified files**: the 251-file production output, with `index.html` at its root, plus `.nojekyll` to prevent Jekyll processing. All files match the prepared local output, including all 120 diagrams and 120 thumbnails. The build comes from source commit `6cf2696f72ead5bccfcdb0c206647741ee371308`; the offline cache version is `a8076470a1d7`.
 
-The owner needs to enable the publishing source once:
+The repository's [Settings → Pages](https://github.com/ACSBalan/Photography-Tips/settings/pages) is configured as:
 
-1. Open [Settings → Pages](https://github.com/ACSBalan/Photography-Tips/settings/pages).
-2. Under **Build and deployment**, select **Source: Deploy from a branch**.
-3. Choose **gh-pages**, keep **/(root)** and click **Save**.
-4. Wait for GitHub's Pages deployment to succeed, then open the address shown in Pages settings. Perform the live checks below before calling the app verified.
+- **Source:** Deploy from a branch
+- **Branch:** gh-pages
+- **Folder:** /(root)
 
-This follows [GitHub's documented branch-publishing flow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). The code connector can upload files but cannot change Pages administration settings. The browser session could not sign in, so this owner setting remains pending. Creating the prepared branch alone does not enable Pages.
+This follows [GitHub's documented branch-publishing flow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). GitHub's automatic Pages build and deployment completed successfully. No additional enablement action is required for the current site.
 
 For subsequent updates while using branch publishing, rebuild and verify the app, then replace the contents of `gh-pages` with the new complete `dist/` output and retain `.nojekyll`. A change to `main` alone does not update that compiled branch. Alternatively, switch to the source-build workflow below.
 
@@ -49,7 +54,7 @@ The included [Pages workflow](../.github/workflows/pages.yml) is **manual only**
 4. Wait for **Build and verify**, then **Publish verified artifact**, to succeed. The build runs `npm ci`, `npm run build`, `npm run validate` and `npm test` in that order; a failure prevents deployment.
 5. Open the URL reported by the deployment job or **Settings → Pages**. Record that exact verified address in the README and verification record after completing the checks below.
 
-The normal project-site URL would be `https://acsbalan.github.io/Photography-Tips/`, unless account/domain settings change it. This is an expected URL shape, not a verified live address.
+The current verified project-site URL is **[https://acsbalan.github.io/Photography-Tips/](https://acsbalan.github.io/Photography-Tips/)**. Preserve that project subdirectory when configuring or verifying future deployments.
 
 The workflow uses official GitHub actions: checkout and setup-node v7, configure-pages v5, upload-pages-artifact v4 and deploy-pages v4. Node setup explicitly disables automatic package-manager caching. The build job has only `contents: read`; the separate deployment job has only `pages: write` and `id-token: write`. Checkout does not persist credentials, the artifact expires after one day, and deployments are serialized. `configure-pages` uses its default configuration: no forced enablement and no supplied token. See [GitHub's Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [setup-node](https://github.com/actions/setup-node) and [checkout](https://github.com/actions/checkout).
 
@@ -62,6 +67,24 @@ Vite uses `base: './'`; scripts, styles, diagrams and thumbnails have relative U
 For branch publishing, the contents of `dist/` are placed at the root of `gh-pages` alongside `.nojekyll`. For the optional Actions route, publish `dist/` as the Pages artifact with `index.html` at the artifact root; that workflow route does not need `.nojekyll`. The deployed directory should have its normal trailing slash.
 
 ## Verify the deployed app
+
+Build the same source version as the deployment, then run:
+
+```sh
+npm run verify:deployment -- https://acsbalan.github.io/Photography-Tips/
+```
+
+The checker requests every file in the offline manifest, the manifest itself and the service worker, then compares each response with the local `dist/` file by SHA-256. The verified deployment returned **PASS: 251 files**, **120 scene diagrams**, cache version **`a8076470a1d7`**. The `.nojekyll` publishing marker is present in the 252-file branch; it is not an application asset and is not part of the 251-file live-content check. The service worker caches 250 files; its own script is the additional served application file.
+
+If the verification environment uses a configured HTTP(S) proxy, Node 24 may require environment-proxy support:
+
+```sh
+NODE_USE_ENV_PROXY=1 node scripts/verify-deployment.mjs https://acsbalan.github.io/Photography-Tips/
+```
+
+Use that variant only when the environment uses a proxy. It was the successful command in the verification environment; it does not require application credentials.
+
+The live browser check also passed the scene-to-settings-to-correction journey, format and favourite persistence, cache verification at **250/250**, and a cache-only rehearsal with a fresh reload and an unvisited waterfall sheet and diagram. Repeat the following checks after application changes:
 
 - Open the actual Pages address and confirm the 120-scene library appears. Reload a direct scene link and check its diagram and thumbnail load.
 - On a narrow phone viewport, search for a scene, read the four main settings, change camera format and find a correction. Check keyboard focus, favourites persistence and theme selection.

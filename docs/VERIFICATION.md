@@ -2,6 +2,12 @@
 
 Validation date: 30 October 2026. This record distinguishes checks performed from physical-device or photographic field testing.
 
+**Verified live app:** [https://acsbalan.github.io/Photography-Tips/](https://acsbalan.github.io/Photography-Tips/)
+
+**Public source:** [ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)
+
+**Successful Pages run:** [41051389283](https://github.com/ACSBalan/Photography-Tips/actions/runs/41051389283), publishing `gh-pages` commit [`790a2aafbc5720e42a48e443dbbfca17d80b2a99`](https://github.com/ACSBalan/Photography-Tips/commit/790a2aafbc5720e42a48e443dbbfca17d80b2a99).
+
 ## Automated checks
 
 The production build, content validator and all **88 tests in five files** pass.
@@ -39,7 +45,7 @@ The NPF implementation uses the documented full formula and native horizontal pi
 
 Safety guidance accompanies solar photography, lightning, water and other relevant scenes. The Moon-in-landscape setup explicitly protects lunar detail and explains the brightness difference from the landscape. Timelapse, flash pulse and multi-image instructions remain in printed pocket cards.
 
-## Browser checks performed
+## Preview browser checks performed
 
 The managed preview was used for the library and a same-origin iframe at phone widths. The following journey was exercised through visible controls:
 
@@ -61,6 +67,23 @@ The saved [phone screenshot](fieldframe-redesign-phone.jpg) shows the tested 1.1
 
 The `viewport-check.html` utility provides reproducible 390 px, 360 px and 768 px iframe viewports. It is marked `noindex` and is not part of the app's navigation. This validates responsive CSS, not physical touch targets, real-device camera behavior or mobile OS installation.
 
+## Live GitHub Pages browser checks
+
+The actual public Pages app opened successfully and displayed the full 120-scene library. The following journey was verified through its visible controls:
+
+1. Search for **Milky Way**, open the matching sheet and read its four primary settings.
+2. Select **APS-C 1.5×**. ISO **3200**, aperture **f/2.8** and shutter **10 s** stay unchanged; the suggested focal length becomes **13.3 mm actual**, separately labelled as a **20 mm equivalent** field of view.
+3. Save the scene as a favourite and open its scene-specific **Fix a problem** section.
+4. Set the APS-C crop factor to **1.6×**, reload and confirm the preference persists. The saved favourite also persists.
+5. Use **Verify saved files** and confirm **250/250 files** are saved.
+6. Start the app's **cache-only offline rehearsal**, reload the app, then open a previously unvisited waterfall scene. Its sheet and SVG diagram load from the saved cache.
+
+The rehearsal exercises the deployed service worker with network fallback disabled. It was turned off after the check. It is not a physical-device flight-mode or operating-system installation test. Physical iOS/Android installation remains unverified.
+
+The live app's 360 px phone fixture repeated search → Milky Way → read settings → Fix a problem. With the browser fixture's scrollbar, content width and scroll width were both **345 px**, with no horizontal overflow. The four primary values occupied approximately **y=239–382 px** within the app viewport. APS-C 1.6× showed **12.5 mm actual / 20 mm equivalent**, with ISO 3200, f/2.8 and 10 s unchanged. The waterfall sheet also kept all four primary readouts in that area. Selecting **Phone** changed its guidance to automatic ISO, a usually fixed aperture, a supported simulated/stacked long-exposure mode and a stationary-rock focus target.
+
+The saved desktop and phone screenshots were captured from the actual GitHub Pages deployment after these checks. The desktop library's visible scene thumbnails all loaded; the phone screenshot shows the waterfall sheet inside the 360 px responsive fixture. The fixture is a browser layout check, not a physical handset test.
+
 ## Print review
 
 Individual print layouts contain the full sheet, diagram, relevant safety, exposure notes, ranges, metering, stabilisation, steps, explanations, pack list, corrections, alternatives and source URLs. Pocket sets include the primary setup, operational exposure notes, focus, essentials, first three corrections and practical tip. Phone alternatives are labelled as camera references and capability-dependent.
@@ -79,9 +102,35 @@ The full application was uploaded in commit [`6cf2696f72ead5bccfcdb0c206647741ee
 
 The [gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages), at commit `790a2aafbc5720e42a48e443dbbfca17d80b2a99`, contains **252 verified files**: the 251-file production output plus `.nojekyll`. Every blob matched the local build. Source and deployment are separate branches of this same repository.
 
-Pages is not yet enabled and no GitHub Pages URL is claimed as live. The connected GitHub tools lack Pages administration operations, and the browser session still shows a failed sign-in. The remaining owner action is **Settings → Pages → Deploy from a branch → gh-pages → /(root) → Save**. The optional manual Pages workflow is also present but has not run. The deployment checker accepts an HTTPS project subdirectory and compares every served file with the built output; run it after Pages reports a successful deployment.
+Pages is enabled with **Deploy from a branch → gh-pages → /(root)**. [GitHub's automatic deployment run 41051389283](https://github.com/ACSBalan/Photography-Tips/actions/runs/41051389283) succeeded for the compiled commit above, and **[https://acsbalan.github.io/Photography-Tips/](https://acsbalan.github.io/Photography-Tips/)** is live. The optional manual source-build workflow remains available but was not used for this deployment.
 
-Before this migration, the same application build was published on a separate owner-private host. Authenticated checks verified all **251 deployed files** against the production output, using cache version `a8076470a1d7`. That earlier host's publication does not establish GitHub Pages deployment. The app has no dependency on that host and its hosting association is not included in this repository.
+The existing deployment checker downloaded and SHA-256-compared **all 251 served application files** with the tested local `dist/` output. Every file matched, including the 120 scene diagrams, 120 thumbnails, application bundles, install assets, manifest and service worker. The command exited successfully with this result:
+
+```json
+{
+  "status": "PASS",
+  "url": "https://acsbalan.github.io/Photography-Tips/",
+  "verifiedFiles": 251,
+  "sceneVisuals": 120,
+  "cacheVersion": "a8076470a1d7"
+}
+```
+
+Reproduce after building the matching source version:
+
+```sh
+npm run verify:deployment -- https://acsbalan.github.io/Photography-Tips/
+```
+
+The verification environment used a configured HTTP(S) proxy, so the successful invocation enabled Node 24's environment-proxy support:
+
+```sh
+NODE_USE_ENV_PROXY=1 node scripts/verify-deployment.mjs https://acsbalan.github.io/Photography-Tips/
+```
+
+Use the proxy variant only in an environment with a configured proxy. No application credentials are required for this public check. The **291 source files**, **252 compiled-branch files** (including `.nojekyll`), **251 served application files**, and **250 precached files** count different sets: the publishing marker is outside the application set, and the worker script is served separately from the files it precaches.
+
+The app has no dependency on its earlier preview host, and that host's association is not included in this repository. The live results above were obtained directly from GitHub Pages.
 
 ## Version 1.1 visual refresh
 
@@ -93,7 +142,7 @@ The refreshed production build was reviewed in the managed browser at desktop wi
 
 At the 360 px fixture, content and scroll widths were both 345 px; the four primary setting fields occupied approximately y=202–417 px. All three themes were inspected at that width, including the narrow header and card controls. At the 768 px fixture, content and scroll widths were both 753 px, with no horizontal overflow. Existing favourites and camera preferences remained after a fresh reload. Observed console errors belonged to the browser integration extension, not the app.
 
-The [desktop library screenshot](fieldframe-redesign-library.jpg) and [phone sheet screenshot](fieldframe-redesign-phone.jpg) show this build. The latter includes the responsive test harness around the actual app. These preview screenshots do not claim a live GitHub Pages or physical-device installation test.
+The [desktop library screenshot](fieldframe-redesign-library.jpg) and [phone sheet screenshot](fieldframe-redesign-phone.jpg) now show the live GitHub Pages build. The latter includes the responsive test harness around the actual app. They document the deployed layout and do not claim physical-device installation testing.
 
 ## Practical limits
 
