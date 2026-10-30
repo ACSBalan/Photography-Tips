@@ -61,3 +61,8 @@ type Scene = {
 ```
 
 Every scene gets an original schematic visual, explicitly labelled diagram. Prefer imagery of actual effect where possible, but no invented EXIF. Source links are a verified technical basis; recipe settings are original test starting points. No arbitrary sensor-dependent exposure changes. Phone fixed aperture and unavailable controls must be explicit. Solar photography MUST require an appropriate FRONT-mounted solar filter; never recommend an ND filter or unfiltered optical viewing. Lightning work must be from enclosed shelter, not exposed ground. Never use generic infinity focus for stars.
+
+
+## Photographic edition (2.0)
+
+The visual brief remains useful editorial metadata, but the app no longer generates or displays schematic SVG cartoons. Every scene must map to a relevant real photograph in `src/photo-manifest.json`, with a local optimized WebP, accurate alt text, source, creator, licence and licence URL. Preserve work titles where attribution requires them. Do not present suggested recipe values as that image’s EXIF. Subject/technique matches require visual review. New photographs must be included in the complete offline manifest and original source credits.

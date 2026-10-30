@@ -16,8 +16,8 @@ for(const s of all){
  if(s.sources.some(x=>!x.url.startsWith('https://')))issues.push(s.id+': non-HTTPS source');
  if(!s.phone.aperture.toLowerCase().includes('fix')&&!s.phone.aperture.toLowerCase().includes('auto'))issues.push(s.id+': phone aperture must state fixed/automatic capability');
  if(s.visual.points.some(t=>t.length>80))issues.push(s.id+': diagram annotation is too long');
- if(fs.existsSync('public/visuals')&&!fs.existsSync('public/visuals/'+s.id+'.svg'))issues.push(s.id+': visual missing');
- if(!fs.existsSync('public/thumbnails/'+s.id+'.svg'))issues.push(s.id+': library thumbnail missing');
+
+
 }
 for(const name of ['conditions','intent']){const unique=new Set(all.map(s=>s[name]));if(unique.size!==all.length)issues.push('Duplicate '+name+' text');}
 const counts=Object.fromEntries(categories.map(c=>[c.name,all.filter(s=>s.category===c.id).length]));

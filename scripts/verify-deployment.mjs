@@ -43,7 +43,7 @@ async function worker() {
 }
 try {
   await Promise.all(Array.from({ length: 4 }, worker));
-  console.log(JSON.stringify({ status: 'PASS', url: base.href, verifiedFiles: verified, sceneVisuals: manifest.sceneVisuals, cacheVersion: manifest.version }, null, 2));
+  console.log(JSON.stringify({ status: 'PASS', url: base.href, verifiedFiles: verified, scenePhotos: manifest.scenePhotos, sceneSheets: manifest.sceneSheets, cacheVersion: manifest.version }, null, 2));
 } catch (error) {
   console.error(error instanceof Error ? error.message : 'Deployment verification failed');
   process.exitCode = 1;

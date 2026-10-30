@@ -10,7 +10,7 @@ export function useOffline(){
    const registration=await navigator.serviceWorker.register(new URL('sw.js',document.baseURI),{scope:'./',updateViaCache:'none'});
    const worker=registration.active??registration.waiting??registration.installing;
    if(worker)worker.postMessage({type});
-   registration.addEventListener('updatefound',()=>setState(v=>({...v,status:'downloading',message:'Downloading all sheets and visuals…'})));
+   registration.addEventListener('updatefound',()=>setState(v=>({...v,status:'downloading',message:'Downloading all sheets and photographs…'})));
    navigator.serviceWorker.ready.then(r=>r.active?.postMessage({type:'STATUS'}));
   }catch(error){setState(v=>({...v,status:'error',message:`Offline download failed. ${error instanceof Error?error.message:'Please retry while online.'}`}));}
  },[]);

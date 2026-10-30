@@ -8,8 +8,10 @@ describe('Complete authored library',()=>{
   for(const s of raw){expect(()=>sceneSchema.parse(s),s.id).not.toThrow();for(const id of s.related)expect(ids.has(id),`${s.id} → ${id}`).toBe(true);}
   for(const c of categories)expect(raw.filter(s=>s.category===c.id).length,c.name).toBeGreaterThanOrEqual(8);
  });
- it('has an original essential visual for every scene, with no fabricated photo metadata',()=>{
-  for(const s of raw){const svg=fs.readFileSync(`public/visuals/${s.id}.svg`,'utf8');expect(svg).toContain('<svg');expect(svg).toContain('TECHNIQUE DIAGRAM');expect(svg).toContain('<title');}
+ it('has a local licensed photograph for every scene, with complete attribution',()=>{
+  const photos=JSON.parse(fs.readFileSync('src/photo-manifest.json','utf8'));
+  expect(Object.keys(photos).sort()).toEqual(raw.map(s=>s.id).sort());
+  for(const scene of raw){const photo=photos[scene.id];const image=fs.readFileSync('public/'+photo.src.replace(/^\.\//,''));expect(image.length,scene.id).toBeGreaterThan(1000);expect(image.toString('ascii',0,4)).toBe('RIFF');expect(image.toString('ascii',8,12)).toBe('WEBP');for(const key of ['author','alt','license'])expect(photo[key].length).toBeGreaterThan(2);for(const key of ['source','licenseUrl'])expect(new URL(photo[key]).protocol).toBe('https:');}
  });
  it('keeps source recipes inside their stated ranges and identifies automatic ISO',()=>{
   for(const {id,setup:s}of raw){for(const key of ['iso','aperture','shutter']){expect(s[key],id+' '+key).toBeGreaterThanOrEqual(s[key+'Range'][0]);expect(s[key],id+' '+key).toBeLessThanOrEqual(s[key+'Range'][1]);}expect(s.autoISO,id).toBe(s.mode==='M + Auto ISO');}
