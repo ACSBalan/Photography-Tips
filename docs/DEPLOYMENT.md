@@ -1,6 +1,6 @@
 # Deploy Fieldframe from GitHub
 
-The project's source repository is **[ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)**. It contained only its initial README when checked; the prepared application does not import the history or starter code of another repository. Preserve the owner's initial commit when adding the app. This guide concerns deployment from the new repository; it does not claim that a live GitHub Pages deployment has been verified.
+The project's source repository is **[ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips)**. It contained only its initial README before the completed app was uploaded; the application does not import the history or starter code of another repository. The owner's initial commit is preserved. This guide concerns deployment from the new repository; it does not claim that a live GitHub Pages deployment has been verified.
 
 Fieldframe is a static React/Vite PWA. The complete deployable output is `dist/`. No application server, database, runtime secret or paid AI API is required.
 
@@ -24,7 +24,22 @@ npm run preview
 
 Build first: the tests inspect the generated service worker, offline manifest and artwork. The build creates all diagrams and thumbnails, checks TypeScript, compiles the application and then writes `dist/sw.js` and `dist/offline-manifest.json`. Deploy every file in `dist/`, including all visuals and PWA assets.
 
-## Enable GitHub Pages and run the workflow
+## Publish the prepared build
+
+The [gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages) contains the verified production output, with `index.html` at its root and `.nojekyll` to prevent Jekyll processing. All 252 files match the local build, including all 120 diagrams and 120 thumbnails. It was built from source commit `6cf2696f72ead5bccfcdb0c206647741ee371308`; the offline cache version is `a8076470a1d7`.
+
+The owner needs to enable the publishing source once:
+
+1. Open [Settings → Pages](https://github.com/ACSBalan/Photography-Tips/settings/pages).
+2. Under **Build and deployment**, select **Source: Deploy from a branch**.
+3. Choose **gh-pages**, keep **/(root)** and click **Save**.
+4. Wait for GitHub's Pages deployment to succeed, then open the address shown in Pages settings. Perform the live checks below before calling the app verified.
+
+This follows [GitHub's documented branch-publishing flow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). The code connector can upload files but cannot change Pages administration settings. The browser session could not sign in, so this owner setting remains pending. Creating the prepared branch alone does not enable Pages.
+
+For subsequent updates while using branch publishing, rebuild and verify the app, then replace the contents of `gh-pages` with the new complete `dist/` output and retain `.nojekyll`. A change to `main` alone does not update that compiled branch. Alternatively, switch to the source-build workflow below.
+
+## Optional: build from source with GitHub Actions
 
 The included [Pages workflow](../.github/workflows/pages.yml) is **manual only** (`workflow_dispatch`). Uploading source or pushing another commit does not trigger this deployment workflow. It does not enable Pages automatically and does not use a personal access token or extra deployment credential.
 
@@ -44,7 +59,7 @@ GitHub's [Actions billing documentation](https://docs.github.com/en/billing/conc
 
 Vite uses `base: './'`; scripts, styles, diagrams and thumbnails have relative URLs. The manifest's `id`, `start_url`, `scope` and icons are relative. The service worker caches files against its registration scope. Scene links use hashes, for example `#/scene/milky-way`, so they need no per-scene server rewrites.
 
-Publish the contents of `dist/` as the Pages artifact, with `index.html` at the artifact root. The workflow does this directly; a compiled deployment branch or `.nojekyll` file is unnecessary for this path. The deployed directory should have its normal trailing slash.
+For branch publishing, the contents of `dist/` are placed at the root of `gh-pages` alongside `.nojekyll`. For the optional Actions route, publish `dist/` as the Pages artifact with `index.html` at the artifact root; that workflow route does not need `.nojekyll`. The deployed directory should have its normal trailing slash.
 
 ## Verify the deployed app
 

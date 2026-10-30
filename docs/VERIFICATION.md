@@ -75,7 +75,11 @@ The authenticated GitHub connection checked the owner's fresh **ACSBalan/Photogr
 
 A separate read-only comparison verified that all 16 application/source files, 246 public assets and five test files in this prepared delivery exactly match the finished Fieldframe app. No files from the other repository's starter implementation are present. The upload set excludes hosting associations, dependencies, build output, environment files and local cache files. The prepared metadata points only to the new repository.
 
-The manual Pages workflow is prepared, but it has not run and no GitHub Pages URL is claimed as live. The deployment checker accepts an HTTPS project subdirectory and compares every served file with the built output. After Pages is enabled, run the workflow and use the URL reported by its deployment job.
+The full application was uploaded in commit [`6cf2696f72ead5bccfcdb0c206647741ee371308`](https://github.com/ACSBalan/Photography-Tips/commit/6cf2696f72ead5bccfcdb0c206647741ee371308). All **291 source files** were independently matched against their local Git blob hashes before the default branch was advanced with an expected-head lease. The only parent is the owner's new repository initial commit; no history from the other repository was imported.
+
+The [gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages), at commit `790a2aafbc5720e42a48e443dbbfca17d80b2a99`, contains **252 verified files**: the 251-file production output plus `.nojekyll`. Every blob matched the local build. Source and deployment are separate branches of this same repository.
+
+Pages is not yet enabled and no GitHub Pages URL is claimed as live. The connected GitHub tools lack Pages administration operations, and the browser session still shows a failed sign-in. The remaining owner action is **Settings → Pages → Deploy from a branch → gh-pages → /(root) → Save**. The optional manual Pages workflow is also present but has not run. The deployment checker accepts an HTTPS project subdirectory and compares every served file with the built output; run it after Pages reports a successful deployment.
 
 Before this migration, the same application build was published on a separate owner-private host. Authenticated checks verified all **251 deployed files** against the production output, using cache version `a8076470a1d7`. That earlier host's publication does not establish GitHub Pages deployment. The app has no dependency on that host and its hosting association is not included in this repository.
 

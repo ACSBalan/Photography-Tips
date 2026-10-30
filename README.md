@@ -8,7 +8,11 @@ The app opens directly into its searchable library. A scene puts ISO, aperture, 
 
 **Public GitHub repository: [ACSBalan/Photography-Tips](https://github.com/ACSBalan/Photography-Tips).** This delivery contains the complete React/TypeScript application, all 120 scene sheets, 240 original SVG assets, the lockfile, tests and deployment instructions. The owner confirmed public publication on 30 October 2026. The fresh repository contained only its initial README when checked. No code or history from another starter repository is included.
 
-GitHub Pages has not yet been enabled or verified for this repository. The supplied `.github/workflows/pages.yml` builds, validates, tests and deploys the full application when run manually after Pages is enabled. It does not start a hosted job automatically on upload. This public repository supports Pages on GitHub Free; no plan upgrade or visibility change is part of the workflow.
+The complete source is uploaded and every one of its **291 files was verified by Git blob hash**. The **[gh-pages branch](https://github.com/ACSBalan/Photography-Tips/tree/gh-pages)** contains the tested production build: 251 application files plus `.nojekyll`, with every file verified against local output.
+
+**One owner setting remains before the app is live:** open [Settings → Pages](https://github.com/ACSBalan/Photography-Tips/settings/pages), choose **Deploy from a branch → gh-pages → /(root)** and **Save**. This public repository supports Pages on GitHub Free. The connected code-writing tools cannot change Pages administration settings, and browser sign-in was unavailable. No live Pages URL is claimed yet.
+
+An optional manual `.github/workflows/pages.yml` is also included for later builds directly from source. Use it only after choosing **GitHub Actions** as the Pages source; see the deployment guide. No plan upgrade or visibility change is part of either route.
 
 See [deployment instructions](docs/DEPLOYMENT.md), the [verification record](docs/VERIFICATION.md), [redesigned library screenshot](docs/fieldframe-redesign-library.jpg) and [phone layout screenshot](docs/fieldframe-redesign-phone.jpg). The local production build, all 120 content checks and all 88 automated tests pass. Live GitHub Pages verification and physical-device installation are separate acceptance steps and are not claimed here.
 
