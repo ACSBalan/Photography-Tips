@@ -57,6 +57,20 @@ Tests execute the actual generated service worker with actual built assets and d
 - Retention of previous hashed assets/photos until older tabs have moved to the new script.
 - A two-tab update handoff, nonblocking activation and cache-only rehearsal.
 
+## Published release check
+
+GitHub Pages completed [deployment 41080680362](https://github.com/ACSBalan/Photography-Tips/actions/runs/41080680362) successfully for commit [`e59b99762c9340161398a7321f6f0f81e90680d3`](https://github.com/ACSBalan/Photography-Tips/commit/e59b99762c9340161398a7321f6f0f81e90680d3), built from source [`ffe78f0523ca0348f14f05b4e53f8f225882ab4f`](https://github.com/ACSBalan/Photography-Tips/commit/ffe78f0523ca0348f14f05b4e53f8f225882ab4f).
+
+The verification script fetched **all 134 live application files** and confirmed SHA-256 equality with the local production build, including all 120 photographs, the sample PDF, worker and manifest. In this execution environment, Node's `--use-env-proxy` flag was needed to use the configured network proxy. The app itself does not require that flag or a proxy configuration.
+
+The already installed live browser updated from offline version `b981caa5a34c` to **`be5772e94d36`**, retained its Phone preference and existing favourite, and reported **133/133 files verified**. The explicit **Verify saved files** action confirmed every saved file.
+
+Cache-only rehearsal was enabled and the live app reloaded. Searching `stream texture` returned the intended scene; opening this previously unvisited sheet loaded the replacement 1400 × 933 photograph and the full phone troubleshooting content from cache. The ND calculator also worked during rehearsal. Normal routing was restored afterward.
+
+The published About page identifies **2.1 · Field reference update**. At a 1363 px desktop viewport, the sheet and its photograph rendered without horizontal overflow. Sharing copied the exact individual scene link. Test display changes were restored and the app was left at the complete scene library.
+
+![Published Fieldframe 2.1 stream sheet](fieldframe-2-1-live-1793374247277.jpg)
+
 ## Scope and remaining physical checks
 
 The six-scene designed PDF sample remains a fixed camera-reference document; its six baseline recipes were unaffected by the audited numeric corrections. The format-aware browser prints were updated and their prepared contents verified. Native browser PDF pagination, tagged-PDF accessibility, actual paper output and pocket readability are not certified by those checks.
