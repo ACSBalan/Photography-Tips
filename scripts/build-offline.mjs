@@ -8,7 +8,7 @@ for(const photo of photoPaths)if(!fs.existsSync(path.join(dist,photo))||fs.statS
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 const files=walk(dist).filter(f=>!f.endsWith('/sw.js')&&!f.endsWith('/offline-manifest.json')).map(f=>path.relative(dist,f).split(path.sep).join('/')).sort();
 for(const file of files)if(fs.statSync(path.join(dist,file)).size===0)throw new Error(`Cannot publish an empty asset: ${file}`);
-const digest=crypto.createHash('sha256');for(const f of files){digest.update(f);digest.update(fs.readFileSync(path.join(dist,f)));}const version=digest.digest('hex').slice(0,12);
+const digest=crypto.createHash('sha256');digest.update(fs.readFileSync('scripts/build-offline.mjs'));for(const f of files){digest.update(f);digest.update(fs.readFileSync(path.join(dist,f)));}const version=digest.digest('hex').slice(0,12);
 const bytes=files.reduce((n,f)=>n+fs.statSync(path.join(dist,f)).size,0);
 fs.writeFileSync(path.join(dist,'offline-manifest.json'),JSON.stringify({version,files,bytes,scenePhotos:photoPaths.length,sceneSheets:Object.keys(photos).length},null,2));
 const manifest=[...files,'offline-manifest.json'];
@@ -40,7 +40,7 @@ async function status(target,verify=false){
  await tell({status:ready?'ready':pending?'downloading':'error',done,rehearsal,message:ready?(rehearsal?'Offline rehearsal active. All app files are served from cache.':verify?'Verified every saved file, including all scene photographs.':'All sheets, photographs and tools are saved on this device.'):'Offline files are incomplete. Use Download / retry while online.'},target);
 }
 self.addEventListener('install',event=>event.waitUntil(cacheAll().then(()=>self.skipWaiting())));
-self.addEventListener('activate',event=>event.waitUntil((async()=>{const old=(await caches.keys()).filter(name=>name.startsWith('fieldframe-')&&name!==CACHE);for(const name of old)await caches.delete(name);await self.clients.claim();await status();if(old.length)for(const client of await self.clients.matchAll({type:'window'})){if(client.url?.startsWith(ROOT)&&typeof client.navigate==='function')await client.navigate(client.url);}})()));
+self.addEventListener('activate',event=>event.waitUntil((async()=>{const old=(await caches.keys()).filter(name=>name.startsWith('fieldframe-')&&name!==CACHE);for(const name of old)await caches.delete(name);await self.clients.claim();await status();if(old.length)for(const client of await self.clients.matchAll({type:'window'})){if(client.url?.startsWith(ROOT)&&typeof client.navigate==='function')void client.navigate(client.url).catch(()=>{});}})()));
 self.addEventListener('message',event=>{event.waitUntil((async()=>{const type=event.data?.type;if(type==='CACHE_ALL'){await cacheAll();await status(event.source);}else if(type==='STATUS'||type==='VERIFY')await status(event.source,type==='VERIFY');else if(type==='REHEARSAL_ON'||type==='REHEARSAL_OFF'){const cache=await caches.open(CACHE);if(type==='REHEARSAL_ON')await cache.put(key('__fieldframe_rehearsal__'),new Response('1'));else await cache.delete(key('__fieldframe_rehearsal__'));await status(event.source);}})().catch(error=>tell({status:'error',message:error.message},event.source)));});
 self.addEventListener('fetch',event=>{
  const u=new URL(event.request.url);

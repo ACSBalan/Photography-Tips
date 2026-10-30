@@ -5,13 +5,13 @@ const worker=fs.readFileSync('dist/sw.js','utf8');
 const photos=JSON.parse(fs.readFileSync('src/photo-manifest.json','utf8'));
 const photoPath=id=>photos[id].src.slice(2);
 const manifest=JSON.parse(fs.readFileSync('dist/offline-manifest.json','utf8'));
-function harness({badFile,loginHTML=false,emptyBody=false}={}){
+function harness({badFile,loginHTML=false,emptyBody=false,pendingNavigation=false}={}){
  const root='https://fieldframe.example/subpath/',handlers={},messages=[],stores=new Map();let network=true,fetchCount=0,claimed=false,skipped=false;
  const url=k=>typeof k==='string'?k:k.url;
  const cache={async put(k,v){stores.set(url(k),v.clone());},async match(k){return stores.get(url(k))?.clone();},async delete(k){return stores.delete(url(k));},async keys(){return [...stores.keys()];}};
  const names=new Set(['fieldframe-previous','unrelated-app']);
  const caches={async open(name){names.add(name);return cache;},async keys(){return [...names];},async delete(name){return names.delete(name);}};
- const client={postMessage:m=>messages.push(m)};
+ const client={postMessage:m=>messages.push(m),...(pendingNavigation?{url:root,navigate:()=>new Promise(()=>{})}:{})};
  const self={registration:{scope:root},location:{origin:'https://fieldframe.example'},clients:{matchAll:async()=>[client],claim:async()=>{claimed=true;}},skipWaiting:async()=>{skipped=true;},addEventListener:(n,f)=>{handlers[n]=f;}};
  const fetch=async input=>{fetchCount++;if(!network)throw Error('Network disabled by test');const f=url(input).slice(root.length);if(f===badFile&&emptyBody)return new Response('',{headers:{'content-type':'image/webp'}});if(f===badFile)return loginHTML?new Response('<html>Sign in</html>',{headers:{'content-type':'text/html'}}):new Response('missing',{status:404});if(f==='index.html')return new Response('<html><title>Fieldframe</title><div id="root"></div></html>',{headers:{'content-type':'text/html'}});return new Response(fs.existsSync('dist/'+f)?fs.readFileSync('dist/'+f):'asset',{headers:{'content-type':f.endsWith('.webp')?'image/webp':f.endsWith('.svg')?'image/svg+xml':f.endsWith('.js')?'text/javascript':'application/octet-stream'}});};
  vm.runInNewContext(worker,{self,caches,fetch,Response,URL,console});
@@ -39,6 +39,9 @@ describe('Built service worker: complete offline behavior',()=>{
   const sample=await h.request('downloads/fieldframe-sample.pdf');expect(sample.status).toBe(200);expect((await sample.arrayBuffer()).byteLength).toBeGreaterThan(1000);
   const bundle=manifest.files.find(f=>f.endsWith('.js'));const js=await h.request(bundle);expect((await js.text()).length).toBeGreaterThan(10000);
   expect(h.fetchCount).toBe(before);
+ });
+ it('activates without awaiting a client navigation that needs the new worker',async()=>{
+  const h=harness({pendingNavigation:true});await h.fire('install');await h.fire('activate');expect(h.claimed).toBe(true);expect(h.messages.at(-1).status).toBe('ready');
  });
  it('a failed asset leaves the library unready instead of falsely claiming completion',async()=>{
   const h=harness({badFile:photoPath('milky-way')});await expect(h.fire('install')).rejects.toThrow();

@@ -6,9 +6,9 @@ Verified on 30 October 2026 against the photographic-edition source and producti
 
 - `npm run build`: PASS. TypeScript and Vite compilation complete.
 - `npm run validate`: PASS. 120 unique, complete scene sheets; all 12 categories; valid related links and consistent numeric ranges/modes.
-- `npm test`: **92/92 PASS** across six test files.
+- `npm test`: **93/93 PASS** across six test files.
 - 120/120 local photographic WebP files pass full image decoding and provenance checks. Exactly 120 unique images; 12.53 MiB of photography.
-- The final app cache version is `e77db49a97d0`. Its offline package contains 133 files including the offline manifest, approximately 14.77 MiB. `sw.js` is served separately.
+- The final app cache version is `76df55686407`. Its offline package contains 133 files including the offline manifest, approximately 14.77 MiB. `sw.js` is served separately.
 - The complete paid companion guide is absent from the public source, build and offline manifest. The public sample contains six scenes over nine PDF pages.
 
 ## Browser checks
@@ -30,7 +30,7 @@ Screenshots: [desktop library](fieldframe-photographic-desktop.jpg).
 
 The tests execute the actual generated service worker under a project subdirectory. They verify all scene photographs and the public PDF sample are included, install completion, an unvisited photograph and sample served without network access, failed downloads, a sign-in page masquerading as an image, empty response bodies, cache eviction and cache-only rehearsal. The build also rejects empty assets.
 
-A successful update installs the complete replacement before removing the previous Fieldframe cache. Existing controlled app tabs in the same scope are reloaded once after activation to show the new release.
+An activation test also verifies that a pending browser navigation cannot block worker activation. A successful update installs the complete replacement before removing the previous Fieldframe cache. Existing controlled app tabs in the same scope are reloaded once after activation to show the new release.
 
 ## Commercial safeguards
 
